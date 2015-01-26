@@ -3,15 +3,17 @@
 
   {% include head.html %}
 
+  {% if page.custom_css %}
+    {{ page.custom_css | stylesheet }}
+  {% endif %}
+
   <body>
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <section class="content">
         {{ content }}
-      </div>
-    </div>
+    </section>
 
     {% include footer.html %}
 

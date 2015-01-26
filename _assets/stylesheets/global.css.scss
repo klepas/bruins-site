@@ -2,6 +2,11 @@
 @import "base/grid-settings";
 @import "neat";
 @import "base/base";
+@import "font-awesome";
+
+$em-base: 16px;
+$fontface-sans: "Source Sans Pro", sans-serif;
+$fontface-serif: "EB Garamond", serif;
 
 body {
   ///////////////////////////////////////////////////////////////////////////////////
@@ -14,6 +19,9 @@ section article.content {
   text-align: left;
 }
 
-@import "homepage";
+@import "header";
 @import "footer";
+@import "homepage";
+
+
 

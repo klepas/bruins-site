@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 13: Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part III)"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 13"
 date: 2014-09-05 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*\ Lecture 13: Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part III)
+## Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part III)
 
 I want now to consider the final three pages of the Sixth Meditation, that is, pp.68-70. For here we see very clearly how Descartes derives from his metaphysics of mind and its place in nature the crucial premise or assumption of the argument from dreaming and from the possibility of radical deception by an evil mind. This premise, you will recall, is that whether he is or is not asleep, the victim of an evil mind, or even a brain in a vat, Descartes is undergoing or having experiences and thoughts. Or, to put the assumption in another way, in both arguments Descartes assumes that there really is a passing of ideas through his mind in that sense of the phrase ‘passing through one’s mind’ which entails a real capacity to identify these ideas, to refer to them and ask of them whether they are or are not true, veracious, etc. Let us recall the passage in which Descartes outlines his views on how the mind relates, first to the brain, then to the body and finally, through the body, to the wider natural world:
 

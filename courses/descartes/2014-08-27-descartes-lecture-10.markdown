@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 10: More on the Ontological Argument — The Fifth Meditation"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 10"
 date: 2014-08-10 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy* Lecture 10: More on the Ontological Argument---The Fifth Meditation (cont.)
+## More on the Ontological Argument---The Fifth Meditation (cont.)
 
 ### § 1: Kant’s Critique of the Traditional Ontological Argument for the Existence of God
 

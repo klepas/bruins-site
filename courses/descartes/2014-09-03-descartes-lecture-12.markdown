@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 12: Descartes’ Metaphysics of Nature and Mind—The Sixth Meditation (Part II)"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 12"
 date: 2014-09-03 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*\ Lecture 12: Descartes’ Metaphysics of Nature and Mind—The Sixth Meditation (Part II)
+## Descartes’ Metaphysics of Nature and Mind—The Sixth Meditation (Part II)
 
 We now come to that doctrine for which Descartes is most famous, or perhaps infamous, certainly in the minds of many today. This is his conviction that the mind is not, as Aristotle thought, merely the form of the body, but in fact a separable existent: precisely because and to the extent that he is a thinking thing, Descartes is not identical with his body but rather is nothing more than his mind. His mind is thus an entity distinct from his body, not just in the sense that it can be distinguished from the latter (as the shape of Arnold Schwarzenegger can be distinguished from him but cannot separated from him[^1]), but in the sense that it exists potentially and indeed after death actually separate from his body. The claim that Descartes is nothing more than a mind and that this mind can exist separately from the body to which it must therefore be, in a sense yet to be explained, attached is the basis upon which Descartes is described as a *substance* dualist: he thinks that there are two basic kinds of substance, whereby what distinguishes one kind of substance from the other is a certain defining attribute. In the case of minds, this defining attribute is thinking, in the case of material things, this attribute is extension.[^2]
 

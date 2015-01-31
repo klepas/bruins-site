@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 7 The Third Meditation continuted—Of God, that He exists – Part III"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 7"
 date: 2014-08-15 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy* Lecture 7: The Third Meditation: Of God, that He exists --- Part III
+## The Third Meditation: Of God, that He exists --- Part III
 
 In this lecture, I want to finish the discussion off of Descartes’ first proof (in the Third Meditation) of the existence of God.
 

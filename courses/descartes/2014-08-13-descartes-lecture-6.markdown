@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 6 The Third Meditation continuted—Of God, that He exists – Part II"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 6"
 date: 2014-08-13 09:00:00
 categories:
 ---
 
-## *Meditations on First Philosophy* Lecture 6: The Third Meditation (continued): Of God, that He exists --- Part II
+## The Third Meditation (continued): Of God, that He exists --- Part II
 
 In this lecture, I want to elaborate the notion of clear and distinct perception in order to show how the two elements of Descartes’ strategy for recovering his entitlement to the knowledge-claims he has suspended hang together. These two elements are his certain knowledge of himself as existing as a thinking thing—what I shall call, rather loosely, the *cogito*—and the proof of God’s existence, which Descartes says (on p.32) he needs to undertake precisely in order to be able to assert *as a general rule* that everything he perceives clearly and distinctly is true,[^1] hence something he is rationally entitled to believe. Once I have done this, I will turn to examine the attempt Descartes makes in the Third Meditation to prove the existence of God. I will finish this examination off in the next lecture (lecture 7).
 

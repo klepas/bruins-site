@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 5 The Third Meditation—Of God, that He exists–Part I"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 5"
 date: 2014-08-08 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy* --- Lecture 5: The Third Meditation—Of God, that He exists --- Part I
+## The Third Meditation—Of God, that He exists --- Part I
 
 ### § 1: The Structure of Perceptual Experience according to Descartes
 

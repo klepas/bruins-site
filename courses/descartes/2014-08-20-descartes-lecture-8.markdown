@@ -1,13 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 8 On Truth and Falsehood or rather, on Correctness and Error in Judgement - The Fourth Meditation"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 8"
 date: 2014-08-20 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*
-
-### *Reminder regarding Assessment!*
+## *Reminder regarding Assessment!*
 
 As assessment for this option, you are required to write one 2,000 word research essay. The essay will be worth 90% of your mark for this option, the other 10% being your mark for tutorial attendance and participation. In other words, the essay will be worth 45% and tutorial attendance/participation 5% *overall*, the remaining 50% being made up by your marks for the second option. Your Descartes essay is to be handed in by 12 noon, Thursday, September 11^th^.
 
@@ -15,7 +13,7 @@ Late work will be subject to late penalties (at two marks per working day) unles
 
 A list of essay topics is available at the Wattle site.
 
-## Lecture 8: On Truth and Falsehood or rather, on Correctness and Error in Judgement[^1]---The Fourth Meditation
+## On Truth and Falsehood or rather, on Correctness and Error in Judgement[^1]---The Fourth Meditation
 
 The Fourth Meditation marks a transition in Descartes’ Meditations as a whole—a transition from an apparently exclusive concern with the epistemological issue of how he can have certain empirical and mathematical knowledge (Meditations One, Two and Three) to the introduction and discussion of explicitly ‘metaphysical’ issues (Meditations Five and Six, in which Descartes introduces what is, notwithstanding his retention of the first-person, meditational literary from, his own official metaphysical framework). In this transitional spirit, it begins by stating Descartes’ own official position on what is truly knowable, what true knowing is and what the role of the senses (perceptual experience) in true knowing is.
 

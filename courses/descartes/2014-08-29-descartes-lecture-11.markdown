@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 11: Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part I)"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 11"
 date: 2014-08-29 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*\ Lecture 11: Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part I)
+## Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part I)
 
 In the sixth and final of his *Meditations on First Philosophy*, Descartes explicitly introduces his metaphysics of the human mind and the empirical world, i.e., nature, in which the human mind exists. Crucially, this metaphysics of mind and nature has been tacitly guiding Descartes’ reflections throughout the preceding five Meditations. That, however, this is so only really becomes clear in this final Meditation. For here, as we shall see, Descartes implicitly explains why he has made the crucial assumption of the argument from dreaming and thus, by extension, of the argument about the possibility of global deception through a supremely powerful, malevolent mind. This assumption is that even if he were dreaming, even if he were the victim of an all-powerful, deceiving evil mind, he would still exist as genuinely thinking and not merely as dreaming in his bed or hallucinating in, say, the vat into which the information-technologically savvy evil mind has placed his brain after removing it from his skull. In other words, even if he were in any such condition, he would genuinely exist as having thoughts (in Descartes’ wide sense of the term, of course) passing through in his mind, available for him to think about, i.e., to withhold assent from, to doubt, to question, to ponder the veracity of, and also, as with his idea of God, to explore the content or meaning of.
 

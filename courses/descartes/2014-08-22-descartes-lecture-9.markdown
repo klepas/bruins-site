@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 9 More on Proving the Existence of God—The Fifth Meditation"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 9"
 date: 2014-08-22 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*\ Lecture 9: More on Proving the Existence of God—The Fifth Meditation
+## More on Proving the Existence of God—The Fifth Meditation
 
 ### § 1: What is the Fifth Meditation out to accomplish?
 

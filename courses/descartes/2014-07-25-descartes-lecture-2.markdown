@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 2 The Letter of Dedication and the First Meditation"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 2"
 date: 2014-07-25 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*: Lecture 2: The Letter of Dedication and the First Meditation
+## The Letter of Dedication and the First Meditation
 
 The point of this segment is to get you to learn how to dissect and analyse an entire philosophical text, in which there is not just argument for one claim alone but a whole series of interlocking claims and arguments which together paint a comprehensive picture. In this lecture, I want to begin the illustration of this forensic task by identifying the various component arguments of the First Meditation and how they arguments hang together, that is, what role they play in the overall strategy of the work. The overall strategy is obviously determined by the overall point and purpose of the text. So we must first identify just what Descartes himself says he is doing in the Meditations.
 

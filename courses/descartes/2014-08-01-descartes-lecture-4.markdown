@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 4 Descartes’ Certain Knowledge of Himself as res cogitans and the Claim of the Second Meditation that Mind is better known than Body"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 4"
 date: 2014-08-01 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy* Lecture 4: Descartes’ Certain Knowledge of Himself as *res cogitans* and the Claim of the Second Meditation that Mind is better known than Body
+## Descartes’ Certain Knowledge of Himself as *res cogitans* and the Claim of the Second Meditation that Mind is better known than Body
 
 ### § 1: Descartes’ Certain Knowledge that he is as Thinking—What is It?
 

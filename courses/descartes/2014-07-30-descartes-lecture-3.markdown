@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes Lecture 3 The Conclusion of the First Meditation and Descartes Discovery of Himself as a Res Cogitans in the Second Meditation"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 3"
 date: 2014-07-30 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*: Lecture 3: The Conclusion of the First Meditation and Descartes’ Discovery of Himself as a *Res Cogitans* in the Second Meditation 
+## The Conclusion of the First Meditation and Descartes’ Discovery of Himself as a *Res Cogitans* in the Second Meditation 
 
 You should also download the PDF “How Descartes thinks of himself”, available at the Wattle site. This diagram is needed for p.16 of these notes. 
 

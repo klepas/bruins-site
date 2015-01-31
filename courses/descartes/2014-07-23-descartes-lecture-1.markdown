@@ -1,11 +1,11 @@
 ---
 layout: paper
-title: "Descartes: Introduction and Lecture 1 Descartes’ Life, Times and Goal in the Meditations"
+title: "Descartes’ *Meditations on First Philosophy* Lecture 1"
 date: 2014-07-23 09:00:00
 categories:
 ---
 
-## Descartes’ *Meditations on First Philosophy*: Introduction to the Segment and Lecture 1: Descartes’ Life, Times and Goal in the *Meditations*
+## Introduction to the Segment and Lecture 1: Descartes’ Life, Times and Goal in the *Meditations*
 
 ### § 1: Organisation of the Segment and Other Information
 

@@ -1,16 +1,18 @@
 ---
-layout: default
+layout: base
 ---
 
-<header class="post header">
-  <h2 class="post-title">{{ page.title }}</h2>
-  <p class="post-meta">
-    {{ page.date | date: "%b %-d, %Y" }}
-    {% if page.author %} &middot; {{ page.author }}{% endif %}
-    {% if page.meta %} • {{ page.meta }}{% endif %}
-  </p>
-</header>
+<section class="content">
+  <header class="post header">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <p class="post-meta">
+      {{ page.date | date: "%b %-d, %Y" }}
+      {% if page.author %} &middot; {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
+  </header>
 
-<article class="post content">
-  {{ content }}
-</article>
+  <article class="post content">
+    {{ content }}
+  </article>
+</section>

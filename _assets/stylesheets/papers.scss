@@ -1,0 +1,67 @@
+.paper-list {
+  ///////////////////////////////////////////////////////////////////////////////////
+
+  $paper-item-border: 1px solid transparentize($base-font-color, 0.8);
+  $paper-item-color: $base-font-color;
+  $paper-item-height: 16em;
+
+  @include clearfix;
+
+  //////////////////////////////////////////////////////////////////////////////////
+
+  position: relative;
+  background-color: $base-background-color;
+
+  .paper {
+    border-bottom: $paper-item-border;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 2em;
+    @include span-columns(12);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .paper-title {
+      float: left;
+      width: 100%;
+      overflow: hidden;
+      outline: none;
+      padding: 2em 2em 1em 0;
+
+      h3 {
+        font-size: 1.3em;
+        margin-bottom: 0.4em;
+      }
+
+      @include media($large-screen) {
+        @include span-columns(4 of 12);
+      }
+      @include media(min-width $tiny-screen max-width 769px, 12) {
+        @include span-columns(12 of 12);
+      }
+
+      &:focus,
+      &:hover {
+        //background: transparentize($paper-item-color, 0.95);
+      }
+    }
+
+    .paper-abstract {
+      padding-top: 1em;
+      @include media($large-screen) {
+        @include span-columns(8 of 12);
+      }
+      @include media(min-width $tiny-screen max-width 769px, 12) {
+        @include span-columns(12 of 12);
+      }
+      p {
+        @include media($medium-screen) {
+          max-width: 95%;
+        }
+      }
+    }
+  }
+}
+

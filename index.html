@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 <div class="home">
@@ -16,22 +16,30 @@ layout: default
     </div>
   </div>
 
-  <section>
-    <h1 class="page-heading">Posts</h1>
+  <section class="content recent-papers">
+    <h2>Recent papers</h2>
 
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
+    <ul class="paper-list">
+      {% for post in site.categories.papers limit:3 %}
+        <li class="paper">
+          <div class="paper-title">
+            <h3>
+              <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+            <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+          <div class="paper-abstract">
+            {% if post.abstract %}
+            <p class="abstract">{{ post.abstract | truncatewords:90 | markdownify }}</p>
+            {% endif %}
+          </div>
         </li>
       {% endfor %}
     </ul>
   </section>
 
+  <!--
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  -->
 
 </div>

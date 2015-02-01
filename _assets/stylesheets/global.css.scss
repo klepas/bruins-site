@@ -4,24 +4,65 @@
 @import "base/base";
 @import "font-awesome";
 
+///////////////////////////////////////////////////////////////////////////////////
+$large-screen: em(860) !default;
+$medium-screen: em(640) !default;
+$tiny-screen: em(320);
+
+$dark-gray: #333 !default;
+$light-gray: #d8d8d8;
+
 $em-base: 16px;
 $fontface-sans: "Source Sans Pro", sans-serif;
 $fontface-serif: "EB Garamond", serif;
+$base-background-color: white !default;
+$base-font-color: $dark-gray !default;
+
+$light-gray: #DDD !default;
+
+$base-border-color: gainsboro !default;
+$base-border-radius: 3px !default;
+$base-accent-color: #477DCA !default;
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
 
 body {
+  margin: 0;
+}
+
+div.page-content {
   ///////////////////////////////////////////////////////////////////////////////////
   @include outer-container;
   text-align: center;
   margin-bottom: 3em;
-  }
+}
 
-section article.content {
+section.content {
+  margin: 8px;
+  @include media(min-width $tiny-screen max-width $large-screen) {
+  }
+}
+
+article.content,
+section.recent-papers {
   text-align: left;
 }
 
+@import "textures";
 @import "header";
 @import "footer";
 @import "homepage";
+@import "papers";
 
 
 

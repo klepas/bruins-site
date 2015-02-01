@@ -1,0 +1,30 @@
+---
+layout: base
+title: Paper index
+permalink: /papers/
+---
+<header class="page header">
+  <h2 class="page-title">{{ page.title }}</h2>
+</header>
+
+<section class="papers">
+
+  <ul class="paper-list">
+    {% for post in site.categories.papers %}
+      <li class="paper">
+        <div class="paper-title">
+          <h3>
+            <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <div class="paper-abstract">
+          {% if post.abstract %}
+          <p class="abstract">{{ post.abstract | truncatewords:90 | markdownify }}</p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</section>

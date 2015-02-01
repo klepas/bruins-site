@@ -1,57 +1,47 @@
 header.navigation {
-  ///////////////////////////////////////////////////////////////////////////////////
-  $base-border-color: gainsboro !default;
-  $base-border-radius: 3px !default;
-  $base-accent-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $large-screen: em(860) !default;
+//////////////////////////////////////////////////////////////////////////////////
 
-  a {
-    text-decoration: none;
-  }
-  //////////////////////////////////////////////////////////////////////////////////
-
+  $navigation-background-color: lighten($light-gray, 12);
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
-  $navigation-color: transparentize(white, 0.3);
-  $navigation-color-hover: white;
-  $navigation-height: 70px;
-  $navigation-nav-button-background: $base-accent-color;
-  $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
+  $navigation-color: transparentize($dark-gray, 0.3);
+  $navigation-color-hover: $dark-gray;
+  $navigation-height: 65px;
+  $navigation-nav-button-background: $navigation-background-color;
+  $navigation-nav-button-background-hover: darken($navigation-background-color, 10%);
   $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
-  $navigation-search-background: lighten($navigation-background, 5);
-  $navigation-search-border: 1px solid darken($navigation-background, 5);
-  $navigation-active-link-color: transparentize(white, 0.5);
+  $navigation-search-background: lighten($navigation-background-color, 5);
+  $navigation-search-border: 1px solid darken($navigation-background-color, 5);
+  $navigation-active-link-color: transparentize($dark-gray, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
-  font-family: $fontface-sans;
 
-  background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  background: $navigation-background-color;
+  border-bottom: 1px solid darken($navigation-background-color, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  font-family: $fontface-sans;
 
   .navigation-wrapper {
     @include clearfix;
-    @include outer-container;
     position: relative;
     z-index: 9999;
+    @include outer-container;
   }
 
   h1 {
     float: left;
     max-height: $navigation-height;
-    padding: .5em $navigation-padding 0 .5em;
+    padding: .5em $navigation-padding 0 8px;
     font-family: $fontface-serif;
     font-weight: 400;
     font-size: 2em;
 
     a {
-      color: #ccc;
+      color: $dark-gray;
       &:hover {
-        color: yellow;
+        color: lighten($dark-gray, 25);
       }
     }
   }
@@ -114,7 +104,7 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    background: $navigation-background;
+    background: $navigation-background-color;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -252,13 +242,13 @@ header.navigation {
       }
 
       a {
-        background-color: darken($navigation-background, 3%);
+        background-color: darken($navigation-background-color, 3%);
         display: inline-block;
         text-align: right;
         width: 100%;
 
         @include media($horizontal-bar-mode) {
-          background-color: $navigation-background;
+          background-color: $navigation-background-color;
           padding-left: $navigation-submenu-padding;
           text-align: left;
           width: $navigation-submenu-width;
@@ -270,7 +260,7 @@ header.navigation {
   // Elements on the far right
 
   .navigation-tools {
-    background: #505050;
+    background: $navigation-background-color;
     clear: both;
     display: block;
     height: $navigation-height;
@@ -282,16 +272,6 @@ header.navigation {
       clear: none;
       float: right;
     }
-  }
-
-  .sign-up {
-    @include button(flat, $base-accent-color);
-    display: inline;
-    float: right;
-    font-size: 0.8em;
-    margin-top: 1em;
-    padding: 0.75em 1em;
-    text-transform: uppercase;
   }
 
   // Search bar
@@ -315,7 +295,7 @@ header.navigation {
         border: $navigation-search-border;
         color: $navigation-color;
         font-size: 0.9em;
-        font-style: italic;
+        font-style: normal;
         margin: 0;
         padding: 0.5em 0.8em;
         width: 100%;

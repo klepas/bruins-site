@@ -85,7 +85,7 @@ But there must be some feature or property which he presupposes himself as havin
 
 Note what Descartes is saying here: even if he is being radically deceived, the very fact that *he* is being radically deceived entails that he exists, which he therefore knows with certainty. Furthermore, he knows that he exists *as* thinking, indeed thinking precisely those thoughts and experiences which have perhaps been caused in him by the evil mind. These, too, must exist because just as he has to exist in order to be deceived, so, too, his thoughts and experiences have to exist as that which regard to which the evil mind is deceiving him. The picture which emerges is thus like this: 
 
-![[How Descartes thinks of himself.pdf]] 
+![How Descartes thinks of himself](2014-07-30-how-descartes-thinks-of-himself.png)
 
 Even if there is an evil mind deceiving him, not only does Descartes exist but he exists as having thoughts and experiences, indeed having thoughts and experiences in exactly the same sense as he would were he not deceived. Here his thoughts and experiences are, and here is his self-conscious awareness of them, with his mind’s eye he is genuinely perusing these thoughts and experiences and genuinely wondering about or asking of them whether they are not the products of radical deception and if they are, what this means for his capacity to know anything with certainty at all. And then he realizes that even so, he himself must exist and so he thinks “I am, I exist.” And then he asks just what, at least on this occasion of its use, the first person singular term ‘I’ refers to. And he answers that it refers to him simply in his capacity as instantiating this picture. 
 

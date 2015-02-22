@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Descartes’ *Meditations on First Philosophy* Lecture 9"
-date: 2014-08-22 09:00:00
 permalink: /courses/:collections/:title/
+title: "Descartes’ *Meditations on First Philosophy* Lecture 9"
+updated: 2014-08-22
+abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
 ---
 
 ## More on Proving the Existence of God—The Fifth Meditation

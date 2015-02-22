@@ -31,9 +31,11 @@ layout: base
               <a class="papers-link" href="{{ doc.url }}">{{ doc.title | markdownify }}</a>
             </h3>
           </div>
+          {% if doc.abstract %}
           <div class="paper-abstract">
-            <p>Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>{{ doc.abstract | markdownify }}</p>
           </div>
+          {% endif %}
         </li>
         {% endif %}
       {% endfor %}

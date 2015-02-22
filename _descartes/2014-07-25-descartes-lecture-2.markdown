@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Descartes’ *Meditations on First Philosophy* Lecture 2"
-date: 2014-07-25 09:00:00
 permalink: /courses/:collections/:title/
+title: "Descartes’ *Meditations on First Philosophy* Lecture 2"
+updated: 2014-07-25
+abstract: "This week we do X, Y, and Z."
 ---
 
 ## The Letter of Dedication and the First Meditation

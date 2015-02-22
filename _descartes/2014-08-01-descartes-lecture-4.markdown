@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 4"
-date: 2014-08-01 09:00:00
+updated: 2014-08-01
 permalink: /courses/:collections/:title/
+abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
 ---
 
 ## Descartes’ Certain Knowledge of Himself as *res cogitans* and the Claim of the Second Meditation that Mind is better known than Body

@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Descartes’ *Meditations on First Philosophy* Lecture 3"
-date: 2014-07-30 09:00:00
 permalink: /courses/:collections/:title/
+title: "Descartes’ *Meditations on First Philosophy* Lecture 3"
+updated: 2014-07-30
+abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
+
 ---
 
 ## The Conclusion of the First Meditation and Descartes’ Discovery of Himself as a *Res Cogitans* in the Second Meditation

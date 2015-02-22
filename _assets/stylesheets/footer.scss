@@ -1,18 +1,18 @@
-.footer {
+.footer-2 {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
   $base-accent-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  font-family: $fontface-sans;
-
+  
   ul {
+    margin: 0;
     padding: 0;
+    line-height: 1.5em;
   }
 
   li {
     list-style: none;
-    line-height: 1.5em;
   }
 
   a {
@@ -26,42 +26,42 @@
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
-  padding: ($base-spacing * 2) $gutter;
+  padding: $base-spacing;
   width: 100%;
+  display: inline-block;
 
   .footer-logo {
     margin-bottom: 2em;
     text-align: center;
-
-    img {
-      height: 3em;
-    }
   }
+
+  .footer-logo img {
+    height: 1.6em;
+  } 
 
   .footer-links {
     @include clearfix;
     margin-bottom: $base-spacing;
 
-    @include media($medium-screen) {
-      @include shift(3);
-    }
   }
 
   ul {
-    margin-bottom: $base-spacing * 2;
+    margin-bottom: 1em;
 
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include omega(3n);
-      @include clearfix;
+      @include media($large-screen) {
+      float: center;
+      line-height: 1.8em;
+      margin-left: 1em;
+      margin-bottom: 0;
     }
   }
 
   li {
-    text-align: center;
+    font-weight: 800;
+    padding-right: 1em;
 
-    @include media($medium-screen) {
-      text-align: left;
+    @include media($large-screen) {
+      text-align: center;
     }
   }
 
@@ -72,14 +72,7 @@
     &:hover {
       color: transparentize($footer-color, 0);
     }
-  }
-
-  li h3 {
-    color: $footer-color;
-    font-size: 1em;
-    font-weight: 800;
-    margin-bottom: 0.4em;
-  }
+  } 
 
   hr {
     border: 1px solid transparentize($footer-disclaimer-color, 0.3);

@@ -17,3 +17,4 @@ collections:
     permalink: /courses/:collection/
     title: "PHIL1337 Descartes"
     abstract: "This is my abstract about my awesome Descartes course."
+    pdf: outline.pdf

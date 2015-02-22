@@ -14,7 +14,11 @@ layout: base
           <p>{{ site.collections.[label].abstract | truncatewords:90 | markdownify }}</p>
           {% endif %}
         </div>
-        <button><i class="fa fa-file-o"> PDF course outline</i></button>
+        {% if site.collections.[label].['pdf'] %}
+        <a class="course-outline" href="{{ site.baseurl }}{{ site.collections.[label].['pdf'] }}">
+          <i class="fa fa-file-o"> PDF course outline</i>
+        </a>
+        {% endif %}
       </div>
     </div>
   </header>

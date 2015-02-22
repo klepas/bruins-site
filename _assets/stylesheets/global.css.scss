@@ -62,10 +62,17 @@ section.recent-papers {
   text-align: left;
 }
 
+//badly nested for now
+a.course-outline {
+  @include button(flat, $base-accent-color);
+    padding: 0.7em 1em;
+}
+
 @import "textures";
 @import "header";
 @import "footer";
 @import "homepage";
+@import "courses";
 @import "papers";
 
 

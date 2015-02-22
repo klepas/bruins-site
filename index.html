@@ -4,38 +4,40 @@ layout: base
 
 <div class="home">
 
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <h2>Foobar barfoo</h2>
-        {% if site.description %}
-        <p>{{ site.description }}</p>
-        {% endif %}
+  <section class="content recent-papers">
+
+    <h2>Recent Papers</h2>
+
+  <div class="cards">
+  {% for post in site.categories.papers limit:3 %}
+    
+    <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">
+      
+    <div class="card">
+      
+      <!-- Uncomment to include images on cards
+      <div class="card-image">
+        <img src="{% cycle 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png', 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-2.png', 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png' %}" alt="">
       </div>
-      <button>button</button>
+      -->
+
+      <div class="card-header">
+        <p>{{ post.title }}</p>
+        <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div>
+      <div class="card-copy">
+        {% if post.abstract %}
+        <p>{{ post.abstract | truncatewords:50 | markdownify }}</p>
+         {% endif %}
+
+      </div>
+
+      </a>
+
     </div>
+  {% endfor %}  
   </div>
 
-  <section class="content recent-papers">
-    <h2>Recent papers</h2>
-
-    <ul class="paper-list">
-      {% for post in site.categories.papers limit:3 %}
-        <li class="paper">
-          <div class="paper-title">
-            <h3>
-              <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h3>
-            <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </div>
-          <div class="paper-abstract">
-            {% if post.abstract %}
-            <p class="abstract">{{ post.abstract | truncatewords:90 | markdownify }}</p>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
   </section>
 
   <!--

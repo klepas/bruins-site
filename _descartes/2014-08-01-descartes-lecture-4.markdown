@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 4"
 date: 2014-08-01 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## Descartes’ Certain Knowledge of Himself as *res cogitans* and the Claim of the Second Meditation that Mind is better known than Body
@@ -152,4 +152,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^15]: That the mind *infers to* the identity on the basis of the *evidence* provided by the senses, hence *judges* the wax to be of such and such a kind, or again, such and such an individual instance of the kind, is the point of the example Descartes gives across pp.28-29, where he speaks of his *inferring* that the things in hats and coats he sees moving about on the street below are people.
 
-[^16]: But Descartes, unlike other mechanists and atomists of his time, does not regard corpuscles as indivisible—the *Principles of Philosophy*, Book I, Part II, § 20; quoted in note 15 of my notes for Lecture 3. 
+[^16]: But Descartes, unlike other mechanists and atomists of his time, does not regard corpuscles as indivisible—the *Principles of Philosophy*, Book I, Part II, § 20; quoted in note 15 of my notes for Lecture 3.

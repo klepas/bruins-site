@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 2"
 date: 2014-07-25 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## The Letter of Dedication and the First Meditation
@@ -135,4 +135,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^7]: Clarke rightly points out (p.xix) that the very way Descartes formulates this his initial reason for regarding the principle of the reliability of the senses as dubitable suggests that he is here drawing upon the essayist Montaigne (1533-1592), whose writings were common fare amongst the educated elites of Descartes’s time—see http://en.wikipedia.org/wiki/Michel\_de\_Montaigne. So here Descartes is simply rehearsing an argument he has picked up from his intellectual milieu. What is crucial is *that Descartes goes on, quite rightly, to reject this argument against the reliability of perceptual experience as a bad one*, i.e., an argument which *does not* really show that we have rational grounds for regarding the principle that the senses are reliable as inadequately grounded, hence dubitable.
 
-[^8]: So either evolution or God will have to have acted to ensure that most situations are ones in which perceptual mechanisms function well. 
+[^8]: So either evolution or God will have to have acted to ensure that most situations are ones in which perceptual mechanisms function well.

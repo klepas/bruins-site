@@ -1,0 +1,44 @@
+---
+layout: base
+---
+
+<section class="content>"
+  <header class="page header">
+    <h2 class="page-title">{{ page.title }}</h2>
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          {% for collection in site.collections %}
+          {% capture label %}{{ collection | first }}{% endcapture %}
+          {% if site.collections.[label].abstract %}
+          <p>{{ site.collections.[label].abstract | truncatewords:90 | markdownify }}</p>
+          {% endif %}
+        </div>
+        <button><i class="fa fa-file-o"> PDF course outline</i></button>
+      </div>
+    </div>
+  </header>
+
+  <article class="page content">
+    {{ content }}
+    <ul class="paper-list">
+      {% assign doc-listing = site.collections.[label].docs %}
+      {% for doc in doc-listing %}
+        {% if doc.layout == "post" or doc.layout == "lecture" or doc.layout == "resource" %}
+        <li class="paper">
+          <div class="paper-title">
+            <h3>
+              <a class="papers-link" href="{{ doc.url }}">{{ doc.title | markdownify }}</a>
+            </h3>
+          </div>
+          <div class="paper-abstract">
+            <p>Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </li>
+        {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
+  </section>
+  </article>
+</section>

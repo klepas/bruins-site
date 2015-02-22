@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 5"
 date: 2014-08-08 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## The Third Meditation—Of God, that He exists --- Part I
@@ -115,4 +115,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^11]: The most prominent exponent of this kind of reading is Richard Rorty, in his massively influential but also massively inaccurate *Philosophy and the Mirror of Nature* (Princeton, NJ: Princeton University Press, 1979). What Rorty says about Descartes is just wrong, as is the account he then goes on to give of late 19^th^ century German neo-Kantianism. Ironically, the German neo-Kantians understood much better than Rorty (a) that Descartes rejected the picture-conception; and (b) that Descartes does not necessarily embrace any correspondence-theoretic view of truth (of which the picture-conception is a crude version) at all. True, Descartes does speak of judgements corresponding to reality, etc., but he does not have to be understood as meaning this in the strong ontological sense required of a proponent of the correspondence theory. For a quick account of German neo-Kantianism which intimates its much greater historical sophistication see my “What does (the young) Heidegger mean by the *Seinsfrage*?”, *Inquiry*, Vol. 42, No.3-4, November, 1999, pp.411-438.
 
-[^12]: In the Scholastic jargon which Descartes uses in the Third Meditation, its *realitas objectiva*— what Clarke translates as intentional reality (p.34), Anscombe and Geach as representational reality but is literally, hence to our modern ears misleadingly, translated as objective reality—does not correspond to its *formal* reality (*realitas formalis*). 
+[^12]: In the Scholastic jargon which Descartes uses in the Third Meditation, its *realitas objectiva*— what Clarke translates as intentional reality (p.34), Anscombe and Geach as representational reality but is literally, hence to our modern ears misleadingly, translated as objective reality—does not correspond to its *formal* reality (*realitas formalis*).

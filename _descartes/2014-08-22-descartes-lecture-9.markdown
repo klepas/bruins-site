@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 9"
 date: 2014-08-22 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## More on Proving the Existence of God—The Fifth Meditation
@@ -145,4 +145,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^10]: Which reflects the inherent complexity of the true and immutable natures they each express.
 
-[^11]: On p.39, Descartes allows that “there are innumerable … things in God that I do not comprehend and which may be completely outside the scope of my thought.” 
+[^11]: On p.39, Descartes allows that “there are innumerable … things in God that I do not comprehend and which may be completely outside the scope of my thought.”

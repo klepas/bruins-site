@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 13"
 date: 2014-09-05 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part III)
@@ -69,4 +69,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^4]: Descartes refers to this phenomenon on p.61 of the Sixth Meditation.
 
-[^5]: Note that we are still ascribing this false belief under the assumption that the person is completely rational; this person has just made an understandable mistake. 
+[^5]: Note that we are still ascribing this false belief under the assumption that the person is completely rational; this person has just made an understandable mistake.

@@ -10,21 +10,19 @@ permalink: /courses/
 <section class="courses">
 
   <ul class="course-list">
-    {% comment %} This is handled by _data/courses.yml {% endcomment %}
-    {% for course in site.data.courses %}
+    {% for collection in site.collections %}
+    {% capture label %}{{ collection | first }}{% endcapture %}
       <li class="course">
         <div class="course-title">
           <h3>
-            <a class="papers-link" href="{{ course.source | prepend: site.baseurl }}">
-              {{ course.title }}
-            </a>
+            <a class="papers-link" href="{{ collection[0] }}">{{ label | capitalize }}</a>
           </h3>
         </div>
+        {% if site.collections.[label].abstract %}
         <div class="course-abstract">
-          {% if course.abstract %}
-          <p class="abstract">{{ course.abstract | truncatewords:90 | markdownify }}</p>
-          {% endif %}
+          <p class="abstract">{{ site.collections.[label].abstract | truncatewords:90 | markdownify }}</p>
         </div>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

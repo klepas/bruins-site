@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 10"
 date: 2014-08-10 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## More on the Ontological Argument---The Fifth Meditation (cont.)
@@ -85,4 +85,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^11]: Dicker 1993, p.165.
 
-[^12]: It is important to note that some systems of logic, e.g., intuitionist systems, deny that it is legitimate to move from not not *S* to *S*. 
+[^12]: It is important to note that some systems of logic, e.g., intuitionist systems, deny that it is legitimate to move from not not *S* to *S*.

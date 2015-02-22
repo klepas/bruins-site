@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 7"
 date: 2014-08-15 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## The Third Meditation: Of God, that He exists --- Part III
@@ -99,4 +99,4 @@ In short, what Garber regards as a second argument is an effort at clarifying th
 
 [^3]: Descartes speaks here of an *efficient* cause because he is alluding to Aristotle’s explication of the senses in which one can speak of ‘cause’. By a ‘cause’ Aristotle primarily means anything to which one could refer in a full causal explanation of something, which includes an account of what a thing can do, why it has come about and what it will actually do. In such a full explanation one will indicate (1) what a thing is made of (its *material* cause), which explains why it has such sensible properties as hardness, colour, etc.; (2) what kind of thing it is (its *formal* cause), which identifies what properties and potentialities a thing may be typically expected to have; (3) what goal a thing’s actual and potential behaviours are directed towards (its *final* cause), which explains what a thing may be, *ceteris paribus*, expected to do—how it may be expected to actualises its various potentialities; and (4) what brought it about (its *efficient* cause), which identities what other entity or entities are responsible for its actually existing. The concept of *efficient* causation is thus the idea of something’s causing something else to happen. We today tend to identify the notion of causation with that of specifically efficient causation.
 
-[^4]: Or, as is often said, are *representations of* other people, animals or angels. 
+[^4]: Or, as is often said, are *representations of* other people, animals or angels.

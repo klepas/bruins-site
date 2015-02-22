@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 6"
 date: 2014-08-13 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## The Third Meditation (continued): Of God, that He exists --- Part II
@@ -149,4 +149,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^12]: But it is not just to ask this. In addition to this, it is also to ask whether these ideas really do originate in things external to him at all for it is, he says, possible that he himself should be the origin of these ideas. Perhaps he has “some other faculty, of which I am not yet sufficiently aware and which is the origin of those ideas, in the same way as it always seemed to up to now that, when I was dreaming, ideas were formed in me without any assistance from external things.” (p.34) Note how Descartes assumes here that his ideas must have *some* cause, whether external or internal.
 
-[^13]: *Res quae ita existit, ut nulla alia re indigeat ad existendum* (Descartes 1644 (1983), § 51, p.23; AT viii^1^), at least in the abstractly nominal sense of substantiality rather than the commonly nominal sense of an individual substance. 
+[^13]: *Res quae ita existit, ut nulla alia re indigeat ad existendum* (Descartes 1644 (1983), § 51, p.23; AT viii^1^), at least in the abstractly nominal sense of substantiality rather than the commonly nominal sense of an individual substance.

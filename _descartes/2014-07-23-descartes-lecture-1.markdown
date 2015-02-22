@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 1"
 date: 2014-07-23 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## Introduction to the Segment and Lecture 1: Descartes’ Life, Times and Goal in the *Meditations*
@@ -86,13 +86,13 @@ But before we look more closely at the philosophical views which made Descartes 
 1596
 : born at La Haye near Tours (about 215 km SSW of Paris) on 31^st^ March
 
-1606-14 
+1606-14
 : attends the Jesuit college of La Flèche in Anjou, which, as I recall, was steeped in the late Mediaeval Scholastic philosophy of Francesco Suarez (1548-1617); Descartes stayed at La Flèche for eight or nine years, but, as is pointed out in the Cottingham translation, “the exact dates of his arrival and departure are uncertain.”
 
-1616 
+1616
 : takes doctorate in law at University of Poitiers
 
-1618 
+1618
 : goes to Holland; joins army of Prince Maurice of Nassau (but, as I recall, does not see any action, in fact, finds life in the army rather boring); meets and befriends Isaac Beeckman, a brilliant and more or less self-taught student of nature (hydrostatics), with whom Descartes corresponds over a long period of time and who had already embraced a ‘mechanicist’ view of nature; composes a short treatise on music, the *Compendium Musicae*
 
 -----
@@ -218,4 +218,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^10]: Notoriously, Luther spoke of *die Hure Vernunft*, i.e., the whore Reason.
 
-[^11]: A particularly poignant feature of acknowledging this mistake would lie in the fact that Luther and other Reformers were extremely hostile towards Aristotle. So by acknowledging one’s mistake, one would be generously making an important concession to the Reformers’ position while retaining the core of one’s own. 
+[^11]: A particularly poignant feature of acknowledging this mistake would lie in the fact that Luther and other Reformers were extremely hostile towards Aristotle. So by acknowledging one’s mistake, one would be generously making an important concession to the Reformers’ position while retaining the core of one’s own.

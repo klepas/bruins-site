@@ -10,3 +10,10 @@ url: "http://bruinchristensen.net"
 
 # Build settings
 markdown: kramdown
+
+collections:
+  descartes:
+    output: true
+    permalink: /courses/:collection/
+    title: "PHIL1337 Descartes"
+    abstract: "This is my abstract about my awesome Descartes course."

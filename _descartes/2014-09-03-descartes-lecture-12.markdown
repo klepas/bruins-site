@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 12"
 date: 2014-09-03 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## Descartes’ Metaphysics of Nature and Mind—The Sixth Meditation (Part II)
@@ -117,4 +117,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^10]: I am thinking here of a colleague at the University of Sydney who at least at one time ran this line. No doubt others have, too. Note that to run this argument is in effect to argue that the idea of the mind acting autonomously upon the brain is ‘miraculous’ in Hume’s sense, namely, a contradiction in terms. (Hume once argued that the idea of a miracle was absurd because it involved suspending what could not, for strictly logical reasons, be suspended, namely, the laws of nature.)
 
-[^11]: Conceived indeed as a merely scalar and not a vector quantity. 
+[^11]: Conceived indeed as a merely scalar and not a vector quantity.

@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 8"
 date: 2014-08-20 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## *Reminder regarding Assessment!*
@@ -123,4 +123,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^6]: For this reason, from the mid-1630’s on, Descartes starts to think increasingly of beliefs and other cognitive mental items on analogy to linguistic acts of assertion and statement rather than on analogy to pictures and images. This point shows that the principal thesis of Richard Rorty’s book *Philosophy and the Mirror of Nature* (Princeton, NJ: Princeton University Press, 1979) is fundamentally wrong. For an excellent critique of Rorty, which shows just how fundamentally he misunderstands Descartes, see Dominik Perler’s *Repräsentation bei Descartes*, Frankfurt am Main: Vittorio Klostermann, 1996.
 
-[^7]: But not necessarily. As Descartes himself points out towards the end of the Fourth Meditation, one can err in judging, i.e., judge non-optimally, and yet, just by luck, make a true judgement. 
+[^7]: But not necessarily. As Descartes himself points out towards the end of the Fourth Meditation, one can err in judging, i.e., judge non-optimally, and yet, just by luck, make a true judgement.

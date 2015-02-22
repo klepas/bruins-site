@@ -1,8 +1,8 @@
 ---
-layout: paper
+layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 11"
 date: 2014-08-29 09:00:00
-categories:
+permalink: /courses/:collections/:title/
 ---
 
 ## Descartes’ Metaphysics of Nature and Mind – The Sixth Meditation (Part I)
@@ -123,4 +123,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^12]: This latter is known as *idealisation* and it is a crucial feature of distinctively modern science.
 
-[^13]: I.e., *nihil in intellectū est quod non antea in sensū fuerit*. 
+[^13]: I.e., *nihil in intellectū est quod non antea in sensū fuerit*.

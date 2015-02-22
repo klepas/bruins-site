@@ -4,11 +4,11 @@ layout: base
 
 <section class="content">
   <header class="post header">
-    <h2 class="post-title">{{ page.title }}</h2>
+    <h2 class="post-title">{{ page.title | markdownify }}</h2>
     <p class="post-meta">
       {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %} &middot; {{ page.author }}{% endif %}
-      {% if page.meta %} • {{ page.meta }}{% endif %}
+      {% if page.meta %} &middot; {{ page.meta }}{% endif %}
     </p>
   </header>
 

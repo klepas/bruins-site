@@ -51,6 +51,10 @@ section.content {
   margin: 8px;
   @include media(min-width $tiny-screen max-width $large-screen) {
   }
+
+  p, li, dd {
+    font-family: $fontface-serif;
+  }
 }
 
 article.content,

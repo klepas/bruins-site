@@ -1,4 +1,4 @@
-.paper-list {
+.paper-list, .course-list {
   ///////////////////////////////////////////////////////////////////////////////////
 
   $paper-item-border: 1px solid transparentize($base-font-color, 0.8);
@@ -12,7 +12,7 @@
   position: relative;
   background-color: $base-background-color;
 
-  .paper {
+  .course, .paper {
     border-bottom: $paper-item-border;
     width: 100%;
     text-align: left;
@@ -23,7 +23,7 @@
       border-bottom: none;
     }
 
-    .paper-title {
+    .course-title, .paper-title {
       float: left;
       width: 100%;
       overflow: hidden;
@@ -48,7 +48,7 @@
       }
     }
 
-    .paper-abstract {
+    .course-abstract, .paper-abstract {
       padding-top: 1em;
       @include media($large-screen) {
         @include span-columns(8 of 12);

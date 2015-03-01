@@ -2,13 +2,12 @@
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
   $base-accent-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
   font-family: $fontface-sans;
   $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.4);
   $footer-site-meta-color: transparentize($footer-color, 0.4);
+  font-size: 1.2em;
 
   ul {
     margin: 0 0 1em 0;
@@ -61,10 +60,10 @@
     color: $footer-site-meta-color;
     font-size: 0.9em;
     margin: 0 auto 1em 0;
-    max-width: 35em;
     text-align: center;
   }
   p.developer {
-    font-family: $fontface-monospace;
+    font-weight: 300;
+    font-size: .8em;
   }
 }

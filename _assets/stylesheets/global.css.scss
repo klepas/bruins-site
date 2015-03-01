@@ -6,7 +6,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 $large-screen: em(860) !default;
-$medium-screen: em(749) !default;
+$medium-screen: em(769) !default;
 $tiny-screen: em(320);
 
 $dark-gray: #333 !default;
@@ -82,8 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @import "textures";
 @import "typography";
-@import "hero";
 @import "header";
+@import "hero";
 @import "footer";
 @import "homepage";
 @import "courses";

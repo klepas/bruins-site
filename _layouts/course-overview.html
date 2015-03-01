@@ -11,7 +11,7 @@ layout: base
           {% for collection in site.collections %}
           {% capture label %}{{ collection | first }}{% endcapture %}
           {% if site.collections.[label].abstract %}
-          <p>{{ site.collections.[label].abstract | truncatewords:90 | markdownify }}</p>
+          {{ site.collections.[label].abstract | truncatewords:90 | markdownify }}
           {% endif %}
         </div>
         {% if site.collections.[label].['pdf'] %}

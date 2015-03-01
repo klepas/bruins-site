@@ -6,7 +6,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 $large-screen: em(860) !default;
-$medium-screen: em(640) !default;
+$medium-screen: em(749) !default;
 $tiny-screen: em(320);
 
 $dark-gray: #333 !default;
@@ -14,7 +14,8 @@ $light-gray: #d8d8d8;
 
 $em-base: 16px;
 $fontface-sans: "Source Sans Pro", sans-serif;
-$fontface-serif: "EB Garamond", serif;
+$fontface-serif: "Merriweather", serif;
+$fontface-monospace: "Source Code Pro", monospace;
 $base-background-color: white !default;
 $base-font-color: $dark-gray !default;
 
@@ -23,18 +24,6 @@ $light-gray: #DDD !default;
 $base-border-color: gainsboro !default;
 $base-border-radius: 3px !default;
 $base-accent-color: #477DCA !default;
-
-a {
-  text-decoration: none;
-}
-
-p {
-  line-height: 1.6em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-align: left;
-}
 
 body {
   margin: 0;
@@ -49,7 +38,23 @@ div.page-content {
 
 section.content {
   margin: 8px;
-  @include media(min-width $tiny-screen max-width $large-screen) {
+  @include media(min-width $tiny-screen max-width $large-screen, 12) {
+  }
+
+  & header.post,
+  & header.page,
+  & article.post.content,
+  & article.page.content {
+    margin-top: 4em;
+    margin-bttom: 2em;
+    @include media(max-width $tiny-screen) {
+      @include span-columns(12);
+      @include shift(0);
+    }
+    @include media(min-width $large-screen, 12) {
+      @include span-columns(10);
+      @include shift(1);
+    }
   }
 
   p, li, dd {
@@ -62,12 +67,24 @@ section.recent-papers {
   text-align: left;
 }
 
+a {
+  text-decoration: none;
+}
+
+p, ul, ol, dl {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
 @import "textures";
+@import "typography";
+@import "hero";
 @import "header";
 @import "footer";
 @import "homepage";
 @import "courses";
 @import "papers";
-
-
-

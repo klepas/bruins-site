@@ -8,36 +8,31 @@ layout: base
 
     <h2>Recent Papers</h2>
 
-  <div class="cards">
-  {% for post in site.categories.papers limit:3 %}
-    
-    <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">
-      
-    <div class="card">
-      
-      <!-- Uncomment to include images on cards
-      <div class="card-image">
-        <img src="{% cycle 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png', 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-2.png', 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png' %}" alt="">
-      </div>
-      -->
+    <div class="cards">
+      {% for post in site.categories.papers limit:3 %}
+      <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">
 
-      <div class="card-header">
-        <p>{{ post.title }}</p>
-        <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </div>
-      <div class="card-copy">
-        {% if post.abstract %}
-        <p>{{ post.abstract | truncatewords:50 | markdownify }}</p>
-         {% endif %}
+        <div class="card">
 
-      </div>
+          <!-- Uncomment to include images on cards
+          <div class="card-image">
+            <img src="{% cycle 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png', 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-2.png', 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png' %}" alt="">
+          </div>
+          -->
 
+          <div class="card-header">
+            <h3>{{ post.title }}</h3>
+            <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+          <div class="card-copy">
+            {% if post.abstract %}
+            <p>{{ post.abstract | truncatewords:50 | markdownify }}</p>
+            {% endif %}
+          </div>
       </a>
-
+      </div>
+      {% endfor %}
     </div>
-  {% endfor %}  
-  </div>
-
   </section>
 
   <!--

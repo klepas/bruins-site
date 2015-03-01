@@ -1,29 +1,36 @@
-.footer-2 {
+.footer {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
   $base-accent-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  
+  font-family: $fontface-sans;
+  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.4);
+  $footer-site-meta-color: transparentize($footer-color, 0.4);
+
   ul {
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 0;
-    line-height: 1.5em;
+    text-align: center;
   }
 
   li {
     list-style: none;
-  }
+    font-weight: 400;
+    padding-right: 1em;
+    text-align: center;
 
-  a {
-    text-decoration: none;
+    a {
+      color: $footer-link-color;
+        &:focus,
+        &:hover {
+        color: transparentize($footer-color, 0);
+      }
+    }
   }
   //////////////////////////////////////////////////////////////////////////////////
-
-  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
   padding: $base-spacing;
@@ -37,55 +44,27 @@
 
   .footer-logo img {
     height: 1.6em;
-  } 
+  }
 
   .footer-links {
     @include clearfix;
     margin-bottom: $base-spacing;
-
   }
-
-  ul {
-    margin-bottom: 1em;
-
-      @include media($large-screen) {
-      float: center;
-      line-height: 1.8em;
-      margin-left: 1em;
-      margin-bottom: 0;
-    }
-  }
-
-  li {
-    font-weight: 800;
-    padding-right: 1em;
-
-    @include media($large-screen) {
-      text-align: center;
-    }
-  }
-
-  li a {
-    color: $footer-link-color;
-
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  } 
 
   hr {
-    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    border: 1px solid transparentize($footer-site-meta-color, 0.3);
     margin: 0 auto $base-spacing;
     width: 12em;
   }
 
   p {
-    color: $footer-disclaimer-color;
+    color: $footer-site-meta-color;
     font-size: 0.9em;
-    line-height: 1.5em;
-    margin: auto;
+    margin: 0 auto 1em 0;
     max-width: 35em;
     text-align: center;
+  }
+  p.developer {
+    font-family: $fontface-monospace;
   }
 }

@@ -7,15 +7,16 @@
   width: 100%;
 }
 .recent-papers  h2 {
-    margin-bottom: 2em;
-    text-align: center;
+  font-family: $fontface-sans;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////
 // Cards display for recent papers
-// 
-// To do: 
+//
+// To do:
 // Remove references to the background images if not using
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -77,29 +78,36 @@
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 1.6;
     padding: ($base-spacing / 3) ($base-spacing / 2);
+
+    h3 {
+      font-family: $fontface-serif;
+      font-size: 1.6em;
+      font-weight: 400;
+      margin-bottom: 0.5em;
+    }
   }
 
   .card-copy {
     color: $base-font-color;
     font-size: 0.9em;
-    line-height: 1.5em;
+    line-height: 1.6;
     padding: ($base-spacing / 2) ($base-spacing / 2);
 
     p {
       margin: 0 0 ($base-spacing / 2);
     }
   }
-  
+
   &:focus,
   &:hover {
     background-color: $card-hover-background;
-    
+
     .card-image img {
       background: $card-image-hover-background;
     }
-  
+
     .card-header {
       background-color: $card-hover-background;
     }
@@ -115,6 +123,8 @@
 
   .papers-meta {
     color: $base-font-color;
+    font-family: $fontface-sans;
     font-size: 0.9em;
+    margin-bottom: 0.5em;
   }
 }

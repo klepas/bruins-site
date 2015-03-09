@@ -2,7 +2,7 @@
 layout: post
 title: "Descartes’ *Meditations on First Philosophy* Lecture 5"
 updated: 2014-08-08
-permalink: /courses/:collections/:title/
+permalink: /courses/:collection/:title/
 abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
 ---
 

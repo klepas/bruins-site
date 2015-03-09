@@ -5,8 +5,8 @@
   $large-screen: em(860) !default;
   //////////////////////////////////////////////////////////////////////////////////
 
-  $hero-background-top: #2e3436;
-  $hero-background-bottom: #204a87;
+  $hero-background-top: lighten(#2e3436, 15%);
+  $hero-background-bottom: lighten(#204a87, 35%);
   $hero-color: white;
   $gradient-angle: 5deg;
   font-family: $fontface-sans;
@@ -32,12 +32,12 @@
       text-align: center;
 
       p {
-        color: white;
+        color: $hero-color;
         font-family: $fontface-sans;
         font-weight: 200;
         font-size: 1.8em;
         line-height: 1.6;
-        text-shadow: rgba(0,0,0,0.4) 1px 1px 3px;
+        text-shadow: rgba(0,0,0,0.6) 1px 1px 3px;
         margin: 0 auto 2em auto;
 
         @include media($large-screen) {

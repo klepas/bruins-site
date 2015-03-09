@@ -17,7 +17,9 @@
   $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
 
-  background-color: desaturate(darken($centered-navigation-background, 10%), 30%);
+  $background-color: desaturate(darken($centered-navigation-background, 10%), 30%);
+
+  background-color: $background-color;
   border-bottom: 2px solid darken($centered-navigation-background, 12%);
   min-height: $centered-navigation-height;
   width: 100%;
@@ -33,12 +35,6 @@
     float: left;
     max-height: $centered-navigation-height;
     padding-left: $centered-navigation-padding;
-
-    img {
-      max-height: $centered-navigation-height;
-      opacity: .6;
-      padding: .8em 0;
-    }
 
     @include media($horizontal-bar-mode) {
       display: none;
@@ -104,7 +100,7 @@
   }
 
   ul li.nav-link {
-    background: $centered-navigation-background;
+    background: $background-color;
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
@@ -260,7 +256,7 @@
         width: 100%;
 
         @include media($horizontal-bar-mode) {
-          background-color: $centered-navigation-background;
+          background-color: $background-color;
           padding-left: $centered-navigation-submenu-padding;
           text-align: left;
           width: $centered-navigation-submenu-width;

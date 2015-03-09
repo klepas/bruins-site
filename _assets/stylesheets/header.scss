@@ -6,7 +6,7 @@
   //////////////////////////////////////////////////////////////////////////////////
 
   $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 2em;
+  $centered-navigation-icon-height: 2em;
   $centered-navigation-background: #204a87;
   $centered-navigation-color: $header-link-color;
   $centered-navigation-color-hover: lighten($header-link-color, 50%);
@@ -144,19 +144,13 @@
     }
   }
 
-  li.logo.nav-link {
+  li.nav-link.home {
     display: none;
     line-height: 0;
 
     @include media($large-screen) {
       display: inline;
     }
-  }
-
-  .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3;
-    max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
   }
 
   // Sub menus

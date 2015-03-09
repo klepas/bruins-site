@@ -21,6 +21,17 @@
     font-weight: 400;
     padding-right: 1em;
     text-align: center;
+    &.home {
+      padding-bottom: 1.5em;
+      a.home-icon {
+        font-size: 1.7em;
+        color: #90b1df;
+        &:focus,
+        &:hover {
+          color: white;
+        }
+      }
+    }
     &.back-up {
       color: #ccc;
       font-size: 0.875em;
@@ -44,15 +55,6 @@
   padding: $base-spacing;
   width: 100%;
   display: inline-block;
-
-  .footer-logo {
-    margin-bottom: 2em;
-    text-align: center;
-  }
-
-  .footer-logo img {
-    height: 1.6em;
-  }
 
   .footer-links {
     @include clearfix;

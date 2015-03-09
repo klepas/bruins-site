@@ -21,6 +21,13 @@
     font-weight: 400;
     padding-right: 1em;
     text-align: center;
+    &.back-up {
+      color: #ccc;
+      font-size: 0.875em;
+      font-weight: 300;
+      padding-left: 0.5em;
+      padding-top: 1em;
+    }
 
     a {
       color: $footer-link-color;

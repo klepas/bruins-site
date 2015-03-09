@@ -2,3 +2,30 @@
 // Site-wide typography
 ///////////////////////////////////////////////////////////////////////////////////
 
+$base-leading: 1.5;
+$paragraph-leading: 1.7;
+
+a {
+  text-decoration: none;
+  &:focus,
+  &:hover {
+  }
+}
+
+p, ul, ol, dl {
+  margin-bottom: 1em;
+  line-height: $paragraph-leading;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+
+header.page {
+  margin-bottom: 3em;
+  h2 {
+    text-align: center;
+    font-family: $fontface-serif;
+  }
+}

@@ -1,9 +1,10 @@
-.paper-list, .course-list {
+$list-item-border: 1px solid transparentize($base-font-color, 0.8);
+
+.paper-list, .course-list, .course-items {
   ///////////////////////////////////////////////////////////////////////////////////
 
-  $paper-item-border: 1px solid transparentize($base-font-color, 0.8);
-  $paper-item-color: $base-font-color;
-  $paper-item-height: 16em;
+  $list-item-color: $base-font-color;
+  $list-item-height: 16em;
 
   @include clearfix;
 
@@ -12,8 +13,8 @@
   position: relative;
   background-color: $base-background-color;
 
-  .course, .paper {
-    border-bottom: $paper-item-border;
+  .item {
+    border-bottom: $list-item-border;
     width: 100%;
     text-align: left;
     padding-bottom: 2em;
@@ -23,7 +24,7 @@
       border-bottom: none;
     }
 
-    .course-title, .paper-title {
+    .item-title {
       float: left;
       width: 100%;
       overflow: hidden;
@@ -31,8 +32,16 @@
       padding: 2em 2em 1em 0;
 
       h3 {
+        font-family: $fontface-serif;
         font-size: 1.3em;
         margin-bottom: 0.4em;
+        line-height: $base-leading;
+        a {
+          line-height: inherit;
+          p {
+            line-height: inherit;
+          }
+        }
       }
 
       @include media($large-screen) {
@@ -44,11 +53,11 @@
 
       &:focus,
       &:hover {
-        //background: transparentize($paper-item-color, 0.95);
+        //background: transparentize($list-item-color, 0.95);
       }
     }
 
-    .course-abstract, .paper-abstract {
+    .item-abstract {
       padding-top: 1em;
       @include media($large-screen) {
         @include span-columns(8 of 12);
@@ -63,5 +72,10 @@
       }
     }
   }
+}
+
+.course-items {
+  margin-top: 3em;
+  border-top: $list-item-border;
 }
 

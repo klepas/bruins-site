@@ -5,10 +5,10 @@
   $large-screen: em(860) !default;
   //////////////////////////////////////////////////////////////////////////////////
 
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
+  $hero-background-top: #2e3436;
+  $hero-background-bottom: #204a87;
   $hero-color: white;
-  $gradient-angle: 10deg;
+  $gradient-angle: 5deg;
   font-family: $fontface-sans;
 
   @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
@@ -16,23 +16,28 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
+  box-shadow: inset 0px 0px 1px 2px darken(rgba(0,0,0,0.1), 10%);
+  border-radius: 2px;
 
   .hero-inner {
     @include outer-container;
     @include clearfix;
     color: $hero-color;
     margin: auto;
-    padding: 3.5em;
+    padding: 4em 1em 3em 1em;
     text-align: center;
 
     .hero-copy {
       text-align: center;
 
       p {
+        color: white;
+        font-family: $fontface-sans;
         font-weight: 200;
         font-size: 1.8em;
         line-height: 1.6;
+        text-shadow: rgba(0,0,0,0.4) 1px 1px 3px;
         margin: 0 auto 2em auto;
 
         @include media($large-screen) {
@@ -40,11 +45,6 @@
           max-width: 60%;
         }
       }
-    }
-
-    button {
-      @include button(flat, $base-accent-color);
-      padding: 0.7em 1em;
     }
   }
 }

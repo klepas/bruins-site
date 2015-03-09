@@ -1,17 +1,18 @@
 .footer {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-spacing: 1.5em !default;
-  $base-accent-color: #477DCA !default;
+  $base-accent-color: #204a87;
   font-family: $fontface-sans;
-  $footer-background: desaturate(darken($base-accent-color, 20%), 30%);
+  $footer-background: desaturate(darken($base-accent-color, 10%), 30%);
   $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.4);
-  $footer-site-meta-color: transparentize($footer-color, 0.4);
+  $footer-link-color: #e9b96e;
+  $footer-site-meta-color: transparentize($footer-color, 0.3);
+  text-shadow: rgba(0,0,0,0.4) 1px 1px 2px;
   font-size: 1.2em;
 
   ul {
-    margin: 0 0 1em 0;
     padding: 0;
+    margin-left: 1em;
     text-align: center;
   }
 
@@ -25,7 +26,7 @@
       color: $footer-link-color;
         &:focus,
         &:hover {
-        color: transparentize($footer-color, 0);
+        color: lighten($footer-link-color, 50%);
       }
     }
   }
@@ -51,7 +52,7 @@
   }
 
   hr {
-    border: 1px solid transparentize($footer-site-meta-color, 0.3);
+    border: 1px solid transparentize($footer-site-meta-color, 0.6);
     margin: 0 auto $base-spacing;
     width: 12em;
   }
@@ -64,6 +65,19 @@
   }
   p.developer {
     font-weight: 300;
-    font-size: .8em;
+    font-size: 0.7em;
+    a {
+      font-weight: 400;
+      &.dev-resource {
+        color: #90b1df;
+      }
+      &.dev {
+        color: #90b1df;
+      }
+      &:active,
+      &:hover {
+        color: white;
+      }
+    }
   }
 }

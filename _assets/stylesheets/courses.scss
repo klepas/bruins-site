@@ -1,6 +1,27 @@
-
 // nest me
+
+$button-blue-gradient: linear-gradient(#4293f0, #0776f3);
+$button-blue-gradient-hover: linear-gradient(#3b84d8, #066ada);
+
 a.course-outline {
-  @include button(flat, $base-accent-color);
-    padding: 0.7em 1em;
+  color: white;
+  font-family: $fontface-sans;
+  padding: 0.7em 1em;
+  border: 1px solid #076fe4;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #8ebcf1;
+  display: inline-block;
+  font-weight: 400;
+  background-image: $button-blue-gradient;
+  text-shadow: rgba(0,0,0,0.4) 1px 1px 3px;
+  background-clip: padding-box;
+  &:active,
+  &:hover {
+    background-image: $button-blue-gradient-hover;
+  }
+}
+
+// course-overview
+section.course article.content p:first-child {
+  font-size: 1.125em;
 }

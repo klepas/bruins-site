@@ -2,8 +2,8 @@
 layout: base
 ---
 
-<section class="content>"
-  <header class="page header">
+<section class="content course">
+  <header class="page course">
     <h2 class="page-title">{{ page.title }}</h2>
     <div class="hero">
       <div class="hero-inner">
@@ -25,18 +25,18 @@ layout: base
 
   <article class="page content">
     {{ content }}
-    <ul class="paper-list">
+    <ul class="course-items">
       {% assign doc-listing = site.collections.[label].docs %}
       {% for doc in doc-listing %}
         {% if doc.layout == "post" or doc.layout == "lecture" or doc.layout == "resource" %}
-        <li class="paper">
-          <div class="paper-title">
+        <li class="item">
+          <div class="item-title">
             <h3>
-              <a class="papers-link" href="{{ doc.url }}">{{ doc.title | markdownify }}</a>
+              <a class="item-link" href="{{ doc.url }}">{{ doc.title | markdownify }}</a>
             </h3>
           </div>
           {% if doc.abstract %}
-          <div class="paper-abstract">
+          <div class="item-abstract">
             <p>{{ doc.abstract | markdownify }}</p>
           </div>
           {% endif %}
@@ -45,6 +45,5 @@ layout: base
       {% endfor %}
       {% endfor %}
     </ul>
-  </section>
   </article>
 </section>

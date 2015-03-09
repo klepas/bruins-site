@@ -1,30 +1,30 @@
 ---
 layout: base
-title: Paper index
+title: Course index
 permalink: /courses/
 ---
-<header class="page header">
-  <h2 class="page-title">{{ page.title }}</h2>
-</header>
+<section class="content courses">
+  <header class="page courses">
+    <h2 class="page-title">{{ page.title }}</h2>
+  </header>
 
-<section class="courses">
-
+  <article class="page content">
   <ul class="course-list">
     {% for collection in site.collections %}
     {% capture label %}{{ collection | first }}{% endcapture %}
-      <li class="course">
-        <div class="course-title">
+      <li class="item">
+        <div class="item-title">
           <h3>
-            <a class="papers-link" href="{{ collection[0] }}">{{ label | capitalize }}</a>
+            <a class="item-link" href="{{ collection[0] }}">{{ label | capitalize }}</a>
           </h3>
         </div>
         {% if site.collections.[label].abstract %}
-        <div class="course-abstract">
+        <div class="item-abstract">
           <p class="abstract">{{ site.collections.[label].abstract | truncatewords:90 | markdownify }}</p>
         </div>
         {% endif %}
       </li>
     {% endfor %}
   </ul>
-
+  </article>
 </section>

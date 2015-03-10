@@ -13,19 +13,54 @@ a {
 }
 
 p, ul, ol, dl {
+  font-size: 1.062em; // 17px
   margin-bottom: 1em;
   line-height: $paragraph-leading;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: left;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: $base-leading;
 }
 
+// in-text footnote styling
+article.post.content sup a,
+article.page.content sup a {
+  font-weight: 400;
+  font-family: $fontface-sans;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  padding: 0.15em 0.4em;
+  background-color: lighten(yellow, 35%);
+  border-radius: 2px;
+  &:focus,
+  &:hover {
+    color: black;
+    box-shadow: 0 0 0.5em #ccc;
+  }
+}
+
+// title styling for a page
 header.page {
   margin-bottom: 3em;
   h2 {
     text-align: center;
     font-family: $fontface-serif;
+  }
+}
+
+// title styling for a post
+header.post {
+  h2 {
+    line-height: $base-leading;
+    background-color: lighten(#ddd, 10%);
+    padding: 1em;
+    margin-bottom: 0;
+    p {
+      line-height: inherit;
+      margin-bottom: 0;
+      padding: 0;
+    }
   }
 }

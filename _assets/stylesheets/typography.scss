@@ -26,13 +26,14 @@ h1, h2, h3, h4, h5, h6 {
 
 // in-text footnote styling
 article.post.content sup a,
-article.page.content sup a {
+article.page.content sup a,
+article.page.content .reversefootnote li p a {
   font-weight: 400;
   font-family: $fontface-sans;
   margin-left: 0.25em;
   margin-right: 0.25em;
   padding: 0.15em 0.4em;
-  background-color: lighten(yellow, 35%);
+  background-color: lighten(yellow, 40%);
   border-radius: 2px;
   &:focus,
   &:hover {

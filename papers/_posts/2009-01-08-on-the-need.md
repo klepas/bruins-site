@@ -2,7 +2,7 @@
 layout: post
 title: "On the Need not to be Constructivist about Affectivities , or Why Some People really do Smell"
 date: 2009-01-08 09:00:00
-abstract: "In this paper, I pursue both a first-order and a higher-order goal. The first-order goal is to expose what seems to me to be a weakness in Elizabeth Shove’s account of such everyday behavioural practices as the thermal management of working and domestic environments, the laundering of clothes and the bathing of human bodies. The higher order goal is to identify, through this critique, a crucial task whose accomplishment is required if we are to profit from Shove’s central practical insight. The insight is that achieving a more sustainable order primarily requires what she calls the reconfiguration of everyday routine behaviour. The philosophical task required for it to bear its political fruit is the philosophical explication of what it is to be the kind of moderately rational, self-conscious beings we are."
+abstract: "This is my amazing abstract about the constructivist paper."
 ---
 
 ## § 1: Introduction

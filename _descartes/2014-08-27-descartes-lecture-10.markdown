@@ -1,9 +1,9 @@
 ---
 layout: post
 permalink: /courses/:collection/:title/
-title: "Descartes’ *Meditations on First Philosophy* Lecture 10"
+title: "Descartes’ *Meditations on First Philosophy* 10"
 updated: 2014-08-10
-abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
+abstract: "More on the Ontological Argument---The Fifth Meditation (cont.)"
 ---
 
 ## More on the Ontological Argument---The Fifth Meditation (cont.)
@@ -48,7 +48,7 @@ So properly understood and analysed, the statement that carnivorous cows do not 
 
 Clearly, the idea of distinguishing between subsistence and existence is a strange one. Firstly, what on Earth could subsistence be? If certain entities subsist, *where* do they subsist? The answer has to be that they do so nowhere, for if, as subsisting,
 
-> they were somewhere (i.e,, if they were situated in space), then they would exist. But if they are nowhere, what can it mean to say that they “subsist” or “have being”?[^11]
+> they were somewhere (i.e., if they were situated in space), then they would exist. But if they are nowhere, what can it mean to say that they “subsist” or “have being”?[^11]
 
 This view of all entities as subsisting while only some actually exist is utterly mysterious.
 
@@ -60,8 +60,6 @@ At this point Dicker now indulges in an elaborate and complex argument which you
 
 -----
 
-These notes are solely for the use of students in PHIL 1007 “Philosophy, Humanity, Society”, Second Semester, 2014, at the Australian National University. They are not to be reproduced, or cited in anything other than assessment essays for this course, without permission of the author.
-
 © Carleton B. Christensen, 2008, 2010, 2011, 2012, 2013 and 2014
 
 [^1]: *Der einzig mögliche Beweisgrund zu einer Demonstration des Daseins Gottes*. This is the title of the first edition of this work, which appeared in 1763. Two later editions appeared, the second in 1770 and the third in 1783. The second edition had a slightly different title.
@@ -72,9 +70,9 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^4]: See Dicker 1993, p.160.
 
-[^5]: What is the relation between the kind of objection we find in de Kater and Kant’s criticism? It is certainly possible to regard existence as a property in a strictly formal sense, i.e., to represent existence claims by using the verb “to exist.” In such claims the verb of course functions as a predicate (as in “Santa exists”) and such predicative form is used to ascribe properties (as in “Santa runs”, which ascribes to Santa the property of running). But to regard existence as a property in this merely formal sense is obviously not to decide the issue of whether existence really is a property. (We see here, I think, why Kant asserts that ‘Being’ is not a *real* predicate; even though verbs like “to exist” and “to be” are used predicatively to assert existence, this does not decide the issue of whether they are *real* predicates, i.e., predicates which denote a *genuine* property.) Even so, whatever stand one takes on this issue, one still confronts de Kater’s kind of objection. So it is, I think, a different and indeed prior objection to Kant’s.
+[^5]: What is the relation between the kind of objection we find in Caterus and Kant’s criticism? It is certainly possible to regard existence as a property in a strictly formal sense, i.e., to represent existence claims by using the verb “to exist.” When one does this, the verb of course functions as a predicate (as in “Santa exists”) and such predicative form is used to ascribe properties (as in “Santa runs”, which ascribes to Santa the property of running). But to regard existence as a property in this merely formal sense is obviously not to decide the issue of whether existence really is a property. (We see here, I think, why Kant asserts that ‘Being’ is not a *real* predicate; even though verbs like “to exist” and “to be” are used predicatively to assert existence, this does not decide the issue of whether they are *real* predicates, i.e., predicates which denote a *genuine* property.) Even so, whatever stand one takes on this issue, one still confronts Caterus’ kind of objection. So it is, I think, a different and indeed prior objection to Kant’s.
 
-[^6]: *Modus tollens* is the following inference pattern ‘If *p*, then *q*. But not *q*, therefore not *p*’. It is so to speak the opposite number to so-called *modus ponens*, i.e., the inference pattern ‘If *p*, then *q*. But *p*, therefore *q*’
+[^6]: *Modus tollens* is the inference pattern ‘If *p*, then *q*. But not *q*, therefore not *p*’. It is so to speak the opposite number to so-called *modus ponens*, the inference pattern ‘If *p*, then *q*. But *p*, therefore *q*’
 
 [^7]: The translator Kemp-Smith wrongly encloses ‘Being’ in shudder quotes; none occur in the German.
 
@@ -86,4 +84,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^11]: Dicker 1993, p.165.
 
-[^12]: It is important to note that some systems of logic, e.g., intuitionist systems, deny that it is legitimate to move from not not *S* to *S*.
+[^12]: It is important to note that some systems of logic, e.g., intuitionist systems, do not permit one to move from not not *S* to *S*. 

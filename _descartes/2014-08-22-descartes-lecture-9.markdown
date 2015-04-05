@@ -1,9 +1,9 @@
 ---
 layout: post
 permalink: /courses/:collection/:title/
-title: "Descartes’ *Meditations on First Philosophy* Lecture 9"
+title: "Descartes’ *Meditations on First Philosophy* 9"
 updated: 2014-08-22
-abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
+abstract: "More on Proving the Existence of God—The Fifth Meditation"
 ---
 
 ## More on Proving the Existence of God—The Fifth Meditation
@@ -122,8 +122,6 @@ If this is the right way to read Descartes’ response to Caterus, then we need 
 
 -----
 
-These notes are solely for the use of students in PHIL 1007 “Philosophy, Humanity, Society”, Second Semester, 2014, at the Australian National University. They are not to be reproduced, or cited in anything other than assessment essays for this course, without permission of the author.
-
 © Carleton B. Christensen, 2008, 2010, 2011, 2012, 2013and 2014
 
 [^1]: Note that this is to say that while the proof of the existence of God provided in the Third Meditation resolves the *epistemological* issue of *whether* material things exist, indeed the very material things which show themselves to him in his perceptual experience, it does not resolve the *ontological* issue of what it is to be a material thing in that sense of the term “material thing” which is implicit in his perceptual experience. (This ontological issue has, of course, been touched upon in the discussion of the wax example at the end of the Second Meditation.)
@@ -138,7 +136,8 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^6]: It would seem that the example of wax in Meditation Two does not embody or imply the knowability of material things in this strong sense. For the discussion of this example can really at most hope to show that the essential nature of a material thing such as a lump of wax lies hidden behind its surface sensible properties, i.e., consists in the often mathematically expressible laws which articulate how the non-sensible microstructure of material things determines these surface properties and how they succeed one another. And this surely does not entail that all of nature is governed by a single, unitary set of physical laws which could be captured in a single, unified theoretical account of nature. If so, then, in this conception of the essence and knowability of materials things, Descartes is in fact importing something into the notion of a material thing which is *not* inherent in his perceptual experience. In fact, what he is importing into his ontology of the material thing is the metaphysical interpretation of nature he provides in the *Principia philosophiae*. There, he provides what is in effect a decidedly metaphysical, indeed naturalist and physicalist account *of nature* into which he then has great trouble inserting human minds. It is important to note the essentially anti-Aristotelian, physicalist character of Descartes’ account *of nature* because so much of modern philosophy presents itself as naturalist, even physicalist *and therefore anti-Cartesian*. In fact, the difficulties contemporary naturalisms and physicalisms have with Cartesian dualism really constitute an internal family quarrel since their respective metaphysics *of nature*—the world minus minds, as it were—are, in general terms and character at least, the same.
 
-[^7]: The suggestion that I do not so much learn as remember things already known is a tacit reference to Plato’s doctrine of *anamnesis*—see http://en.wikipedia.org/wiki/Anamnesis\_(philosophy).
+[^7]: The suggestion that I do not so much learn as remember things already known is a tacit reference to Plato’s doctrine of *anamnesis*—see
+ http://en.wikipedia.org/wiki/Anamnesis\_(philosophy).
 
 [^8]: Caterus writes, “Even if it is granted that a supremely perfect being, by its very nature, implies existence, it still does not follow that such an existence is something that is actually present in the nature of things, but only that the concept of existence is inseparably linked with the concept of a supreme being. You cannot deduce from this that the existence of God is something actual, unless you presuppose that God is a supreme being who actually exists. If that were true, it would actually include all perfections, including the perfection of real existence.” As Georges Dicker points out, this objection was also made by the great Mediaeval theologian St. Thomas Aquinas in his *Summa Theologica* (part I, quest. 2, art. 1).
 
@@ -146,4 +145,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^10]: Which reflects the inherent complexity of the true and immutable natures they each express.
 
-[^11]: On p.39, Descartes allows that “there are innumerable … things in God that I do not comprehend and which may be completely outside the scope of my thought.”
+[^11]: On p.39, Descartes allows that “there are innumerable … things in God that I do not comprehend and which may be completely outside the scope of my thought.” 

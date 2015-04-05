@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Descartes’ *Meditations on First Philosophy* Lecture 6"
+title: "Descartes’ *Meditations on First Philosophy* 6"
 updated: 2014-08-13
 permalink: /courses/:collection/:title/
-abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
+abstract: "The Third Meditation (continued): Of God, that He exists --- Part II"
 ---
 
 ## The Third Meditation (continued): Of God, that He exists --- Part II
@@ -46,8 +46,6 @@ This is possibly the most obscure notion in Descartes’ Meditations. It is very
 
 > So until I have determined whether what I am now having is a correct mathematical calculating, as opposed to the mere manipulated appearance thereof caused by sleep or an supremely powerful, malicious mind, I may not yet rationally believe that there the square root of 7921 is 89. That is, I may not yet endorse, *for this kind of proposition (mathematical ones)*, the general rule that if I perceive clearly and distinctly that *p*, then (I may rationally believe that) *p*.”
 
------
-
 Notice that in these three cases, a certain move is always at issue, namely, from its seeming-to-me clearly and distinctly that *p* to my regarding myself as rationally entitled or justified to believe that *p*. What Descartes appears to be getting at when, in the Third Meditation, he asks whether he may assert *as a general rule* that everything he perceives very clearly and distinctly is true[^2] is the idea of such a general move, such a general rule or criterion for moving from asserting, “It seems clearly and distinctly to me, i.e., optimally, such that I can see no reason for doubt, that *p*” to believing, “*p*”. In general, the idea of clear and distinct perception is the general idea of its seeming clearly and distinctly, i.e., optimally, to me that *p* (such that, barring whacky thought-experiments of the kind Descartes is encouraging us to engage in, I have no reason to doubt that *p*, hence would ordinarily be entitled to believe that *p*). And there are three kinds of such clear and distinct seeming-to-me, namely, the very abstract kind which Descartes has when he ponders what, if any, things he can still claim to know with certainty once he has withheld assent from the diverse things the supremely powerful, malicious mind could deceive him about. Then there is clear and distinct seeming to me of the genuinely perceptual kind, in which one can speak literally of clear and distinct perceptual experience. And finally there is the mathematical kind, which is, of course, a rather attenuated and derivative sense in which one might speak of clear and distinct perception. As a matter of fact, we do speak in this derivative and attenuated way. Thus, we say, “I see now how this algorithm works”, or again, “I see now that the square root of 7921 is 89”, etc.
 
 Crucially, according to Descartes only one of these is *unconditionally* valid, i.e., such that one can move from “It seems to me clearly and distinctly that *p*, such that I know or conceive of nothing which speaks against its being the case that *p*” to “I may rationally believe it to be the case that *p*” without hesitation or qualification, that is, without first having to address a prior issue. This is the case of his certain knowledge, namely, that he exists as thinking. In this one very special case, what seems to him to be the case just has to be the case. In this one case, then, Descartes knows with complete certainty and confidence that he rationally believe what seems very clearly and distinctly to him to be the case.
@@ -66,7 +64,7 @@ Yet there is a problem for this way of reading Descartes, a problem which forces
 
 I must therefore argue that Descartes, notwithstanding what stands in his text, actually meant (or ought to have meant) what I am attributing to him. In other words, I must argue that when on p.31 Descartes speaks of a general rule it better corresponds to what he was really getting at but perhaps not seeing clearly, perhaps not formulating accurately, to regard him as saying, “It seems, therefore, that I could establish as a general rule that everything that I perceive very clearly and distinctly I may rationally believe to be true.”[^5] What consideration might justify me in maintaining this? Principally this: if Descartes is serious in his talk of a rule, i.e., something which governs *acts of thinking*, then he *must* understand his rule in the way I suggest. For as a rule governing acts of thinking, it can only be a rule specifying when he, Descartes may move from one act of thinking, viz., clearly and distinctly perceiving it to be true that *p*, *to another act of thinking*. But its being true that *p* is not an act of thinking but a fact about the world. In other words, Descartes’ rule, as formulated by Descartes himself, does not make literal sense; it is poorly formulated. At the very least, it must refer, not to various facts in the world, but only to acts performed by Descartes. Moreover, it must specify one of these acts not simply as one Descartes *actually* does perform but as one he *is rationally entitled* to perform, given that he has performed another.[^6]
 
-There is another reason why we must interpret Descartes in the way I have interpreted him here. If it were right to read Descartes as out to assert *generally* that everything he perceives very clearly and distinctly is true; and if to perceive anything clearly and distinctly is to have the best possible reasons for believing it: then we are *de facto* implying that Descartes thought it possible to eliminate, or rather, to deny, the fallibility of empirical knowledge-claims. But we know that this is absurd and that Descartes would not be so stupid as not to see this absurdity.
+There is another reason why we must interpret Descartes in the way I have interpreted him here. If it were right to read Descartes as out to assert *generally* that everything he perceives very clearly and distinctly is true; and if to perceive anything clearly and distinctly is to have the best possible reasons for believing it: then we are *de facto* implying that Descartes thought it possible to eliminate, or rather, to deny, the fallibility of empirical knowledge-claims. But we know that this is absurd and we also know that Descartes would not be so stupid as not to see this absurdity.
 
 ### § 3: Descartes on the Existence of God
 
@@ -122,8 +120,6 @@ In other words, when he speaks of the idea of God as having more intentional rea
 
 -----
 
-These notes are solely for the use of students in PHIL 1007 “Philosophy, Humanity, Society”, Second Semester, 2014, at the Australian National University. They are not to be reproduced, or cited in anything other than assessment essays for this course, without permission of the author.
-
 © Carleton B. Christensen, 2008, 2010, 2011, 2012, 2013 and 2014
 
 [^1]: See p.31.
@@ -132,7 +128,7 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^3]: In other words, whether it is a seeming-to-one in the sense of being the *mere illusion* of being a seeming-optimally (clearly and distinctly)-to-one!
 
-[^4]: See http://en.wikipedia.org/wiki/Cartesian\_circle, available as a PDF as the Wattle site.
+[^4]: See http://en.wikipedia.org/wiki/Cartesian\_circle.
 
 [^5]: Descartes comes close to this kind of formulation in the Fifth Meditation, where he asserts, clearing intending to assert a general principle, “But whatever argument I eventually use to prove something, I am always brought back to this: the only things that clearly convince me are those that I perceive clearly and distinctly.” (p.55) There are two senses in which this is for Descartes a general principle: as a matter of fact, he is inclined by nature to become convinced that *p*, if he clearly and distinctly perceives that *p*. In other words, he is be nature inclined to judge or assert that *p* if it seems to him that *p* under optimal conditions, such that he has the best possible reasons for judging or asserting that *p*. But this principle concerning how he is disposed to judge or assert that *p* presupposes the *normative* principle that he may rationally form the conviction that *p* if he clearly and distinctly perceives that *p*. On the same page there occurs another formulation of this general principle which is clearly weighted, much more so than the one just given, towards a reading which expresses how Descartes *is disposed* to judge or assert: “… my nature is such that, as long as I perceive something very clearly and distinctly, I *am unable* not to believe that it is true.” (p.55, italics added) Note that in this formulation, too, the consequent is formulated not simply in terms of something’s being true, but in terms of its being *believed to* be true. That is, this formulation, too, has a consequent which speaks, as in my opinion and according to my interpretation it should, in terms of *acts* rather than *contents* of thought.
 
@@ -150,4 +146,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^12]: But it is not just to ask this. In addition to this, it is also to ask whether these ideas really do originate in things external to him at all for it is, he says, possible that he himself should be the origin of these ideas. Perhaps he has “some other faculty, of which I am not yet sufficiently aware and which is the origin of those ideas, in the same way as it always seemed to up to now that, when I was dreaming, ideas were formed in me without any assistance from external things.” (p.34) Note how Descartes assumes here that his ideas must have *some* cause, whether external or internal.
 
-[^13]: *Res quae ita existit, ut nulla alia re indigeat ad existendum* (Descartes 1644 (1983), § 51, p.23; AT viii^1^), at least in the abstractly nominal sense of substantiality rather than the commonly nominal sense of an individual substance.
+[^13]: *Res quae ita existit, ut nulla alia re indigeat ad existendum* (Descartes 1644 (1983), § 51, p.23; AT viii^1^), at least in the abstractly nominal sense of substantiality rather than the commonly nominal sense of an individual substance. 

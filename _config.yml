@@ -16,4 +16,4 @@ collections:
     output: true
     permalink: /courses/:collection/
     title: "PHIL1337 Descartes"
-    abstract: "This is my abstract about my awesome Descartes course. It's set as a variable under the collections in `_config.yml` file."
+    abstract: "The materials I use for introductory courses on René Descartes"

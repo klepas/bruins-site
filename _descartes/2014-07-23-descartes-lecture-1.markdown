@@ -1,78 +1,23 @@
 ---
 layout: post
 permalink: /courses/:collection/:title/
-title: "Descartes’ *Meditations on First Philosophy* Lecture 1"
+title: "Descartes’ *Meditations on First Philosophy* 1"
 updated: 2014-07-23
-abstract: "This is the abstract for a single lecture item. These are defined at the top of a lecture item or lecture resource, collated under `_$course/$item.md.` See the `abstract` field. We can use punctuation and markdown if we surround them with double prime marks."
+abstract: "Introduction: Descartes’ Life, Times and Goals in the *Meditations*"
 ---
 
-## Introduction to the Segment and Lecture 1: Descartes’ Life, Times and Goal in the *Meditations*
+## Introduction: Descartes’ Life, Times and Goals in the *Meditations*
 
-### § 1: Organisation of the Segment and Other Information
+### § 1: Preliminary Remarks
 
-#### *Contact Details*
 
-My office is Room 3227, Coombs Building. My telephone number is 6125 6265. My email address is [*carleton.christensen@anu.edu.au*](mailto:carleton.christensen@anu.edu.au). You should use email wherever possible as it is the most reliable means of contacting me.
+These notes constitute course materials I have developed over several years of introducing students to René Descartes’ *Meditations on First Philosophy*. Descartes wrote the Meditations in Latin but because it is such a central work of modern Western philosophy it has been repeatedly translated throughout the centuries since 1641, when it was first published.[^1] The English translation I have used in these notes is the translation by Desmond Clarke, simply because this is the translation used for the Penguin Classics edition, which is very cheap, hence readily accessible to most.
 
-I have not yet determined when my consultation hours will be. I will advise you of this *on the Wattle site* when I have done so. If you cannot come during my consultation hours, please make an appointment with me *by email*.
+With one important exception I have no objections to other well-known English translations, e.g., the Sutcliffe translation used in the older Penguin Classics edition or the Cottingham translation, to be found in *Descartes—Selected Philosophical Writings*, translated by John Cottingham, Robert Stoothoff and Dugald Murdoch, Cambridge: Cambridge University Press, 1988. I do not think there is much to choose between the Sutcliffe, Clarke and Cottingham translations. The exception is the old Haldane and Ross translation, which sometimes translates Descartes’ Latin term *cogitatio* as ‘thought’, sometimes as ‘perception’. This is very misleading because it obscures Descartes’ attempt to construe perceptions, insofar they are genuinely cognitive, as just a particular species of thought. Those interested in seeing the original Latin text may consult *Meditationes de primā philosophiā*—*A Bilingual Edition*, edited, translated and indexed by George Heffernan.[^2]
 
-#### *Course Content and Text*
+For a proper understanding of what Descartes—the real Descartes, not the Descartes of the *Meditations* themselves, who is a literary artifice—I encourage readers to begin with the Letter of Dedication to the Sorbonne (pp.8-11) and the Summary of the Following Six Meditations (pp.14-17). Those using the Clarke translation might also read the translator’s introduction (pp.xv-xl). Those seeking even more of challenge might also look at Descartes’ Preface to the Reader (pp.12-14). (One might find this more difficult because it presupposes some awareness of Descartes’ earlier work, *The Discourse on Method* of 1637.)
 
-In the first six weeks of the course we will be looking at René Descartes’ *Meditations on First Philosophy*. Descartes wrote the Meditations in Latin but because it is such a central work of modern Western philosophy it has been repeatedly translated throughout the centuries since 1641, when it was first published.[^1] The translation I have recommended is the translation by Desmond Clarke, simply because this is the translation used for the Penguin Classics edition, which is very cheap. You should purchase this as quickly as possible. There are multiple copies at the Coop Bookstore and at the Wattle site there is a link to Amazon.com, from which you can also buy a copy. Since you will not necessarily obtain the book immediately, there are PDFs provided online of the relevant parts of Clarke’s translation.
-
-You may also use other translations if you wish, for example, the Sutcliffe translation used in the older Penguin Classics edition or the Cottingham translation, to be found in *Descartes—Selected Philosophical Writings*, translated by John Cottingham, Robert Stoothoff and Dugald Murdoch, Cambridge: Cambridge University Press, 1988. I do not think there is much to choose between the Sutcliffe, Clarke and Cottingham translations. The only translation I would warn you away from is the old Haldane and Ross translation, which sometimes translates Descartes’ Latin term *cogitatio* as ‘thought’, sometimes as ‘perception’. This is very misleading because it obscures Descartes’ attempt to construe perceptions, insofar they are genuinely cognitive, as just a particular species of thought. If you are interested in seeing the Latin text, you may consult *Meditationes de primā philosophiā*—*A Bilingual Edition*, edited, translated and indexed by George Heffernan.[^2]
-
-I would urge you to get your copy of the Meditations as soon as possible because I want to start looking at the First Meditation in the second lecture, i.e., this Friday, 25.07.14. Please try to read by then at least Descartes’ Letter of Dedication to the Sorbonne (pp.8-11) and the Summary of the Following Six Meditations (pp.14-17). If you already have the Clarke translation, you might also read the translator’s introduction (pp.xv-xl). Those of you who would seek even more of challenge might also look at Descartes’ Preface to the Reader (pp.12-14). You will, however, find this more difficult because it presupposes some awareness of an earlier work by Descartes, *The Discourse on Method* of 1637.
-
-There is one rather considerable difficulty to which I must draw your attention immediately: in the Preface Descartes speaks of understanding an idea “intentionally” (p.13). And in the Summary he speaks of the “intentional reality” (p.16) contained in an idea, specifically, in our idea of a supremely perfect being, i.e., God. In order to understand this, one must understand something of the Scholastic philosophy[^3] in which Descartes had been raised and with which he was deeply familiar. In the notes to his translation, Desmond Clarke gives a brief explanation of why he has chosen to translate things this way—see pp.6-7. I cannot go into the details of this now. So I would recommend that you first download this first set of lecture notes as soon as possible and read them in conjunction with Clarke’s explanation. For in the final section of these notes (§ 5, pp. 19-21) I elaborate what is behind Clarke’s choice of English translation, which seems to me to be a very good choice.
-
-#### *Lecture Notes and Course Information*
-
-These and the other lecture notes for this segment will be posted on a more or less weekly basis at the Wattle site for PHIL 1007. You will automatically have access to this site if you are correctly enrolled in this unit. Lectures will be taped as far as possible, i.e., technology permitting, and these will be available in the usual way at the Wattle site.
-
-In addition, *all organisational information about the course will be posted there, in particular, one-off announcements about such things as assessment, cancellation of tutorials* (if, for example, I become ill), etc. *So you must consult the website regularly*. Not being aware of any information posted at the site will be no excuse for failure to act on this information. This applies in particular to assessment details and deadlines.
-
-#### *Assessment*
-
-Assessment for this segment will consist in a 2000 word research essay worth 45% of your mark for the whole course. As tutorial attendance will be worth 10% of your mark for the whole course (5% for Segment 1 + 5% for Segment 2), it is important that you come to as many tutes as possible in both segments.
-
-In your essay you will be expected to use secondary sources as well as the primary text. For this reason, I will be putting quite a number of relevant monographs and essay collections in the Reserve Collection. A reading and reference list is available at the course Wattle site (as a PDF); you should download this and use it to find references. There are three references, all to go into the Reserve Collection, upon which I will frequently rely. They are:
-
-- Dicker, G. (1993). *Descartes: an Analytical and Historical Introduction*. New York, Oxford University Press.
-
-- Doney, W., Ed. (1968) *Descartes: A Collection of Critical Essays*. London, Macmillan. (This contains Jaako Hintikka’s essay on the *cogito*, upon which I will rely extensively.)
-
-- Gaukroger, S. (1995). *Descartes: An Intellectual Biography*. Oxford and New York, Oxford University Press.
-
-Finally, it is worth mentioning the *Stanford Encyclopaedia of Philosophy*. This is an online encyclopaedia, accessible at [*http://plato.stanford.edu/*](http://plato.stanford.edu/), which contains many useful entries on all sorts of topics. You should always look first at this in order to see whether it has an entry on the issue you want to know more about. The chances are good that it will.
-
-#### *Essay Deadline and Submission*
-
-**The deadline for the essay will be 12 noon, Thursday, September 11th.**
-
-**Please note that in this segment you are required to make both online and hard copy submissions!**
-
-##### *Instructions for Online Submission*:
-
-You make your online submission via the Wattle Site for the course. A link will be provided for this, at the top of the page. YOU MUST SUBMIT THE SOFT COPY OF YOUR ESSAY WITH A COVERSHEET ATTACHED TO IT. A soft copy of the coversheet is available as a word document at the Wattle site. You should simply past this into the front of your essay and fill it out.
-
-##### *Instructions for Hard Copy Submission*:
-
-Before you submit the hard copy of your essay, you must submit first fill out and sign a coversheet, which you then attach to the front of the hard copy. Coversheets are available at the office of the School of History and Philosophy, which you will find to the right of the main entrance to the Coombs Building. You submit the hard copy of your essay by placing it in the essay box provided in the office of the School of History and Philosophy.
-
-Late penalties will apply unless you have an extension, i.e., two marks off for each week day late. If you require an extension, you must get in touch with me as soon as possible, preferably by email. Any extension granted plus copies of relevant documentation (e.g., medical certificates) should be attached to the front of the essay, *behind* the cover sheet.
-
-#### *Tutorials*
-
-Tutorials begin in Week 2, i.e., next week. There will be five tutorial groups. Unfortunately, it is not possible to offer a wide selection of tutorial times. *Could you please go to the Wattle Site ASAP and enrol in one of these groups **by Friday**. Note that there is a limit of 20 on tutorial size; once a group is filled, you cannot go into it. So in order to ensure that you have maximum choice, please go on line **ASAP*** *to enrol*.
-
-##### *A note on how to approach tutorial work*
-
-In this segment I want you to think and talk about the text, in particular, to ask, in the first instance, not so much whether Descartes is or is not right in what he says, but what he means by it. A great philosopher is always more subtle than would permit one simply to glance at the text and dismiss as nonsense (or endorse it as true). One needs to put to one side tendencies to quick judgement in order to concentrate, in the first instance, on understanding the text. As far as understanding is concerned, a good maxim to follow is that of interpretive ‘charity’: if you think what Descartes is saying is either nonsensical or obviously false, you have probably misunderstood him.
-
-#### *Course Plan*
-
-Since there are six individual Meditations in Descartes’ text and we have, apart from this lecture, twelve lectures at our disposal, I propose to spend roughly two lectures on each Meditation. This means that, all else being equal, we will be looking at a new Meditation each Friday. Thus, this Friday, 25.07., I will start looking at the First Meditation; on the following Friday, 01.08., the Second; on Friday, 08.08., the Third; on Friday, 15.08., the Fourth; on Friday, 22.08., the Fifth; and on Friday, 29.08., the Sixth. (See in this connection the lecture schedule, available at the Wattle site.) But some Meditations will be more important for us than others. The Sixth will be particularly important. So I may find myself not adhering strictly to this rather mechanical schedule. It depends how I go in getting notes together for each week; I may find that I will need to spend less time on, say, the Fifth Meditation, in order to do justice to the Sixth.
+There is one rather considerable difficulty to which attention must be drawn immediately: in the Preface Descartes speaks of understanding an idea “intentionally” (p.13). And in the Summary he speaks of the “intentional reality” (p.16) contained in an idea, specifically, in our idea of a supremely perfect being, i.e., God. In order to understand this, one must understand something of the Scholastic philosophy[^3] in which Descartes had been raised and with which he was deeply familiar. In the notes to his translation, Desmond Clarke gives a brief explanation of why he has chosen to translate things this way—see pp.6-7. In the final section of these notes (§ 5, pp. 19-21) I elaborate what is behind Clarke’s choice of English translation, which seems to me to be a very good choice. I recommend reading this section in conjunction with Clarke’s explanation. 
 
 ### § 2: Descartes’ Life and Times
 
@@ -87,13 +32,13 @@ But before we look more closely at the philosophical views which made Descartes 
 1596
 : born at La Haye near Tours (about 215 km SSW of Paris) on 31^st^ March
 
-1606-14
+1606-14 
 : attends the Jesuit college of La Flèche in Anjou, which, as I recall, was steeped in the late Mediaeval Scholastic philosophy of Francesco Suarez (1548-1617); Descartes stayed at La Flèche for eight or nine years, but, as is pointed out in the Cottingham translation, “the exact dates of his arrival and departure are uncertain.”
 
-1616
+1616 
 : takes doctorate in law at University of Poitiers
 
-1618
+1618 
 : goes to Holland; joins army of Prince Maurice of Nassau (but, as I recall, does not see any action, in fact, finds life in the army rather boring); meets and befriends Isaac Beeckman, a brilliant and more or less self-taught student of nature (hydrostatics), with whom Descartes corresponds over a long period of time and who had already embraced a ‘mechanicist’ view of nature; composes a short treatise on music, the *Compendium Musicae*
 
 -----
@@ -191,17 +136,14 @@ As already indicated, in the Preface Descartes speaks of understanding an idea �
 
 Note that the property of being about something can be possessed not just by such *psychological* entities as ideas in the mind but also by such linguistic entities as names and sentences. This suggests that in order to clarify what Descartes means by the objective reality of an idea, we may take our lead from the notion of the *meaning* of linguistic entities: what Descartes means by the objective reality of an idea is, or is at least analogous to, the *meaning* of a linguistic entity. The meaning of a linguistic item like a name or sentence is, one would think, something which the name or sentence can have irrespective of whether there actually is any reality corresponding to the name or sentence. The meaning of the name or sentence is, after all, what makes it the case that the name or sentence is about this rather than that. So we may regard what Descartes means by the objective reality of an idea as its meaning, in analogy to the linguistic case.
 
-The property of being about something is a very important and much discussed notion in contemporary philosophy of mind and psychology. In the literature, this property of aboutness is called *intentionality.* Note that the notion of intentionality is not to be identified the ordinary, pre-philosophical notion of intention, which connotes purpose or aim. If you are interested in understanding more about the notion of intentionality, you might consult the entry on intentionality in the online *Stanford Encyclopaedia of Philosophy --- *see [*http://plato.stanford.edu/entries/intentionality/*](http://plato.stanford.edu/entries/intentionality/).
+The property of being about something is a very important and much discussed notion in contemporary philosophy of mind and psychology. In the literature, this property of aboutness is called *intentionality.* Note that the notion of intentionality is not to be identified the ordinary, pre-philosophical notion of intention, which connotes purpose or aim. If you are interested in understanding more about the notion of intentionality, you might consult the entry on intentionality in the online *Stanford Encyclopaedia of Philosophy*---see [http://plato.stanford.edu/entries/intentionality/](http://plato.stanford.edu/entries/intentionality/).
 
 -----
-
-These notes are solely for the use of students in PHIL 1007 “Philosophy, Humanity, Society”, Second Semester, 2014, at the Australian National University. They are not to be reproduced, or cited in anything other than assessment essays for this course, without permission of the author.
-
 © Carleton B. Christensen, 2008, 2010, 2011, 2012, 2013 and 2014
 
 [^1]: Under a slightly different title than the present one, namely, *Metaphysical Meditations*. The title we know the Meditations under today goes back to the second edition of 1643.
 
-[^2]: You will, however, find the English translation provided by Heffernan bizarre in places because he has, for some strange reason, decided to reproduce, in what he takes to be very literal ways, the Latin subjunctive in the English text. Thereby he has generated very odd and at times misleading English.
+[^2]: The English translation provided by Heffernan is bizarre in places because he has, for some unexplained reason, decided to reproduce, in what he takes to be very literal ways, the Latin subjunctive in the English text. Thereby he has generated very odd and at times misleading English.
 
 [^3]: By Scholastic philosophy I mean the kind of highly sophisticated academic philosophy which had emerged during the Middle Ages, through the work of thinkers like St. Thomas Aquinas, John Duns Scotus and William of Ockham (of Ockham’s razor fame). This kind of philosophy, which was pursued within the universities, hence by members of religious orders (since these were the university teachers of the time), was often oriented towards (Christian) theological issues such as proofs of the existence of God, the nature of the human soul, the way God acted in the world, etc. (At the same time, this kind of philosophy developed very sophisticated, theological neutral accounts of perception, cognition, language, logic, etc.) Although this kind of philosophy originated in the Middle Ages, it persisted at the Universities right through the Renaissance and into the seventeenth century. By the end of the seventeenth century, however, it had declined and a more modern, non-clerical and often non-academic science-orientated intellectual life had assumed the ascendancy.
 
@@ -219,4 +161,4 @@ These notes are solely for the use of students in PHIL 1007 “Philosophy, Human
 
 [^10]: Notoriously, Luther spoke of *die Hure Vernunft*, i.e., the whore Reason.
 
-[^11]: A particularly poignant feature of acknowledging this mistake would lie in the fact that Luther and other Reformers were extremely hostile towards Aristotle. So by acknowledging one’s mistake, one would be generously making an important concession to the Reformers’ position while retaining the core of one’s own.
+[^11]: A particularly poignant feature of acknowledging this mistake would lie in the fact that Luther and other Reformers were extremely hostile towards Aristotle. So by acknowledging one’s mistake, one would be generously making an important concession to the Reformers’ position while retaining the core of one’s own. 

@@ -24,6 +24,47 @@ h1, h2, h3, h4, h5, h6 {
   line-height: $base-leading;
 }
 
+.amp {
+  font-family: "Palatino Linotype", Palatino, Baskerville, Times, "Times New Roman", Georgia, serif;
+  font-style: italic;
+  line-height: 1;
+  font-weight: 300;
+}
+
+section.introduction {
+  margin: 8px;
+  margin-top: 3em;
+  @include media(min-width $tiny-screen max-width $large-screen, 12) {
+  }
+  p.home-intro {
+    text-align: left;
+    font-family: $fontface-sans;
+    font-weight: 300;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    @include media(max-width $tiny-screen) {
+      @include span-columns(12);
+      @include shift(0);
+    }
+    @include media(min-width $large-screen, 12) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+  p.about-me {
+    margin-bottom: 2em;
+  }
+}
+
+abbr {
+  font-size: 0.875em;
+  padding-bottom: 1px;
+  border-bottom: dotted 1px #ccc;
+}
+
 // in-text footnote styling
 article.post.content sup a,
 article.page.content sup a,

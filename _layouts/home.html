@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  {% if page.custom_css %}
+    {{ page.custom_css | stylesheet }}
+  {% endif %}
+
+  <body>
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

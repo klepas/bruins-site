@@ -54,10 +54,6 @@ section.content {
       @include shift(1);
     }
   }
-
-  p, li, dd {
-    font-family: $fontface-serif;
-  }
 }
 
 article.content,

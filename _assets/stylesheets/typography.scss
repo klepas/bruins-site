@@ -34,28 +34,43 @@ h1, h2, h3, h4, h5, h6 {
 section.introduction {
   margin: 8px;
   margin-top: 3em;
+  text-align: left;
+  p.home-intro.hello {
+    font-family: $fontface-sans;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: #222;
+  }
+  p.home-intro.about-me {
+    font-family: $fontface-sans;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+  @include outer-container;
   @include media(min-width $tiny-screen max-width $large-screen, 12) {
   }
   p.home-intro {
-    text-align: left;
-    font-family: $fontface-sans;
-    font-weight: 300;
-    font-size: 1.7em;
+    font-family: $fontface-serif;
+    font-weight: 400;
+    font-size: 1.1em;
     margin-bottom: 0.5em;
     @include media(max-width $tiny-screen) {
-      @include span-columns(12);
-      @include shift(0);
-    }
-    @include media(min-width $large-screen, 12) {
       @include span-columns(10);
+      @include shift(1);
+      font-size: 0.875em;
+    }
+    @include media(min-width $large-screen, 10) {
+      @include span-columns(8);
       @include shift(1);
     }
     strong {
-      font-weight: 400;
+      font-weight: bold;
     }
   }
   p.about-me {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    border-bottom: 2px dotted #ddd;
   }
 }
 
@@ -63,6 +78,34 @@ abbr {
   font-size: 0.875em;
   padding-bottom: 1px;
   border-bottom: dotted 1px #ccc;
+}
+
+article.content {
+  h1 { font-family: $fontface-serif; }
+  h2, h3, h4, h5, h6, dt {
+    font-family: $fontface-sans;
+  }
+  p, li, dd {
+    font-family: $fontface-serif;
+  }
+  dt {
+    font-size: 1.1em;
+  }
+  dd {
+    margin-left: 1em;
+  }
+  ol {
+    li {
+      list-style: decimal;
+    }
+  }
+}
+
+header.post.header p.post-meta {
+  font-family: $fontface-sans;
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 2em;
 }
 
 // in-text footnote styling
@@ -83,6 +126,18 @@ article.page.content .reversefootnote li p a {
   }
 }
 
+// bottom of document footnote styling
+section.content .footnotes {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 2px dotted #ddd;
+  font-size: 0.875em;
+}
+
+section.content .card-copy {
+  font-family: $fontface-sans;
+}
+
 // title styling for a page
 header.page {
   margin-bottom: 3em;
@@ -95,8 +150,9 @@ header.page {
 // title styling for a post
 header.post {
   h2 {
+    font-family: $fontface-serif;
     line-height: $base-leading;
-    background-color: lighten(#ddd, 10%);
+    //background-color: lighten(#ddd, 10%);
     padding: 1em;
     margin-bottom: 0;
     p {

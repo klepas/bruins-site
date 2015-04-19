@@ -2,7 +2,7 @@
 layout: post
 title: "On the Need not to be Constructivist about Affectivities , or Why Some People really do Smell"
 date: 2009-01-08 09:00:00
-abstract: "This is my amazing abstract about the constructivist paper."
+abstract: "Abstract to be added."
 ---
 
 ## § 1: Introduction

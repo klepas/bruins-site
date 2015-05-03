@@ -172,7 +172,7 @@ Sellars, Wilfrid 1967 *Science and Metaphysics: Variations on Kantian Themes*, L
 
 Snowdon, P. 1988 “Perception, Vision, and Causation,” in Perceptual Knowledge, edited by J. Dancy, Oxford, Oxford University Press, pp. 192-208
 
-Wheeler, Michael 2005 *Reconstructing the Cognitive World*, Cambridge, Mass.: The MIT Press
+Wheeler, Michael 2005 *Reconstructing the Cognitive World: The Next Step*, Cambridge, Mass.: The MIT Press
 
 ## Notes
 

@@ -14,7 +14,7 @@ permalink: /papers/
         <li class="item">
           <div class="item-title">
             <h3>
-              <a class="item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <a class="item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify }}</a>
             </h3>
             <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           </div>

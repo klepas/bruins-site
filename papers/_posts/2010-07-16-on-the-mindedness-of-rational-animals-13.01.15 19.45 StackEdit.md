@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On the Mindedness of Rational Animals—Coping with Dreyfus"
-date: 2010-07-16 16:00:00
+date: 2010-07-16
 abstract: "I will be adding an abstract later."
 ---
 

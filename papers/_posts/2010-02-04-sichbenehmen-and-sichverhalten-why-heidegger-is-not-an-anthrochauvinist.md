@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "*Sichbenehmen* and *Sichverhalten*—Why Heidegger is not an Anthrochauvinist"
-date: 2010-07-16 16:00:00
+date: 2010-02-04 16:00:00
 abstract: "I will be adding an abstract later."
 ---
 

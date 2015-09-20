@@ -1,7 +1,7 @@
 @media print {
   header#header, footer.footer { display: none; }
 
-  img { max-width: 600px; }
+  img { max-width: 500px; }
 
   @page { margin: 2cm 1.5cm 1.5cm 1.5cm; }
   @page :left { margin-left: 2.5cm; }
@@ -9,8 +9,12 @@
   @page :first { margin-top: 6cm; }
 
   body {
-    font-size: 0.575em;
+    font-size: 8pt;
     font-family: $fontface-print;
+    background: white;
+    color: black;
+    border: 0;
+
   }
 
   section.content {
@@ -25,7 +29,9 @@
       visibility: hidden;
     }
 
-    h2:not(.post-title):not(.abstract-heading) { page-break-before: always; }
+    article.post.content h2:not(.post-title):not(.abstract-heading) {
+      page-break-before: always;
+    }
 
     // test this to see if it can be removed :>
     ol, ul {

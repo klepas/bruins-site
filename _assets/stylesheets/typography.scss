@@ -88,6 +88,11 @@ section.content {
   p, li, dd {
     font-family: $fontface-serif;
   }
+  blockquote {
+    color: #111;
+    margin-left: 0.45em;
+    padding-left: 0.55em;
+  }
   dt {
     font-size: 1.1em;
   }

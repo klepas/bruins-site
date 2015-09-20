@@ -1,0 +1,39 @@
+@media print {
+  nav, footer.footer { display: none; }
+
+  img { max-width: 600px; }
+
+  @page { margin: 1cm; }
+  @page :left { margin: 1cm; }
+  @page :right { margin: 1.5cm; }
+  @page :first { margin: 1.5cm 2.5cm; }
+
+  body {
+    font-size: 0.75em;
+    font-family: $fontface-print;
+  }
+
+  section.content {
+    a:not(.footnote) { text-decoration: underline; }
+
+    //a:after {
+    //    content: " ("attr(href)") ";
+    //  }
+
+    a.reversefootnote,
+    a.print-btn {
+      display: none;
+    }
+
+    ul {
+      li {
+        list-style: square;
+      }
+    }
+    ol {
+      li {
+        list-style: decimal;
+      }
+    }
+  }
+}

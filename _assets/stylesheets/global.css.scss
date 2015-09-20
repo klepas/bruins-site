@@ -16,6 +16,7 @@ $em-base: 16px;
 $fontface-sans: "Source Sans Pro", sans-serif;
 $fontface-serif: "Merriweather", serif;
 $fontface-monospace: "Source Code Pro", monospace;
+$fontface-print: Georgia, Times, "Times New Roman", Serif;
 $base-background-color: white !default;
 $base-font-color: $dark-gray !default;
 
@@ -69,3 +70,4 @@ section.recent-papers {
 @import "homepage";
 @import "courses";
 @import "item-listing";
+@import "print";

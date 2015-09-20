@@ -80,7 +80,7 @@ abbr {
   border-bottom: dotted 1px #ccc;
 }
 
-article.content {
+section.content {
   h1 { font-family: $fontface-serif; }
   h2, h3, h4, h5, h6, dt {
     font-family: $fontface-sans;
@@ -94,6 +94,11 @@ article.content {
   dd {
     margin-left: 1em;
   }
+  ul {
+    li {
+      list-style: square;
+    }
+  }
   ol {
     li {
       list-style: decimal;
@@ -101,11 +106,20 @@ article.content {
   }
 }
 
-header.post.header p.post-meta {
-  font-family: $fontface-sans;
-  color: #333;
-  font-size: 1.1em;
-  margin-bottom: 2em;
+header.post.header {
+  p.post-meta {
+    font-family: $fontface-sans;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+
+    a.print-btn {
+      font-family: $fontface-sans;
+      letter-spacing: 1px;
+      color: #555;
+      font-size: 0.875em;
+    }
+  }
 }
 
 // in-text footnote styling
@@ -123,6 +137,16 @@ article.page.content .reversefootnote li p a {
   &:hover {
     color: black;
     box-shadow: 0 0 0.5em #ccc;
+  }
+}
+article.post.content div.abstract {
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #ddd;
+
+  p.abstract {
+    font-family: $fontface-sans;
+    font-size: 1.125em;
   }
 }
 
@@ -161,4 +185,8 @@ header.post {
       padding: 0;
     }
   }
+}
+
+section.content hr {
+  border-bottom: 1px solid #ddd;
 }

@@ -9,13 +9,22 @@ layout: base
       {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %} &middot; {{ page.author }}{% endif %}
       {% if page.meta %} &middot; {{ page.meta }}{% endif %}
+      <br />
+      <span>
+        <a class="print-btn" href="#" onClick="window.print();return false">
+          [ <i class="fa fa-print"></i> print ]</a>
+      </span>
     </p>
   </header>
 
   <article class="post content">
     {% if page.abstract %}
+    <div class="abstract">
       <h2>Abstract</h2>
+      <p class="abstract">
       {{ page.abstract | markdownify }}
+      </p>
+    </div>
     {% endif %}
     {{ content }}
   </article>

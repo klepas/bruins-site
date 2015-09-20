@@ -2,6 +2,7 @@
 layout: post
 title: "On the Mindedness of Rational Animals—Coping with Dreyfus"
 date: 2010-07-16
+author: Carleton Christensen
 abstract: "I will be adding an abstract later."
 published: false
 ---

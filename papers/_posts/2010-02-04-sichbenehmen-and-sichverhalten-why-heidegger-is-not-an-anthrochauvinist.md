@@ -2,6 +2,7 @@
 layout: post
 title: "*Sichbenehmen* and *Sichverhalten*—Why Heidegger is not an Anthrochauvinist"
 date: 2010-02-04
+author: Carleton Christensen
 abstract: "I will be adding an abstract later."
 ---
 

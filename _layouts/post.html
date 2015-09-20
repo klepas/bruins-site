@@ -7,8 +7,8 @@ layout: base
     <h2 class="post-title">{{ page.title | markdownify }}</h2>
     <p class="post-meta">
       {{ page.date | date: "%b %-d, %Y" }}
-      {% if page.author %} &middot; {{ page.author }}{% endif %}
-      {% if page.meta %} &middot; {{ page.meta }}{% endif %}
+      {% if page.author %}&emsp;&middot;&emsp;{{ page.author }}{% endif %}
+      {% if page.meta %}&emsp;&middot;&emsp;{{ page.meta }}{% endif %}
       <br />
       <span>
         <a class="print-btn" href="#" onClick="window.print();return false">

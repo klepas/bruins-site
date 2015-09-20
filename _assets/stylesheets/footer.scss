@@ -73,9 +73,12 @@
     margin: 0 auto 1em 0;
     text-align: center;
   }
-  p.developer {
+  p.developer,
+  p.updated {
     font-weight: 300;
     font-size: 0.7em;
+  }
+  p.developer {
     a {
       font-weight: 400;
       &.dev-resource {

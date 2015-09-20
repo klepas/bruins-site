@@ -3,7 +3,7 @@
 
   img { max-width: 600px; }
 
-  @page { margin: 2cm 1.5cm 1cm 1.5cm; }
+  @page { margin: 2cm 1.5cm 1.5cm 1.5cm; }
   @page :left { margin-left: 2.5cm; }
   @page :right { margin-right: 2.5cm; }
   @page :first { margin-top: 6cm; }
@@ -22,11 +22,12 @@
 
     a.reversefootnote,
     a.print-btn {
-      display: none;
+      visibility: hidden;
     }
 
     h2:not(.post-title):not(.abstract-heading) { page-break-before: always; }
 
+    // test this to see if it can be removed :>
     ol, ul {
       margin-left: 1cm;
     }

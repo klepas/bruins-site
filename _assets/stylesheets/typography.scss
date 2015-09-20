@@ -13,7 +13,7 @@ a {
 }
 
 p, ul, ol, dl {
-  font-size: 1.062em; // 17px
+  font-size: 1em; // 17px
   margin-bottom: 1em;
   line-height: $paragraph-leading;
 }
@@ -108,15 +108,19 @@ section.content {
 
 header.post.header {
   p.post-meta {
+    margin: 0.75em 0 1em 0;
+    padding: 1em 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     font-family: $fontface-sans;
     color: #333;
     font-size: 1.1em;
-    margin-bottom: 2em;
 
     a.print-btn {
-      font-family: $fontface-sans;
-      letter-spacing: 1px;
-      color: #555;
+      display: block;
+      margin-top: 0.75em;
+      font-family: $fontface-monospace;
+      color: #666;
       font-size: 0.875em;
     }
   }
@@ -140,6 +144,7 @@ article.page.content .reversefootnote li p a {
   }
 }
 article.post.content div.abstract {
+  margin-top: 2em;
   margin-bottom: 2em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid #ddd;
@@ -177,7 +182,8 @@ header.post {
     font-family: $fontface-serif;
     line-height: $base-leading;
     //background-color: lighten(#ddd, 10%);
-    padding: 1em;
+    font-size: 1.9em;
+    padding: 0.5em;
     margin-bottom: 0;
     p {
       line-height: inherit;

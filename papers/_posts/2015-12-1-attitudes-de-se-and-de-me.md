@@ -283,7 +283,7 @@ Castañeda, H-N. (1999) _The Phenomeno-Logic of the I: Essays on Self-Consciousn
 
 Christensen, C. (1997) “Meaning Things and Meaning Others,” in _Philosophy and Phenomenological Research_, Vol. 57, No. 3, pp.495-522
 
-Christensen, C. (2007) “Nichts Neues unter der Sonne: Bewußtsein und Selbstbewußtsein bei Paul Natorp,“ in _Kant-Studien_, Vol. 98, No. 3, pp.372-398
+Christensen, C. (2007) “Nichts Neues unter der Sonne: Bewußtsein und Selbstbewußtsein bei Paul Natorp," in _Kant-Studien_, Vol. 98, No. 3, pp.372-398
 
 Christensen, C. (2008) _Self and World: From Analytic Philosophy to Phenomenology_, Walter de Gruyter, Berlin
 

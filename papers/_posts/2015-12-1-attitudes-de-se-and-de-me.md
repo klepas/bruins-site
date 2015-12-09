@@ -91,7 +91,7 @@ Now it is absolutely crucial to appreciate that Cappelin and Dever, as much as t
 
 * Belief: If François ducks under the table, François will not be shot.
 
-Nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or_ justificandum_:
+Nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or _ justificandum_:
 
 * Action: François ducks under the table.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Atittudes _de se_ and _de me_"
+title: "Attitudes *de se* and *de me*"
 date: 2015-11-30
 version: "02.12.15"
 

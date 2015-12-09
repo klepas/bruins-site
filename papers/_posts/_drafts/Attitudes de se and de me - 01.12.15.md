@@ -3,7 +3,7 @@
 
 layout: post
 
-title: “Atittudes _de se_ and _de me_”
+title: “Attitudes _de se_ and _de me_”
 
 date: 2015-11-30
 

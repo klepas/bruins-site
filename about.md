@@ -13,7 +13,6 @@ I work primarily on German philosophy of the late 19th and early 20th centuries,
 A crucial part of my work is the building of interdisciplinary links to other areas of the ANU relevant to sustainability, in particular, the Fenner School of Environment and Society. I see these as enabling a new kind of engagement for philosophers, beyond the usual round of conferencing, paper-giving, publishing and intra-disciplinary teaching.
 
 
-
 ##Publications
 
 ## 2015

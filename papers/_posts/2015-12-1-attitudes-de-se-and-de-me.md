@@ -1,15 +1,10 @@
-
-
-
+---
 layout: post
-
 title: “Atittudes _de se_ and _de me_”
-
 date: 2015-11-30
 
-abstract: "In sentences of the type “S believes that he/she/it is &Phi;” the pronoun occurring within the scope of the verb ‘believes’ in such sentences is sometimes used anaphorically to refer to the subject of belief S. I shall argue that when the pronoun is being used in this anaphoric way, the whole sentence is not always functioning as a device for attributing to the subject S an indexical, indeed first-personal belief—what I shall call a belief _de me_. In other words, to use terminology first introduced by Lewis and now universally accepted, I argue that ascription or attribution _de se_ does not always report an attitude _de me_. I also argue, however, that in those cases in which no belief _de me_ is reported, the belief state reported is nonetheless at least sometimes itself _de se_. In other words, and crudely put, there is belief _de se_ which is not belief _de me_. 
-
-I argue this via a critique (§§ 1 and 2) of Cappelin and Dever (_The Inessential Indexical_, Oxford, 2013), who have, quite rightly, attacked the idea of essential indexicality as this has come to be understood in the literature. I also show (§ 3) that essential indexicality in _this_ sense is not actually what Perry was claiming in his well-known paper of 1979. I conclude by drawing out the implications of the idea that there is belief _de se_ which is not _de me_, particularly for the idea of explicit, first-personal thinking (having an ‘I’-thought)."
+abstract: "In sentences of the type “S believes that he/she/it is &Phi;” the pronoun occurring within the scope of the verb ‘believes’ in such sentences is sometimes used anaphorically to refer to the subject of belief S. I shall argue that when the pronoun is being used in this anaphoric way, the whole sentence is not always functioning as a device for attributing to the subject S an indexical, indeed first-personal belief—what I shall call a belief _de me_. In other words, to use terminology first introduced by Lewis and now universally accepted, I argue that ascription or attribution _de se_ does not always report an attitude _de me_. I also argue, however, that in those cases in which no belief _de me_ is reported, the belief state reported is nonetheless at least sometimes itself _de se_. In other words, and crudely put, there is belief _de se_ which is not belief _de me_.<br/><br/>I argue this via a critique (§§ 1 and 2) of Cappelin and Dever (_The Inessential Indexical_, Oxford, 2013), who have, quite rightly, attacked the idea of essential indexicality as this has come to be understood in the literature. I also show (§ 3) that essential indexicality in _this_ sense is not actually what Perry was claiming in his well-known paper of 1979. I conclude by drawing out the implications of the idea that there is belief _de se_ which is not _de me_, particularly for the idea of explicit, first-personal thinking (having an ‘I’-thought)."
+---
 
 ## Introduction[^1]
 

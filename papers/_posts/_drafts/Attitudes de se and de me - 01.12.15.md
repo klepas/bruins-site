@@ -95,7 +95,7 @@ Now it is absolutely crucial to appreciate that Cappelin and Dever, as much as t
 
 * Belief: If François ducks under the table, François will not be shot.
 
-Nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or_ justificandum_:
+Nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or _ justificandum_:
 
 * Action: François ducks under the table.
 
@@ -287,7 +287,7 @@ Castañeda, H-N. (1999) _The Phenomeno-Logic of the I: Essays on Self-Consciousn
 
 Christensen, C. (1997) “Meaning Things and Meaning Others,” in _Philosophy and Phenomenological Research_, Vol. 57, No. 3, pp.495-522
 
-Christensen, C. (2007) “Nichts Neues unter der Sonne: Bewußtsein und Selbstbewußtsein bei Paul Natorp,“ in _Kant-Studien_, Vol. 98, No. 3, pp.372-398
+Christensen, C. (2007) “Nichts Neues unter der Sonne: Bewußtsein und Selbstbewußtsein bei Paul Natorp," in _Kant-Studien_, Vol. 98, No. 3, pp.372-398
 
 Christensen, C. (2008) _Self and World: From Analytic Philosophy to Phenomenology_, Walter de Gruyter, Berlin
 

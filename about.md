@@ -20,7 +20,7 @@ A crucial part of my work is the building of interdisciplinary links to other ar
 
 #### 2014
 
-‘Sustainability and Sustainable Development: Philosophical Distinctions and Practical Implications’, in Environmental Values, Vol. 23, No.1 (2014), pp.8-28
+‘Sustainability and Sustainable Development: Philosophical Distinctions and Practical Implications’, co-authored with Donald Hector and James Petrie, in _Environmental Values_, Vol. 23, No.1 (2014), pp.8-28
 
 ‘Human Ecology as Philosophy’, in _Human Ecological Review_, Vol. 20, No.2 (2014), pp.31-50
 
@@ -54,7 +54,7 @@ Dialogue with Will McNeill on Heidegger’s Notion of Technicity and its Relevan
 
 ### 2007
 
-‘What are the Categories in Sein und Zeit? Brandom on Heidegger on Zuhandenheit’, in _European Journal of Philosophy_, Vol. 15, August, No. 2, 2007, pp.159-185
+‘What are the Categories in _Sein und Zeit_? Brandom on Heidegger on _Zuhandenheit_’, in _European Journal of Philosophy_, Vol. 15, August, No. 2, 2007, pp.159-185
 
 ‘Nichts Neues unter der Sonne: Bewußtsein und Selbstbewußtsein bei Paul Natorp’, in _Kant-Studien_, Vol. 98, No. 3, September, 2007, pp.372-398
 

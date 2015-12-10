@@ -83,7 +83,7 @@ Here, the sentences used to articulate the content of François’ psychological
 
 Note that now the subject of belief must be specified since this is required simply in order to ensure that the pronoun ‘he’ refers to the right object, namely, François, in the right way, namely, anaphorically. Only if this is ensured will the right content be attributed. Note, however, that the truth of the IIC imposes a certain understanding of what this third person anaphoric construction accomplishes. For its truth entails that insofar as this third person, anaphorically formulated explanation or rationalisation is complete, this is because and only because the beliefs it attributes by means of the anaphoric construction are in fact indexical, specifically, first-personal. In other words, the IIC presupposes that insofar as such an explanation or rationalisation is complete, this is because the anaphoric construction is serving as a device for attributing what are in fact indexical, specifically first-personal psychological states. _The IIC thus rests upon the assumption that attributions **de se** of belief are attributions of belief **de me**_.
 
-Now it is absolutely crucial to appreciate that Cappelin and Dever, as much as they regard the IIC as false and seek positively to demonstrate that there are no good reasons for endorsing it, themselves accept this assumption. This explains why, having rejected the IIC as false or at least unfounded, they reject any suggestion that impersonal action explanations or rationalisations are incomplete. As far as explaining or rationalising why François ducks under the table is concerned, it suffices entirely to attribute to François the structure of belief and desire illustrated above, namely:
+Now Cappelin and Dever, as much as they regard the IIC as false and seek positively to demonstrate that there are no good reasons for endorsing it, themselves accept this assumption. This explains why, having rejected the IIC as false or at least unfounded, they reject any suggestion that impersonal action explanations or rationalisations are incomplete. As far as explaining or rationalising why François ducks under the table is concerned, it suffices entirely to attribute to François the structure of belief and desire illustrated above, namely:
 
 * Belief: François is about to be shot.
 
@@ -91,7 +91,7 @@ Now it is absolutely crucial to appreciate that Cappelin and Dever, as much as t
 
 * Belief: If François ducks under the table, François will not be shot.
 
-Nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or _ justificandum_:
+According to Cappelin and Dever, nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or _ justificandum_:
 
 * Action: François ducks under the table.
 

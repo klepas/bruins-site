@@ -121,6 +121,10 @@
       }
     }
     a.home-icon {
+      border-bottom: 1px solid #888;
+      padding: 0 2px 3px 2px;
+      margin-right: 22px;
+      margin-top: 4px;
       font-size: 1.25em;
       color: #90b1df;
       &:focus,

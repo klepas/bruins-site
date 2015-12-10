@@ -48,6 +48,12 @@
       }
     }
   }
+  li.nav-link {
+    a.home-icon {
+      border-bottom: 1px solid #888;
+      padding: 0 2px 3px 2px;
+    }
+  }
   //////////////////////////////////////////////////////////////////////////////////
 
   border-top: 2px solid darken($footer-background, 4%);

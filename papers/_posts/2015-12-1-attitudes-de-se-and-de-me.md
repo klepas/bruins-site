@@ -91,7 +91,7 @@ Now Cappelin and Dever, as much as they regard the IIC as false and seek positiv
 
 * Belief: If François ducks under the table, François will not be shot.
 
-According to Cappelin and Dever, nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or _ justificandum_:
+According to Cappelin and Dever, nothing more needs to be added _by way of belief and desire_ in order to arrive at the _explanandum_ or _justificandum_:
 
 * Action: François ducks under the table.
 

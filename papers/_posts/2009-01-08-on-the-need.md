@@ -2,7 +2,7 @@
 layout: post
 title: "On the Need not to be Constructivist about Affectivities , or Why Some People really do Smell"
 date: 2009-01-08
-author: Carleton Christensen
+author: Carleton B. Christensen
 abstract: "I will be adding an abstract later."
 ---
 

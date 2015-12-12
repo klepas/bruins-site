@@ -2,7 +2,7 @@
 layout: post
 title: "Making the Argument against Efficiency more Efficient"
 date: 2012-11-16
-author: Carleton Christensen
+author: Carleton B. Christensen
 abstract: "Thomas Princen (*The Logic of Sufficiency*, Cambridge, Mass.: The MIT Press, 2005) argues that a principal cause of unsustainability in modern societies is their reliance on the notion of efficiency in their decisions concerning resource use. Unfortunately, Princen casts his thesis in such general, unelaborated terms that his argument is not convincing: one sees neither that modern society is reliant on such a principle nor that this reliance is a cause of unsustainability. The paper overcomes this deficit by making clear what Princen does not: the distinctive re-organisation of work accomplished by ‘scientific’ management, once known as Taylorism and now re-incarnate as managerialism, permitted an economy structured around capital accumulation to organise the links between productive units according to quantifiable notions of efficient production. This liberated the productive potential of late modern capitalist economies, at enormous cost to the environment, just as Princen claims. But the paper goes on to argue that this re-organisation also represents a distortion of practical reason, whether phronesis or techné, of which pre-Taylorist capitalist production still retained vestiges. Herein lies the distorting, alienating character of the Taylorist organisation of production, which has, as Princen points out, spread to consumption and life in general—cf. the modern university! An understanding of this distorting, alienating character suggests what is required in order to overcome this condition, so as to live both better and more sustainably."
 ---
 

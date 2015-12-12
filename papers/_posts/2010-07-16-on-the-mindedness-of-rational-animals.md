@@ -3,8 +3,9 @@ layout: post
 title: "On the Mindedness of Rational Animals—Coping with Dreyfus"
 date: 2010-07-16
 author: Carleton Christensen
+version: "13.01.15 19.45 StackEdit"
 abstract: "I will be adding an abstract later."
-published: false
+
 ---
 
 ## § 1: The Central Difference between Dreyfus and McDowell

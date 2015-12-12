@@ -187,34 +187,33 @@ The report by Newman and Kenworthy fixed the terms of subsequent debate in Canbe
 
 [^7]: “I suggest twenty years as a time frame because almost everybody will relocate [to the frequent or patronage network] in that time, and most of the development now contemplated in your city will be complete.” (Walker 2012, p.216)
 
-[^8]: The Strategic Public Transport Network Plan of 2009, drawn up by Walker’s firm McCormick Rankin Cagney and upon which *Transport for Canberra* is based, is even blunter: “(T)he ACT Government should consider the Frequent Network when making its own locational decisions, and should encourage Commonwealth Government and private entities to do likewise. The message is simple: *If you want good public transport in the long term, locate on the Frequent Network*.” (McCormick Rankin Cagney 2009, p.iv)
+[^8]: McCormick Rankin Cagney 2009, upon which *Transport for Canberra* is based, is even blunter: “(T)he ACT Government should consider the Frequent Network when making its own locational decisions, and should encourage Commonwealth Government and private entities to do likewise. The message is simple: *If you want good public transport in the long term, locate on the Frequent Network*.” (p.iv)
 
-[^9]: The Strategic Public Transport Network Plan of 2009, upon which *Transport for Canberra* is based, appears to understand by a day a 12-hour period, and evening the six hours thereafter---see p.52. Consistent with this, the service span on any one day is said to be 18 hours per day (e.g., 5:00 AM–11:00 PM) seven days a week---see p.68.
+[^9]: McCormick Rankin Cagney 2009 appears to understand by a day a 12-hour period, and evening the six hours thereafter-see p.52. Consistent with this, the service span on any one day is said to be 18 hours per day (e.g., 5:00 AM–11:00 PM) seven days a week-see p.68.
 
-[^10]: In this regard we should let ACTION buses speak for itself: “Red Rapid Route 200 travels between Gungahlin and Fyshwick via the City, Russell, Barton and Kingston. Buses depart every 10 minutes between 7am and 8.30am and every 15 minutes between 8.30am and 7pm weekdays. Blue Rapid 300 Series route is a combination of all 300 series routes travelling between Belconnen and Tuggeranong via the City and Woden. Buses depart every 5-8 minutes between 7am and 7pm on weekdays and every 15 minutes in the evening.” See [https://www.action.act.gov.au/routes_by_number.html](https://www.action.act.gov.au/routes_by_number.html)
+[^10]: In this regard we should let ACTION buses speak for itself: "Red Rapid Route 200 travels between Gungahlin and Fyshwick via the City, Russell, Barton and Kingston. Buses depart every 10 minutes between 7am and 8.30am and every 15 minutes between 8.30am and 7pm weekdays. Blue Rapid 300 Series route is a combination of all 300 series routes travelling between Belconnen and Tuggeranong via the City and Woden. Buses depart every 5-8 minutes between 7am and 7pm on weekdays and every 15 minutes in the evening." See [https://www.action.act.gov.au/routes_by_number.html](https://www.action.act.gov.au/routes_by_number.html).
 
-[^11]: See *Transport for Canberra*, p.28, and the sub-section ‘connectivity’ on p.31. The report on which *Transport for Canberra* is based, McCormick Rankin Cagney 2009, has more to say on this---see p.19. What it does says confirms the hypothesis that the wait times contained in *Transport for Canberra* are for all stops, not just interchanges, that they do imply no timetable coordination and that the reason for this is the difficulty of achieving such coordination across minor as opposed to major stops at interchanges.
+[^11]: See *Transport for Canberra*, p.28, and the sub-section ‘connectivity’ on p.31. McCormick Rankin Cagney 2009, has more to say on this-see p.19. And what it does says confirms the hypothesis that the wait times contained in *Transport for Canberra* are for all stops, not just interchanges, that they do imply no timetable coordination and that the reason for this is the difficulty of achieving such coordination across minor as opposed to major stops at interchanges.
 
 [^12]: McCormick Rankin Cagney 2009, p.iii, emphasis added.
 
-[^13]: See “Submission to ‘Draft *Transport for Canberra* Plan’”, Nov. 11th, 2011, pp.4-7, available online at the ACT Greens’ website.
+[^13]: See [Submission to Draft Transport for Canberra Plan](http://archive-act.greens.org.au/sites/greens.org.au/files/Transport%20for%20Canberra%20Plan%20-%20Final%20Submission.pdf), pp.4-7.
 
-[^14]: See “Passenger Transport ModeShares in World Cities” in *Journeys*, Nov. 2011, pp.60-70. Note, by the way, that at least “Toronto’s density, while higher than the Australian average, is none the less of the same magnitude as the larger Australian urban areas. The overall density figure of 23.7 per ha compares with 20 in Sydney; gross residential densities are 33 and 32 respectively. The densities of Australian and Canadian cities are not as different as is widely believed: Vancouver and Adelaide, for example, both had overall urban densities of 14 per ha in 1991.” (Mees 2000, p.192)
+[^14]: See “Passenger Transport ModeShares in World Cities” in *Journeys*, Nov. 2011, pp.60-70. Note, by the way, that at least “Toronto’s density, while higher than the Australian average, is none the less of the same magnitude as the larger Australian urban areas. The overall density figure of 23.7 per ha compares with 20 in Sydney; gross residential densities are 33 and 32 respectively. The densities of Australian and Canadian cities are not as different as is widely believed: Vancouver and Adelaide, for example, both had overall urban densities of 14 per ha in 1991.” (Mees, _A Very Public Solution_, Melbourne University Press, 2000, p.192)
 
 [^15]: ACT Budget 2001-2001, Budget Paper No. 1 (Budget Speech), ACT Government, Canberra, p. 13.
 
-[^16]: This section is not my own work nor even, for the most part, my own writing. Because I have had no time to provide this information in my own words, I have simply lifted much of the text of this section from Paul Mees’ Submission on *Transport for Canberra*.
+[^16]: This section is not my own work nor even, for the most part, my own words. Because I have had no time to provide this information in my own words, I have drawn much of the text of this section from Mees’ [Submission](/files/pdfs/Mees-Transport-for-Canberra-submission.pdf) to the ACT Government on *Transport for Canberra*.
 
+[^17]: And Canberra’s planners intended this situation to continue: the Canberra Area Transportation Study of 1963 treated public transport as an afterthought, simply assuming that it could operate on the freeway network planned for the car-driving majority-see Karl Fischer, *Canberra: Myths and Models*, Institute of Asian Affairs, 1984.
 
-[^17]: And Canberra’s planners intended this situation to continue: the Canberra Area Transportation Study of 1963 treated public transport as an afterthought, simply assuming that it could operate on the freeway network planned for the car-driving majority-see *Canberra: Myths and Models*, by Karl Fischer, 1984.
-
-[^18]: This evidence has been collected from 1976 onwards and is summarised in Travel to Work in Australian Capital Cities, 1976 to 2006, by P. Mees, J. Stone and E. Sorupia, 2007.
+[^18]: This evidence has been collected from 1976 onwards and is summarised in _Travel to Work in Australian Capital Cities, 1976 to 2006_, by P. Mees, J. Stone and E. Sorupia, 2007.
 
 [^19]: The remaining part of this section relies on work by Paul Mees to which he has very generously given me access.
 
 [^20]: The current mode share of the car is around 81%, too. But the mode share of public transport is lower. Indeed, the 1981 figure of 9.9% is more than the target for 2011!
 
-[^21]: See *Travel to Work in Australian Capital Cities*, 1976 to 2006, by P. Mees, J. Stone and E. Sorupia, 2007. Mees, Stone and Sorupia point out that some of the increase in cycling may have occurred at the expense of walking, which fell from 4.6 to 4.0 per cent between 1976 and 1981.
+[^21]: See P. Mees, J. Stone and E. Sorupia, 2007. Mees, Stone and Sorupia point out that some of the increase in cycling may have occurred at the expense of walking, which fell from 4.6 to 4.0 per cent between 1976 and 1981.
 
 [^22]: NCDC (1984) *Metropolitan Canberra: Policy Plan, Development Plan*, Canberra, pp. 76-77.
 

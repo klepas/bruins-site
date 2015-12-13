@@ -246,7 +246,7 @@ Unfortunately, one is bound yet again for disappointment. On p. 58 of *Transport
 
 
 
-hese targets for modal shift in journey to work can hardly be described as courageous. All ‘sustainable’ modes of transport---walking, cycling and public transport---are to have, by 2026, their shared doubled, relative to their performance in 2006 by. Canberra’s currently pathetic 9% for public transport (in 2011) is therefore to be increased to 16% by 2026. Presumably, then, by 2031, assuming the positive trend continues, the mode share of public transport for journeys to work will be approximately 20%. So by then Canberra’s performance will be roughly equivalent to the current performance of cities like Beijing, New York, Rome and Toronto.[^14]
+These targets for modal shift in journey to work can hardly be described as courageous. All ‘sustainable’ modes of transport---walking, cycling and public transport---are to have, by 2026, their shared doubled, relative to their performance in 2006 by. Canberra’s currently pathetic 9% for public transport (in 2011) is therefore to be increased to 16% by 2026. Presumably, then, by 2031, assuming the positive trend continues, the mode share of public transport for journeys to work will be approximately 20%. So by then Canberra’s performance will be roughly equivalent to the current performance of cities like Beijing, New York, Rome and Toronto.[^14]
 
 
 

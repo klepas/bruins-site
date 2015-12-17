@@ -1,10 +1,12 @@
 ---
+
 layout: post
 title: "Using Luther to Understand Heidegger on Anxiety"
 date: 2007-07-12
 author: Carleton B. Christensen
 version: "12.10.2007, 14:49"
-abstract: "I will be adding an abstract later. This paper presupposes an understanding of material presented in the Powerpoint presentation [Heidegger on Anxiety](/files/ppts/Heidegger_on_Anxiety_27.07.07_9.32.ppt)."
+abstract: "I will be adding an abstract later. This paper presupposes an understanding of material presented in the Powerpoint presentation [Heidegger on Anxiety](/files/ppts/Heidegger_on_Anxiety_27.07.07_9.32.ppt). I will eventually expand the claim that one can use the life of Luther to understand Heidegger. Specifically, I will argue that one can use, not Luther’s _Anfechtungen_, but the events of 1505 which led him to enter the monastery, in order to understand what Heidegger means by Dasein’s _Sein zum Tode_."
+
 ---
 
 ## § 1: Anxiety in the everyday, pre-philosophical sense

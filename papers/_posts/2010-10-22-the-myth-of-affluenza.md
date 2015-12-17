@@ -185,6 +185,7 @@ Schor, Juliet, *The Overworked American--The Unexpected Decline of Leisure*, New
 [^17]: See Martens 2010.
 
 [^18]: ‘Authenticity’ actually a rather inept but perhaps unavoidable translation of the German word *Eigentlichkeit*, which capture the *formal* character of this condition, that is, its character as *not* privileging any substantive life style, much better.
+
 [^19]: In order to show this properly  one would have show, in an exercise in what Kant calls transcendental philosophy, that self-consciousness is only possible for a participant in social practices, not the least linguistic practices. One could then draw upon the claim just made participation in a social practice must be understood as implicating the capacity to move out of it as the situation requires, in other words, that that participation *in* a social practices  presupposes the capacity to move between them in rational response to the particularities of the situation.
 
 [^20]: This *is phronesis* and not merely *techné*. For Aristotle *techné* is certainly creative and never just the mechanical application of rules. Nonetheless, as an ‘art’, it is a teachable ability whereas practical wisdom cannot be taught, at least not in the same way, but is primarily be acquired, if at all, through experience. As Aristotle says, “practical wisdom is a virtue and not an art.” (*NE*, Bk. VI, Ch.5, 1140b25)
@@ -194,7 +195,6 @@ Schor, Juliet, *The Overworked American--The Unexpected Decline of Leisure*, New
 [^22]: We see here, incidentally, why Heidegger claims, rightly in my opinion, that for which reason Heidegger rightly says that in the notion of *phronesis* Aristotle glimpsed the phenomenon of conscience--see Heidegger 1992, § 8, H 56.
 
 [^23]: It is a condition in which the just prosper--see Psalms 1:3.
-
 
 [^24]: *NE*, Bk. I, Ch4, 1095b33-1096a2
 

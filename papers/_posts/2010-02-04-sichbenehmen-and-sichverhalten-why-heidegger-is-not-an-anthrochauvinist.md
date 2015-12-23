@@ -233,7 +233,7 @@ Wheeler, Michael 2005 *Reconstructing the Cognitive World: The Next Step*, Cambr
 
 [^note_25]: Perceptual experience through *one* sense organ is, in the case of vision, derivative and possibly in the case of the other senses not really possible—which constitutes the sound basis for the prioritising of vision in philosophy since it is, for us humans at least, the most informationally dense, hence primary form of perceptual experience.
 
-[^note_26]: Clark and Grush do not see or at least do not emphasise. They tend to put the point as if it were simply an empirical matter of feedback mechanisms being, as they put it, ‘laggardly’—see Clark and Grush, p.6.
+[^note_26]: Clark and Grush do not see or at least do not emphasise this. They tend to put the point as if it were simply an empirical matter of feedback mechanisms being, as they put it, ‘laggardly’—see Clark and Grush, p.6.
 
 [^note_27]: Feedback in the colloquial sense of the term is a report back on current opinions about, and effects of, actions previously undertaken.
 

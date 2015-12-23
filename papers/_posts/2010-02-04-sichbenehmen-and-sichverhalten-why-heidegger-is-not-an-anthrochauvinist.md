@@ -28,7 +28,7 @@ The gist of this odd passage is clear: the behaviour of an animal, although purp
 
 >is precisely a holding-in (*Ein-Behalten*) and taking-in (*Ein-Nehmen*), this without any kind of reflectiveness (*Reflexion*). An animal’s conducting of itself (*Benehmen*) is, as a mode of Being in general, only possible on the basis of the animal’s character as taken up or pre-occupied with itself (*Eingenommenheit des Tieres in sich*). We characterise *the specifically animal way of being present to itself (Bei-sich-sein)*, which has nothing to do with the selfhood of the self-comporting human being as person—that Being-taken-up-with-itself within which each and every phase of its conducting of itself is possible—as *dazedness* (*Benommenheit*). (WS 29/30, § 58 b), H 347; my translation)
 
-Heidegger points out that the word Benommenheit
+Heidegger points out that the word _Benommenheit_
 
 >is typically used to characterise a determinate psychological condition of a human being which can last for some greater or less length of time. Thereby we mean that condition which lies between consciousness and unconsciousness. … [But] (g)iven all that has been said thus far, in speaking now of dazedness as the essential structure of the animal, there can be no question of simply transposing this condition, familiar to us from human self-experience, to the animal, as its chronic state, and maintaining that the animal, in contrast to the human being, is perpetually dazed—which would immediately entail that the animal could in principle be free of this condition. (WS 29/30, § 58 b), H 348; my translation)
 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: “Technology and Human Existence—Overview of the Philosophy of Technology”
+permalink: /courses/:collection/:title/
+title: "Technology and Human Existence—Overview of the Philosophy of Technology"
 date: 1994-05-06
-abstract: “This is the first of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime.”
-
+abstract: "This is the first of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime."
+---
 
 ## Overview of the Philosophy of Technology
 
@@ -58,8 +59,8 @@ Of course, in saying this I am making a factual claim, namely, that in our times
 
 Thus, even though there is and has been since the sixties or so, a growing feeling that our society needs to confront the issue of what technology is and what it does, there is still a very broad spectrum of views and attitudes towards technology. We can represent this broad spectrum on a scale from right to left. On the right, we can put the technophiles, who believe that our modern, scientifically-based technology is marching us inexorably towards human emancipation; in the centre the moderates, who believe that whether any particular technology is good or bad depends on the use to which it is put; and finally on the left, the radical techno-critics, who believe that there is something intrinsically destructive and dominating about modern technology. Representatives of all three positions are:
 
-|         Right         |    Centre   | Left          |
-|:---------------------:|-------------|---------------|
+|           Right            | Centre            | Left          |
+|:--------------------------:|:------------------|:--------------|
 | Richard Buckminster-Fuller | Emmanuel Mesthene | Jacques Ellul |
 
 Let us look more closely at the moderate and techno-critical positions.
@@ -142,4 +143,3 @@ But this is to anticipate things a little. In the next three lectures I want to 
 [^14]: Ginsberg captures the stance of the radical critics well: “Ourselves caught in the giant machine are conditioned to its terms, only holy vision or technological catastrophe or revolution break “the mind-forg’d manacles.”—Allen Ginsberg, Introduction to Timothy Leary’s Jail Notes, New York, Douglas Books, 1971.
 
 [^15]: This paragraph was added on January 9th, 2016.
-

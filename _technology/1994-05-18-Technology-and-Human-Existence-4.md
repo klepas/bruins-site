@@ -1,11 +1,10 @@
 ---
 layout: post
-title: “Technology and Human Existence—The Radical Techno-Critic Jacques Ellul” 
+permalink: /courses/:collection/:title/
+title: "Technology and Human Existence—The Radical Techno-Critic Jacques Ellul"
 date: 1994-05-18
 version: "19.05.1994"
-
-abstract: “This is the fourth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime.”
-
+abstract: "This is the fourth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime."
 ---
 
 ## Jacques Ellul and the Technological Society
@@ -22,11 +21,11 @@ In order to unlock just what does seem to be right in Ellul, we must try to crac
 
 Given this structure, we at least know where to look in our search for intelligibility. I want to start with Ellul’s concept of technique, and thus with his discussion on pages 119 to 122. Now by technique he does not mean what we normally understand by this word. We often mean by this word something like skill: the technique of Horowitz the pianist, the technique of Rembrandt the painter and the technique of Bradman the batsman. But this is not what Ellul means by technique. What he means by this word is intimated by two things he says: Firstly, the concept of technique must be distinguished from that of a machine; it is, he says, “a radical error to think of technique and machine as interchangeable.” (p.122) Secondly, he insists that while these two concepts are not identical, they are nonetheless related. He appears to think that there are at least three ways in which these two concepts are related:
 
-1.	“Technique certainly began with the machine” (p.119); the modern world, the world of technique, would not exist without the machine (see p.120). 
+1.	“Technique certainly began with the machine” (p.119); the modern world, the world of technique, would not exist without the machine (see p.120).
 
-2.	“Technique integrates the machine into society” (p.121); it is what enables a machine to play a part in the social process of production. Without technique, the machine is just a lump of metal; 
+2.	“Technique integrates the machine into society” (p.121); it is what enables a machine to play a part in the social process of production. Without technique, the machine is just a lump of metal;
 
-3.	“The machine ... represents the ideal to which technique strives” (p.120). That is, technique strives to function, to operate, like a machine. 
+3.	“The machine ... represents the ideal to which technique strives” (p.120). That is, technique strives to function, to operate, like a machine.
 
 These remarks are all pretty obscure. In order to make sense of them and Ellul’s concept of technique itself, the best thing to do is to develop our own conception of technique. If our concept of technique allows us to make sense of how technique and the machine are at once different yet related in the three ways mentioned, then we can reasonably conclude that our conception of technique is also Ellul’s.
 
@@ -76,7 +75,7 @@ I do not want to deal with the arguments Ellul adduces to show that really there
 
 Rather than dealing with these very pessimistic arguments and claim, I want to conclude by asking whether there are any empirical indications that our modern technological society is indeed, as Ellul alleges, heading towards a situation where the process of technological development is mindless, that is, where it is no longer guidable by considerations of human well-being. Surely, in any society which is heading in this direction we can expect to find at least two things.
 
-Firstly, we can expect to find is a growing public concern about the effects and impact of technological development. This will manifest itself in calls for greater public control over technological development and implementation. The call will go out for some kind of deliberate attempt to work out in advance what the likely effects of this or that new technology will be. These attempts will be made and in the process people will discover that working out in advance just what new technologies will do is an extraordinarily difficult business. They will discover that in assessing long-term and distant effects, fundamental assumptions will have to be made which, if they prove wrong or incomplete, will render all the often quite massive calculations and predictions quite pointless. And they will discover that before they can determine whether this or that technology will be good for humanity, they have to confront issues of a decidedly non-technological nature, such as what kind of creatures we humans ought to be and what kind of world we ought to live in. 
+Firstly, we can expect to find is a growing public concern about the effects and impact of technological development. This will manifest itself in calls for greater public control over technological development and implementation. The call will go out for some kind of deliberate attempt to work out in advance what the likely effects of this or that new technology will be. These attempts will be made and in the process people will discover that working out in advance just what new technologies will do is an extraordinarily difficult business. They will discover that in assessing long-term and distant effects, fundamental assumptions will have to be made which, if they prove wrong or incomplete, will render all the often quite massive calculations and predictions quite pointless. And they will discover that before they can determine whether this or that technology will be good for humanity, they have to confront issues of a decidedly non-technological nature, such as what kind of creatures we humans ought to be and what kind of world we ought to live in.
 
 Now what I have just described quite abstractly has already begun to take place in our society, in particular in America. In the late sixties and seventies, people grew so concerned about the impact of technological change that they tried to introduce a thing called “Technology Impact Assessment.” We don’t here much about this in Australia, but it in fact goes hand in hand with something I’m sure you’ve all heard of, namely, “Environmental Impact Assessment”. In fact, in America both kinds of assessment grew up together. And indeed both have encountered the kinds of epistemological problems and problems of value I have just mentioned. People have discovered that it is a very dubious business trying to work out in advance just what a new technology will do, just as they have discovered that it is a very dubious business trying to work out in advance what a new development projects will do to the environment.
 

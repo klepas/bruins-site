@@ -56,7 +56,7 @@ And some writers have actually applied this principle to the _Challenger_ incide
 
 > ... had a deep commitment to the technological institution involved \[i.e., to N.A.S.A. and its space shuttle programme—C.B.C.\], but were insulated from the uncertainties of those with direct responsibility for producing knowledge about the safety of the solid booster rocket.[^13]
 
-In short, because Mulloy and the other decision-makers at N.A.S.A. had never actually been at the coal face studying the behaviour of O-rings, they had never had to face the uncertainties which these components presented. This distance from the coal-face led them not only placed greater degree of confidence in the O-rings; it led them to place an unjustifiable degree of confidence in these components.
+In short, because Mulloy and the other decision-makers at N.A.S.A. had never actually been at the coal face studying the behaviour of O-rings, they had never had to face the uncertainties which these components presented. This distance from the coal-face led them not only to place a _greater_ degree of confidence in the O-rings; it also led them to place an _unjustifiable_ degree of confidence in them.
 
 But other writers have proceeded differently. They have pointed out that almost always designing and operating technological systems is not a matter of following formally prescribed rules. They claim that whenever one investigates system failures, or indeed, technological systems operating normally, one finds the same situation:
 

@@ -1,4 +1,4 @@
-# Site settings
+﻿# Site settings
 title: Bruin Christensen
 email: carleton.christensen@anu.edu.au
 description: > # this means to ignore newlines until "baseurl:"
@@ -18,5 +18,10 @@ collections:
   descartes:
     output: true
     permalink: /courses/:collection/
-    title: "PHIL1337 Descartes"
+    title: "Descartes"
     abstract: "The materials I use for introductory courses on René Descartes"
+  technology:
+    output: true
+    permalink: /courses/:collection/
+    title: "Technology and Human Existence"
+    abstract: "The materials I use for a six-week First Year option on the philosophy of technology"

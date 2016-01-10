@@ -3,7 +3,7 @@
 layout: post
 title: “Technology and Human Existence—The Technophile Richard Buckminster Fuller”
 date: 1994-05-07
-abstract: “This is the second of a set of twelve course notes written in 1994 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime.”
+abstract: “This is the second of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime.”
 
 ---
 

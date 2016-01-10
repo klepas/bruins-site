@@ -2,7 +2,7 @@
 layout: post
 title: “Technology and Human Existence—Overview of the Philosophy of Technology”
 date: 1994-05-06
-abstract: “This is the first of a set of twelve course notes written in 1994 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime.”
+abstract: “This is the first of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology.<br><br/>I have only made some slight changes to the texts and some of my views have of course changed in the meantime.”
 
 
 ## Overview of the Philosophy of Technology

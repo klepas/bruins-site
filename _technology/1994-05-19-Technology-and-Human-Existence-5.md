@@ -4,7 +4,7 @@ permalink: /courses/:collection/:title/
 title: "Problems of Complexity—The _U.S.S. Vincennes_"
 date: 1994-05-19
 version: "09.12.1995"
-abstract: "This is the fifth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for a half-semester first year option on the philosophy of technology."
+abstract: "This is the first of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
 ---
 
 ## Steering Complex Technological Systems—The _U.S.S. Vincennes_ and _Iran Air Flight 655_

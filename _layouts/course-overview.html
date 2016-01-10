@@ -4,15 +4,15 @@ layout: base
 
 <section class="content course">
   <header class="page course">
-    <h2 class="page-title">{{ page.title }}</h2>
+    <h2 class="page-title">{{ page.title | markdownify }}</h2>
     <div class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
+          {% assign the-collection = page.collection %}
           {% for collection in site.collections %}
-          {% capture label %}{{ collection | first }}{% endcapture %}
-          {% if site.collections.[label].abstract %}
+          {% capture label %}{{ collection[0] }}{% endcapture %}
+          {% if label == page.collection %}
           {{ site.collections.[label].abstract | truncatewords:90 | markdownify }}
-          {% endif %}
         </div>
         {% if site.collections.[label].['pdf'] %}
         <a class="course-outline" href="{{ site.baseurl }}{{ site.collections.[label].['pdf'] }}">
@@ -43,6 +43,8 @@ layout: base
         </li>
         {% endif %}
       {% endfor %}
+      {% break %}
+      {% endif %}
       {% endfor %}
     </ul>
   </article>

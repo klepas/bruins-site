@@ -1,8 +1,7 @@
 ---
-
 layout: course-overview
 title: "Course materials for the six-week First Year option _Technology and Human Existence_"
-
+collection: "technology"
 ---
 
 ## Introduction

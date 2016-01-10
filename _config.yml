@@ -2,9 +2,10 @@
 title: Bruin Christensen
 email: carleton.christensen@anu.edu.au
 description: > # this means to ignore newlines until "baseurl:"
-  This is the personal website of Carleton B. Christensen, AKA Bruin Christensen. Please visit the site    and download anything of interest to you!
+  This is the personal website of Carleton B. Christensen, AKA Bruin
+  Christensen. Please visit the site and download anything of interest to you!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://bruinchristensen.net"
+url: "http://cbchristensen.net"
 
 # Excluded files
 exluded: Gemfile, Gemfile.lock, todo.md, .DS_Store, vendor, .bundle

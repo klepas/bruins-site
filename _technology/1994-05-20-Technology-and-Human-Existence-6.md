@@ -3,7 +3,9 @@ layout: post
 permalink: /courses/:collection/:title/
 title: "Problems of Complexity—The Space Shuttle _Challenger_"
 date: 1994-05-20
-abstract: "This is the first of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+version: "20.05.1994"
+abstract: "This is the sixth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+
 ---
 
 ## Steering Complex Technological Systems—The _Challenger_ Disaster

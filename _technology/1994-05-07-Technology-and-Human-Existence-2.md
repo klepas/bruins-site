@@ -3,7 +3,8 @@ layout: post
 permalink: /courses/:collection/:title/
 title: "The Technophile Richard Buckminster Fuller"
 date: 1994-05-07
-abstract: "This is the first of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+version: "06.05.1994"
+abstract: "This is the second of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
 ---
 
 ## Richard Buckminster Fuller on Innovation, Agility and Restless Human Being

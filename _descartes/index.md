@@ -1,6 +1,6 @@
 ---
 layout: course-overview
-title: "Descartes course materials"
+title: "_Descartes_"
 collection: "descartes"
 ---
 

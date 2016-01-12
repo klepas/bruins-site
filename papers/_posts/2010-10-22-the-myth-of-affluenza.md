@@ -12,7 +12,7 @@ abstract: "In the 1990’s America experienced a wave of popular writing on cons
 
 In the 1990’s America experienced a wave of popular writing on consumerism of which the flagships were *The Overworked American* by Juliet Schor, *Luxury Fever* by Robert Frank and *Affluenza--The All-Consuming Epidemic* by John de Graaf, David Wann and Thomas Naylor.[^1] In these writings American consumer capitalism was presented as a treadmill in which people overwork in order to overspend, with deleterious consequences both for themselves and for society at large. This literature, and in particular these flagships, have been appropriated by Clive Hamilton and Richard Deniss of *The Australia Institute* in their book *Affluenza--When Too Much is Never Enough*. The book differs, however, from its sources in two important respects: firstly, the critique of consumerism developed from these American models is posited as a basis for reviving a left politics with a real alternative to contemporary consumer society.[^2] Secondly, a *psychological* explanation is sought of what drives the consumerist cycle of work-and-spend, hence requires correction if consumerism is to be overcome.[^3] The first objective explains the second: Hamilton and Deniss provide their psychological account of consumerism because if it is right, then consumer society requires a radical transformation. And the claim that society requires radical transformation is an essential feature of a seriously left politics.
 
-In this paper, I will argue that this critique and explanation are deficient. Furthermore, I will attempt at least to intimate how a better account of consumerism and its causes might be given. This will indicate how better to proceed in developing the kind of *critical* theory sought by Hamilton and Deniss, one which could both contribute tophrónesis&#243;&#243; revitalising left politics and intimate how better to shift consumption in a more sustainable direction.
+In this paper, I will argue that this critique and explanation are deficient. Furthermore, I will attempt at least to intimate how a better account of consumerism and its causes might be given. This will indicate how better to proceed in developing the kind of *critical* theory sought by Hamilton and Deniss, one which could both contribute to revitalising left politics and intimate how better to shift consumption in a more sustainable direction.
 
 ## § 1: Consumerism according to the Australia Institute
 
@@ -149,6 +149,8 @@ Martens, Lydia “Creating the Ethical Parent-Consumer Subject: Commerce, Morali
 Sassatelli, Roberta *Consumer Culture--History, Theory and Politics*, London: Sage Publications, 2007
 
 Schor, Juliet, *The Overworked American--The Unexpected Decline of Leisure*, New York: Basic Books, 1991
+
+## Notes
 
 [^1]:   This book was based on two  documentaries produced by de Graaf and Vivia Boe and broadcasted on PBS in 1997--see [http://www.pbs.org/kcts/affluenza/](http://www.pbs.org/kcts/affluenza/)
 

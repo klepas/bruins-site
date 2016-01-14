@@ -186,7 +186,7 @@ Schor, Juliet, *The Overworked American--The Unexpected Decline of Leisure*, New
 
 [^17]: See Martens 2010.
 
-[^18]: ‘Authenticity’ actually a rather inept but perhaps unavoidable translation of the German word *Eigentlichkeit*, which capture the *formal* character of this condition, that is, its character as *not* privileging any substantive life style, much better.
+[^18]: ‘Authenticity’ actually a rather inept but perhaps unavoidable translation of the German word *Eigentlichkeit*. The German word captures the *formal* character of the condition, that is, its character as *not* privileging any substantive life style, much better.
 
 [^19]: In order to show this properly  one would have show, in an exercise in what Kant calls transcendental philosophy, that self-consciousness is only possible for a participant in social practices, not the least linguistic practices. One could then draw upon the claim just made participation in a social practice must be understood as implicating the capacity to move out of it as the situation requires, in other words, that that participation *in* a social practices  presupposes the capacity to move between them in rational response to the particularities of the situation.
 

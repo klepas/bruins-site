@@ -24,6 +24,10 @@ $list-item-border: 1px solid transparentize($base-font-color, 0.8);
       border-bottom: none;
     }
 
+    .item-course {
+      font-style: italic;
+    }
+
     .item-title {
       float: left;
       width: 100%;
@@ -78,4 +82,3 @@ $list-item-border: 1px solid transparentize($base-font-color, 0.8);
   margin-top: 3em;
   border-top: $list-item-border;
 }
-

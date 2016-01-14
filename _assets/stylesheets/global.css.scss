@@ -39,13 +39,13 @@ div.page-content {
 
 section.content {
   margin: 8px;
-  margin-top: 4em;
+  margin-top: 3em;
   @include media(min-width $tiny-screen max-width $large-screen, 12) {
   }
 
   & article.post.content,
   & article.page.content {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     @include media(max-width $tiny-screen) {
       @include span-columns(12);
       @include shift(0);

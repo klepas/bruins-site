@@ -291,7 +291,7 @@ van Buren, John 1994 „Martin Heidegger, Martin Luther“, in _Reading Heidegge
 
 [^55]: Das hängt mit dem Genie des Kapitalismus zusammen—der Tatsache, nämlich, daß in ihm der Konsum zu einem systemerhaltenden Moment der Produktion gediehen ist. Im übrigen ist in jüngster Zeit der Gegensatz zwischen kürzfristiger und langfristiger Rationalität nur noch stärker geworden, weil man im Namen von Flexibilität, freier Wahl und Selbstverantwortung die Lebensrhythmen immer mehr aufgesplittert hat: immer mehr Individuen haben unterschiedliche Arbeitsstunden, Ruhetage und Ferienwochen, gehen auf verschiedene Schulen, usw., und wir müssen ja alle jetzt Aufgaben erledigen, die einst staatlichen und kommunalen Behörden zufielen. Hier liegt der wahre Grund dafür, daß so viele meinen, zeitarm zu sein—vgl. Shove 2003. Denn durch diese Aufsplitterung wird die Handlungskoordination immer komplizierter und muß entsprechend bewußter vollzogen werden.
 
-[^56]: Die Vernunft wird tendenziell zur Unvernunft, die Unvernunft Vernunft.
+[^56]: Die Vernunft wird tendenziell zur Unvernunft, die Unvernunft zur Vernunft.
 
 [^57]: Das ist ein Zustand, in dem es gemeinsam gewußt ist, daß jeder seinerseits seine Leistung nur vorgaukelt, die anderen aber ihrerseits das nicht beim Namen nennen wollen, weil sie wissen, daß man nur so zurecht kommt.
 

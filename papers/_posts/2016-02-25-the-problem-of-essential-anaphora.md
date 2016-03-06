@@ -217,7 +217,7 @@ What, however, if Perry’s initial conception of belief should fail? What indee
 
 There are forms of belief such that
 
-1.	Someone S* who does not identify with the subject S of these forms of intentionality only truly individuates them as the particular intentional states or experiences they are if S* uses a sentence of the form “S CV &#934;(PN)”, in which
+1.	Someone S\* who does not identify with the subject S of these forms of intentionality only truly individuates them as the particular intentional states or experiences they are if S\* uses a sentence of the form “S CV &#934;(PN)”, in which
 
 	(a)	‘CV’ is some epistemic verb such as ‘believes’, ‘realises’, ‘sees’ etc.; 
 

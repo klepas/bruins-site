@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "The Problem of Essential Anaphora"

@@ -219,7 +219,7 @@ There are forms of belief such that
 
 1.	Someone S\* who does not identify with the subject S of these forms of intentionality only truly individuates them as the particular intentional states or experiences they are if S\* uses a sentence of the form “S CV &#934;(PN)”, in which
 
-	(a)	‘CV’ is some epistemic verb such as ‘believes’, ‘realises’, ‘sees’ etc.; 
+	(a)	‘CV’ is some epistemic verb such as ‘believes’, ‘realises’, ‘sees’, etc.; 
 
 	(b)	‘PN’ is a third personal pronoun, whether in the nominative or some other case, which refers anaphorically to S; and
 

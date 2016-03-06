@@ -87,6 +87,10 @@ section.content {
   p, li, dd {
     font-family: $fontface-serif;
   }
+  p.logic {
+    font-family: $fontface-monospace;
+    text-align: center;
+  }
   blockquote {
     color: #111;
     margin-left: 0.45em;

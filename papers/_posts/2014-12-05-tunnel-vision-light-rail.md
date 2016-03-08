@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Why Light Rail causes Tunnel Vision  — A Critique of the Non-Critique of _Transport for Canberra_"
+title: "Why Light Rail causes Tunnel Vision —A Critique of the Non-Critique of _Transport for Canberra_"
 
 date: 2014-12-05
 

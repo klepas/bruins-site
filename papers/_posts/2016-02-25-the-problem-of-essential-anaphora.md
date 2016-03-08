@@ -1,4 +1,4 @@
-““---
+---
 layout: post
 title: "The Problem of Essential Anaphora"
 date: 2016-02-25

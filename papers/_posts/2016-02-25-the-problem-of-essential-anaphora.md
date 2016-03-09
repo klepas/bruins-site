@@ -118,15 +118,15 @@ Thus far, this is mere assertion with which many would presumably disagree. So C
 
 > **Premise 1** : Two agents can have all the same impersonal beliefs and desires yet act differently.
 
-> **Premise 2** : In such cases there must be a difference _in beliefs and desires_ between the two agents which explains the difference in behaviour.
+> **Premise 2** : In such cases there must be a difference _in beliefs and/or desires_ between the two agents which explains the difference in behaviour.
 
-> **_Lemma_** : This explanatory difference must therefore be a difference in beliefs and desires which are not impersonal, that is, are personal, since _ex hypothesi_ the two agents have the same impersonal beliefs and desires.
+> **_Lemma_** : This explanatory difference must therefore be a difference in beliefs and/or desires which are not impersonal, that is, are personal, since _ex hypothesi_ the two agents have the same impersonal beliefs and desires.
 
-> **Premise 3** : The only kind of personal belief the agents could have is first-personal, hence indexical.
+> **Premise 3** : The only kind of personal belief the agents could have, at least in the kind of case represented by François and Dilip, is first-personal, hence indexical.
 
 > **_Conclusion_** : In this kind of case a truly complete action explanation or rationalisation must attribute first-personal, hence indexical belief. Merely impersonal action explanations or rationalisations are incomplete because they lack this missing indexical component.
 
-Clearly, the conclusion of this argument is the IIC, at least in its application to this kind of case.
+Clearly, the conclusion of this argument is the IIC, at least in its application to the kind of case represented by François and Dilip.
 
 Evidently, those attracted by this kind of argument are assuming that if two agents display different behaviours, then they have different beliefs or desires. Or, as Cappelin and Dever put it, they are assuming that “when two agents have the same belief-desire sets, they perform the same action.” (p.52) More accurately, they are assuming that when two agents have the same belief-desire sets, they perform the same action _ceteris paribus_ since for some external reason an agent might fail to perform an action towards which he or she is psychologically disposed, e.g., just as the agent is about to act, the agent is struck dead by a bolt of lightning. Cappelin and Dever rightly accept this assumption—see p.52. They claim, however, that this assumption does not entitle one to conclude that when agents with the same impersonal belief/desire sets behave differently, the difference in behaviour must be due to a difference _in belief and desire_, hence a difference in either first-personal or more generally indexical belief and desire. There can be, they maintain, some other difference between agents which explains the difference in behaviour, so the second premise of the argument above is false.
 

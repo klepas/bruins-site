@@ -24,3 +24,8 @@ collections:
     permalink: /courses/:collection/
     title: "Technology and Human Existence"
     abstract: "The materials I use for a six-week First Year option on the philosophy of technology"
+  dilthey:
+    output: true
+    permalink: /courses/:collection/
+    title: "Wilhelm Dilthey"
+    abstract: "The materials I use for a half-semester introduction to the thought of Wilhelm Dilthey"

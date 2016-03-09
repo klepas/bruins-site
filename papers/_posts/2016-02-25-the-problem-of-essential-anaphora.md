@@ -292,7 +292,9 @@ Now Perry claims that this latter truth condition, which is reflexive because it
 
 More succinctly put:
 
+
 <p class="logic">Lingens’ utterance <em>u</em> of the sentence “I am lost in the Stanford library” is true<br>if and only if<br>the speaker of <em>u</em> belongs to the extension of the relational property determined by the predicate ‘am lost in the Stanford library’ contained in <em>u</em></p>
+
 
 And most succinctly put:[^21]
 

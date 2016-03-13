@@ -115,6 +115,9 @@ section.content {
 }
 
 header.post.header {
+  h2.post-title p {
+    text-align: center;
+  }
   p.post-meta {
     margin: 0.75em 0 1em 0;
     padding: 1em 0;

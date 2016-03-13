@@ -39,16 +39,16 @@ layout: base
           -->
 
           <div class="card-header">
-            <h3>{{ post.title | markdownify }}</h3>
+            <h3>{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
             <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           </div>
           <div class="card-copy">
             {% if post.abstract %}
-            <p>{{ post.abstract | truncatewords:50 | markdownify }}</p>
+            <p>{{ post.abstract | truncatewords:120 | markdownify }}</p>
             {% endif %}
           </div>
+        </div>
       </a>
-      </div>
       {% endfor %}
     </div>
   </section>

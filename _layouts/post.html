@@ -4,7 +4,7 @@ layout: base
 
 <section class="content">
   <header class="post header">
-    <h2 class="post-title">{{ page.title | markdownify }}</h2>
+    <h2 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
     <p class="post-meta">
       {{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %}&emsp;&middot;&emsp;{{ page.author }}{% endif %}
@@ -20,7 +20,7 @@ layout: base
     <div class="abstract">
       <h2 class="abstract-heading">Abstract</h2>
       <p class="abstract">
-      {{ page.abstract | markdownify }}
+      {{ page.abstract | markdownify | remove: '<p>' | remove: '</p>' }}
       </p>
     </div>
     {% endif %}

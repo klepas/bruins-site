@@ -32,8 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section.introduction {
-  margin: 8px;
-  margin-top: 3em;
   text-align: left;
   p.home-intro.hello {
     font-family: $fontface-sans;
@@ -46,23 +44,11 @@ section.introduction {
     font-size: 1.3em;
     font-weight: 300;
   }
-  @include outer-container;
-  @include media(min-width $tiny-screen max-width $large-screen, 12) {
-  }
   p.home-intro {
     font-family: $fontface-serif;
     font-weight: 400;
     font-size: 1.1em;
     margin-bottom: 0.5em;
-    @include media(max-width $tiny-screen) {
-      @include span-columns(10);
-      @include shift(1);
-      font-size: 0.875em;
-    }
-    @include media(min-width $large-screen, 10) {
-      @include span-columns(8);
-      @include shift(1);
-    }
     strong {
       font-weight: bold;
     }

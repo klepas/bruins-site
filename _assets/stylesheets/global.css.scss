@@ -37,20 +37,22 @@ div.page-content {
   margin-bottom: 3em;
 }
 
-section.content {
+section.content,
+section.introduction {
   margin: 8px;
   margin-top: 3em;
   @include media(min-width $tiny-screen max-width $large-screen, 12) {
   }
 
   & article.post.content,
-  & article.page.content {
+  & article.page.content,
+  & div.site-intro  {
     margin-bottom: 1.5em;
     @include media(max-width $tiny-screen) {
-      @include span-columns(12);
-      @include shift(0);
+      @include span-columns(10);
+      @include shift(1);
     }
-    @include media(min-width $large-screen, 12) {
+    @include media(min-width $large-screen) {
       @include span-columns(10);
       @include shift(1);
     }

@@ -31,19 +31,17 @@
     .hero-copy {
       text-align: center;
 
-      p {
-        color: $hero-color;
-        font-family: $fontface-sans;
-        font-weight: 200;
-        font-size: 1.8em;
-        line-height: 1.6;
-        text-shadow: rgba(0,0,0,0.6) 1px 1px 3px;
-        margin: 0 auto 1em auto;
+      color: $hero-color;
+      font-family: $fontface-sans;
+      font-weight: 200;
+      font-size: 1.8em;
+      line-height: 1.6;
+      text-shadow: rgba(0,0,0,0.6) 1px 1px 3px;
+      margin: 0 auto 1em auto;
 
-        @include media($large-screen) {
-          font-size: 1.8em;
-          max-width: 60%;
-        }
+      @include media($large-screen) {
+        font-size: 1.8em;
+        max-width: 60%;
       }
     }
   }

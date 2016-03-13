@@ -46,9 +46,6 @@ $list-item-border: 1px solid transparentize($base-font-color, 0.8);
             line-height: inherit;
           }
         }
-        @include media($tiny-screen) {
-          text-align: center;
-        }
       }
 
       @include media($large-screen) {

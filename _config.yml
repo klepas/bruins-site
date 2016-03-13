@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cbchristensen.net"
 
 # Excluded files
-exluded: Gemfile, Gemfile.lock, todo.md, .DS_Store, vendor, .bundle
+exclude: [README.md, Rakefile, .gitignore, Gemfile, Gemfile.lock, vendor]
 
 # Build settings
 markdown: kramdown

@@ -5,7 +5,7 @@ permalink: /courses/
 ---
 <section class="content courses">
   <header class="page courses">
-    <h2 class="page-title">{{ page.title }}</h2>
+    <h2 class="page-title">{{ page.title | remove: '<p>' | remove: '</p>' }}</h2>
   </header>
 
   <article class="page content">
@@ -15,12 +15,12 @@ permalink: /courses/
       <li class="item">
         <div class="item-title">
           <h3>
-            <a class="item-link item-course" href="{{ collection[0] }}">{{ site.collections.[label].title | markdownify }}</a>
+            <a class="item-link item-course" href="{{ collection[0] }}">{{ site.collections.[label].title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
           </h3>
         </div>
         {% if site.collections.[label].abstract %}
         <div class="item-abstract">
-          <p class="abstract">{{ site.collections.[label].abstract | truncatewords:90 | markdownify }}</p>
+          <p class="abstract">{{ site.collections.[label].abstract | truncatewords:90 | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         </div>
         {% endif %}
       </li>

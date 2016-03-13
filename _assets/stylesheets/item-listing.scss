@@ -46,6 +46,9 @@ $list-item-border: 1px solid transparentize($base-font-color, 0.8);
             line-height: inherit;
           }
         }
+        @include media($tiny-screen) {
+          text-align: center;
+        }
       }
 
       @include media($large-screen) {
@@ -62,7 +65,7 @@ $list-item-border: 1px solid transparentize($base-font-color, 0.8);
     }
 
     .item-abstract {
-      padding-top: 1em;
+      margin-top: 2em;
       @include media($large-screen) {
         @include span-columns(8 of 12);
       }

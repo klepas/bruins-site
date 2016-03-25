@@ -151,7 +151,7 @@ The property of being about something is a very important and much discussed not
 
 [^5]: Organicist conceptions involve the idea that the whole can affect its parts and their arrangement in a manner not possible for a mechanist whole. Vitalist doctrines in biology, associated with the the German embryologist Hans Driesch (1867-1941) and now discredited, are forms of organicism. I hasten to add, however, the organicist conceptions need not be vitalist. The important feature about organicism is its causal holism, something it shares with certain conceptions, not of *nature*, but of certain kinds of human and social reality. Thus, the German philosopher Wilhelm Dilthey (1833-1911) conceived of human persons, societies, cultures and traditions as wholes of a quite different, genuinely ‘holistic’ kind, as opposed to the mechanistic wholes to be found in nature. For more on Driesch, see http://en.wikipedia.org/wiki/Hans\_Driesch. For an account of vitalism, see http://en.wikipedia.org/wiki/Vitalism.
 
-[^6]: See Gaukroger, p.106f., for an account of this dream and the vision Descartes had a mathematically and scientifically organised system of all human knowledge.
+[^6]: See Gaukroger, p.106f., for an account of this dream and the vision Descartes had of a mathematically and scientifically organised system of all human knowledge.
 
 [^7]: Or at least no less interesting in understanding how empirical world worked
 

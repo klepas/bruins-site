@@ -229,7 +229,7 @@ There are forms of belief such that
 
 3.	These forms of belief are necessarily involved in the exercise of agency, hence are, in this sense, essential to agency. 
 
-Finally, one would have to concede that the traditional conception of belief as a relation of a subject to some object of belief (and a content of belief is precisely such an object) fails. For if there are forms of belief which can only be perspicuously characterised in third-personal anaphoric fashion, then there are forms of belief whose content is not an object of belief, at least not when this latter notion is understood to be something which could be individuated by a free-standing sentence, whether indexical or not.
+Finally, one would have to concede that the traditional conception of belief as a relation of a subject to some object of belief (and of a content of belief as precisely such an object) fails. For if there are forms of belief which can only be perspicuously characterised in third-personal anaphoric fashion, then there are forms of belief whose content is not an object of belief, at least not when this latter notion is understood to be something which could be individuated by a free-standing sentence, whether indexical or not.
 
 ## § 3: Belief and Acceptance—Perry’s Early Conception of Belief
 

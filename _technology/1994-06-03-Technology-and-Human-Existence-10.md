@@ -4,7 +4,7 @@ permalink: /courses/:collection/:title/
 title: "More on Marcuse and the One-Dimensional Society"
 date: 1994-06-03
 version: "05.07.1993"
-abstract: "This is the tenth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.<br><br/>This set of notes are incomplete and, unlike the other sets, has not been updated since 1993."
+abstract: "This is the tenth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.<br><br/>This set of notes is incomplete and, unlike the other sets, has not been updated since 1993."
 
 ---
 

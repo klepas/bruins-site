@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "“Philosophers have thus far only ... interpreted the world ...”—How Human Ecology can make Philosophy Practical "
+title: "“Philosophers have thus far only ... interpreted the world ...”"
 date: 2016-04-15
 version: "02.04.16, 22:19 pm"
 author: Carleton B. Christensen

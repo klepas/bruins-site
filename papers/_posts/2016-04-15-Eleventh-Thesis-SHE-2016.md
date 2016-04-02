@@ -9,7 +9,7 @@ abstract: "This short paper will be given at the forthcoming annual conference o
 
 ## “Philosophers have thus far only ... interpreted the world ...”—How Human Ecology can make Philosophy Practical
 
-In two papers published in _Human Ecology Review_,[^1] I have spoken of what philosophy can do for human ecology. In this paper, I will speak of what human ecology can do for philosophy, at least given a certain conception of philosophy which I am assuming to be correct. Of course, if I were to do nothing more than this, then my paper would be more relevant for a philosophy conference rather than human ecology one. Yet as we shall see, in showing the importance of disciplines like human ecology for philosophy one simultaneously reveals, in a novel way, the importance of philosophy for human ecology. I will do this by way of interpreting Karl Marx’s conception of philosophy, to which, therefore, I am subscribing.
+In two papers published in _Human Ecology Review_,[^1] I have spoken of what philosophy can do for human ecology. In this paper, I will speak of what human ecology can do for philosophy, at least given a certain conception of philosophy which I am assuming to be correct. Of course, if I were to do nothing more than this, then my paper would be more relevant for a philosophy conference rather than a human ecology one. Yet as we shall see, in showing the importance of disciplines like human ecology for philosophy one simultaneously reveals, in a novel way, the importance of philosophy for human ecology. I will do this by way of interpreting Karl Marx’s conception of philosophy, to which, therefore, I am subscribing.
 
 ### § 1: Marx’s Conception of Philosophy and Its Dependence on Kant
 

@@ -43,7 +43,7 @@ Note, however, a crucial feature of the knowledge which human ecology, practised
 
 ### Notes
 
-[^1]: These publications are: ‘Two Kinds of Economy, Two Kinds of Self—Toward More Manageable, Hence More Sustainable and Just Supply Chains’, in Human Ecological Review, Vol. 21, No.2 (2015), pp.3-21; and ‘Human Ecology as Philosophy’, in Human Ecological Review, Vol. 20, No.2 (2014), pp.31-50.
+[^1]: These publications are: ‘Two Kinds of Economy, Two Kinds of Self—Toward More Manageable, Hence More Sustainable and Just Supply Chains’, in _Human Ecological Review_, Vol. 21, No.2 (2015), pp.3-21; and ‘Human Ecology as Philosophy’, in _Human Ecological Review_, Vol. 20, No.2 (2014), pp.31-50.
 
 [^2]: Note, incidentally, that this is Kant’s debt to Descartes.
 

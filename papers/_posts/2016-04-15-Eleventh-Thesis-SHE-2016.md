@@ -49,7 +49,7 @@ Note, however, a crucial feature of the knowledge which human ecology, practised
 
 [^3]: Note, incidentally, that this is Kant’s debt to Descartes.
 
-[^4]: The claim that this is the defining _point_ and _purpose_ of philosophical inquiry, and not just something merely _implicit in_ the investigation of how entities must be in order that we may relate in self-conscious, reason-wielding fashion to them, has not be sufficiently justified. But I do not have the time to do this here.
+[^4]: The claim that this is the defining _point_ and _purpose_ of philosophical inquiry, and not just something merely _implicit in_ the investigation of how entities must be in order that we may relate in self-conscious, reason-wielding fashion to them, has not been sufficiently justified. But I do not have the time to do this here.
 
 [^5]: The restriction here to the reality _we confront in our experience_ is essential; if the claim  applied to all possible empirical reality, then it would be obviously false: an empirical reality is certainly conceivable in which rational agents such as humans are could not survive. If, for example, all empirical reality across the board had the properties of a black hole, then presumably it would be nomologically impossible for any rational being sufficiently similar to a human being to exist in this reality. The claim here is weak enough to preserve this possibility. At the same time, it is still stronger than the clearly trivial claim that _some_ empirical reality is possible in which rational agents would exist optimally as the (specific kind of) rational agent they are.
 

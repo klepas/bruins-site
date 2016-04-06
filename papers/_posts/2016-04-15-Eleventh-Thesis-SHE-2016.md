@@ -65,7 +65,7 @@ Note, however, a crucial feature of the knowledge which human ecology, practised
 
 [^11]: Through the exercise of what Aristotle calls _phrónesis_.
 
-[^12]: This characterisation of what is meant by alternative shows that the experimentation with alternatives of which I speak here is not the idea of _withdrawing from society in order to create alternatives_, as in the commune movement of sixties and seventies counterculture. Rather, it is the idea of experimenting with alternatives ways of conducting everyday activities constitutive of the existing social process and order.
+[^12]: This characterisation of what is meant by alternative shows that the experimentation with alternatives of which I speak here is not the idea of _withdrawing from society_ in order to create alternatives, as in the commune movement of sixties and seventies counterculture. Rather, it is the idea of experimenting with alternatives ways of conducting everyday activities constitutive of the existing social process and order.
 
 [^13]: One could also speak here of composure. Eckhart speaks of _Abgeschiedenheit_ and _Gelassenheit_.
 

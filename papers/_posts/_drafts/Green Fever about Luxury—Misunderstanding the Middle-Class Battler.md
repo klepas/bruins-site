@@ -1,12 +1,5 @@
 
-layout: post
-title: "Green Fever about Luxury—Misunderstanding the Middle-Class Battler"
-date: 2004-07-02
-version: "02.07.2004, 11:54 am"
-author: Carleton B. Christensen
-abstract: "This is the (slightly revised and corrected) text of a speech I gave as invited speaker at the annual dinner at International House in mid-2004."
-
-## Luxury Fever and Manufactured Identity
+### Luxury Fever and Manufactured Identity
 
 For some years now, prominent environmentalists have been expressing concern about the social and ecological impact of the amount Australians spend on non-essential luxury items. Most recently, Clive Hamilton from the Australia Institute has launched a stinging attack on such over-consumption, which he terms _luxury fever_. Luxury fever, says Hamilton, is “(t)he desire to emulate the lifestyles of the very rich … .” This desire has led “… to booming sales of trophy homes, luxury cars, pleasure craft, cosmetic surgery and professional quality home equipment.” (p.6, OIA) According to Hamilton, infection by luxury fever is a chronic condition of consumer capitalism: this can only survive by constantly growing and it achieves constant growth by using advertising to create artificially high and constantly rising levels of demand. This explains why so many in Australia, although “wealthy by any historical or international standard[,] actually feel poor” (p.6, OIA). It also explains our currently record levels of consumer debt.
 
@@ -14,7 +7,7 @@ The advertising industry has done this, thinks Hamilton, by exploiting the fact 
 
 But this way of constructing a sense of self-worth traps us in a cycle of excessive work and consumption in which the recognition and confirmation we seek constantly eludes us. We are thrown into loneliness and existential depression, are left with “a niggling sense that there is no point,” (p.75, GF) to which our society can only respond by advising us to go shopping. (p.75, GF) No wonder, then, says Hamilton, that suicide is on the increase. No wonder, too, that the environment is collapsing under the weight of all those people looking for happiness and authentic selfhood in the wrong place. 
 
-## A False Diagnosis?
+### A False Diagnosis?
 
 My students love this kind of social critique. It is almost as if they want to believe it. Yet it seems to me not just wrong, but also dangerous—dangerous because it presents a grossly distorted picture of why most people consume as they do, and as a result, it insinuates a completely distorted picture of what is needed in order to address the current environmental crisis.
 
@@ -32,7 +25,7 @@ But it is not luxury fever. People today consume excessively, thoughtlessly and 
 
 Contemporary consumption is thus not pathological behaviour, as critics like Hamilton suggest. It is in fact moderately rational behaviour, given the concrete situation people take themselves to be in. Hamilton and other like him can only think that it is pathological, and thus explicable only by postulating recondite psychological mechanisms which cause people to look for such dubious things as ‘real’ happiness and ‘true’ selfhood in the wrong place, because they indulge in a fantasy already mentioned, namely, that “(p)eople naturally pursue a sense of community and belonging.” (p.77, GF) In saying this, Hamilton is surely not making the anodyne point that humans have an inherent desire to be recognised and confirmed by the ones they love, admire or respect. If he is making more than this obvious point, then he can surely only be claiming that humans have an inherent desire to stand in relations of solidarity and support with whoever they have to rub shoulders with on a more than casual basis—with their neighbours, their colleagues, their community, etc. Note that if this is what Hamilton is saying, then we can explain his surely otherwise inexplicably negative attitude towards modern communication technology: Hamilton regards it as a bad thing, as evincing “(t)he absence of real contact” (p.79, GF), that “with all the enormous advances in communications, people know less of their neighbours than ever before … .” (p.79, GF) In other words, no amount of modern technology permitting us to remain in contact, even at great distance, with family and friends compensates for the fact that we no longer gossip over the back fence with our neighbour. For this latter kind of contact realises more fully our inherent need for belonging, and thus our true selves.
 
-## A Dangerous Diagnosis?
+### A Dangerous Diagnosis?
 
 I have given you a rough indication of why the kind of social critique offered by Hamilton might be wrong. Let me now indicate three ways in which it might be dangerous:
 
@@ -46,7 +39,7 @@ But where I live in the Blue Mountains, whatever ‘community’ there is centre
 
 The kind of radical social critique propounded by Hamilton and the Greens is underwritten by the assumption that in order to overcome the environmental crisis it will not be enough to do what we have always done in smarter, more environmentally friendly ways. This assumption is surely right; we must indeed learn to consume less. And if we are to consume less, then it is essential to understand why we consume as much as we currently do and how we might live just as well or even better without consuming as much. Unfortunately, accounts of the kind offered by Hamilton give us merely the illusion of understanding. Something must, after all, be wrong with a diagnosis which portrays as alternative to the consumerist middle-class whinger what this latter would doubtless call the downshifting middle-class wanker.
 
-## References
+### References
 
 Hamilton, Clive 2002 “Overconsumption in Australia—The Rise of the Middle-Class Battler” (OIA), The Australia Institute, Discussion Paper Number 49, November 2002
 
@@ -54,7 +47,7 @@ Hamilton, Clive 2003 “Downshifting in Australia—A Sea-change in the Pursuit 
 
 Hamilton, Clive 2003 _Growth Fetish_ (GF), Sydney: Allen & Unwin
 
-## Notes
+### Notes
 
 [^1]: Hamilton provides ample statistical evidence of how people these days can afford things their parents could not: while the average size of households has fallen from 3.3 people per household in the early 1970s to 2.6 today, the size of houses has grown from an average of 115 square metres in 1950 to 221 square metres today (so that each occupant today has more than twice the space). (p.6, OIA) Some contemporary household appliances, like refrigerators (Hamilton’s example—see pp.6-7, OIA), are more expensive than their 1950’s counterparts; and so on.
 

@@ -1,3 +1,10 @@
+layout: post
+title: "Sustainability or Growth, Sustainability and Growth—A Spurious Disjunction and a Spurious Conjunction?"
+date: 2006-12-10
+version: "11.12.2006, 09:28 am"
+author: Carleton B. Christensen
+abstract: "This was my contribution to the ERA Panel Discussion on Sustainability and Economic Growth held at Macquarie University on December 10<sup>th.s</sup>, 2006."
+
 ## Sustainability or Growth, Sustainability and Growth—A Spurious Disjunction and a Spurious Conjunction?
 
 I want to examine what we are asking when we ask whether it is possible for Australia to have a sustainable future and maintain economic growth. Otherwise the notion of a sustainable future remains so vague that it cannot guide discussion, much less action. In the plenary discussion I hope to be able to talk about such philosophical issues as living well with less, what kinds of consumption cause environmental crisis, what its causes are, to what extent consumer society is ‘decadent’, suffering an epidemic of unhappiness, etc.

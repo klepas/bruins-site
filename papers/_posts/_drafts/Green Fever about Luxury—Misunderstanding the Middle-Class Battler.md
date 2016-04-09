@@ -1,4 +1,3 @@
-## A New Post
 
 layout: post
 title: "Green Fever about Luxury—Misunderstanding the Middle-Class Battler"
@@ -6,8 +5,6 @@ date: 2004-07-02
 version: "02.07.2004, 11:54 am"
 author: Carleton B. Christensen
 abstract: "This is the (slightly revised and corrected) text of a speech I gave as invited speaker at the annual dinner at International House in mid-2004."
-
-This file is from documents saved by Edith in Downer_Toshiba_Edith on the hard drive.
 
 ## Luxury Fever and Manufactured Identity
 

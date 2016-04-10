@@ -1,34 +1,68 @@
----
-layout: post
-title: "Sustainability or Growth, Sustainability and Growth—A Spurious Disjunction and a Spurious Conjunction?"
-date: 2006-12-10
-version: "11.12.2006, 09:28 am"
-author: Carleton B. Christensen
-abstract: "This is a slightly revised version of my contribution to the ERA Panel Discussion on Sustainability and Economic Growth held at Macquarie University on December 10<sup>th.</sup>, 2006."
----
-
-## Sustainability or Growth, Sustainability and Growth—A Spurious Disjunction and a Spurious Conjunction?
-
-I want to examine what we are asking when we ask whether it is possible for Australia to have a sustainable future and maintain economic growth. Otherwise the notion of a sustainable future remains so vague that it cannot guide discussion, much less action. In the plenary discussion I hope to be able to talk about such philosophical issues as living well with less, what kinds of consumption cause environmental crisis, what its causes are, to what extent consumer society is ‘decadent’, suffering an epidemic of unhappiness, etc.
-
-There are three ways in which one can understand the question of whether Australia can have both sustainability and growth. Only the second and third are of any use. The first and useless way of understanding the question takes it as a query into the objective limits set by natural and socio-economic law. Are these laws such that it is possible or impossible for a society like Australia to exist sustainably while growing economically? Understood in this way, our question is easy to answer. Let us assume, for example, that the area of productive land needed to supply one Australian with food, water, settlement and energy was 1.2 hectares rather than its current 7 to 8 hectares. Since 1.2 hectares per capita is, by the measure I am using here, the average area of productive land available on the planet per capita, this would make Australia a sustainable society. Note, however, that such parity between impact and carrying capacity does not entail absence of economic growth. The amount of land available per capita for sustaining a human life is in part determined by the nature of technology and socio-political organisation, hence can vary across time. If, however, it can vary across time, then there can be sustainable economic growth.
-
-This intimates what critics like Julian Simon and Mark Sagoff get right when they argue that prophets of eco-doom and eco-frugality have always got it wrong, that history shows that we have always found ways of keeping things growing. These critics see that, given the role technology and socio-political organisation play in determining what is available and how much, it is senseless to talk in the abstract of limits, whether to resources or to growth or to consumption. The demands placed by human desire on natural systems must of course not exceed what the technology and social organisation of the time permit these systems to deliver, at least not by too much and not for too long. But this does not rule out economic growth over time. Indeed, it does not rule out excessive growth, at least for sufficiently short stretches of time. Insistence on a homeostatic economy makes as much sense as insistence on perpetually balanced budgets.
-
-This brings me to two more subtle ways of understanding the question. Firstly, from a resolutely practical point of view, what looks like one question is perhaps just a schematic way of representing a whole lot of questions of the form, “Can Australia continue doing A in fashion B without this having, within the foreseeable future, some combination of unacceptably deleterious consequences, e.g., consequences X, Y, Z?” Can Australia continue to move people and things around as it currently does without this having, within the foreseeable future, such deleterious consequences as unlivable cities, air pollution, socio-economic inequity, climate change, etc.? Can Australia continue to farm as it does without destroying soils, the habitats of other species, robbing river systems of water, etc.? Can it continue to eat seafood as it currently does without devastating marine eco-systems? And so on, for many questions more.[^1]
-
-The character of these questions indicates the right way to respond to Simon and Sagoff: when we answer these concrete questions in the negative, as we surely must, we are not betting on any one of the bad consequences we mention ineluctably occurring. We mention specific bad consequences only to indicate what we think likely to happen, while insisting only that some combination of deleterious consequences will occur. Perhaps indeed this combination will be something we cannot predict from where we stand now. Yet those destined to endure it will be able retrospectively to show how what we are doing now caused it. Had Paul Ehrlich put his point about population this way, he would have won his wager with Simon.[^2]
-
-These days, we confront many such concrete questions, or rather, the many problems which generate these questions. This points to a third, quite general way of understanding our question: Can Australia continue to assume ‘business-as-usual’, or it is time to bring eco-impact more in line with what technology and social organisation permit natural systems to yield? Indeed, since Australia has profited from its early industrialisation, might it not be morally obliged and prudentially well-advised to do more than simply restore balance between eco-impact and carrying capacity? Might it not have to do more than this, in order to cut less developed countries a little slack? (Greenhouse gas emissions are, I think, a case in point.)
-
-This third way of understanding the question has significant advantages. Firstly, it does not speak of some one final condition such as harmony with nature, a steady-state, no-growth economy, closed loops which let nothing in or out, or even a conserver society. I do not think it makes sense to talk of some end-state in which sustainability is achieved once and for all. Sustainability is only the shifting, contextually determined regulative ideal of parity over time between eco-impact and carrying capacity. Over time, things should balance out, but balance at all points of time is not desirable since a country might have to compensate for past indulgence with extra frugality. Note, too, that if humans had never drawn down on their natural capital, they would never have existed as humans.
-
-Secondly, this way of understanding the question permits one to see the general problem of balancing eco-impact and carrying capacity as a distillate of such concrete problems as how we move, how we farm, how we fish, etc. It thus shows that the only way to address to the general problem of cutting back to whatever degree is morally and prudentially required in the current context is to address such concrete problems as best we can. There is no additional task of creating a sustainable society, which would be the mega-project to end all mega-projects, hence as uncertain in outcome as any mega-project. We can only proceed piecemeal and hope that the current context is such that we can push disaster so far out into the future that we gain time to continue pushing it out into the future—and so on, indefinitely.
-
-Finally, by insinuating this incremental task of pushing disaster out into the future, this way of understanding the question intimates a crucial political task: we need to control the economy. So we need to ensure that our economy, whether it expands or contracts, does not do so quickly that it creates even more tightly coupled, hence rapidly ramifying complexity beyond our control. In short, we need to slow things down. This explains the affinity of environmental politics with the slow food movement, as indeed with the ‘small is beautiful’ and alternative technology traditions of third world development. It also shows what is right in the call for a ‘simpler’ way. A sustainable way will not necessarily be simpler, but it will be slower, so that we have time to deliberate and to act on this deliberation. Slowing things down requires us, however, to challenge current over-application of market models and doctrines of competition. For this over-application leads to spuriously short-term notions of outcome and efficiency, thereby robbing us of time to think and act.
-
-## Notes
-
-[^1]: That Ehrlich and other forecasters are right is thus shown not so much by the accuracy of their predictions as in the fact that these days we confront such a plethora of concrete, practical questions. For it is clear that increases in population and the like have contributed to engendering many of the problems to which these questions are responses, even if Ehrlich and others of his time could not have foreseen these particular problems but could only do the best they could, hence naively predicted such things as a rise in resource prices.
-
-[^2]: Ehrlich should have said, “If the world continues to increase population in a way which involves no significant redistribution of resources and reduction of per capita impact, then over the next few decades this will have significant deleterious consequences—I suspect a problem of scarcity, as manifest in significantly increased resource prices, but, failing this, some other deleterious consequence which one can perhaps only ascertain as such a consequence retrospectively.” Of course, it would be bad science to say, “If salt is placed in water, something will happen—I suspect the salt will dissolve, but, failing that, something else.” But as their use of the word ‘deleterious’ indicates, Ehrlich and other such writers are not doing science alone.
+---
+
+layout: post
+
+title: "Sustainability or Growth, Sustainability and Growth—A Spurious Disjunction and a Spurious Conjunction?"
+
+date: 2006-12-10
+
+version: "11.12.2006, 09:28 am"
+
+author: Carleton B. Christensen
+
+abstract: "This is a slightly revised version of my contribution to the ERE Panel Discussion on Sustainability and Economic Growth held at Macquarie University on December 10<sup>th.</sup>, 2006."
+
+---
+
+
+
+## Sustainability or Growth, Sustainability and Growth—A Spurious Disjunction and a Spurious Conjunction?
+
+
+
+I want to examine what we are asking when we ask whether it is possible for Australia to have a sustainable future and maintain economic growth. Otherwise the notion of a sustainable future remains so vague that it cannot guide discussion, much less action. In the plenary discussion I hope to be able to talk about such philosophical issues as living well with less, what kinds of consumption cause environmental crisis, what its causes are, to what extent consumer society is ‘decadent’, suffering an epidemic of unhappiness, etc.
+
+
+
+There are three ways in which one can understand the question of whether Australia can have both sustainability and growth. Only the second and third are of any use. The first and useless way of understanding the question takes it as a query into the objective limits set by natural and socio-economic law. Are these laws such that it is possible or impossible for a society like Australia to exist sustainably while growing economically? Understood in this way, our question is easy to answer. Let us assume, for example, that the area of productive land needed to supply one Australian with food, water, settlement and energy was 1.2 hectares rather than its current 7 to 8 hectares. Since 1.2 hectares per capita is, by the measure I am using here, the average area of productive land available on the planet per capita, this would make Australia a sustainable society. Note, however, that such parity between impact and carrying capacity does not entail absence of economic growth. The amount of land available per capita for sustaining a human life is in part determined by the nature of technology and socio-political organisation, hence can vary across time. If, however, it can vary across time, then there can be sustainable economic growth.
+
+
+
+This intimates what critics like Julian Simon and Mark Sagoff get right when they argue that prophets of eco-doom and eco-frugality have always got it wrong, that history shows that we have always found ways of keeping things growing. These critics see that, given the role technology and socio-political organisation play in determining what is available and how much, it is senseless to talk in the abstract of limits, whether to resources or to growth or to consumption. The demands placed by human desire on natural systems must of course not exceed what the technology and social organisation of the time permit these systems to deliver, at least not by too much and not for too long. But this does not rule out economic growth over time. Indeed, it does not rule out excessive growth, at least for sufficiently short stretches of time. Insistence on a homeostatic economy makes as much sense as insistence on perpetually balanced budgets.
+
+
+
+This brings me to two more subtle ways of understanding the question. Firstly, from a resolutely practical point of view, what looks like one question is perhaps just a schematic way of representing a whole lot of questions of the form, “Can Australia continue doing A in fashion B without this having, within the foreseeable future, some combination of unacceptably deleterious consequences, e.g., consequences X, Y, Z?” Can Australia continue to move people and things around as it currently does without this having, within the foreseeable future, such deleterious consequences as unlivable cities, air pollution, socio-economic inequity, climate change, etc.? Can Australia continue to farm as it does without destroying soils, the habitats of other species, robbing river systems of water, etc.? Can it continue to eat seafood as it currently does without devastating marine eco-systems? And so on, for many questions more.[^1]
+
+
+
+The character of these questions indicates the right way to respond to Simon and Sagoff: when we answer these concrete questions in the negative, as we surely must, we are not betting on any one of the bad consequences we mention ineluctably occurring. We mention specific bad consequences only to indicate what we think likely to happen, while insisting only that some combination of deleterious consequences will occur. Perhaps indeed this combination will be something we cannot predict from where we stand now. Yet those destined to endure it will be able retrospectively to show how what we are doing now caused it. Had Paul Ehrlich put his point about population this way, he would have won his wager with Simon.[^2]
+
+
+
+These days, we confront many such concrete questions, or rather, the many problems which generate these questions. This points to a third, quite general way of understanding our question: Can Australia continue to assume ‘business-as-usual’, or it is time to bring eco-impact more in line with what technology and social organisation permit natural systems to yield? Indeed, since Australia has profited from its early industrialisation, might it not be morally obliged and prudentially well-advised to do more than simply restore balance between eco-impact and carrying capacity? Might it not have to do more than this, in order to cut less developed countries a little slack? (Greenhouse gas emissions are, I think, a case in point.)
+
+
+
+This third way of understanding the question has significant advantages. Firstly, it does not speak of some one final condition such as harmony with nature, a steady-state, no-growth economy, closed loops which let nothing in or out, or even a conserver society. I do not think it makes sense to talk of some end-state in which sustainability is achieved once and for all. Sustainability is only the shifting, contextually determined regulative ideal of parity over time between eco-impact and carrying capacity. Over time, things should balance out, but balance at all points of time is not desirable since a country might have to compensate for past indulgence with extra frugality. Note, too, that if humans had never drawn down on their natural capital, they would never have existed as humans.
+
+
+
+Secondly, this way of understanding the question permits one to see the general problem of balancing eco-impact and carrying capacity as a distillate of such concrete problems as how we move, how we farm, how we fish, etc. It thus shows that the only way to address to the general problem of cutting back to whatever degree is morally and prudentially required in the current context is to address such concrete problems as best we can. There is no additional task of creating a sustainable society, which would be the mega-project to end all mega-projects, hence as uncertain in outcome as any mega-project. We can only proceed piecemeal and hope that the current context is such that we can push disaster so far out into the future that we gain time to continue pushing it out into the future—and so on, indefinitely.
+
+
+
+Finally, by insinuating this incremental task of pushing disaster out into the future, this way of understanding the question intimates a crucial political task: we need to control the economy. So we need to ensure that our economy, whether it expands or contracts, does not do so quickly that it creates even more tightly coupled, hence rapidly ramifying complexity beyond our control. In short, we need to slow things down. This explains the affinity of environmental politics with the slow food movement, as indeed with the ‘small is beautiful’ and alternative technology traditions of third world development. It also shows what is right in the call for a ‘simpler’ way. A sustainable way will not necessarily be simpler, but it will be slower, so that we have time to deliberate and to act on this deliberation. Slowing things down requires us, however, to challenge current over-application of market models and doctrines of competition. For this over-application leads to spuriously short-term notions of outcome and efficiency, thereby robbing us of time to think and act.
+
+
+
+## Notes
+
+
+
+[^1]: That Ehrlich and other forecasters are right is thus shown not so much by the accuracy of their predictions as in the fact that these days we confront such a plethora of concrete, practical questions. For it is clear that increases in population and the like have contributed to engendering many of the problems to which these questions are responses, even if Ehrlich and others of his time could not have foreseen these particular problems but could only do the best they could, hence naively predicted such things as a rise in resource prices.
+
+
+
+[^2]: Ehrlich should have said, “If the world continues to increase population in a way which involves no significant redistribution of resources and reduction of per capita impact, then over the next few decades this will have significant deleterious consequences—I suspect a problem of scarcity, as manifest in significantly increased resource prices, but, failing this, some other deleterious consequence which one can perhaps only ascertain as such a consequence retrospectively.” Of course, it would be bad science to say, “If salt is placed in water, something will happen—I suspect the salt will dissolve, but, failing that, something else.” But as their use of the word ‘deleterious’ indicates, Ehrlich and other such writers are not doing science alone.
+

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Problem of Essential Anaphora
-date: {}
+date: 2016-02-25
 version: "25.02.16, 10:22 am"
 author: Carleton B. Christensen
 abstract: "This paper represents a development of arguments first deployed in two papers from 2015, namely, “Attitudes _de se_ and _de me_” and “Consciousness, Self-Consciousness and Essential Indexicality.” (Both these earlier papers are also available at this website.) This paper improves on the previous ones by including a more extensive and improved discussion of what various authors mean by, and what could be meant by, indexical, more precisely, first-person belief. It also includes a discussion of Perry’s _later_ concept of belief, which appeals to the notion of reflexive truth conditions—see § 4.<br>I would like to thank Al Hàjek, Brian Garrett and Daniel Stoljar for very useful conversations and comments."

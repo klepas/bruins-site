@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "“Philosophers have thus far only ... interpreted the world ...”"
-date: 2016-04-15
+title: “Philosophers have thus far only ... interpreted the world ...”
+date: 2016-04-15T00:00:00.000Z
 version: "02.04.16, 22:19 pm"
 author: Carleton B. Christensen
-abstract: "This short paper will be given at the forthcoming annual conference of the <em>Society for Human Ecology</em>, on April 15<sup>th.</sup>, 2016."
+abstract: "This short paper was given at the annual conference of the <em>Society for Human Ecology</em>, on April 15<sup>th.</sup>, 2016."
+published: true
 ---
 
 ## “Philosophers have thus far only ... interpreted the world ...”—How Human Ecology can make Philosophy Practical
@@ -72,4 +73,3 @@ Note, however, a crucial feature of the knowledge which human ecology, practised
 [^14]: At this point I would, if I had the time, go on to argue that when human ecology has this understanding of itself (as applied philosophy in the sense indicated) would justify the inherently political character which human ecology would, in order to deal adequately with problems of unsustainability, find itself forced to assume. By this political character I mean the way in which human ecology, in its efforts to understand problematic human-environment interactions so as to facilitate transformation of them, is forced to confront power relations. Thus, it is surely part of human ecology to identify and criticise strategies which, at first blush, _seem_ sustainable, hence good ideas, but are not really, for example, much urban planning, gentrification, etc. Human ecology is, after all, defined by its challenge to that scientistic conception which construes sustainability as a politically neutral technological issue of implementing things like eco-villages, people-friendly public spaces, greening buildings, etc. So inevitably, in its efforts to demonstrate that sustainability is not a simply scientific and technological problem but a social and political one as well, human ecology will be brought face-to-face with power relations.
 
 [^15]: Note that one could run a similar argument for issues of public health or social harmony, e.g., combating obesity or addiction or indeed overcoming forms of social violence, such as teenage gang culture or honour killing. In these cases, too, a similar engagement of the practitioner with the participants is a requirement, an engagement which is only _epistemically_ successful if it is _practically_ successful. Lack of time prevents me from developing the essentially political character of this kind of engagement, whether with regard to the environment, public health or social harmony. For indeed it is clear that in the case of any such engagement those involved in it may encounter opposition from groups with a vested interest in maintaining the _status quo_.
-

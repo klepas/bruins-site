@@ -1,13 +1,10 @@
-
-
-
 ---
 layout: post
 title: "Heidegger and the Hermeneutic ‘As’"
 date: 2007-05-11
 version: "21.05.07, 06:29 am, vorzuletzt modifiziert: 14.05.07, 09:44 am"
 author: Carleton B. Christensen
-abstract: "This paper is a slightly revised version of a paper given at a staff seminar of the Department of Philosophy, Faculty of Arts, ANU, on May 11<sup>th.</sup>, 2007."
+abstract: "This paper is a slightly revised version of a paper given, I think, at a staff seminar of the Department of Philosophy, Faculty of Arts, University of Sydney, on May 11<sup>th.</sup>, 2007."
 ---
 
 ## Heidegger and the Hermeneutic ‘As’

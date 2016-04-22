@@ -29,7 +29,7 @@ This might suggest that in his distinction between the hermeneutic and apophanti
 
 But let us return to Heidegger, for now he says something very strange:
 
-> All pre-predicative, simple seeing of the ready to hand [_Alles vorprädikative schlichte Sehen des Zuhandenen_] is in and through itself already understandingly-explicative. But does not the absence of this “as” constitute the the simplicity [_Schlichtheit_] of a pure perceiving of something?
+> All pre-predicative, simple seeing of the ready to hand [_Alles vorprädikative schlichte Sehen des Zuhandenen_] is in and through itself already understandingly-explicative. But does not the absence of this “as” constitute the simplicity [_Schlichtheit_] of a pure perceiving of something?
 
 No, says Heidegger, 
 

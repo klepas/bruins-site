@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Heidegger and the Hermeneutic ‘As’"
-date: 2007-05-11
+title: Heidegger and the Hermeneutic ‘As’
+date: {}
 version: "21.05.07, 06:29 am, vorzuletzt modifiziert: 14.05.07, 09:44 am"
 author: Carleton B. Christensen
 abstract: "This paper is a slightly revised version of a paper given, I think, at a staff seminar of the Department of Philosophy, Faculty of Arts, University of Sydney, on May 11<sup>th.</sup>, 2007."
+published: true
 ---
 
 ## Heidegger and the Hermeneutic ‘As’
@@ -188,4 +189,3 @@ It is crucial to note that Husserl cannot put this spin on the hermeneutic chara
 [^26]: Such explication, which unpacks that aspect of conceptual content in virtue of which it is predicative—the aspect of content marked by the verbal phrase “… is lying here”—is explication of what Husserl aptly calls the _outer horizon_ of perceptual experience.
 
 [^27]: Such explication is explication of what Husserl equally aptly calls the _inner horizon_ of perceptual experience. One corollary of the argument presented here is that Husserl needs to regard simple, sensuous perception as predicative in order to secure a real distinction between inner and outer horizons. In general, Husserl fails to see the priority and distinctive significance of the outer horizon, which fixes identity of place and thereby the _singularity_ (numerical identity, _Einzelheit_) of what is perceived. The inner horizon is that into which one must penetrate in order to know the _particularity_ (qualitative identity, _Besonderheit_) of what is perceived.
-

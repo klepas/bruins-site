@@ -13,6 +13,22 @@ exclude: [README.md, Rakefile, .gitignore, Gemfile, Gemfile.lock, vendor]
 # Build settings
 markdown: kramdown
 
+# Prose.io configuration
+
+prose:
+  siteurl: 'http://cbchristensen.net'
+  ignore:
+    - Gemfile
+    - Gemfile.lock
+    - /_plugins
+    - /_includes
+    - /_layouts
+    - /_passets
+    - feed.xml
+    - courses.html
+    - index.html
+    - papers.html
+
 collections:
   descartes:
     output: true

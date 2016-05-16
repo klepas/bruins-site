@@ -1,4 +1,4 @@
---
+---
 layout: post
 permalink: /courses/:collection/:title/
 title: "Descartes’ *Meditations on First Philosophy* 7"

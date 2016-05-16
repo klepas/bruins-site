@@ -29,6 +29,7 @@ prose:
     - courses.html
     - index.html
     - papers.html
+    - /_posts
 
 collections:
   descartes:

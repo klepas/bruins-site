@@ -24,7 +24,6 @@ prose:
     - /_plugins
     - /_includes
     - /_layouts
-    - /_passets
     - feed.xml
     - courses.html
     - index.html

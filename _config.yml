@@ -14,7 +14,6 @@ exclude: [README.md, Rakefile, .gitignore, Gemfile, Gemfile.lock, vendor]
 markdown: kramdown
 
 # Prose.io configuration
-
 prose:
   siteurl: 'http://cbchristensen.net'
   ignore:
@@ -30,6 +29,7 @@ prose:
     - index.html
     - papers.html
     - /_posts
+    # posts added until general blogging is added later
 
 collections:
   descartes:

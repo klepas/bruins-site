@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Title"
-date:
+title: Title
+date: null
 author: Carleton B. Christensen
-abstract: "I will be adding an abstract later."
+abstract: I will be adding an abstract later.
+published: true
 ---

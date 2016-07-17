@@ -4,7 +4,7 @@ title: >-
   Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
   *Ökonomisch-Philosophischen Manuskripten*
 date: 2016-07-14T00:00:00.000Z
-version: '17.07.16, 12:06 am'
+version: '17.07.16, 12:27 pm'
 author: Carleton B. Christensen
 abstract: >-
   Im Rahmen meiner Bemühungen um eine Rehabilitierung des Marx’schen

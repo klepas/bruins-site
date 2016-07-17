@@ -3,7 +3,7 @@ layout: post
 title: >-
   Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
   Ökonomisch-Philosophischen Manuskripten
-date: {}
+date: 2016-07-14T00:00:00.000Z
 version: '14.07.16, 15:29 pm'
 author: Carleton B. Christensen
 abstract: >-
@@ -18,11 +18,11 @@ abstract: >-
   sich der Arbeiter seinem Wesen und damit auch sich selbst durch die
   kapitalistische Lohnarbeit entfremdet. Dann erläutere ich den Naturbegriff bei
   Marx und zeige u.a., dass das, was bei Marx „Natur“ heißt, nicht das ist, was
-  Descartes und der heutige Naturalismus unter „Natur“ verstehen.<br><b>Dieses
+  Descartes und der heutige Naturalismus unter „Natur“ verstehen.<br><br>Dieses
   Paper bildet den Text eines Vortrags, den ich am 14<sup>.ten</sup> Juli, 2016,
   im Kolloquium des Philosophischen Instituts der Rheinisch-Westfälischen
   Technischen Hochschule gehalten habe.
-published: false
+published: true
 ---
 
 ## Einleitung

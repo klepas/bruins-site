@@ -3,7 +3,7 @@ layout: post
 title: >-
   Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
   *Ökonomisch-Philosophischen Manuskripten*
-date: {}
+date: 2016-07-14T00:00:00.000Z
 version: '17.07.16, 12:06 am'
 author: Carleton B. Christensen
 abstract: >-
@@ -13,7 +13,7 @@ abstract: >-
   ist: dass der Mensch ein „Gattungswesen“ ist, das als solches die eigene
   Gattung und die Gattungen der übrigen Dinge zum Gegenstand macht. Zu diesem
   Zweck ziehe ich den formalen Begriff der „Existenz“ bei Heidegger heran. Auf
-  der Basis dieser Interpretation versuche ich plausibel zu Machen, dass wenn
+  der Basis dieser Interpretation versuche ich plausibel zu machen, dass, wenn
   man Gattungswesen und Natur so versteht, man verständlich machen kann, wie
   sich der Arbeiter seinem Wesen und damit auch sich selbst durch die
   kapitalistische Lohnarbeit entfremdet. Dann erläutere ich den Naturbegriff bei

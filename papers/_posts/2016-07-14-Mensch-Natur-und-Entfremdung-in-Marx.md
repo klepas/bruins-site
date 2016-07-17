@@ -1,11 +1,28 @@
 ---
 layout: post
-title: Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´ Ökonomisch-Philosophischen Manuskripten
-date: 2016-07-14
-version: "14.07.16, 15:29 pm"
+title: >-
+  Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
+  Ökonomisch-Philosophischen Manuskripten
+date: {}
+version: '14.07.16, 15:29 pm'
 author: Carleton B. Christensen
-abstract: "Im Rahmen meiner Bemühungen um eine Rehabilitierung des Marx’schen Entfremdungsbegriffs rekonstruiere ich eine These, die Marx offensichtlich als wesentlich für diesen Begriff betrachtet, die aber ausgesprochen rätselhaft ist: dass der Mensch ein „Gattungswesen“ ist, das als solches die eigene Gattung und die Gattungen der übrigen Dinge zum Gegenstand macht. Zu diesem Zweck ziehe ich den formalen Begriff der „Existenz“ bei Heidegger heran. Auf der Basis dieser Interpretation versuche ich plausibel zu Machen, dass wenn man Gattungswesen und Natur so versteht, man verständlich machen kann, wie sich der Arbeiter seinem Wesen und damit auch sich selbst durch die kapitalistische Lohnarbeit entfremdet. Dann erläutere ich den Naturbegriff bei Marx und zeige u.a., dass das, was bei Marx „Natur“ heißt, nicht das ist, was Descartes und der heutige Naturalismus unter „Natur“ verstehen.<br><b>Dieses Paper bildet den Text eines Vortrags, den ich am 14<sup>.ten</sup> Juli, 2016, im Kolloquium des Philosophischen Instituts der Rheinisch-Westfälischen Technischen Hochschule gehalten habe."
-published: true
+abstract: >-
+  Im Rahmen meiner Bemühungen um eine Rehabilitierung des Marx’schen
+  Entfremdungsbegriffs rekonstruiere ich eine These, die Marx offensichtlich als
+  wesentlich für diesen Begriff betrachtet, die aber ausgesprochen rätselhaft
+  ist: dass der Mensch ein „Gattungswesen“ ist, das als solches die eigene
+  Gattung und die Gattungen der übrigen Dinge zum Gegenstand macht. Zu diesem
+  Zweck ziehe ich den formalen Begriff der „Existenz“ bei Heidegger heran. Auf
+  der Basis dieser Interpretation versuche ich plausibel zu Machen, dass wenn
+  man Gattungswesen und Natur so versteht, man verständlich machen kann, wie
+  sich der Arbeiter seinem Wesen und damit auch sich selbst durch die
+  kapitalistische Lohnarbeit entfremdet. Dann erläutere ich den Naturbegriff bei
+  Marx und zeige u.a., dass das, was bei Marx „Natur“ heißt, nicht das ist, was
+  Descartes und der heutige Naturalismus unter „Natur“ verstehen.<br><b>Dieses
+  Paper bildet den Text eines Vortrags, den ich am 14<sup>.ten</sup> Juli, 2016,
+  im Kolloquium des Philosophischen Instituts der Rheinisch-Westfälischen
+  Technischen Hochschule gehalten habe.
+published: false
 ---
 
 ## Einleitung
@@ -36,7 +53,7 @@ Auffallend ist die Bestimmung, dass der Mensch, als ein Gattungswesen ist sich a
 
 Wie ist das näher zu bestimmen, und zwar so, dass das, was Marx von der Tradition unterscheidet, richtig hervortritt? Um zu verstehen, was Marx meint, wenn er den Menschen als ein Gattungswesen in dem soeben angedeuteten vernünftig selbstregelnden Sinn bezeichnet, müssen wir die folgende Textstelle verstehen:
 
-„Der Mensch ist ein Gattungswesen, ... indem er praktisch und theoretisch die Gattung, sowohl seine eigne als die der übrigen Dinge, zu seinem Gegenstand macht ... .“ (ÖPM, MEW 40, S.515)
+> Der Mensch ist ein Gattungswesen, ... indem er praktisch und theoretisch die Gattung, sowohl seine eigne als die der übrigen Dinge, zu seinem Gegenstand macht ... .“ (ÖPM, MEW 40, S.515)
 
 Wir haben hier zwei offensichtlich miteinander verschränkte Bestimmungen des Gattungswesensseins. Aber was heisst, dass der Mensch als Gattungswesen die eigene Gattung zum Gegenstand macht? Und was heisst es, dass er ebendamit auch die Gattungen aller übrigen Dinge zum Gegenstand macht?
 
@@ -44,11 +61,7 @@ Eine Interpretation lässt sich sehr leicht ausschliessen: Zweifellos kann ein s
 
 Um weiter zu kommen, besinnen wir uns darauf, wie Marx die soeben zitierte Passage fortsetzt: dass der Mensch als Gattungswesen seine eigene Gattung und die Gattungen der übrigen Dinge zum Gegenstand macht, läuft hinaus, dass er „sich zu sich selbst als der gegenwärtigen, lebendigen Gattung ... , als einem universellen, darum freien Wesen[,] verhält.“ (ÖPM, MEW 40, S.515) Also, Marx selbst behauptet, dass um Gattungswesen zu sein, man sich als Gattungswesen verhalten muss—natürlich in dem vernünftigen Sinn, dass er sich nach einem Wissen von sich und seiner Lage selbstregelnd verhält.
 
-Schon bei Hegel finden wir zumindest ansatzweise die Rede vom Sich-Verhalten-zu-sich-selbst. Sie findet sich aber erst recht bei Denkern wie Kierkegaard und Heidegger vor. Inbesondere der Vergleich mit Heidegger, den man ja nicht normalerweise mit Marx in Verbindung bringt, ist lehrreich. Heidegger schreibt,
-
-„Dasein ist Seiendes, das sich in (H 53) seinem Sein verstehend zu diesem Sein verhält.“ (Sein und Zeit, § 12, H 52-H 53) 
-
-Damit ist, so Heidegger, der formale Begriff der Existenz angezeigt.
+Schon bei Hegel finden wir zumindest ansatzweise die Rede vom Sich-Verhalten-zu-sich-selbst. Sie findet sich aber erst recht bei Denkern wie Kierkegaard und Heidegger vor. Inbesondere der Vergleich mit Heidegger, den man ja nicht normalerweise mit Marx in Verbindung bringt, ist lehrreich. Heidegger schreibt, „Dasein ist Seiendes, das sich in (H 53) seinem Sein verstehend zu diesem Sein verhält.“ (Sein und Zeit, § 12, H 52-H 53) Damit ist, so Heidegger, der formale Begriff der Existenz angezeigt.
 
 Nun das Dasein ist für Heidegger genauso sehr „fur sich seiend“ als für Marx der Mensch es ist. An einer Stelle behauptet Heidegger sogar, dass das Dasein durch Egoizität gekennzeichnet ist.[^2] (MFL, § 11, H 240) Darüber hinaus gibt es einige strukturelle Parallele zwischen der Bestimmung des formalen Begriffs der Existenz und dem, was Marx zur Bestimmung des Menshen als eines Gattungswesens anführt. Zum Beispiel, Marx behauptet, als Gattungswesen müsse sich der Mensch „in seinem Sein als in seinem Wissen bestätigen und betätigen …,” was er sicherlich nur wissend, eben verstehend, tun kann. Ferner benutzt Heidegger das Wort ‘Sein’ in absichtlich zweideutiger Weise: Einerseits ist das Sein, von dem hier die Rede ist, das jeweilige Washeit, scholastisch, die quidditas, das dem Dasein zukommt, also gerade das, was das Dasein gleichsam gattungsmässig ist. Andererseits ist das Sein, zu dem sich das Dasein verhält, die konkrete Lage, die faktischen Umstände, in denen sich das Dasein jeweils befindet. M.a.W., es ist der bestimmte Kontext, in dem sich das Dasein befindet, also all das, was für den Umgang des Daseins mit den Dingen jetzt relevant ist, was auch dem Dasein in seiner Relevanz gegenwärtig sein muss, damit sich das Dasein in diesem Kontext lebendig, d.h. kontextempfindlich, verhalten kann.[^3] Angesichts dieser strukturellen Ähnlichkeit möchte ich jetzt versuchen, durch Rückgriff auf den formalen Begriff der Existenz, die erste Bestimmung des Menschen als eines Gattungswesens—dass er die eigene Gattung zum Gegenstand macht—zu interpretieren.
 
@@ -163,7 +176,3 @@ Zum Schluss ist viererlei anzumerken: erstens, um die zweite Bestimmung des Mens
 [^25]: Man kann ja sagen, dass der Mensch, im Unterschied zu dem Tier, sein Produkt, sich selbst und seine produzierende Tätigkeit als innerhalb bzw. in der Welt versteht.
 
 [^26]: Tatsächlich eignet sich aus der Perspektive von Marx das vollendete Gute sehr gut als das, was den Sinn des jetzt hervorgetretenen Totalitätsbegriffs festlegt. Hierfur gibt es zwei sich gegenseitig ergänzende Gründe. Einerseits ist das vollendete Gute hinreichend formal, um zu gewährleisten, dass alle möglichen Formen des produktive Lebens, das sich innerhalb dieser Totalität abspielt, umfasst. Andererseits ist es hinreichend konkret, um eine Alternative zur Relativierung auf eine unbestimmte Vielfalt verschiedener und ganz beliebiger Bedürfnisse. Würde man die Nützlichkeit der Dinge nicht auf das vollendete Gute zurückbeziehen können, so müsste man das produktive Leben—im Grunde die Wirtschaft—so verstehen wie es Mandeville, Bentham und deren heutigen Nachfahren in den Wirtschaftswissenschaften tun. Bei Marx geht aber es sicherlich um eine Interessen- und Bedürfnisbefriedigung, die an Rousseau und Kant  erinnnert, die insofern von einem einzigen gemeinsamen Meta-Interesse an der Einstimmigkeit der faktischen Interessen des einzelnen mit den legitimen Interessen aller anderen geleitet und eingeschränkt wird.<br><br>Im übrigen ist zu beachten, dass diese Bestimmung dessen, wozu alles Seiende nützlich ist, sich durchaus damit verträgt, dass man manchmal das, was nützlich ist, „niemals bloß als Mittel, sondern jederzeit zugleich als Zweck an sich selbst behandeln solle.“ (Kant, Grundlegung der Metaphysik der Sitten, AA IV, 433)
-
-
-
-

@@ -5,7 +5,7 @@ date: 2016-07-14
 version: "14.07.16, 15:29 pm"
 author: Carleton B. Christensen
 abstract: "Im Rahmen meiner Bemühungen um eine Rehabilitierung des Marx’schen Entfremdungsbegriffs rekonstruiere ich eine These, die Marx offensichtlich als wesentlich für diesen Begriff betrachtet, die aber ausgesprochen rätselhaft ist: dass der Mensch ein „Gattungswesen“ ist, das als solches die eigene Gattung und die Gattungen der übrigen Dinge zum Gegenstand macht. Zu diesem Zweck ziehe ich den formalen Begriff der „Existenz“ bei Heidegger heran. Auf der Basis dieser Interpretation versuche ich plausibel zu Machen, dass wenn man Gattungswesen und Natur so versteht, man verständlich machen kann, wie sich der Arbeiter seinem Wesen und damit auch sich selbst durch die kapitalistische Lohnarbeit entfremdet. Dann erläutere ich den Naturbegriff bei Marx und zeige u.a., dass das, was bei Marx „Natur“ heißt, nicht das ist, was Descartes und der heutige Naturalismus unter „Natur“ verstehen.<br><b>Dieses Paper bildet den Text eines Vortrags, den ich am 14<sup>.ten</sup> Juli, 2016, im Kolloquium des Philosophischen Instituts der Rheinisch-Westfälischen Technischen Hochschule gehalten habe."
-published: false
+published: true
 ---
 
 ## Einleitung

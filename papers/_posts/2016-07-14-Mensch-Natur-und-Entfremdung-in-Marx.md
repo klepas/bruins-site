@@ -1,8 +1,8 @@
 ---
 layout: post
 title: >-
-  Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
-  Ökonomisch-Philosophischen Manuskripten
+  Zum Zusammenhang von _Mensch, Natur und Entfremdung in Marx´
+  Ökonomisch-Philosophischen Manuskripten_
 date: {}
 version: '14.07.16, 15:29 pm'
 author: Carleton B. Christensen
@@ -27,7 +27,7 @@ published: true
 
 ## Einleitung
 
-In den Ökonomisch-Philosophischen Manuskripte von 1844 behauptet Karl Marx, dass die kapitalistische Lohnarbeit in vierfacher Hinsicht entfremdet ist. Unter kapitalistischen Produktionsverhältnissen entfremdet sich der Arbeiter zugleich:
+In den _Ökonomisch-Philosophischen Manuskripte von 1844_ behauptet Karl Marx, dass die kapitalistische Lohnarbeit in vierfacher Hinsicht entfremdet ist. Unter kapitalistischen Produktionsverhältnissen entfremdet sich der Arbeiter zugleich:
 
 1. dem Gegenstand seiner Tätigkeit, d.h. dem Arbeitsprodukt (S.511-514);
 
@@ -43,7 +43,7 @@ Offensichtlich kann ich das hier nicht unternehmen. Ich werde mich also darauf b
 
 ## I. Der Mensch als Gattungswesen
 
-Entfremdung in der dritten von Marx unterschiedenen Hinsicht ist eine Entfremdung, zunächst dem Wesen des Arbeiters als Menschen, dann aber auch sich selbst gegenüber. Was aber ist nach Marx das Wesen des Menschen? In dem Teil der Ökonomisch-Philosophischen Manuskripte, wo Marx die Hegelsche Philosophie kritisiert, schreibt er,
+Entfremdung in der dritten von Marx unterschiedenen Hinsicht ist eine Entfremdung, zunächst dem Wesen des Arbeiters als Menschen, dann aber auch sich selbst gegenüber. Was aber ist nach Marx das Wesen des Menschen? In dem Teil der _Ökonomisch-Philosophischen Manuskripte_, wo Marx die Hegelsche Philosophie kritisiert, schreibt er,
 
 > (D)er Mensch ist nicht nur Naturwesen, sondern er ist menschliches Naturwesen; d. h. für sich selbst seiendes Wesen, darum Gattungswesen, als welches er sich sowohl in seinem Sein als in seinem Wissen bestätigen und betätigen muß. (ÖPM, MEW 40, S.579) 
 

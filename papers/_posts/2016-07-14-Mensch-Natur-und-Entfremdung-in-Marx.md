@@ -4,7 +4,7 @@ title: >-
   Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
   *Ökonomisch-Philosophischen Manuskripten*
 date: 2016-07-14T00:00:00.000Z
-version: '17.07.16, 14:51 pm'
+version: '17.07.16, 15:29 pm'
 author: Carleton B. Christensen
 abstract: >-
   Im Rahmen meiner Bemühungen um eine Rehabilitierung des Marx’schen
@@ -129,7 +129,7 @@ Zum Schluss ist viererlei anzumerken: erstens, um die zweite Bestimmung des Mens
 
 ## Notes
 
-[^1]: An einer Stelle spricht Marx von dem „Bewusstsein, welches der Mensch von seiner Gattung hat … .“ (ÖPM, MEW 40, S.517) Aber Marx scheint eben nicht zu meinen, dass der Mensch ein Bewusstsein des Mensch-seins in demselben Sinn, wie zumindest manche Menschen ein Bewusstsein des Kängaruh-seins haben. Letzteres läuft darauf hinaus, dass man den Begriff ‘Kängaruh’ versteht und in dem Gehalt verschiedener intentionaler Zustände und -erlebnisse hat. Aber in der soeben zitierten Passage behauptet Marx, dass das Bewusstsein, das er von der eigenen Gattung hat, „verwandelt sich durch die Entfremdung … dahin, daß das Gattungs[leben] ihm zum Mittel wird.“ Wenn er ein Bewusstsein der eigenen Gattung in genau demselben Sinn hätte wie wenigstens manche ein Bewusstsein des Kängaruh-seins haben, so würde sein Bewusstsein von der Entfremdung unberührt bleiben, genauso wie ein Bewusstsein des Kängaruh-seins unberührt bliebe.
+[^1]: An einer Stelle spricht Marx von dem „Bewusstsein, welches der Mensch von seiner Gattung hat … .“ (ÖPM, MEW 40, S.517) Aber Marx scheint eben nicht zu meinen, dass der Mensch ein Bewusstsein des Mensch-seins in demselben Sinn hat, wie zumindest manche Menschen ein Bewusstsein des Kängaruh-seins haben. Letzteres läuft darauf hinaus, dass man den Begriff ‘Kängaruh’ versteht und in dem Gehalt verschiedener intentionaler Zustände und -erlebnisse hat. Aber in der soeben zitierten Passage behauptet Marx, dass das Bewusstsein, das er von der eigenen Gattung hat, „verwandelt sich durch die Entfremdung … dahin, daß das Gattungs[leben] ihm zum Mittel wird.“ Wenn er ein Bewusstsein der eigenen Gattung in genau demselben Sinn hätte wie wenigstens manche ein Bewusstsein des Kängaruh-seins haben, so würde sein Bewusstsein von der Entfremdung unberührt bleiben, genauso wie ein Bewusstsein des Kängaruh-seins unberührt bliebe.
 
 [^2]: Im übrigen verbindet Heidegger in dieser Passage, genauso wie Marx es tut, die Egoizität des Daseins mit dessen Freiheit.
 

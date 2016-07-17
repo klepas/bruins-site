@@ -53,7 +53,7 @@ Auffallend ist die Bestimmung, dass der Mensch, als ein Gattungswesen ist sich a
 
 Wie ist das näher zu bestimmen, und zwar so, dass das, was Marx von der Tradition unterscheidet, richtig hervortritt? Um zu verstehen, was Marx meint, wenn er den Menschen als ein Gattungswesen in dem soeben angedeuteten vernünftig selbstregelnden Sinn bezeichnet, müssen wir die folgende Textstelle verstehen:
 
-> Der Mensch ist ein Gattungswesen, ... indem er praktisch und theoretisch die Gattung, sowohl seine eigne als die der übrigen Dinge, zu seinem Gegenstand macht ... .“ (ÖPM, MEW 40, S.515)
+> Der Mensch ist ein Gattungswesen, ... indem er praktisch und theoretisch die Gattung, sowohl seine eigne als die der übrigen Dinge, zu seinem Gegenstand macht ... . (ÖPM, MEW 40, S.515)
 
 Wir haben hier zwei offensichtlich miteinander verschränkte Bestimmungen des Gattungswesensseins. Aber was heisst, dass der Mensch als Gattungswesen die eigene Gattung zum Gegenstand macht? Und was heisst es, dass er ebendamit auch die Gattungen aller übrigen Dinge zum Gegenstand macht?
 
@@ -63,7 +63,7 @@ Um weiter zu kommen, besinnen wir uns darauf, wie Marx die soeben zitierte Passa
 
 Schon bei Hegel finden wir zumindest ansatzweise die Rede vom Sich-Verhalten-zu-sich-selbst. Sie findet sich aber erst recht bei Denkern wie Kierkegaard und Heidegger vor. Inbesondere der Vergleich mit Heidegger, den man ja nicht normalerweise mit Marx in Verbindung bringt, ist lehrreich. Heidegger schreibt, 
 
-> Dasein ist Seiendes, das sich in seinem Sein verstehend zu diesem Sein verhält.“ (Sein und Zeit, § 12, H 52-H 53)
+> Dasein ist Seiendes, das sich in seinem Sein verstehend zu diesem Sein verhält. (Sein und Zeit, § 12, H 52-H 53)
 
 Damit ist, so Heidegger, der formale Begriff der Existenz angezeigt.
 

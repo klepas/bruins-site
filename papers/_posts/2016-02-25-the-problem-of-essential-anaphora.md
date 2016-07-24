@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Problem of Essential Anaphora
-date: {}
+date: 2016-02-25T00:00:00.000Z
 version: '25.02.16, 10:22 am'
 author: Carleton B. Christensen
 abstract: >-

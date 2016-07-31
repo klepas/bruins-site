@@ -1,10 +1,17 @@
 ---
 layout: post
 title: Tomasello zu Moralität aus der Perspective der zweiten Person
-date: 2016-06-30
-version: "31.07.16, 13:53 pm"
+date: {}
+version: '31.07.16, 13:53 pm'
 author: Carleton B. Christensen
-abstract: "Nachstehendes ist ein Referat zum dritten Kapitel des neuen, erst 2015 bei Harvard University Press erschienenen Buchs von Michael Tomasello, <em>A Natural History of Human Morality</em>. Das Kapitel selbst trägt den Titel “Second-Personal Morality”. Das Referat wurde am 30<sup>.sten</sup> Juni, 2016, in dem Doktoranden-Kolloquium von Axel Honneth an der Goethe-Universität, Frankfurt am Main, abgehalten.<br><br>Ich möchte mich bei Christian Schmidt für sehr nützliche Kommentare und Kritik bedanken."
+abstract: >-
+  Nachstehendes ist ein Referat zum dritten Kapitel des neuen, erst 2015 bei
+  Harvard University Press erschienenen Buchs von Michael Tomasello, <em>A
+  Natural History of Human Morality</em>. Das Kapitel selbst trägt den Titel
+  “Second-Personal Morality”. Das Referat wurde am 30<sup>.sten</sup> Juni,
+  2016, in dem Doktoranden-Kolloquium von Axel Honneth an der
+  Goethe-Universität, Frankfurt am Main, abgehalten.<br><br>Ich möchte mich bei
+  Christian Schmidt für sehr nützliche Kommentare und Kritik bedanken.
 published: true
 ---
 
@@ -12,14 +19,14 @@ published: true
 
 ### _Kapitel III_
 
-A. Neue Art Kollaboration: obligate[^1] kollaborative Nahrungssuche 
-B. Gemeinsame Handlung aus der Perspektive der zweiten Person[^2] 
-C. Gemeinsame Bindung und Das Ursprüngliche Sollen 
+A. Neue Art Kollaboration: obligate[^1] kollaborative Nahrungssuche &#8594;
+B. Gemeinsame Handlung aus der Perspektive der zweiten Person[^2] &#8594;
+C. Gemeinsame Bindung und Das Ursprüngliche Sollen &#8594;
 
 ### _Kapitel IV_
 
-A. Neue Art Kollaboration: Gruppenbewusste Teilname an einer kulturellen bzw. sozialen Praxis 
-B. Kollektive Handlung aus der Perspektive eines gruppenbewussten Teilnehmers an einer kulturellen bzw. sozialen Praxis[^3] 
+A. Neue Art Kollaboration: Gruppenbewusste Teilname an einer kulturellen bzw. sozialen Praxis &#8594;
+B. Kollektive Handlung aus der Perspektive eines gruppenbewussten Teilnehmers an einer kulturellen bzw. sozialen Praxis[^3] &#8594;
 C. Ausdrücklich moralische Selbststeuerung und das ursprüngliche Gerecht und Ungerecht
 
 Im Nachstehenden gehe ich, nach einer kurzen Einleitung, darauf ein, was Tomasello im Kap. III unter A., B. und C. meint bzw. meinen könnte—und auch an manchen Stellen hätte meinen sollen.
@@ -258,4 +265,3 @@ Gleichwohl vermögen Tomasello und Carpenter nicht zu erkennen, wie unzureichend
 [^35]: Und eigentlich auch, das müsste man hinzfügen, dass sie _all dies_ gemeinsam erkennen!
 
 [^36]: Bei solchen Redewendungen  muss man aufpassen. Sie dürfen nicht wortwörtlich verstanden werden, denn das Auge kann sich beim Sehen nicht sehend erwischen. Von daher ist jeder, der sich ihrer bedient, angehalten, sie nicht metaphorische aufzuklären. Das ist schwierig.
-

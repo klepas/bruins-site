@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tomasello zu Moralität aus der Perspective der zweiten Person
-date: 2016-06-30T00:00:00.000Z
+date: {}
 version: '31.07.16, 13:53 pm'
 author: Carleton B. Christensen
 abstract: >-
@@ -178,13 +178,13 @@ Diese Darstellungsweise des Phänomens vom gemeinsamen Wissen greift überhaupt 
 
 Jetzt, wo wir bestimmt haben, worin die vollständige _epistemische_ Reziprozität besteht—in dem gemeinsamen Wissen, wie soeben definert—, stellt sich die Frage, ob man die intentionale Reziprozität über das Epistemische hinaus erweitern kann. John Searle hat dies wohl als erster versucht, indem er die These aufstellte, dass es gemeinsame Handlungsintentionen gibt. (Searle sprach von „collective intentions,“ wobei er nicht ganz das meinte, was Tomasello „collective intentionality“ nennt, denn Searle hat nicht zwischen gemeinsamer und kollektiver Intentionalität unterschieden.)
 
-Tatsächlich lässt sich, wie ich meine, die soeben eingeführte selbstbezügliche Darstellungsweise viel plausibeler, weil viel verständlicher, auf Fälle vollständiger nicht-epistemischer, etwa volitiver oder konativer Reziprozität übertragem—also auf gerade die Art Handlungsintention, die bei gemeinsamer Handlung vorliegt. Die Übertragung ist einfach:
+Tatsächlich lässt sich, wie ich meine, die soeben eingeführte selbstbezügliche Darstellungsweise viel plausibeler, weil viel verständlicher, auf nicht-epistemische, etwa volitive oder konative Fälle vollständiger Reziprozität übertragen—also auf gerade die Art Handlungsintention, die bei gemeinsamer Handlung vorliegt. Die Übertragung ist einfach:
 
-<p class="logic">Zwei Individuen A und B wollen gemeinsam, dass <em>p</em>,<br><br> dann, wenn<br><br>A hat das Wollen <em>W</em>, dass (<em>p</em> und B will, dass (<em>p</em> und dass A <em>W</em> hat));<br>und<br>B hat das Wollen <em>W</em>*, dass (<em>p</em> und A will, dass (<em>p</em> und dass B <em>W</em>\* hat));</p>
+<p class="logic">Zwei Individuen A und B wollen gemeinsam, dass <em>p</em>,<br><br> dann, wenn<br><br>A hat das Wollen <em>W</em>, dass (<em>p</em> und B will, dass (<em>p</em> und dass A <em>W</em> hat));<br>und<br>B hat das Wollen <em>W</em>*, dass (<em>p</em> und A will, dass (<em>p</em> und dass B <em>W</em>* hat));</p>
 
 Und:
 
-<p class="logic">Zwei Individuen A und B intendieren gemeinsam, dass <em>p</em>,<br><br>dann und nur dann, wenn<br><br>A hat die Intention <em>I</em>, dass (<em>p</em> und B intendiert, dass (<em>p</em> und dass A <em>I</em> hat));<br>und<br>B hat die Intention <em>I</em>*, dass (<em>p</em> und A intendiert, dass (<em>p</em> und dass B <em>I</em>\* hat)).</p>
+<p class="logic">Zwei Individuen A und B intendieren gemeinsam, dass <em>p</em>,<br><br>dann und nur dann, wenn<br><br>A hat die Intention <em>I</em>, dass (<em>p</em> und B intendiert, dass (<em>p</em> und dass A <em>I</em> hat));<br>und<br>B hat die Intention <em>I</em>*, dass (<em>p</em> und A intendiert, dass (<em>p</em> und dass B <em>I</em>* hat)).</p>
 
 Ich will nicht ausschliessen, dass die selbstbezügliche Darstellungsweise bzw. ihre Erweiterung auf nicht-kognitive Intentionalität tiefe Probleme in sich verbergen könnte. In diesem Zusammenhang jedoch interessiert uns diese Möglichkeit nicht. Was uns interessiert, ist die Tatsache, dass diese Bestimmung der vollständig reziproken Intentionalität, ob nun epistemisch oder nicht, uns erlaubt, nicht nur Tieren wie Schimpansen und auch Hunden gerecht zu werden sondern auch einzusehen, inwiefern Menschen tatsächlich besondere Formen der Intentionalität haben, die, genau wie Tomasello behauptet, Menschen von Schimpansen und Hunden unterscheiden und auch das äussert kooperative menschliche Verhalten ermöglichen.
 

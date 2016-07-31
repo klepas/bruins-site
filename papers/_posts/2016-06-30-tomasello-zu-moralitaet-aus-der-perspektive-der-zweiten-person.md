@@ -19,14 +19,14 @@ published: true
 
 ### _Kapitel III_
 
-A. Neue Art Kollaboration: obligate[^1] kollaborative Nahrungssuche &#8594;
-B. Gemeinsame Handlung aus der Perspektive der zweiten Person[^2] &#8594;
+A. Neue Art Kollaboration: obligate[^1] kollaborative Nahrungssuche &#8594;<br>
+B. Gemeinsame Handlung aus der Perspektive der zweiten Person[^2] &#8594;<br>
 C. Gemeinsame Bindung und Das Ursprüngliche Sollen &#8594;
 
 ### _Kapitel IV_
 
-A. Neue Art Kollaboration: Gruppenbewusste Teilname an einer kulturellen bzw. sozialen Praxis &#8594;
-B. Kollektive Handlung aus der Perspektive eines gruppenbewussten Teilnehmers an einer kulturellen bzw. sozialen Praxis[^3] &#8594;
+A. Neue Art Kollaboration: Gruppenbewusste Teilname an einer kulturellen bzw. sozialen Praxis &#8594;<br>
+B. Kollektive Handlung aus der Perspektive eines gruppenbewussten Teilnehmers an einer kulturellen bzw. sozialen Praxis[^3] &#8594;<br>
 C. Ausdrücklich moralische Selbststeuerung und das ursprüngliche Gerecht und Ungerecht
 
 Im Nachstehenden gehe ich, nach einer kurzen Einleitung, darauf ein, was Tomasello im Kap. III unter A., B. und C. meint bzw. meinen könnte—und auch an manchen Stellen hätte meinen sollen.

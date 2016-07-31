@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tomasello zu Moralität aus der Perspective der zweiten Person
-date: 2016-06-30T00:00:00.000Z
+date: {}
 version: '31.07.16, 20:27 pm'
 author: Carleton B. Christensen
 abstract: >-
@@ -257,7 +257,7 @@ Gleichwohl vermögen Tomasello und Carpenter nicht zu erkennen, wie unzureichend
 
 [^32]: Den Begriff des gemeinsamen Bodens hat Tomasello ausdrücklich von Clark übernommen—siehe Tomasello 2014, S.38, und H. Clark, _The Uses of Language_, Cambridge: Cambridge University Press, 1996.
 
-[^33]: Dem SEP Eintrag zu kollektiver Intentionalität zufolge ist es problematisch, wenn man mit Tomasello gemeinsames Wissen (und _mutatis mutandis_ andere Formen gemeinsamer Intentionalität) etwa Kindern oder Menschenaffen zuschreibt. Denn solche Wesen haben, so der SEP Eintrag, “keine Theorie des Geistes” ("theory of mind"). Warum aber ein Wissen darum, was ein anderer weiss, eine Theorie des Geistes erfordert, ist mir unklar und wird von dem Eintrag nicht erklärt. Sofern ich der Rede von einer Theorie des Geistes überhaupt einen Sinn beimessen kann, möchte ich bezweifeln, dass selbst erwachsene Menschen auf der Strasse eine solche Theorie haben. Siehe http://plato.stanford.edu/archives/sum2013/entries/collective-intentionality/, S.9.
+[^33]: Dem SEP Eintrag zu kollektiver Intentionalität zufolge ist es problematisch, wenn man mit Tomasello gemeinsames Wissen (und _mutatis mutandis_ andere Formen gemeinsamer Intentionalität) etwa Kindern oder Menschenaffen zuschreibt. Denn solche Wesen haben, so der SEP Eintrag, “keine Theorie des Geistes” (“theory of mind”). Warum aber ein Wissen darum, was ein anderer weiss, eine Theorie des Geistes erfordert, ist mir unklar und wird von dem Eintrag nicht erklärt. Sofern ich der Rede von einer Theorie des Geistes überhaupt einen Sinn beimessen kann, möchte ich bezweifeln, dass selbst erwachsene Menschen auf der Strasse eine solche Theorie haben. Siehe http://plato.stanford.edu/archives/sum2013/entries/collective-intentionality/, S.9.
 
 [^34]: Siehe Anmerkung 4.
 

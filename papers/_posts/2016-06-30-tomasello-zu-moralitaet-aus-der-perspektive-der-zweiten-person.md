@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tomasello zu Moralität aus der Perspective der zweiten Person
-date: 2016-06-30T00:00:00.000Z
+date: {}
 version: '31.07.16, 20:27 pm'
 author: Carleton B. Christensen
 abstract: >-
@@ -159,7 +159,7 @@ Der Terminus ‘gemeinsame Intentionalität’ („joint intentionality“) geht
 
 Schiffer definiert gemeinsames Wissen wie folgt:
 
-<p class="logic">Zwei Individuen A und B wissen gemeinsam, dass <em>p</em>,<br>dann und nur dann, wenn<br><br>A weiss, dass B weiss, dass A weiss, ... dass <em>p</em>;<br>und<br>B weiss, dass A weiss, dass B weiss, ... dass <em>p</em><br></p>
+<p class="logic">Zwei Individuen A und B wissen gemeinsam, dass <em>p</em>,<br><br>dann und nur dann, wenn<br><br>A weiss, dass B weiss, dass A weiss, ... dass <em>p</em>;<br>und<br>B weiss, dass A weiss, dass B weiss, ... dass <em>p</em><br></p>
 
 Die drei Punkte weisen darauf hin, dass die Formel, in der sie vorkommen, als rekursiv iteriert verstanden werden soll. Es handelt sich also eigentlich um zwei unendliche lange Ketten. Etwas Ähnliches findet sich auch bei Lewis vor.
 
@@ -180,7 +180,7 @@ Jetzt, wo wir bestimmt haben, worin die vollständige _epistemische_ Reziprozit�
 
 Tatsächlich lässt sich, wie ich meine, die soeben eingeführte selbstbezügliche Darstellungsweise viel plausibeler, weil viel verständlicher, auf nicht-epistemische, etwa volitive oder konative Fälle vollständiger Reziprozität übertragen—also auf gerade die Art Handlungsintention, die bei gemeinsamer Handlung vorliegt. Die Übertragung ist einfach:
 
-<p class="logic">Zwei Individuen A und B wollen gemeinsam, dass <em>p</em>,<br><br> dann, wenn<br><br>A hat das Wollen <em>W</em>, dass (<em>p</em> und B will, dass (<em>p</em> und dass A <em>W</em> hat));<br>und<br>B hat das Wollen <em>W</em>*, dass (<em>p</em> und A will, dass (<em>p</em> und dass B <em>W</em>* hat));</p>
+<p class="logic">Zwei Individuen A und B wollen gemeinsam, dass <em>p</em>,<br><br> dann und nur dann, wenn<br><br>A hat das Wollen <em>W</em>, dass (<em>p</em> und B will, dass (<em>p</em> und dass A <em>W</em> hat));<br>und<br>B hat das Wollen <em>W</em>*, dass (<em>p</em> und A will, dass (<em>p</em> und dass B <em>W</em>* hat));</p>
 
 Und:
 

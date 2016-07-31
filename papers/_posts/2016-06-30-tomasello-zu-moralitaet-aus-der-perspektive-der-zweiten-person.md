@@ -2,7 +2,7 @@
 layout: post
 title: Tomasello zu Moralität aus der Perspective der zweiten Person
 date: 2016-06-30T00:00:00.000Z
-version: '31.07.16, 20:27 pm'
+version: '31.07.16, 21:00 pm'
 author: Carleton B. Christensen
 abstract: >-
   Nachstehendes ist ein Referat zum dritten Kapitel des neuen, erst 2015 bei

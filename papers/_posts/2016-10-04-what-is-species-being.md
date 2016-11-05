@@ -4,7 +4,7 @@ title: >-
   What is Species-Being?—Towards a True Reappropriation of the Concept of
   Alienation
 date: 2016-10-04T00:00:00.000Z
-version: '06.11.16, 10:16 am'
+version: '06.11.16, 10:33 am'
 author: Carleton B. Christensen
 abstract: >-
   In her book <em>Entfremdung—Zur Aktualität eines sozialphilosophischen
@@ -318,6 +318,8 @@ Christensen, C. B. 2014. “Human Ecology as Philosophy”. _Human Ecological Re
 Dejours, C. 2006. “Subjectivity, Work and Action”. _Critical Horizons_ 7: 45–62
 
 Dejours, C., and Deranty, J.-P. 2010. “The Centrality of Work”. _Critical Horizons_ 11: 167-180
+
+Feuerbach, L. 1846/1973 Das Wesen des Christentums. Ludwig Feuerbach—Gesammelte Werke, Bd. V. Schuffenhauer, W. (ed.) Berlin: Akademie Verlag
 
 Kanigel, R. 1997 “Taylor-Made—How the World’s First Efficiency Expert refashioned Modern Life in His Own Image”. _Sciences_ 37: 18-23
 

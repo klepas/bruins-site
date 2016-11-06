@@ -4,7 +4,7 @@ title: >-
   What is Species-Being?—Towards a True Reappropriation of the Concept of
   Alienation
 date: 2016-10-04T00:00:00.000Z
-version: '06.11.16, 10:33 am'
+version: '06.11.16, 11:04 am'
 author: Carleton B. Christensen
 abstract: >-
   In her book <em>Entfremdung—Zur Aktualität eines sozialphilosophischen

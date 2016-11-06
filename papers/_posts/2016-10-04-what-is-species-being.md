@@ -319,7 +319,7 @@ Dejours, C. 2006. “Subjectivity, Work and Action”. _Critical Horizons_ 7: 45
 
 Dejours, C., and Deranty, J.-P. 2010. “The Centrality of Work”. _Critical Horizons_ 11: 167-180
 
-Feuerbach, L. 1846/1973 Das Wesen des Christentums. Ludwig Feuerbach—Gesammelte Werke, Bd. V. Schuffenhauer, W. (ed.) Berlin: Akademie Verlag
+Feuerbach, L. 1846/1973 _Das Wesen des Christentums_. _Ludwig Feuerbach—Gesammelte Werke_, Bd. V. Schuffenhauer, W. (ed.) Berlin: Akademie Verlag
 
 Kanigel, R. 1997 “Taylor-Made—How the World’s First Efficiency Expert refashioned Modern Life in His Own Image”. _Sciences_ 37: 18-23
 

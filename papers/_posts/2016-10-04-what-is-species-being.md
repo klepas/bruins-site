@@ -1,7 +1,7 @@
 ---
 layout: post
 title: >-
-  What is Species-Being?—Towards a True Reappropriation of the Concept of
+  What is Species-Being?—Towards a Full Reappropriation of the Concept of
   Alienation
 date: 2016-10-04T00:00:00.000Z
 version: '06.11.16, 11:04 am'

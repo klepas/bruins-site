@@ -415,8 +415,7 @@ Weber, M. 1947. _The Theory of Social and Economic Organizations_. Henderson, A.
 
 [^33]: In this spirit, Marx writes, “(C)ommunism is not as such the goal of human development—the form of [truly] human society.” (MEW 40, S.546) Human development does not tend towards any end-point _behind the backs of human agents_, as it does in Hegel.
 
-[^34]: This famous passage from _The Critique of the Gotha Programme_ of 1875 is not original to Marx—see	
-https://en.wikipedia.org/wiki/From_each_according_to_his_ability,_to_each_according_to_his_needs.
+[^34]: This famous passage from _The Critique of the Gotha Programme_ of 1875 is not original to Marx—see https://en.wikipedia.org/wiki/From_each_according_to_his_ability,_to_each_according_to_his_needs.
 
 [^35]: Marx maintains, of course, that a social order which allocates resources according to this (half of) the principle must be one in which private property in Marx’s distinctive sense—private ownership of the means of production for the market (exchange)—does not exist.
 

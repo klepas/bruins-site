@@ -4,7 +4,7 @@ title: >-
   What is Species-Being?—Towards a Full Rehabilitation of the Concept of
   Alienation
 date: 2016-10-04T00:00:00.000Z
-version: '11.11.16, 06:07 am'
+version: '11.11.16, 06:12 am'
 author: Carleton B. Christensen
 abstract: >-
   In her book <em>Entfremdung—Zur Aktualität eines sozialphilosophischen
@@ -59,7 +59,7 @@ In the _Economic and Philosophic Manuscripts of 1844_ Marx claims that under con
 
 But what exactly are these four ways in which the wage labourer under capitalism is alienated? Marx barely explains and so the temptation is great to fill in the gaps by assuming that these four ways are simply esoteric labels for exoteric phenomena, such as the physically and psychologically debilitating, and dehumanising conditions of work in nineteenth century capitalism. This, however, empties the concept of alienation of all philosophical content, making it a relatively superficial political and ethical notion whose relevance for the critique of capitalism beyond the nineteenth century is difficult to specify.
 
-One thing, however, is clear: in the _Economic and Philosophic Manuscripts_ Marx thinks of these four forms of alienation as a causal unity of illegitimate suffering. In four ways, four forms or four sense the alienating and alienated character of work under capitalism causes wrongful suffering or at least dissatisfaction such that workers have reason and motive to change their condition.[^2] Evidently, if one can spell these four ways, forms or senses of alienation out in a manner which clearly shows them to be not identical with the exoteric brutalities of nineteenth century capitalism yet still sources of suffering or dissatisfaction; if further one can show them to have their origin in the nature of work under capitalism _as such_: then one will have a critique of work under capitalism _as such_. As will be shown in the next section, it is precisely the role of the concept of alienation to ensure the possibility of such a critique—both in Marx himself and, as I shall argue, in a critical social theory which truly understands the nature of environmental crisis.
+One thing, however, is clear: in the _Economic and Philosophic Manuscripts_ Marx thinks of these four forms of alienation as a causal unity of illegitimate suffering. In four ways, four forms or four senses the alienating and alienated character of work under capitalism causes wrongful suffering or at least dissatisfaction such that workers have reason and motive to change their condition.[^2] Evidently, if one can spell these four ways, forms or senses of alienation out in a manner which clearly shows them to be not identical with the exoteric brutalities of nineteenth century capitalism yet still sources of suffering or dissatisfaction; if further one can show them to have their origin in the nature of work under capitalism _as such_: then one will have a critique of work under capitalism _as such_. As will be shown in the next section, it is precisely the role of the concept of alienation to ensure the possibility of such a critique—both in Marx himself and, as I shall argue, in a critical social theory which truly understands the nature of environmental crisis.
 
 ## Section I: The Significance of the Concept of Alienation for Marx and for Critical Theory
 

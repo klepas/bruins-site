@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Why Light Rail causes Tunnel Vision —A Critique of the Non-Critique of _Transport for Canberra_"
+title: "Why Light Rail causes Tunnel Vision — A Critique of the Non-Critique of _Transport for Canberra_"
 
 date: 2014-12-05
 
@@ -459,6 +459,3 @@ The report by Newman and Kenworthy fixed the terms of subsequent debate in Canbe
 
 
 [^28]: The *Canberra Times* of August 8th, 2013, reported on the response of Simon Corbell, ACT Minister for Sustainable Development, to Infrastructure Australia, which had cast doubt on whether the territory had enough traffic congestion to warrant federal funding for light rail or rapid buses. Corbell said that light rail was “the best choice for Canberra’s future” because it would bring more development to the Civic to Gungahlin corridor than buses. This reveals a powerful motivation for the Government’s endorsement of light rail, more accurately, of the particular way in which light rail is to be introduced: the greater commercialisation of Civic and Northbourne Avenue, which will boost Government revenues. See [http://www.canberratimes.com.au/act-news/canberra-light-rail-plan-not-enough-traffic-says-infrastructure-australia-report-20130808-2rjth.html](http://www.canberratimes.com.au/act-news/canberra-light-rail-plan-not-enough-traffic-says-infrastructure-australia-report-20130808-2rjth.html).
-
-
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Myth of Affluenza or Why Consumerism is not a Disease  — Towards a Meaningful Ecopolitics of Consumption"
+title: "The Myth of Affluenza or Why Consumerism is not a Disease — Towards a Meaningful Ecopolitics of Consumption"
 date: 2010-10-22
 author: Carleton B. Christensen
 

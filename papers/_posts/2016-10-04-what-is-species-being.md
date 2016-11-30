@@ -4,7 +4,7 @@ title: >-
   What is Species-Being?—Towards a Full Rehabilitation of the Concept of
   Alienation
 date: 2016-10-04T00:00:00.000Z
-version: '30.11.16, 21:11 pm'
+version: '30.11.16, 21:21 pm'
 author: Carleton B. Christensen
 abstract: >-
   In her book <em>Entfremdung—Zur Aktualität eines sozialphilosophischen
@@ -391,7 +391,7 @@ Weber, M. 1947. _The Theory of Social and Economic Organizations_. Henderson, A.
 
 [^21]: This will be true only of social roles and identities but since, at least on a broad reading of the term ‘kind’, social roles and identities are kinds, the term is quite appropriate here.
 
-[^22]: The ‘sightedness’, that is, the _cognitive character_, of such application must be emphasised. With Dreyfus and his followers one can certainly say that the ability to perform a certain social role or to realise a certain identity is a knowing-how. But the character of <em>know</em>-how precisely as a knowing of something must be taken seriously: true know-how has, as Fichte might say, an eye set into it, an eye which yields knowledge of what, in view of particular, perhaps unique circumstances in which one is acting, is to be done. Without this eye, without this sight, the behaviour in which the realisation of a role or identity consists would not have the spontaneity, the perhaps unprecedented adaptavity, which permits one to speak of _application_.
+[^22]: The ‘sightedness’, that is, the _cognitive character_, of such application must be emphasised. With Dreyfus and his followers one can certainly say that the ability to perform a certain social role or to realise a certain identity is a knowing-how. But the character of <em>know</em>-how precisely as a knowing of something must be taken seriously: true know-how has, as Fichte might say, an eye set into it, an eye which yields knowledge of what, in view of the particular, perhaps unique circumstances in which one is acting, is to be done. Without this eye, without this sight, the behaviour in which the realisation of a role or identity consists would not have the spontaneity, the perhaps unprecedented adaptavity, which permits one to speak of _application_.
 
 [^23]: I hesitate to say that it therein makes, realises or even merely constitutes itself as what it is because all these terms, particularly the first, encourage (although they do not necessitate) a reading of _Existenz_ as an essentially promethean notion. This is quite wrong; insofar as it is appropriate here to speak, for example, of realisation, realisation is to be understood in an old-fashioned _Aristotelian_ sense rather than any modern sense, whether in the philosophical sense intended by those who claim that the only thing essential about human being is that it makes and re-makes itself anew; or in the pre-philosophical sense intended by those who speak of their essential need to realise themselves in this or that unique way, e.g., through performance poetry, stamp-collecting or train-spotting.
 

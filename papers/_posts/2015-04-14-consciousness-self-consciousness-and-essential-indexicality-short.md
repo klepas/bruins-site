@@ -29,6 +29,7 @@ abstract: >-
   to construe what it is like to undergo such experience in a way which does not
   entail any kind of self-awareness.
 published: true
+version: '23.01.17, 12:02 am'
 ---
 
 ## Section 1: Zahavi and Sartre on Consciousness

@@ -1,13 +1,34 @@
 ---
 layout: post
-title: "Consciousness, Self-Consciousness and Essential Indexicality"
-date: 2015-03-14
+title: 'Consciousness, Self-Consciousness and Essential Indexicality'
+date: 2015-03-14T00:00:00.000Z
 author: Carleton B. Christensen
+abstract: >-
+  Dan Zahavi argues for a Sartrean conception of consciousness which he regards
+  as endorsed by numerous other thinkers in the phenomenological tradition and
+  as superior to both contemporary “higher-order” and “one-level”
+  (neo-)Brentanian conceptions. As Zahavi points out, all three conceptions—the
+  ostensibly phenomenological, the “higher-order” and the Brentanian—assume that
+  consciousness is to be explicated as a form of self-awareness. Only under this
+  assumption, thinks Zahavi, can one endorse the thesis deriving from Nagel that
+  a psychological state or experience is conscious only if there is something it
+  is like to be in this state or experience. For according to Zahavi there being
+  something it is like to be in a certain psychological state or experience
+  implicates the givenness of something to the subject, hence what Zahavi calls
+  the dative status of the subject.
 
-abstract: "Dan Zahavi argues for a Sartrean conception of consciousness which he regards as endorsed by numerous other thinkers in the phenomenological tradition and as superior to both contemporary “higher-order” and “one-level” (neo-)Brentanian conceptions. As Zahavi points out, all three conceptions—the ostensibly phenomenological, the “higher-order” and the Brentanian—assume that consciousness is to be explicated as a form of self-awareness. Only under this assumption, thinks Zahavi, can one endorse the thesis deriving from Nagel that a psychological state or experience is conscious only if there is something it is like to be in this state or experience. For according to Zahavi there being something it is like to be in a certain psychological state or experience implicates the givenness of something to the subject, hence what Zahavi calls the dative status of the subject.
-
-I argue that one can accommodate, at least for conscious perceptual experience, the intuition which leads Zahavi to speak of givenness and the dative status of the subject without endorsing the thesis that consciousness is a form of self-consciousness (which I regard as implausible and for which Zahavi has no good argument). I do this by extracting what I take to be the real lessons implicit in Perry’s deliberations about essential indexicality: essential anaphora and essential spatial demonstrativeness. These two notions, taken as capturing the structure of distinctively perceptual intentional content, permit an account of conscious perceptual experience which allows one to construe what it is like to undergo such experience in a way which does not entail any kind of self-awareness."
-
+  I argue that one can accommodate, at least for conscious perceptual
+  experience, the intuition which leads Zahavi to speak of givenness and the
+  dative status of the subject without endorsing the thesis that consciousness
+  is a form of self-consciousness (which I regard as implausible and for which
+  Zahavi has no good argument). I do this by extracting what I take to be the
+  real lessons implicit in Perry’s deliberations about essential indexicality:
+  essential anaphora and essential spatial demonstrativeness. These two notions,
+  taken as capturing the structure of distinctively perceptual intentional
+  content, permit an account of conscious perceptual experience which allows one
+  to construe what it is like to undergo such experience in a way which does not
+  entail any kind of self-awareness.
+published: true
 ---
 
 ## Section 1: Zahavi and Sartre on Consciousness
@@ -114,7 +135,7 @@ Yet this account of what Perry is getting at simultaneously highlights a signifi
 
 So why does Perry puts us through these hoops? The clue lies in a crucial equivocation in the notion of agent-relative knowledge: is agent-relative perceptual experience and belief selfless in the sense that it involves no *representation of* self? Or is it selfless in the sense that it involve no *reference to* self? It is by no means obvious that these are the same or even mutually entailing theses yet Perry does not distinguish them. In the essay we have been discussing, Perry writes,
 
-> When we perceive how the world is around us and act upon it, we need to judge what distance and direction things stand relative to ourselves. But we do not need to keep track of who it is that we are judging things to be in front of or to the left or, at least as long as we are basing our actions on simple perceptual knowledge. In this case, our knowledge concerns ourselves but need not involve an explicit *representation* of ourselves. (Perry 1998, p.329; italics added) (Perry 1998, p.329; italics added)
+> When we perceive how the world is around us and act upon it, we need to judge what distance and direction things stand relative to ourselves. But we do not need to keep track of who it is that we are judging things to be in front of or to the left or, at least as long as we are basing our actions on simple perceptual knowledge. In this case, our knowledge concerns ourselves but need not involve an explicit *representation* of ourselves. (Perry 1998, p.329; italics added)
 
 But in another essay he concludes from the same observations about perception and action that “(t)here is no need for a self-*referring* component of our belief ... .” (Perry 1986a, p.182; italics added)[^reference_representation] Indeed, this equivocation between self-reference and self-representation is present in the essay we are discussing. For in this essay Perry says that in all the reports he would naturally give of his perceiving an apple there is no *reference* to him.
 

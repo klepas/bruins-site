@@ -2,7 +2,7 @@
 layout: post
 title: The Problem of Essential Anaphora
 date: 2016-02-25T00:00:00.000Z
-version: '25.02.16, 10:22 am'
+version: '11.03.17, 18:12 pm'
 author: Carleton B. Christensen
 abstract: >-
   This paper represents a development of arguments first deployed in two papers
@@ -43,7 +43,7 @@ This is surprising. What, after all, are the indexical thoughts, beliefs or info
 
 McGinn, Price and the many others who make similar claims would no doubt protest that they do not understand by first-person thought or belief anything as literal as this. But what then _do_ they mean by indexical, and in particular, first-person thought and belief? Perhaps McGinn, for example, really means something like the following:
 
-> (I)ndexical concepts are ineliminable because without them agency would be impossible: when I imagine myself divested of .... thoughts [whose content an agent with these thoughts and capable of expressing its thoughts linguistically, must express in indexical, indeed first-personal terms if it is to express this content perspicuously. In other words, when I imagine myself] employing only centreless mental representations [,which are precisely representations whose content a being capable of expressing its thoughts would have to express non-indexically and in particular non-first personally], I _eo ipso_ imagine myself deprived of the power to act. (McGinn 1983, p.104)
+> (I)ndexical concepts are ineliminable because without them agency would be impossible: when I imagine myself divested of .... thoughts [whose content an agent with these thoughts and capable of expressing its thoughts linguistically, must express in indexical, indeed first-personal terms if it is to express this content perspicuously. In other words, when I imagine myself employing only centreless mental representations [,which are precisely representations whose content a being capable of expressing its thoughts would have to express non-indexically and in particular non-first personally], I _eo ipso_ imagine myself deprived of the power to act. (McGinn 1983, p.104)
 
 And similarly Price the following:
 

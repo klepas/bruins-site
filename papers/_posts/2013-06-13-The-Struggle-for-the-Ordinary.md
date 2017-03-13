@@ -5,7 +5,7 @@ title: "The Struggle for the Ordinary——Was für eine Konsumtheorie braucht d
 date: 2013-06-13
 version: "09.07.13, 21:30 pm"
 author: Carleton B. Christensen
-abstract: "I will be adding an abstract later.<br><br>This is a paper held on 13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof. Dr. Axel Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am Man."
+abstract: "I will be adding an abstract later.<br>This is a paper held on 13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof. Dr. Axel Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am Man."
 ---
 
 ## Einleitung

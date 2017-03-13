@@ -84,9 +84,9 @@ Damit wird das begriffliche Gerüst eines Typus von Konsumtheorie sichtbar, die 
 
 1. Sie ist praktisch relevant für das politische Bestreben, den gegenwärtigen Konsum nach Art, Grösse und Tempo zu verringern, und zwar auf zweierlei Weise:
 
-    * In dem _negativen_ Sinn, dass sie ein Kriterium immanent enthält, mit dem man beurteilen kann, inwiefern konkret bestehende soziale Verhältnisse suboptimale Lebensbedingungen für Wesen, wie wir es sind, darstellen.
+    - In dem _negativen_ Sinn, dass sie ein Kriterium immanent enthält, mit dem man beurteilen kann, inwiefern konkret bestehende soziale Verhältnisse suboptimale Lebensbedingungen für Wesen, wie wir es sind, darstellen.
     
-    * In dem _positiven_ Sinn, dass sie Anleitung dazu gibt, wie sich der Konsum im weitesten Sinn (der den gesamten Prozess von Produktion, Verteilung und Entsorgung umfasst, da ja an diesem ganzen Weg entlang konsumiert wird), in Richtung auf Nachhaltigkeit verändern lässt bzw. davor gehütet wird, ins Unnachhaltige weiter abzurutschen.
+    - In dem _positiven_ Sinn, dass sie Anleitung dazu gibt, wie sich der Konsum im weitesten Sinn (der den gesamten Prozess von Produktion, Verteilung und Entsorgung umfasst, da ja an diesem ganzen Weg entlang konsumiert wird), in Richtung auf Nachhaltigkeit verändern lässt bzw. davor gehütet wird, ins Unnachhaltige weiter abzurutschen.
     
 2. Sie ist empirisch in dem Sinne, dass sie von den Ergebnissen konkreter empirischen Forschung in der Soziologie und Anthropologie ausgeht. (Dies ist notwendig, damit sie die phänomenologisch nachvollziehbare Evidenz hat, ohne die ihr Anspruch, alltägliche Konsumpraktiken richtig zu treffen, nicht überzeugen kann.)
 

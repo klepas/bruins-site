@@ -3,13 +3,14 @@ layout: post
 title: >-
   The Struggle for the Ordinary——Was für eine Konsumtheorie braucht die
   Umweltpolitik?
-date: {}
+date: 2013-06-13T00:00:00.000Z
 version: '09.07.13, 21:30 pm'
 author: Carleton B. Christensen
 abstract: >-
-  I will be adding an abstract later.<br>This is a paper held on
-  13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof. Dr. Axel
-  Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am Man.
+  I will be adding an abstract later.<br>This is the long version of a paper
+  held on 13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof.
+  Dr. Axel Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am
+  Man.
 published: true
 ---
 

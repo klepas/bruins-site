@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "The Struggle for the Ordinary——Was für eine Konsumtheorie braucht die Umweltpolitik?"
-date: 2013-06-13
-version: "09.07.13, 21:30 pm"
+title: >-
+  The Struggle for the Ordinary——Was für eine Konsumtheorie braucht die
+  Umweltpolitik?
+date: {}
+version: '09.07.13, 21:30 pm'
 author: Carleton B. Christensen
-
-abstract: "I will be adding an abstract later.<br>This is a paper held on 13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof. Dr. Axel Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am Man."
-
+abstract: >-
+  I will be adding an abstract later.<br>This is a paper held on
+  13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof. Dr. Axel
+  Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am Man.
+published: true
 ---
 
 ## Einleitung
@@ -319,7 +323,7 @@ Man stelle sich jetzt vor, dass sich bei dieser Begegnung die Moral<em>sensibili
 
 [^44]: “(M)ost people have very limited interest in branding. For some people, a single brand, such as Levi’s, will work well enough to stand for branding in general, while for others _Primark_ has now come to stand for the desire to get inexpensive, good-value garments in lieu of an interest in brands.” (Miller und Woodward 2012, S.62)
 
-[^45]: In letzter Zeit ist über die Markentreue (brand loyalty) viel geschrieben worden, z.B., von Naomi Klein. Nun die Markentreue gibt es, aber die, die es meistens gibt, sieht etwas anders aus als die in der populären Schriftstellerei dargestellte: meistens ergibt sich die Markentreue gerade nicht aus den Gründen, die man erwarten müsste, wenn es tatsächlich den Markenfetischmus gäbe, von dem bei Klein und anderen die Rede ist. Denn meistens ergibt sich die Treue aus ganz pragmatischen Gründen: die einzelnen Konsumenten haben entdeckt, dass ihnen die und die Marke am besten passt, am bequemsten ist, oder sie haben die und die Marke das letzte Mal gekauft und waren damit zufrieden. Kurz, manche Jeansträger sind nur deshalb einer Marke treu, weil sie sich durch ihre Treue von der Qual der Wahl beim Einkaufen befreien. (Miller und Woodward 2012, S.53-55)<br> <b>Damit soll im übrigen nicht unterstellt werden, dass die meisten Jeansträger nur deshalb kein Interesse an Marken, Mode und dgl. haben, weil sie ein ‘authentisches’ Verhältnis zu ihren Jeanshosen haben—was das auch immer heissen mag. Vielmehr ist es so, dass die meisten nicht sehr viel über Jeanshosen nachdenken: sie wissen sehr wenig über ihre eigenen Jeanshosen und über Jeanshosen im Allgemeinen. (S.54)
+[^45]: In letzter Zeit ist über die Markentreue (brand loyalty) viel geschrieben worden, z.B., von Naomi Klein. Nun die Markentreue gibt es, aber die, die es meistens gibt, sieht etwas anders aus als die in der populären Schriftstellerei dargestellte: meistens ergibt sich die Markentreue gerade nicht aus den Gründen, die man erwarten müsste, wenn es tatsächlich den Markenfetischmus gäbe, von dem bei Klein und anderen die Rede ist. Denn meistens ergibt sich die Treue aus ganz pragmatischen Gründen: die einzelnen Konsumenten haben entdeckt, dass ihnen die und die Marke am besten passt, am bequemsten ist, oder sie haben die und die Marke das letzte Mal gekauft und waren damit zufrieden. Kurz, manche Jeansträger sind nur deshalb einer Marke treu, weil sie sich durch ihre Treue von der Qual der Wahl beim Einkaufen befreien. (Miller und Woodward 2012, S.53-55)<br>Damit soll im übrigen nicht unterstellt werden, dass die meisten Jeansträger nur deshalb kein Interesse an Marken, Mode und dgl. haben, weil sie ein ‘authentisches’ Verhältnis zu ihren Jeanshosen haben—was das auch immer heissen mag. Vielmehr ist es so, dass die meisten nicht sehr viel über Jeanshosen nachdenken: sie wissen sehr wenig über ihre eigenen Jeanshosen und über Jeanshosen im Allgemeinen. (S.54)
 
 [^46]: In der Werbung für die Autos von Dacia wird die Marke als das Statussymbol für diejenigen dargestellt, die kein Statussymbol brauchen. Damit zeigen sich Dacia und ihre Werbeagentur dessen bewusst, dass die meisten Verbraucher ein sehr ironisches, kritisches, ja sogar zynisches Verhältnis zu Autowerbung haben, insbes. zu der gängigen Meinung, dass das Auto ein Statussymbol ist.
 

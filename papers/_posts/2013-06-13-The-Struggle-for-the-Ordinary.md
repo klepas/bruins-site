@@ -3,7 +3,7 @@ layout: post
 title: >-
   The Struggle for the Ordinary—Was für eine Konsumtheorie braucht die
   Umweltpolitik?
-date: {}
+date: 2013-06-13T00:00:00.000Z
 version: '09.07.13, 21:30 pm'
 author: Carleton B. Christensen
 abstract: >-

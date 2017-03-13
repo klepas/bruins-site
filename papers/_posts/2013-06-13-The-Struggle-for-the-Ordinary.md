@@ -195,7 +195,7 @@ Ebensowenig geben die Forschungsergebnisse von Miller und Woodward Grund zu der 
 
 Sobald man die Dinge so sieht, erkennt man, dass die schweigende Gemeinschaft nur deshalb, wenn überhaupt, eine Form spätmoderner Entfremdung ist, weil sie, wie auch die Familie und der Freundeskreis, unter der Vorherrschaft wirtschaftlicher Imperative leidet. Das Unstimmige an der spätkapitalistischen Gemeinschaftlichkeit ist also nicht die schweigende Gemeinschaft selbst, sondern die Form, die sie faktisch angenommen hat. Und die schweigende Gemeinschaft hat ihre Vorteile—nicht nur, dass bei ihr die Nachbarschaft einen in Ruhe lässt, sondern auch, dass keine Bürgerinitiative, sofern sie ihren Ursprung richtig versteht, behaupten kann, ‘die’ Gemeinschaft zu sein. In dieser Hinsicht hat Margaret Thatcher recht: so etwas gibt es nicht.[^63]
 
-### b. Interne Kritik und praktisch-politische Anleitung (§ 4, 1.)
+### b. Immanente Kritik und praktisch-politische Anleitung
 
 Am Verbrauch von Jeanshosen, sofern er als die gesellschaftliche Praxis verstanden wird, die Miller und Woodward ethnographisch beschreiben, lässt sich eine allgemeine Struktur ablesen, die erklärt, weshalb er eine ausgezeichnete Art Konsum ist. Bei näherem Hinsehen wird klar: das Tragen einer Jeanshose, sofern er als Zug in dieser Praxis vollzogen wird, ist ein Vorgang, in dem zwischen den Bedürfnissen eines Individuums—dem Bedürfnis des Trägers, seine Tagesgeschäfte zu erledigen, sich im dreifachen Sinn behaglich zu fühlen, usw.—und den normativen und axiologischen Erwartungen anderer vermittelt wird. Es hat also die allgemeine Struktur einer gegenseitigen Abstimmung individueller Interessen und gewisser konkreter Normen bzw. Werte aufeinander.
 

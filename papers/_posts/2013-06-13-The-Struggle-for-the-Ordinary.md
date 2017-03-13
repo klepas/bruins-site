@@ -82,8 +82,11 @@ Es dürfte schon spurbar sein, zu welchem der zwei von mir unterschieden Typen k
 
 Damit wird das begriffliche Gerüst eines Typus von Konsumtheorie sichtbar, die die folgenden Eigenschaften aufweist:
 1. Sie ist praktisch relevant für das politische Bestreben, den gegenwärtigen Konsum nach Art, Grösse und Tempo zu verringern, und zwar auf zweierlei Weise:
-  * In dem _negativen_ Sinn, dass sie ein Kriterium immanent enthält, mit dem man beurteilen kann, inwiefern konkret bestehende soziale Verhältnisse suboptimale Lebensbedingungen für Wesen, wie wir es sind, darstellen.
-  * In dem _positiven_ Sinn, dass sie Anleitung dazu gibt, wie sich der Konsum im weitesten Sinn (der den gesamten Prozess von Produktion, Verteilung und Entsorgung umfasst, da ja an diesem ganzen Weg entlang konsumiert wird), in Richtung auf Nachhaltigkeit verändern lässt bzw. davor gehütet wird, ins Unnachhaltige weiter abzurutschen.
+
+    * In dem _negativen_ Sinn, dass sie ein Kriterium immanent enthält, mit dem man beurteilen kann, inwiefern konkret bestehende soziale Verhältnisse suboptimale Lebensbedingungen für Wesen, wie wir es sind, darstellen.
+    
+    * In dem _positiven_ Sinn, dass sie Anleitung dazu gibt, wie sich der Konsum im weitesten Sinn (der den gesamten Prozess von Produktion, Verteilung und Entsorgung umfasst, da ja an diesem ganzen Weg entlang konsumiert wird), in Richtung auf Nachhaltigkeit verändern lässt bzw. davor gehütet wird, ins Unnachhaltige weiter abzurutschen.
+    
 2. Sie ist empirisch in dem Sinne, dass sie von den Ergebnissen konkreter empirischen Forschung in der Soziologie und Anthropologie ausgeht. (Dies ist notwendig, damit sie die phänomenologisch nachvollziehbare Evidenz hat, ohne die ihr Anspruch, alltägliche Konsumpraktiken richtig zu treffen, nicht überzeugen kann.)
 3. Sie ist philosophisch in dem breiten ‘philosophisch-hermeneutischen’ Sinne, dass sie auf die philosophische Tradition und deren Kategorien zurückgreift, um das praktisch-politische Potential der Ergebnisse der empirischen Forschung voll zu entfalten—im Grunde, um 1. wahr zu machen.)
 4. Sie ist philosophisch in dem weiteren transzendentalphilosophischen Sinn,[^30] dass sie die Ergebnissen von 3. als allgemeine Strukturen der Subjektivität herausstellt. Nur indem sie sich auf dieser Ebene bewegt, gelangt sie zur Einsicht darin, dass das, was ihr Thema ist—im Grunde, was es heisst, Wesen, wie wir es sind, zu sein—jene ontologische Ausgerichtetheit auf einen Idealzustand besitzt, die der Adornoschen Kritik an Veblen implizit zugrundeliegt und die hier anvisierte Theorie davor rettet, moralisierend zu sein.[^31]

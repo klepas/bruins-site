@@ -4,7 +4,7 @@ layout: post
 title: >-
   Muss die Gegebenheit des Subjekts eine Gegebenheit <em>als</em> Subjekt sein?
 date: 2018-10-04
-version: '21.06.18, 22:48 pm'
+version: "21.06.18, 22:48 pm"
 author: Carleton B. Christensen
 abstract: >-
 Dieses Paper bildet den Text eines Vortrags, den ich am 22<sup>.sten</sup> Juni, 2018, auf dem Workshop „Philosophischer Askriptivismus“ (21.<sup>.sten</sup>  bis 22.<sup>.sten</sup>, 2018) an der Westfälischen Wilhelms-Universität, Münster, gehalten habe.
@@ -258,4 +258,4 @@ Zahavi, D. (2009) “Is the Self a Social Construct?,” in <em>Inquiry</em>, Bd
 
 [^27]: Schliesslich ist zur Ernsthaftigkeit des Sich-Vorstellens, wie man behauptet, dass <em>p</em>, nur erforderlich, dass dieses Sich-Vorstellen zwecks Ermittlung der Wahrheit geschieht. Selbstverständlich muss sich diese Ermittlung der Wahrheit nicht selber bewusst geschehen, d.h., aus irgendeinem Entschluss ergeben. Wie die Wahrnehmung selbst, ist auch das Sich-Vorstellen, wie man etwas behauptet, von Hause aus auf die Wahrheit ausgerichtet. Das Sich-Vorstellen im Sinne des blossen Fantasierens, des Sich-Einbildens von etwas, ist der parasitäre, abgeleitete Fall, nicht umgekehrt.
 
-[^28]: Die <em>erstpersonale</em> Darstellungsweise, also, der <em>Selbst</em>bericht <em>oratio obliqua</em> („Ich sehe, wie ein Apfel vor mir (da) liegt“ usw.), fällt gerade deshalb aus, weil sie, wenn sie als die <em>eigentliche</em> verstanden wäre, unterstellen würde, dass der Gehalt der Wahrnehmung eine Repräsentation seines Subjekts enthielte. Man könnte dann nicht behaupten, was Perry behaupten will, nämlich, dass es sich bei dem Gehalt seiner Wahrnehmung um einen „selbstlosen Gedanken“ handelt. 
+[^28]: Die <em>erstpersonale</em> Darstellungsweise, also, der <em>Selbst</em>bericht <em>oratio obliqua</em> („Ich sehe, wie ein Apfel vor mir (da) liegt“ usw.), fällt gerade deshalb aus, weil sie, wenn sie als die <em>eigentliche</em> verstanden wäre, unterstellen würde, dass der Gehalt der Wahrnehmung eine Repräsentation seines Subjekts enthielte. Man könnte dann nicht behaupten, was Perry behaupten will, nämlich, dass es sich bei dem Gehalt seiner Wahrnehmung um einen „selbstlosen Gedanken“ handelt.

@@ -2,7 +2,7 @@
 layout: post
 title: >
   Muss die Gegebenheit des Subjekts eine Gegebenheit *als* Subjekt sein?
-date: 2018-06-21
+date: 2018-06-22
 version: "21.06.18, 22:48 pm"
 author: Carleton B. Christensen
 abstract: >

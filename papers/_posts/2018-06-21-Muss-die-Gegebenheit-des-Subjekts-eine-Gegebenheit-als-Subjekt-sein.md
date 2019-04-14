@@ -6,7 +6,7 @@ date: 2018-10-04
 version: "21.06.18, 22:48 pm"
 author: Carleton B. Christensen
 abstract: >
-  "Dieses Paper bildet den Text eines Vortrags, den ich am 22<sup>.sten</sup> Juni, 2018, auf dem Workshop „Philosophischer Askriptivismus“ (21.<sup>.sten</sup>  bis 22.<sup>.sten</sup>, 2018) an der Westfälischen Wilhelms-Universität, Münster, gehalten habe."
+  Dieses Paper bildet den Text eines Vortrags, den ich am 22<sup>.sten</sup> Juni, 2018, auf dem Workshop „Philosophischer Askriptivismus“ (21.<sup>.sten</sup>  bis 22.<sup>.sten</sup>, 2018) an der Westfälischen Wilhelms-Universität, Münster, gehalten habe.
 published: true
 ---
 

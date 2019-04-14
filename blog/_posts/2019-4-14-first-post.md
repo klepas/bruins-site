@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Starting a blog"
+title:  "I am starting a blog!"
 published: yes
 ---
 
-Hallo.
+Blogging functionality has been added to my website in order to enable me to post quick comments on diverse matters, e.g., responses to comment received on papers or course materials; and comments of topical issues, e.g., concerning development in Canberra.
 
-More content will be coming soon. :)
+For example, I hope soon to post some replies to comments made on the op ed I recently published in *The Riot ACT*! See [Barr’s fast track from Bush Capital to concrete jungle](https://the-riotact.com/barrs-fast-track-from-bush-capital-to-concrete-jungle/291626).

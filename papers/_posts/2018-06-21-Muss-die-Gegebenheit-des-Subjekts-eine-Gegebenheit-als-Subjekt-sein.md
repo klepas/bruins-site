@@ -92,7 +92,7 @@ Bis jetzt ist nicht geklärt, worin das explizite und insbesondere das erstperso
   
   Wir lassen Perry selbst erklären, was er damit meint:
   
-> Würde sich unser Erkenntnisvermögen darauf beschränken, bloß die Beschaffenheit von Gegenständen aufzudecken, die uns unmittelbar umgeben, mit denen wir unmittelbar zu tun haben, bräuchen wir nur selbstlose Gedanken. (Perry 1998, in Perry 2000, S.329)
+> Würde sich unser Erkenntnisvermögen darauf beschränken, bloß die Beschaffenheit von Gegenständen aufzudecken, die uns unmittelbar umgeben, mit denen wir unmittelbar zu tun haben, bräuchten wir nur selbstlose Gedanken. (Perry 1998, in Perry 2000, S.329)
 
 Was Perry unter einem selbstlosen Gedanken versteht, wird mit dem folgenden Beispiel verdeutlicht: 
 

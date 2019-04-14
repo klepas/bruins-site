@@ -24,13 +24,29 @@ layout: base
     </div>
   </section>
 
+  {% if site.categories.blog.size > 0 %}
+    <section class="content recent-blog">
+      <h2>Last aside</h2>
+
+      <article class="page content">
+        {% for post in site.categories.blog limit:1 %}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <h3>{{ post.title }}</h3>
+        </a>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{ post.excerpt }}
+        {% endfor %}
+      </article>
+    </section>
+  {% endif %}
+
   <section class="content recent-papers">
 
     <h2>Recent Papers</h2>
 
     <div class="cards">
       {% for post in site.categories.papers limit:3 %}
-        <div class="card">
+        <article class="card">
           <a class="papers-link" href="{{ post.url | prepend: site.baseurl }}">
           <!-- Uncomment to include images on cards
           <div class="card-image">
@@ -48,7 +64,7 @@ layout: base
             {% endif %}
           </div>
           </a>
-        </div>
+        </article>
       {% endfor %}
     </div>
   </section>

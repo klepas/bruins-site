@@ -4,7 +4,11 @@ layout: base
 
 <section class="content">
   <header class="page header">
-    <h2 class="page-title">{{ page.title }}</h2>
+    <h2 class="page-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
+    <p class="post-meta">
+      <a class="print-btn" href="#" onClick="window.print();return false">
+        [ <i class="fa fa-file-pdf-o"></i> PDF / print <i class="fa fa-print"></i> ]</a>
+    </p>
   </header>
 
   <article class="page content">

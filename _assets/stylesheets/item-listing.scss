@@ -28,25 +28,25 @@ $list-item-border: 1px solid transparentize($base-font-color, 0.8);
       font-style: italic;
     }
 
+    h3 {
+      font-family: $fontface-serif;
+      font-size: 1.3em;
+      line-height: $base-leading;
+      margin-bottom: 0.4em;
+      padding: 2em 2em 1em 0;
+      a {
+        line-height: inherit;
+        p {
+          line-height: inherit;
+        }
+      }
+    }
+
     .item-title {
       float: left;
       width: 100%;
       overflow: hidden;
       outline: none;
-      padding: 2em 2em 1em 0;
-
-      h3 {
-        font-family: $fontface-serif;
-        font-size: 1.3em;
-        margin-bottom: 0.4em;
-        line-height: $base-leading;
-        a {
-          line-height: inherit;
-          p {
-            line-height: inherit;
-          }
-        }
-      }
 
       @include media($large-screen) {
         @include span-columns(4 of 12);

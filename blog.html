@@ -1,7 +1,7 @@
 ---
 layout: base
-title: Paper index
-permalink: /papers/
+title: Asides
+permalink: /blog/
 ---
 <section class="content papers">
   <header class="page papers">
@@ -10,7 +10,7 @@ permalink: /papers/
 
   <article class="page content">
     <ul class="paper-list">
-      {% for post in site.categories.papers %}
+      {% for post in site.categories.blog %}
         <li class="item">
           <h3>
             <a class="item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>

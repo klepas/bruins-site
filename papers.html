@@ -12,17 +12,10 @@ permalink: /papers/
     <ul class="paper-list">
       {% for post in site.categories.papers %}
         <li class="item">
-          <div class="item-title">
-            <h3>
-              <a class="item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
-            </h3>
-            <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </div>
-          <div class="item-abstract">
-            {% if post.abstract %}
-            <p class="abstract">{{ post.abstract | truncatewords:90 | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-            {% endif %}
-          </div>
+          <h3>
+            <a class="item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+          </h3>
+          <span class="papers-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         </li>
       {% endfor %}
     </ul>

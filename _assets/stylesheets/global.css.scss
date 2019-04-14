@@ -34,28 +34,44 @@ div.page-content {
   ///////////////////////////////////////////////////////////////////////////////////
   @include outer-container;
   text-align: center;
+  margin-top: 3em;
   margin-bottom: 3em;
+}
+
+section.content-new {
+  @include media(min-width $tiny-screen max-width $large-screen, 12) { }
+
+  margin: 8px;
+  margin-top: 3em;
+
+  @include media(max-width $tiny-screen) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+  @include media(min-width $large-screen) {
+    @include span-columns(10);
+    @include shift(1);
+  }
 }
 
 section.content,
 section.introduction {
-  margin: 8px;
-  margin-top: 3em;
-  @include media(min-width $tiny-screen max-width $large-screen, 12) {
-  }
+  @include media(min-width $tiny-screen max-width $large-screen, 12) { }
+  margin-top: 0.5em 3em 0.5em 0;
 
   & article.post.content,
   & article.page.content,
   & div.site-intro  {
     margin-bottom: 1.5em;
-    @include media(max-width $tiny-screen) {
-      @include span-columns(10);
-      @include shift(1);
-    }
-    @include media(min-width $large-screen) {
-      @include span-columns(10);
-      @include shift(1);
-    }
+
+    // @include media(max-width $tiny-screen) {
+    //   @include span-columns(12);
+    //   @include shift(1);
+    // }
+    // @include media(min-width $large-screen) {
+    //   @include span-columns(10);
+    //   @include shift(1);
+    // }
   }
 }
 

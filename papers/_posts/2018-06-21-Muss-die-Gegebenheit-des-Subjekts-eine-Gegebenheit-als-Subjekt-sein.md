@@ -137,7 +137,7 @@ http://www.cbchristensen.net/papers/2015/11/30/attitudes-de-se-and-de-me.html
 Christensen, C. (2016) “The Problem of Essential Anaphora,” available at:
 http://www.cbchristensen.net/papers/2016/02/25/the-problem-of-essential-anaphora.html
 
-Christensen, C. (2017) “Handlung und Wesentlich Indexikalität,“ Vortrag zuerst gehalten am 08.07.17 im Forschungsseminar des Instituts für Philosophie der Universität Leipzig
+Christensen, C. (2017) “Handlung und Wesentliche Indexikalität,“ Vortrag zuerst gehalten am 08.07.17 im Forschungsseminar des Instituts für Philosophie der Universität Leipzig
 
 Crimmins, M., and Perry, J. (1989) “The Prince and the Phone Booth: Reporting Puzzling Beliefs,” in Perry 2000, S.207-232
 

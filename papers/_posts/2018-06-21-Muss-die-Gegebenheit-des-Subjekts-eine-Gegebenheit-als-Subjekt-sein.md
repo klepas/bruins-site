@@ -249,7 +249,7 @@ Zahavi, D. (2009) “Is the Self a Social Construct?,” in <em>Inquiry</em>, Bd
 
 [^23]: Dieses Beispiel ist Peacocke 1992 entnommen.
 
-[^24]: Auch Peacocke vertritt die Ansicht, dass die Wahrnehmung sowohl eine begriffliche als auch eine nicht-begriffliche Dimensionen besitzen muss—siehe Peacocke 1992. Allerdings scheint er ihre Einheit nicht richtig zu klären und sogar klären zu können.
+[^24]: Auch Peacocke vertritt die Ansicht, dass die Wahrnehmung sowohl eine begriffliche als auch eine nicht-begriffliche Dimension besitzen muss—siehe Peacocke 1992. Allerdings scheint er ihre Einheit nicht richtig zu klären und sogar klären zu können.
 
 [^25]: “Blindsehen (Englisch: Blindsight) bezeichnet eine verbliebene Restfunktion visueller Informationsverarbeitung in Teilen des Gesichtsfeldes, die aufgrund einer Rindenblindheit erblindet sind. Die betroffenen Personen haben in diesen Gesichtsfeldbereichen keine bewussten Seheindrücke, da die Intaktheit der primären Sehrinde offenbar eine Voraussetzung dafür ist. Dennoch können sie auf dargebotene visuelle Reize sinnvoll reagieren und etwa deren Ort angeben, oder deren Farbe benennen.” (https://de.wikipedia.org/wiki/Blindsehen) Für eine ausführliche Darstellung der Beschaffenheit und Ursachen des Phänomens siehe https://en.wikipedia.org/wiki/Blindsight.
 

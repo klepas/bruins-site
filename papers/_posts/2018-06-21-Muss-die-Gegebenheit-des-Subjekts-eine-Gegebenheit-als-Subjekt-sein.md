@@ -205,7 +205,7 @@ Zahavi, D. (2009) “Is the Self a Social Construct?,” in <em>Inquiry</em>, Bd
 
 [^1]: Siehe u.a. Zahavi 2004, 2007 und 2009.
 
-[^2]: Der angeblich phänomenologischen Auffassung zufolge kann das nicht richtig sein. Denn wenn sie in genau demselben Sinn auf etwas bezogen wären, können sich die Zustände <em>z</em>’ und <em>z</em> nicht auf <em>Verschiedenes</em> beziehen. Schliesslich gilt, dass zwei intentionale Zustände, wenn sie miteinander identisch sind, sich auf dasselbe richten müssen. Ihre naive Annahme macht die neo-Brentanische Auffassung unstabil; sie droht ständig in ihr Gegenteil, die „Zustand höherer Ordnung“ Auffassung, zu verkehren. Die Bezogenheit von dem Zustand <em>z</em>’ auf <em>z</em> darf also keine echt intentionale, echt setzende Bezogenheit sein, wie es die von dem Zustand <em>z</em> auf seinen Gegenstand ist.
+[^2]: Der angeblich phänomenologischen Auffassung zufolge kann das nicht richtig sein. Denn wenn sie in genau demselben Sinn auf etwas bezogen wären, können sich die Zustände <em>z</em>’ und <em>z</em> nicht auf <em>Verschiedenes</em> beziehen. Schliesslich gilt, dass zwei intentionale Zustände, wenn sie miteinander identisch sind, sich auf dasselbe richten müssen. Ihre naive Annahme macht die neo-Brentanische Auffassung unstabil; sie droht, sich ständig in ihr Gegenteil, die „Zustand höherer Ordnung“ Auffassung, zu verkehren. Die Bezogenheit von dem Zustand <em>z</em>’ auf <em>z</em> darf also keine echt intentionale, echt setzende Bezogenheit sein, wie es die von dem Zustand <em>z</em> auf seinen Gegenstand ist.
 
 [^3]: Siehe Zahavi 2009, S.555.
 

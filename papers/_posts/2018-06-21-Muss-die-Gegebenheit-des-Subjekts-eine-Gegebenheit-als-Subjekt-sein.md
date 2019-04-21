@@ -38,13 +38,13 @@ Unter einem impersonalen intentionalen Zustand verstehe ich einen, dessen Gehalt
 
 Aus diesen zwei Prämissen ergibt sich Folgendes, gewissermassen als Lemma:
 
-> <strong>Lemma</strong>: Die Verschiedenheit der intentionalen Zuständen, die den Handlungen jeweils zugrundeliegen, ist eine Verschiedenheit intentionaler Zustände, die <em>nicht impersonal</em>, mithin <em>personal</em> sind; diese verschiedenen *personalen* Zustände sind für Handlungsverschiedenheit verantwortlich.
+> <strong>Lemma</strong>: Die Verschiedenheit der intentionalen Zuständen, die den Handlungen jeweils zugrundeliegen, ist eine Verschiedenheit intentionaler Zustände, die <em>nicht impersonal</em>, mithin <em>personal</em> sind und diese verschiedenen *personalen* Zustände sind für Handlungsverschiedenheit verantwortlich.
 
 > <strong>Prämisse 3</strong>: Diese <em>personalen</em> intentionalen Zustände sind in dem Sinn personal, dass sie <em>erst</em>personal, mithin <em>indexikalisch</em> sind. 
 
 Diese dritte Prämisse beinhaltet, gleichsam als ihre Kehrseite, dass die anaphorisch-drittpersonale Darstellung der Gehalte dieser Zustände <em>nichts mehr</em> ist als eine Darstellungs- bzw. Erscheinungsweise. Sie stellt dar, wie etwas <em>an sich</em> Erstpersonales <em>für uns</em> ist.
 
-> <strong>Schluss</strong>: Die zwei Akteure befinden sich z.T. in (jeweils verschiedenen) <em>erstpersonalen</em>, folglich <em>indexikalischen</em> intentionalen Zustände, und diese sind für die Verschiedenheit ihrer Handlungen verantwortlich. 
+> <strong>Schluss</strong>: Die zwei Akteure befinden sich z.T. in (jeweils verschiedenen) <em>erstpersonalen</em>, folglich <em>indexikalischen</em> intentionalen Zustände und diese sind für die Verschiedenheit ihrer Handlungen verantwortlich. 
 
 Damit sind wir bei wesentlicher Erstpersonalität bzw. Indexikalität angelangt.[^10]
 

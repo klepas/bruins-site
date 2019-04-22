@@ -38,7 +38,7 @@ Unter einem impersonalen intentionalen Zustand verstehe ich einen, dessen Gehalt
 
 Aus diesen zwei Prämissen ergibt sich Folgendes, gewissermaßen als Lemma:
 
-> <strong>Lemma</strong>: Die Verschiedenheit der intentionalen Zuständen, die den Handlungen jeweils zugrundeliegen, ist eine Verschiedenheit intentionaler Zustände, die <em>nicht impersonal</em>, mithin <em>personal</em> sind, und diese verschiedenen *personalen* Zustände sind für Handlungsverschiedenheit verantwortlich.
+> <strong>Lemma</strong>: Die Verschiedenheit der intentionalen Zuständen, die den Handlungen jeweils zugrundeliegen, ist eine Verschiedenheit intentionaler Zustände, die <em>nicht impersonal</em>, mithin <em>personal</em> sind, und diese verschiedenen *personalen* Zustände sind für die Handlungsverschiedenheit verantwortlich.
 
 > <strong>Prämisse 3</strong>: Diese <em>personalen</em> intentionalen Zustände sind in dem Sinn personal, dass sie <em>erst</em>personal, mithin <em>indexikalisch</em> sind. 
 

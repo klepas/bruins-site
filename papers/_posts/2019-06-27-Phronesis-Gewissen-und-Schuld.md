@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: >
  *Phrónesis*, Gewissen und Schuld in *Sein und Zeit*

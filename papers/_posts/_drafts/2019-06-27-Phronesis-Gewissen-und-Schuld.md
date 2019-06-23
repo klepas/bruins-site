@@ -1,19 +1,11 @@
 ---
-
 layout: post
-
 title: > _Phrónesis_, Gewissen und Schuld in _Sein und Zeit_
-
 date: 2019-06-22
-
 version: "22.06.19, 11:57 am"
-
 author: Carleton B. Christensen
-
 abstract: > Dieses Paper bildet den Text eines Vortrags, den ich am 20<sup>.sten</sup> Juni, 2019, im Institut für Philosophie an der Universität Leipzig, und am 27<sup>.sten</sup> Juni, 2019 im Institut für Philosophie an der Westfälischen Wilhelms-Universität, Münster, gehalten habe.
-
 published: true
-
 ---
 
 ## Einleitung

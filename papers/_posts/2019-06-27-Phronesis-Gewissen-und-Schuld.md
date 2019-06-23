@@ -128,7 +128,7 @@ Church, G. 2019, [“The Maths Problem that could bring the World to a Halt,”]
 
 Fischer, N., und von Herrmann, F-W. (hrsg.) 2007 _Heidegger und die christliche Tradition_, Hamburg: Meiner Verlag
 
-Garrard, G. 2010 in _ISLE_ (_Interdisciplinary Studies in Literature and Environment_), Vol. 17, No. 2, pp. 251-271
+Garrard, G. 2010 "Heidegger Nazism Ecocriticism," in _ISLE_ (_Interdisciplinary Studies in Literature and Environment_), Vol. 17, No. 2, pp. 251-271
 
 Heidegger, M. 1979 _Sein und Zeit_, 15.te Auflage, Tübingen: Max Niemeyer Verlag
 

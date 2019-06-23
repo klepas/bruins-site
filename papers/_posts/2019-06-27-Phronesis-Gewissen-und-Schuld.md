@@ -2,7 +2,7 @@
 layout: post
 title: >
   *Phrónesis*, Gewissen und Schuld in *Sein und Zeit*
-date: 2019-06-22
+date: 2019-06-27
 version: "22.06.19, 11:57 am"
 author: Carleton B. Christensen
 abstract: >

@@ -156,7 +156,7 @@ von Krockow, C. 1958 _Die Entscheidung—Eine Untersuchung über Ernst Jünger, 
 
 [^6]: Siehe auch _Sein und Zeit_, § 41 H 191 und H 193.
 
-[^7]: M.a.W., sie erfasst sowohl das, was Sartre unter Faktizität verstand, als auch das, was er Transzendenz nannte.
+[^7]: M.a.W., sie erfasst ungefähr das, was Sartre unter Faktizität verstand, wie auch das, was er Transzendenz nannte.
 
 [^8]: Das tut natürlich auch Aristoteles. Auch ihm zufolge verhalten sich die Menschen zunächst und zumeist sittlich.
 

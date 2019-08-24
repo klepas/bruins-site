@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact Details and Impressum
+title: Impressum
 permalink: /impressum/
 ---
 

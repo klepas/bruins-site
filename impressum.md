@@ -6,10 +6,11 @@ permalink: /impressum/
 
 Carleton Bruin Christensen  
 
-I will shortly have a new institutional address. 
+**I will shortly have a new institutional address.** 
 
-Tel.: +61 (0)447 807 271  
-E-Mail: [Click on this Link!](mailto:carleton.christensen@gmail.com)
+Tel.: +61 (0)447 807 271
+
+E-Mail: [Click on this link!](mailto:carleton.christensen@gmail.com)
 
 ## Legal
 

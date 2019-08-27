@@ -12,6 +12,8 @@ I work primarily on German philosophy of the late 19th and early 20th centuries,
 
 A crucial part of my work is the building of interdisciplinary links to other areas of inquiry relevant to sustainability. I see these as enabling a new kind of engagement for philosophers, beyond the usual round of conferencing, paper-giving, publishing and intra-disciplinary teaching. I am actively engaged in local politics, specifically, on issues of urban consolidation, gentrification and public transport.
 
+I will soon be getting a new institutional email address at the University of New South Wales. In the meantime, you may contact me under this [email address](mailto:carleton.christensen@gmail.com).
+
 ## Publications
 
 ### 2015

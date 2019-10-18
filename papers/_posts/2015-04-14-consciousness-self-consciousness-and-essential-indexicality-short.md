@@ -28,6 +28,8 @@ abstract: >-
   content, permit an account of conscious perceptual experience which allows one
   to construe what it is like to undergo such experience in a way which does not
   entail any kind of self-awareness.
+  
+  This is a slightly altered and extended version of a paper held on February 17th., 2015, in the Research Seminar of the School of Philosophy at the ANU.
 published: true
 version: '23.01.17, 12:02 am'
 ---

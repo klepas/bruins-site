@@ -27,7 +27,7 @@ abstract: >-
   taken as capturing the structure of distinctively perceptual intentional
   content, permit an account of conscious perceptual experience which allows one
   to construe what it is like to undergo such experience in a way which does not
-  entail any kind of self-awareness.
+  entail any kind of self-awareness.<br>
   
   This is a slightly altered and extended version of a paper held on February 17<sup>th.</sup>, 2015, in the Research Seminar of the       School of Philosophy at the ANU.
   

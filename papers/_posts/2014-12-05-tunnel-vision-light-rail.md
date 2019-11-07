@@ -184,8 +184,6 @@ Of course, crucial to the functioning of the whole system and its capacity to ch
 
 | Station transfer direction | Average wait time 7am to 7pm by 2013 | Average wait time 7am to 7pm from 2016 |
 
-| :--- | :--- | :--- |
-
 | Coverage service to frequent network | 7.5 minutes | 5 minutes   |
 
 | Frequent network to coverage service | 15 minutes | 10 minutes   |

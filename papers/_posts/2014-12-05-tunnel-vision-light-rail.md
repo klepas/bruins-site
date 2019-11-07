@@ -198,7 +198,7 @@ It pays, however, to ponder the wait times a little further, for they may well r
 
 
 
-This impression is in fact confirmed by the “ACT Stategic Public Transport Network Plan”, the report drawn up in 2009 for the ACT government by Walker’s firm McCormick Rankin Cagney and which serves as the basis for *Transport for Canberra*. Recall that according to *Transport for Canberra* there are four types or categories of public transport service: rapid, frequent local, peak express and coverage. Only the first two constitute the Frequent Network. Of the latter two categories, peak express and coverage, the report says that they
+This impression is in fact confirmed by the “ACT Strategic Public Transport Network Plan”, the report drawn up in 2009 for the ACT government by Walker’s firm McCormick Rankin Cagney and which serves as the basis for *Transport for Canberra*. Recall that according to *Transport for Canberra* there are four types or categories of public transport service: rapid, frequent local, peak express and coverage. Only the first two constitute the Frequent Network. Of the latter two categories, peak express and coverage, the report says that they
 
 
 

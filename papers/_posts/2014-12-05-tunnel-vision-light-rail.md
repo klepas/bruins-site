@@ -156,7 +156,7 @@ In the Coverage Network there will be two kinds of route, distinguished accordin
 
 
 
-| [Date] | Urban Form | Weekdays Peak | Offpeak | Weekends | Distance to Bus Stop   |
+| Date | Urban Form | Weekdays Peak | Offpeak | Weekends | Distance to Bus Stop   |
 
 | :--- | :--- | :--- | :--- | :--- | :---   |
 

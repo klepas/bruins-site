@@ -126,11 +126,11 @@ Let us first look at the characteristics which the Frequent or patronage network
 
 
 
-![Image: Map of Frequent Network](URL)
+[The Frequent Network 2031](http://www.cbchristensen.net/files/images/Frequent Network TfC.jpg)
 
 
 
-(Image from p.20 of TFC PDF.)
+(Image from p.20 of _Transport for Canberra_.)
 
 
 

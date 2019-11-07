@@ -126,7 +126,7 @@ Let us first look at the characteristics which the Frequent or patronage network
 
 
 
-[The Frequent Network 2031](http://www.cbchristensen.net/files/images/Frequent Network TfC.jpg)
+[The Frequent Network 2031](/files/images/Frequent Network TfC.jpg)
 
 
 
@@ -344,7 +344,7 @@ The report by Newman and Kenworthy fixed the terms of subsequent debate in Canbe
 
 
 
-[^1]: For access to all of the ACT Government´s transport policy documents see [Transport for Canberra Policy](http://www.transport.act.gov.au/policy_and_projects/transport_for_canberra_policy).
+[^1]: For more on the ACT Government´s transport policy documents see the page ["Planning for the Future"](https://www.transport.act.gov.au/about-us/planning-for-the-future) at the website of _Transport Canberra_.
 
 
 

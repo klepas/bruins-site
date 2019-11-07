@@ -158,8 +158,6 @@ In the Coverage Network there will be two kinds of route, distinguished accordin
 
 | Date | Urban Form | Weekdays Peak | Offpeak | Weekends | Distance to Bus Stop   |
 
-| :--- | :--- | :--- | :--- | :--- | :---   |
-
 | By 2016 | Between group centres, medium density development and employment locations |  30 minutes or better | 30 minutes or better | 60 minutes or better. Routes same as weekdays.* | 500m (5-7 minutes walk) of 95% of households   |
 
 |        | Low density, outer suburbs | 30 minutes or better | 60 minutes or better* | 60 minutes or better. Routes same as weekdays.* | 500m (5-7 minutes walk) of 95% of households   |

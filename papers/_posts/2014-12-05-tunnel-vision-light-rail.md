@@ -230,8 +230,6 @@ Unfortunately, one is bound yet again for disappointment. On p. 58 of *Transport
 
 | Mode | 2006 actual | 2011 target | NEW 2016 target | 2026 target   |
 
-| ---- | ----------- | ----------- | --------------- | -----------   |
-
 | walking | 5% | 6% | 6.5% | 7%   |
 
 | cycling | 2.5% | 5% | 6% | 7%   |

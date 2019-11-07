@@ -344,7 +344,7 @@ The report by Newman and Kenworthy fixed the terms of subsequent debate in Canbe
 
 
 
-[^1]: For more on the ACT Government´s transport policy documents see the page ["Planning for the Future"](https://www.transport.act.gov.au/about-us/planning-for-the-future) at the website of _Transport Canberra_.
+[^1]: For more on the ACT Government’s transport policy see the page ["Planning for the Future"](https://www.transport.act.gov.au/about-us/planning-for-the-future) at the website of _Transport Canberra_.
 
 
 

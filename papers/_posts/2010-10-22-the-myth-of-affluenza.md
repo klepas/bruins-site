@@ -32,7 +32,7 @@ But these days the advertising industry has advanced even further. It now sells,
 
 Naturally, the diversion of so much income into private consumption must have serious public consequences: we find that “there is not enough money left to fund investments in hospitals and schools.” (*Affluenza*, p.4) Yet so convinced are we that self-contentment comes through the social recognition brought by conspicuous consumption that we merely bemoan the sorry state of public goods and services. “(T)oo fearful to change [our] behaviour in any meaningful way” (*Affluenza*, p.152), we refuse to countenance the levels of taxation needed to address “funding shortages for hospitals, schools, universities and public transport” (*Affluenza*, p.3)
 
-We want better public services but seem unwilling to forgo more income in the form of taxes to pay for those services. Australia does not have a public health funding crisis: it has a flat-screen TV crisis. (*Affluenza*, p.4)
+> We want better public services but seem unwilling to forgo more income in the form of taxes to pay for those services. Australia does not have a public health funding crisis: it has a flat-screen TV crisis. (*Affluenza*, p.4)
 
 It is indisputable that levels of private consumption and debt have risen significantly, particularly over the last twenty or so years and particularly in advanced capitalist societies. But what about the explanation Hamilton and Deniss give of this fact? Evidently, this explanation makes strong claims about the power of advertising and, more generally, about the way production relates to consumption. On this account, producers can, through marketing, steer consumers. But are these claims correct?
 

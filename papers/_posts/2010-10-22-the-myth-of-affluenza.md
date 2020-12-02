@@ -194,7 +194,7 @@ Schor, Juliet, *The Overworked American--The Unexpected Decline of Leisure*, New
 
 [^21]: *NE*, Bk VI, Ch.9, 1142b27.
 
-[^22]: We see here, incidentally, why Heidegger claims, rightly in my opinion, that for which reason Heidegger rightly says that in the notion of *phr&#243;nesis* Aristotle glimpsed the phenomenon of conscience--see Heidegger 1992, § 8, H 56.
+[^22]: We see here, incidentally, why Heidegger claims, rightly in my opinion, that in the notion of *phr&#243;nesis* Aristotle glimpsed the phenomenon of conscience--see Heidegger 1992, § 8, H 56.
 
 [^23]: It is a condition in which the just prosper--see Psalms 1:3.
 

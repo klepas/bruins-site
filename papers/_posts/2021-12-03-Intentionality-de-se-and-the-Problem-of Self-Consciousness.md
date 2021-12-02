@@ -34,7 +34,7 @@ As one might also put it, intentional states and experiences *de se* mediate bet
   
   Claim 2 is widely endorsed.[^7] It is, however, widely understood in a manner I reject. In order to appreciate what I am getting at here, we must consider a third claim, one which constitutes a first divergence from the mainstream: 
   
-> \3.	In no *strong* sense does intentionality *de se* implicate or entail the use, or the capacity for the use, of the first-person pronoun.
+> \3.	In no strong sense does intentionality *de se* implicate or entail the use, or the capacity for the use, of the first-person pronoun.
 
 There is certainly a *weak* sense in which intentionality *de se* implicates the first-person pronoun: If S believes that it\* is F, then, *should S be capable of using the first-person pronoun at all*, S must use it in order to characterise the *content* of its belief perspicuously. In other words, S must assert the sentence “I believe that *I* am F.” The vast majority, however, believe, or are committed to believing, that forms of intentionality *de se* are indexical, indeed first-personal, in a sense stronger than this.[^8]
 

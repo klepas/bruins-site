@@ -16,7 +16,7 @@ In her book *Thinking of Oneself—From Nonconceptual Content to the Concept of 
 
 The thesis consists of four claims. The first is the following:
 
-> 1.	There are beliefs and other forms of intentionality only perspicuously characterisable by sentences of the form “S believes that he (or she or indeed it) is F,” “S desires that he (or she or indeed it) be F,” and indeed “S sees something F standing in relation R to it,” etc.
+> \1.	There are beliefs and other forms of intentionality only perspicuously characterisable by sentences of the form “S believes that he (or she or indeed it) is F,” “S desires that he (or she or indeed it) be F,” and indeed “S sees something F standing in relation R to it,” etc.
 
 In these sentences the third-person pronoun refers to S through an *ineliminable* anaphoric link to the subject-term of an intensional context. 
 
@@ -26,7 +26,7 @@ In these sentences the third-person pronoun refers to S through an *ineliminable
   
   The allusion to causal role yields the *second* claim constitutive of the thesis of intentionality inherently *de se*, a claim which motivates the first:
   
-> 2.	Forms of intentionality inherently *de se* are essential to the generation or motivation of purposive behaviour, hence must be mentioned in any complete everyday explanation of it.[^5]
+> \2.	Forms of intentionality inherently *de se* are essential to the generation or motivation of purposive behaviour, hence must be mentioned in any complete everyday explanation of it.[^5]
 
 As one might also put it, intentional states and experiences *de se* mediate between intentionality as such and purposive behaviour. Intentionality not *de se* only takes effect through intentionality that is. 
 
@@ -34,7 +34,7 @@ As one might also put it, intentional states and experiences *de se* mediate bet
   
   Claim 2 is widely endorsed.[^7] It is, however, widely understood in a manner I reject. In order to appreciate what I am getting at here, we must consider a third claim, one which constitutes a first divergence from the mainstream: 
   
-> 3.	In no *strong* sense does intentionality *de se* implicate or entail the use, or the capacity for the use, of the first-person pronoun.
+> \3.	In no *strong* sense does intentionality *de se* implicate or entail the use, or the capacity for the use, of the first-person pronoun.
 
 There is certainly a *weak* sense in which intentionality *de se* implicates the first-person pronoun: If S believes that it\* is F, then, *should S be capable of using the first-person pronoun at all*, S must use it in order to characterise the *content* of its belief perspicuously. In other words, S must assert the sentence “I believe that *I* am F.” The vast majority, however, believe, or are committed to believing, that forms of intentionality *de se* are indexical, indeed first-personal, in a sense stronger than this.[^8]
 
@@ -48,7 +48,7 @@ Note Perry’s caution: he does *not* say that the pronoun ‘he’ tells us tha
 
   All in all, what is meant when one speaks of indexical or first-person belief and the like is very unclear. But if the third claim is right, then this problem simply disappears. For if it is right, then no pragmatic function of quasi-indication attaches to the asterisked third-person pronoun. Indeed, another way of putting the claim is that the pronoun is not a quasi-indicator.[^11] With this, we come to the fourth and most important claim, one which *entails* that it is not a quasi-indicator:
   
-> 4.	Intentionality *de se* does not *eo ipso* implicate or entail self-consciousness[^12]
+> \4.	Intentionality *de se* does not *eo ipso* implicate or entail self-consciousness[^12]
 
 In order to understand this claim, we must start with the notion of self-consciousness itself. Musholt defines self-consciousness as
 

@@ -140,7 +140,7 @@ One can really only understand this dawning as a matter of the sentence “*I* a
   
   Let me end with a hand-waving general remark. The account of self-consciousness sketched here might seem deflationary and in a way it is. In another way, however, it is not, this for two reasons: firstly, it entails that self-consciousness presupposes language and the first person in particular. Secondly, its appeal to imagination (*Einbildungskraft*) suggests that self-consciousness has an *anschauliche* character ultimately grounded in perceptual experience. To this extent, it in no way dislodges self-consciousness from that “highest point to which one must attach all use of the understanding, indeed all logic and, along with it, transcendental philosophy.”[^54]
   
-References
+## References
 
 Anscombe, G. (1975) “The First Person,” in *Mind and Language*, Wolfson College Lectures 1974, edited by Samuel Guttenplan, Oxford University Press, Oxford, pp. 45-65
 

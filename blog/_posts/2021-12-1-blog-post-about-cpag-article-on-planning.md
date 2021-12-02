@@ -10,4 +10,4 @@ An abstract for the paper can be found in the [CPAG Newsletter for December, 202
 
 The paper itself can be found at: [The Significance of the Current ACT Government Planning Review](https://www.canberraplanningactiongroup.com/post/the-significance-of-the-current-act-government-planning-review)
 
-Another paper of mine, one co-authored with Geoffrey Pryor, can be found at the CPAG website: [Government-initiated Consultation re Planning in the ACT](https://www.canberraplanningactiongroup.com/post/paving-the-path-to-a-brighter-future) 
+Another paper of mine, one co-authored with Geoffrey Pryor, can be found at the CPAG website: [Government-initiated Consultation *re* Planning in the ACT](https://www.canberraplanningactiongroup.com/post/paving-the-path-to-a-brighter-future) 

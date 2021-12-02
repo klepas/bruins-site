@@ -9,3 +9,5 @@ The ACT government is conducting a Planning Review and Reform project whose ulti
 An abstract for the paper can be found in the [CPAG Newsletter for December, 2021]( https://shoutout.wix.com/so/97NrQPpKd?languageTag=en&cid=7629bf73-2ec7-47f1-bb89-16168c7b5b03#/main).
 
 The paper itself can be found at: [The Significance of the Current ACT Government Planning Review](https://www.canberraplanningactiongroup.com/post/the-significance-of-the-current-act-government-planning-review)
+
+Another paper of mine, one co-authored with Geoffrey Pryor, can be found at the CPAG website: [Government initiated Consultation re Planning in the ACT[(https://www.canberraplanningactiongroup.com/post/paving-the-path-to-a-brighter-future) 

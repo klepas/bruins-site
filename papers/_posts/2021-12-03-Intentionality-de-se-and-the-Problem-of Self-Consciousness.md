@@ -12,7 +12,7 @@ published: yes
 
 In her book *Thinking of Oneself—From Nonconceptual Content to the Concept of the Self* (MIT Press, 2015) Kristina Musholt outlines what she calls the problem of self-consciousness. This is in fact an old problem, reaching back from Shoemaker and analytic philosophy on the one side, Henrich and the Heidelberg School on the other, through Sartre and phenomenology to Fichte. My goal is both to identify the assumption generating it; and to argue that this assumption can and must be rejected. The latter will involve making some brief and insufficiently grounded remarks about how to think better about self-consciousness—what Musholt calls thinking of oneself, the thinking of ‘I’-thoughts or explicit self-representation. In order to understand all this, however, one must first understand what I call the thesis of intentionality inherently *de se*. 
 
-## Section I: The Thesis of Intentionality Inherently *de se*
+## Section I: The Thesis of Intentionality inherently *de se*
 
 The thesis consists of four claims. The first is the following:
 

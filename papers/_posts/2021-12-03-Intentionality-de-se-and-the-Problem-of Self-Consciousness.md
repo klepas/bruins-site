@@ -2,7 +2,7 @@
 layout: post
 title: Intentionality inherently *de se* and the Problem of Self-Consciousness
 date: 2021-12-03
-version: "03.12.21, 09:10 am, working off version 30.10.2021 07:09"
+version: "03.12.21, 10:19 am, working off version 30.10.2021 07:09"
 abstract: >
   In this paper I present what Kristina Musholt, in her book *Thinking of Oneself—From Non conceptual Content to the Concept of the Self* (MIT Press, 2015) calls the problem of self-consciousness. This is an old problem, reaching back from Shoemaker and analytic philosophy on the one side, Henrich and the Heidelberg School on the other, through Sartre and phenomenology to Fichte. My goal is to identify the assumption generating it and to argue that this assumption is false. I will end by sketching, in admittedly very hand-waving fashion, what this means for the notion of self-consciousness. My argument presupposes an understanding of the central thesis of my research—what I call the thesis of intentionality inherently *de se* —so I begin by elaborating the four claims constitutive of it.<br>This is a slightly revised version of a paper held on October 26<sup>th</sup>, 2021, in the Research Seminar of the Department of Philosophy at the University of New South Wales.
 published: yes

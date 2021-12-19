@@ -50,7 +50,7 @@ Note, however, a crucial feature of the knowledge which human ecology, practised
 
 [^3]: It is here, in the account of what is to be self-conscious, rational agents such as we are, that explication of the obviously philosophically important concepts of morality—of such notions as justice, virtue and indeed the perfect or highest good—finds its place.
 
-[^4]: Note, incidentally, that this is Kant’s debt to Descartes.
+[^4]: Note that this intimates, on the one hand, a debt to Descartes, on the other, a bridge to the phenomenological tradition of Brentano, Husserl and Heidegger. The great neo-Kantian philosopher Paul Natorp appreciated the debt to Descartes, for which reason he treats Descartes in his dissertation of 1882, *Descartes Erkenntnislehre*, as a proto-Kantian, i.e., as a proto-transcendental philosopher.
 
 [^5]: The claim that this is the defining _point_ and _purpose_ of philosophical inquiry, and not just something merely _implicit in_ the investigation of how entities must be in order that we may relate in self-conscious, reason-wielding fashion to them, has not been sufficiently justified. But I do not have the time to do this here.
 

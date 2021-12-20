@@ -60,7 +60,7 @@ Dialogue with Will McNeill on Heidegger’s Notion of Technicity and its Relevan
 
 ‘Nichts Neues unter der Sonne: Bewußtsein und Selbstbewußtsein bei Paul Natorp’, in _Kant-Studien_, Vol. 98, No. 3, September, 2007, pp.372-398
 
-‘What is so Sustainable about Services? The Truth in Service and Flow’, in _Design Philosophy Papers_, Vol. 5, No.4, December, 2007, [http://www.desphilosophy.com/dpp/dpp_index.html](http://www.desphilosophy.com/dpp/dpp_index.html)
+‘What is so Sustainable about Services? The Truth in Service and Flow’, in _Design Philosophy Papers_, Vol. 5, No.4, December, 2007, [https://www.tandfonline.com/doi/abs/10.2752/144871308X13968666267239](https://www.tandfonline.com/doi/abs/10.2752/144871308X13968666267239)
 
 ### 2006
 

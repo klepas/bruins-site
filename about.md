@@ -70,7 +70,7 @@ Dialogue with Will McNeill on Heidegger’s Notion of Technicity and its Relevan
 
 ‘Problem-Structuring of Complex Sustainability Decisions: the Case of Sydney’s Water Supply’, co-authored with Donald Hector and James Petrie, in _Proceedings of the World Congress of Chemical Engineering_, Glasgow, Scotland, July 10th – 14th, 2005, pp.1-10
 
-‘The Material Basis of Everyday Rationality: Transformation by Design or Education?’, in _Design Philosophy Papers_, Vol. 3, No.4, December, 2005, [http://www.desphilosophy.com/dpp/dpp_index.html](http://www.desphilosophy.com/dpp/dpp_index.html); print version in Design Philosophy Papers Collection Three, edited by Anne-Marie Willis, Ravensbourne, Australia: Team D/E/S Publications, 2007, pp.40-53
+‘The Material Basis of Everyday Rationality: Transformation by Design or Education?’, in _Design Philosophy Papers_, Vol. 3, No.4, December, 2005, [https://www.tandfonline.com/doi/abs/10.2752/144871305X13966254124950](https://www.tandfonline.com/doi/abs/10.2752/144871305X13966254124950); print version in Design Philosophy Papers Collection Three, edited by Anne-Marie Willis, Ravensbourne, Australia: Team D/E/S Publications, 2007, pp.40-53
 
 ## 2001
 

@@ -52,7 +52,7 @@ _Self and World: From Analytic Philosophy to Phenomenology_, Berlin and New York
 
 Dialogue with Will McNeill on Heidegger’s Notion of Technicity and its Relevance for the Politics of Sustainability, a discussion arising from my paper ‘What is so Sustainable about Services? The Truth in Service and Flow’, in _Design Philosophy Papers_, Vol. 6, Issue 1, 2008, [http://www.desphilosophy.com/dpp/dpp_index.html](http://www.desphilosophy.com/dpp/dpp_index.html)
 
-‘Redirecting Affective Dispositions’, in _Design Philosophy Papers_, Vol. 6, Issue 2, 2008, [http://www.desphilosophy.com/dpp/dpp_index.html](http://www.desphilosophy.com/dpp/dpp_index.html)
+‘Redirecting Affective Dispositions’, in _Design Philosophy Papers_, Vol. 6, Issue 2, 2008, [https://www.tandfonline.com/doi/abs/10.2752/144871308X13968666267356](https://www.tandfonline.com/doi/abs/10.2752/144871308X13968666267356)
 
 ### 2007
 

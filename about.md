@@ -64,7 +64,7 @@ Dialogue with Will McNeill on Heidegger’s Notion of Technicity and its Relevan
 
 ### 2006
 
-‘Popping the Bubble: The Ethical Responsibility of Design’, in _Design Philosophy Papers_, invited contribution to a special issue on design and philosophy, Vol. 4, No.2, July, 2006, [http://www.desphilosophy.com/dpp/dpp_index.html](http://www.desphilosophy.com/dpp/dpp_index.html)
+‘Popping the Bubble: The Ethical Responsibility of Design’, in _Design Philosophy Papers_, invited contribution to a special issue on design and philosophy, Vol. 4, No.2, July, 2006, [https://www.tandfonline.com/doi/abs/10.2752/144871306X13966268131631](https://www.tandfonline.com/doi/abs/10.2752/144871306X13966268131631)
 
 ### 2005
 

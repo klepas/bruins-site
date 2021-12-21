@@ -40,19 +40,20 @@ This has three important consequences: firstly, it entails that reflection on ap
 
 I suggest that the elaboration of this conception of self, its transcendentally philosophical defence as a condition of the possibility of self-consciousness and, most importantly, its empirical confirmation and use in the development of more sophisticated explanations of environmentally destructive behaviours and how they can be changed, constitutes one central contribution to environmental thinking philosophy can make right now.
 
+
 Notes
+
 
 [^1]: One exception is arguably Habermas, whose work has been mentioned to me by someone working at the Hawkesbury campus of University of Western Sydney as having influenced their work with Landcare groups. The Swiss engineer and planner Werner Ulrich has, I believe, also taken up themes from Critical Theory in what he calls critical systems theory.
 
-[2^]: Elizabeth Shove, *Comfort Cleanliness and Convenience: The Social Organisation of Normality*, Oxford: Berg, 2003.
+[^2]: Elizabeth Shove, *Comfort Cleanliness and Convenience: The Social Organisation of Normality*, Oxford: Berg, 2003.
 
-[3^]: Clive Hamilton and Richard Denniss, *Affluenza: When Too Much is Never Enough*, Sydney: Allen & Unwin, 2005.
+[^3]: Clive Hamilton and Richard Denniss, *Affluenza: When Too Much is Never Enough*, Sydney: Allen & Unwin, 2005.
 
-[4^]: Note that to say that these practices are driven from within is not to deny that there can be much external manipulation from outside, as when advertisers try to instil in housewives the feeling that their kitchens are not safe unless they wage ceaseless chemical war against ‘germs’
+[^4]: Note that to say that these practices are driven from within is not to deny that there can be much external manipulation from outside, as when advertisers try to instil in housewives the feeling that their kitchens are not safe unless they wage ceaseless chemical war against ‘germs’
 
-[5^]: In German one could say “leibhaft.” It is hard to find the right English word for the notion of *Leibhaftigkeit*.
+[^5]: In German one could say “leibhaft.” It is hard to find the right English word for the notion of *Leibhaftigkeit*.
 
-[6^]: For this reason, it is silly to complain about the ‘yuk’ factor as an insuperable obstacle to the introduction of indirect potable water re-use (or indeed to Australians’ ostensibly uniquely deep-seated love of the car); people can and regularly do stand back from their likes and dislikes, provided, of course, that they are not bullied (as they were in Toowoomba, Queensland where a prominent real estate developer led a scare campaign running up to a referendum on introducing recycled water, resulting in defeat of the proposal, but have not been in Goulburn, NSW where there has been widespread public support).
+[^6]: For this reason, it is silly to complain about the ‘yuk’ factor as an insuperable obstacle to the introduction of indirect potable water re-use (or indeed to Australians’ ostensibly uniquely deep-seated love of the car); people can and regularly do stand back from their likes and dislikes, provided, of course, that they are not bullied (as they were in Toowoomba, Queensland where a prominent real estate developer led a scare campaign running up to a referendum on introducing recycled water, resulting in defeat of the proposal, but have not been in Goulburn, NSW where there has been widespread public support).
 
 [7^]: And I would argue that a self which, although knowing right from wrong, could not feel pride in doing right or guilt in doing wrong is a parasitic phenomenon, i.e., only possible as an exception to the rule.
-

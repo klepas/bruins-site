@@ -2,7 +2,7 @@
 layout: post
 title: "How Philosophy can contribute to Eco-Political Thinking"
 date: 2009-11-04
-version: "31.07.2009"
+version: "22.12.2021"
 author: Carleton B. Christensen
 abstract: "This is the text of a very short and simple paper I held in late 2009 at the Australian National University. I can no longer remember the precise context in which it was held. I have also revised it slightly."
 

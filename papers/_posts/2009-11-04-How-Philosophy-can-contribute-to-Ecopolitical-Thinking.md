@@ -56,4 +56,4 @@ Notes
 
 [^6]: For this reason, it is silly to complain about the ‘yuk’ factor as an insuperable obstacle to the introduction of indirect potable water re-use (or indeed to Australians’ ostensibly uniquely deep-seated love of the car); people can and regularly do stand back from their likes and dislikes, provided, of course, that they are not bullied (as they were in Toowoomba, Queensland where a prominent real estate developer led a scare campaign running up to a referendum on introducing recycled water, resulting in defeat of the proposal, but have not been in Goulburn, NSW where there has been widespread public support).
 
-[7^]: And I would argue that a self which, although knowing right from wrong, could not feel pride in doing right or guilt in doing wrong is a parasitic phenomenon, i.e., only possible as an exception to the rule.
+[^7]: And I would argue that a self which, although knowing right from wrong, could not feel pride in doing right or guilt in doing wrong is a parasitic phenomenon, i.e., only possible as an exception to the rule.

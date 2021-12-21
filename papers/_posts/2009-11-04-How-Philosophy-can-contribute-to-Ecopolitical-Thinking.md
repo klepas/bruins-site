@@ -41,7 +41,7 @@ This has three important consequences: firstly, it entails that reflection on ap
 I suggest that the elaboration of this conception of self, its transcendentally philosophical defence as a condition of the possibility of self-consciousness and, most importantly, its empirical confirmation and use in the development of more sophisticated explanations of environmentally destructive behaviours and how they can be changed, constitutes one central contribution to environmental thinking philosophy can make right now.
 
 
-Notes
+##Notes
 
 
 [^1]: One exception is arguably Habermas, whose work has been mentioned to me by someone working at the Hawkesbury campus of University of Western Sydney as having influenced their work with Landcare groups. The Swiss engineer and planner Werner Ulrich has, I believe, also taken up themes from Critical Theory in what he calls critical systems theory.

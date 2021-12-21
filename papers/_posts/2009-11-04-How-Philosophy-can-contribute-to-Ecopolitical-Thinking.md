@@ -43,7 +43,6 @@ I suggest that the elaboration of this conception of self, its transcendentally 
 
 ##Notes
 
-
 [^1]: One exception is arguably Habermas, whose work has been mentioned to me by someone working at the Hawkesbury campus of University of Western Sydney as having influenced their work with Landcare groups. The Swiss engineer and planner Werner Ulrich has, I believe, also taken up themes from Critical Theory in what he calls critical systems theory.
 
 [^2]: Elizabeth Shove, *Comfort Cleanliness and Convenience: The Social Organisation of Normality*, Oxford: Berg, 2003.

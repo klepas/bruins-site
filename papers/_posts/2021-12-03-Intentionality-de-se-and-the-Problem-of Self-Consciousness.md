@@ -212,7 +212,7 @@ Perry, J. (1977) “Frege on Demonstratives,” in *The Philosophical Review*, V
 
 Perry, J. (1979) “The Problem of the Essential Indexical,” in *Noûs*, Vol. 13, No. 1, pp. 3-21; also in Perry 2000, pp. 27-44
 
-Perry, J. (1980a) “Belief and Acceptance,” in *Midwest Studies in Philosophy*, Vol. 5, pp. 533-542; also in Perry 2000, pp. 45-56
+Perry, J. (1980) “Belief and Acceptance,” in *Midwest Studies in Philosophy*, Vol. 5, pp. 533-542; also in Perry 2000, pp. 45-56
 
 Perry, J. (1986) “Thought without Representation,” in Perry 2000, pp. 171-188
 

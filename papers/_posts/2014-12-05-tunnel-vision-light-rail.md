@@ -74,7 +74,7 @@ Much better, then, to separate the pursuit of patronage and coverage within the 
 
 
 
-This abstract theoretical argument deserves serious critical reflection since it is in fact very shallow. But such examination would involve some rather abstruse and possibly tedious conceptual nit-picking. So instead I shall concentrate upon the radical consequences of the conclusion Walker draws from it. The claim that an efficiently functioning public transport system requires a frequent or patronage network, of whatever contextually determined size, has important implications. For if a city lacks the appropriate density conditions which define an area as suitable for a frequent or patronage network, the task of transport planners must be to work hand in hand with land-use and planning authorities to create them. Walker is quite explicit about this:
+This abstract theoretical argument deserves serious critical examination since it is in fact very shallow. But this would involve some rather abstruse and possibly tedious conceptual nit-picking so instead I shall concentrate upon the radical consequences of the conclusion Walker draws from it. The claim that an efficiently functioning public transport system requires a frequent or patronage network, of whatever contextually determined size, has important implications. For if a city lacks the appropriate density conditions which define an area as suitable for a frequent or patronage network, the task of transport planners must be to work hand in hand with land-use and planning authorities to create them. Walker is quite explicit about this:
 
 
 

@@ -94,11 +94,11 @@ And so transport and land use planning must be coordinated so as to facilitate t
 
 
 
-So for Walker the creation of the frequent or patronage network needed for truly effective public transport is at the same time the re-engineering of the urban form of any city which does not already have the kinds of high-density areas which could provide the routes for this network.
+So for Walker the creation of the frequent or patronage network needed for truly effective public transport is at the same time the re-engineering of the urban form of any city that does not already have the kinds of high-density areas which could provide the routes for this network.
 
 
 
-Just such a city is Canberra, as is clear even from the span of time with which *Transport for Canberra* operates: precisely the twenty years Walker suggests for giving all most all the chance to reconsider their location, indeed, for getting most people to relocate.[^7] But the character of *Transport for Canberra* as a blueprint along Walker’s lines for re-engineering Canberra’s urban form comes out most obviously in its claim that the message which development of the frequent or patronage network will convey to citizens is that “‘for access to fast, frequent and reliable public transport services, locate on the Frequent Network’.” (TfC, p.18)[^8] If you do want or cannot afford to locate to the Frequent Network, then you must remain in areas of low density, what Walker calls Sparseville, and there, in Sparseville, “relying on cars for most travel is the rational thing to do.” (Walker 2012, p.134)
+Just such a city is Canberra, as is clear even from the span of time with which *Transport for Canberra* operates: precisely the twenty years Walker suggests for giving almost all the chance to reconsider their location, indeed, for getting most people to relocate.[^7] But the character of *Transport for Canberra* as a blueprint along Walker’s lines for re-engineering Canberra’s urban form comes out most obviously in its claim that the message which development of the frequent or patronage network will convey to citizens is that “‘for access to fast, frequent and reliable public transport services, locate on the Frequent Network’.” (TfC, p.18)[^8] If you do want or cannot afford to locate to the Frequent Network, then you must remain in areas of low density, what Walker calls Sparseville, and there, in Sparseville, “relying on cars for most travel is the rational thing to do.” (Walker 2012, p.134)
 
 
 

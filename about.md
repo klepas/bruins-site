@@ -6,15 +6,19 @@ permalink: /about/
 
 ![Bruin meme photo](/files/images/Bruin-meme-v3 copy.jpg)
 
-I completed a B.A. (Hons) First Class in Philosophy at Latrobe University in Melbourne, Australia. I then completed a M.A. mit Auszeichnung at the Goethe-Universität, in Frankfurt am Main, Germany. I also received my Dr. Phil. (magna cum laude) from the Goethe Universität, with a dissertation on Searle’s Theory of Speech Acts supervised by Karl-Otto Apel and Jürgen Habermas. After a postdoctoral fellowship at the University of New South Wales, I taught at the ANU from 1993 until 2000, then at the University of Sydney until 2007. In 2008 I returned to the ANU, where I have been until August, 2019. I am now doing research at the University of New South Wales.
+I completed a B.A. (Hons) First Class in Philosophy at Latrobe University in Melbourne, Australia. I then completed a M.A. mit Auszeichnung at the Goethe-Universität, in Frankfurt am Main, Germany. I also received my Dr. Phil. (magna cum laude) from the Goethe Universität, with a dissertation on Searle’s Theory of Speech Acts supervised by Karl-Otto Apel and Jürgen Habermas. After a postdoctoral fellowship at the University of New South Wales, I taught at the ANU from 1993 until 2000, then at the University of Sydney until 2007. In 2008 I returned to the ANU, where I remained until 2016. In 2019, I commenced a second course of doctoral research, at the UNSW, which I completed in early 2026—see below for a link to a PDF of my PhD Thesis _On the Concept of the **De Se**_!
+   
+   In the past, I have worked primarily on German philosophy of the late 19th and early 20th centuries, with emphasis on the phenomenology of Husserl and Heidegger; and on the philosophy of technology and sustainability. But I also have a background in analytical philosophy and in Descartes, Kant, Hegel, Marx and Critical Theory, and Gadamer and hermeneutics.
+   
+   A crucial part of my work at the ANU was directed towards building interdisciplinary links to other areas within it relevant to sustainability, in particular, to the Fenner School of Environment and Society. Since retiring (and completing my second doctoral project!), I have widened this inter-disciplinary because practically-motivated concern to include intervention in public debates on housing and public transport in Canberra. In particular, I have been seeking to engage critically with the neoliberal conception of governance, which is hegemonic not just in Canberra but throughout the Western world. This constitutes a new kind of engagement for philosophers, beyond the usual round of specialised academic conferencing, paper-giving, publishing and teaching.
 
-I work primarily on German philosophy of the late 19th and early 20th centuries, with emphasis on the phenomenology of Husserl and Heidegger; and in the philosophy of technology and sustainability. But I also have a background in analytical philosophy and in Descartes, Kant, Hegel, Marx and Critical Theory, and Gadamer and hermeneutics.
-
-A crucial part of my work is the building of interdisciplinary links to other areas of inquiry relevant to sustainability. I see these as enabling a new kind of engagement for philosophers, beyond the usual round of conferencing, paper-giving, publishing and intra-disciplinary teaching. I am actively engaged in local politics, specifically, on issues of urban consolidation, gentrification and public transport.
-
-You may contact me under [my personal email address](mailto:carleton.christensen@gmail.com) or [my email address at the University of New South Wales](mailto:z9000290@ad.unsw.edu.au).
+I can be contacted at [my personal email address](mailto:carleton.christensen@gmail.com).
 
 ## Publications
+
+### 2025
+
+‘On the Concept of the _De Se_’, PhD Thesis, UNSW
 
 ### 2015
 

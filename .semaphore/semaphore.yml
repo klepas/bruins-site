@@ -19,7 +19,7 @@ blocks:
       jobs:
         - name: Bundle install and Jekyll Build
           commands:
-            - bundle install --path vendor/bundle
+            - bundle install
             - bundle exec jekyll build
   - name: "\U0001F680 Deploy"
     dependencies:

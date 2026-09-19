@@ -3,15 +3,15 @@ name: "\U0001F3AF Simple CI Pipeline"
 agent:
   machine:
     type: r1-standard-2
-    os_image: ubuntu2404
+    os_image: ubuntu2004
 fail_fast:
   stop:
-    when: branch != 'main'
+    when: branch != 'master'
 auto_cancel:
   running:
-    when: branch != 'main'
+    when: branch != 'master'
   queued:
-    when: branch = 'main'
+    when: branch = 'master'
 blocks:
   - name: "\U0001F9EA Test"
     dependencies: []
@@ -20,7 +20,7 @@ blocks:
         - name: Bundle install and Jekyll Build
           commands:
             - checkout
-            - sem-version ruby 2.7.8
+            - sem-version ruby 2.6
             - bundle install
             - bundle exec jekyll build
   - name: "\U0001F680 Deploy"

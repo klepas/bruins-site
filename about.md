@@ -18,7 +18,7 @@ I can be contacted at [my personal email address](mailto:carleton.christensen@gm
 
 ### 2025
 
-‘On the Concept of the _De Se_’, PhD Thesis, UNSW
+‘[On the Concept of the _De Se_](/files/pdfs/Christensen-On-the-Concept-of-the-De-Se-UNSW-PhD-2025.pdf)’, PhD Thesis, UNSW
 
 ### 2015
 

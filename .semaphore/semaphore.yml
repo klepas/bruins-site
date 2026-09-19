@@ -20,7 +20,7 @@ blocks:
         - name: Bundle install and Jekyll Build
           commands:
             - checkout
-            - sem-version 2.7.8
+            - sem-version ruby 2.7.8
             - bundle install
             - bundle exec jekyll build
   - name: "\U0001F680 Deploy"

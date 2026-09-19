@@ -3,7 +3,7 @@ name: "\U0001F3AF Simple CI Pipeline"
 agent:
   machine:
     type: r1-standard-2
-    os_image: ubuntu2004
+    os_image: ubuntu2404
 fail_fast:
   stop:
     when: branch != 'master'

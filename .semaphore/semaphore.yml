@@ -1,136 +1,89 @@
 version: v1.0
-name: "💎 Ruby CI Pipeline"         
-
-# ---------------------------------------------------------------------
-# GLOBAL SETTINGS
-# ---------------------------------------------------------------------
+name: "\U0001F48E Ruby CI Pipeline"
 agent:
   machine:
-    type: a2-standard-4        # Filled by template variables
+    type: a2-standard-4
     os_image: macos-xcode16
-
-# Fast feedback & cost control
 fail_fast:
   stop:
-    when: branch != 'main'          # Abort early on non-main branches
+    when: branch != 'main'
 auto_cancel:
   running:
-    when: branch != 'main'          # Cancel older runs on feature branches
+    when: branch != 'main'
   queued:
-    when: branch = 'main'           # Keep the queue clean for main
-
-# Common pre-steps for every job
+    when: branch = 'main'
 global_job_config:
   prologue:
     commands:
-      - checkout                        # Grab the code
-      - sem-service start postgres 17   # Start Postgres 17
-      - sem-service start redis 7       # Start Redis 7
-      - sem-version ruby 3.2.2          # Select Ruby 3.2.2
-      - sem-version node 20.11.0        # Select Node 20.11
-      - cache restore                   # Pull dependencies & packs from cache
-
-# ---------------------------------------------------------------------
-# WORKFLOW
-# ---------------------------------------------------------------------
+      - checkout
+      - sem-service start postgres 17
+      - sem-service start redis 7
+      - sem-version ruby 3.2.2
+      - sem-version node 20.11.0
+      - cache restore
 blocks:
-  # ---------------- SETUP ----------------
-  - name: "🛠 Setup & Cache"
+  - name: "\U0001F6E0 Setup & Cache"
     task:
       jobs:
         - name: Install Gems & JS deps
           commands:
-            - yarn install --frozen-lockfile                   # Install JS deps
-            - bundle install --deployment --path vendor/bundle # Install Ruby gems
-            - gem install --no-document semaphore_test_boosters  # Install Boosters gem
-            - cache store                                      # Save vendor/bundle & node_modules
+            - bundle install --deployment --path vendor/bundle
+            - cache store
+        - name: Build Jekyll
+          commands:
+            - bundle exec jekyll build
     dependencies: []
-
-  # ------------- FRONT-END BUILD -------------
-  - name: "🖼️ Webpacker Build"
-    task:
-      jobs:
-        - name: Compile Assets
-          commands:
-            - cache restore webpacker-assets               # Reuse previous packs if present
-            - bundle exec rake webpacker:compile           # Produce packs for tests
-            - cache store webpacker-assets public/packs    # Save packs for later blocks
-    dependencies:
-      - "🛠 Setup & Cache"
-
-  # ------------- CODE QUALITY -------------
-  - name: "🔍 ESLint & Stylelint"
-    task:
-      jobs:
-        - name: JS / CSS Lint
-          commands:
-            - yarn run eslint .                # Lint JavaScript
-            - yarn run stylelint '**/*.scss'   # Lint SCSS
-    dependencies:
-      - "🖼️ Webpacker Build"
-
-  - name: "🧹 RuboCop"
+  - name: "\U0001F9F9 RuboCop"
     task:
       jobs:
         - name: Ruby Style Check
           commands:
-            - bundle exec rubocop             # Enforce Ruby style
+            - bundle exec rubocop
     dependencies:
-      - "🛠 Setup & Cache"
-
-  # ------------- SECURITY -------------
-  - name: "🛡️ Brakeman"
+      - "\U0001F6E0 Setup & Cache"
+  - name: "\U0001F6E1️ Brakeman"
     task:
       jobs:
         - name: Static Analysis
           commands:
-            - bundle exec brakeman --force    # Rails security scan
+            - bundle exec brakeman --force
     dependencies:
-      - "🛠 Setup & Cache"
-
-  - name: "🛡️ Bundler Audit"
+      - "\U0001F6E0 Setup & Cache"
+  - name: "\U0001F6E1️ Bundler Audit"
     task:
       jobs:
         - name: Gem CVE Check
           commands:
             - bundle exec bundle-audit check --update
     dependencies:
-      - "🛠 Setup & Cache"
-
-  # ------------- TEST SUITE (Boosters) -------------
-  - name: "🚦 RSpec Suite"
+      - "\U0001F6E0 Setup & Cache"
+  - name: "\U0001F6A6 RSpec Suite"
     task:
       env_vars:
         - name: RAILS_ENV
-          value: test              # Use the test environment
+          value: test
         - name: PGHOST
-          value: 127.0.0.1         # PostgreSQL host
+          value: 127.0.0.1
         - name: PGUSER
-          value: postgres          # PostgreSQL user
+          value: postgres
       jobs:
-        - name: "🟢 RSpec Tests"
-          parallelism: 5                       # Split across 5 nodes
+        - name: "\U0001F7E2 RSpec Tests"
+          parallelism: 5
           commands:
-            - cache restore webpacker-assets   # Pull precompiled packs
-            - bundle exec rake db:setup        # Build fresh test DB
-            # Automatic test splitting via Semaphore Boosters
+            - cache restore webpacker-assets
+            - 'bundle exec rake db:setup'
             - rspec_booster --job "$SEMAPHORE_JOB_INDEX/$SEMAPHORE_JOB_COUNT" --format RspecJunitFormatter --out report.xml --format documentation
       epilogue:
         always:
           commands:
             - '[[ -f report.xml ]] && test-results publish report.xml'
     dependencies:
-      - "🧹 RuboCop"
-      - "🛡️ Brakeman"
-      - "🛡️ Bundler Audit"
-      - "🖼️ Webpacker Build"
-
-# ---------------------------------------------------------------------
-# PIPELINE SUMMARY
-# ---------------------------------------------------------------------
+      - "\U0001F9F9 RuboCop"
+      - "\U0001F6E1️ Brakeman"
+      - "\U0001F6E1️ Bundler Audit"
 after_pipeline:
   task:
     jobs:
-      - name: "📊 Merge Results"
+      - name: "\U0001F4CA Merge Results"
         commands:
-          - test-results gen-pipeline-report  # Collate JUnit reports
+          - test-results gen-pipeline-report

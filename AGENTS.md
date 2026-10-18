@@ -34,7 +34,11 @@ The old site ran Jekyll 2.5.3. The rebuild moves to Jekyll 4.4.1, see `plans/ins
 
 ## Quick commands
 
-TODO. The Ruby and Jekyll plans fill this in.
+Run from the repo root.
+
+- `rbenv install`: installs the Ruby named in `.ruby-version`. Use it on a new machine.
+
+TODO. The Jekyll plan adds the build commands.
 
 ## Skills
 
@@ -52,7 +56,7 @@ TODO.
 
 ## Key technologies
 
-- Ruby, managed locally with rbenv. The rebuild pins it in `.ruby-version` (3.4 planned).
+- Ruby, managed locally with rbenv. Ruby 3.4.11, pinned in `.ruby-version`.
 - Jekyll, with kramdown for Markdown and Liquid for templates.
 - AWS S3 static website hosting.
 

@@ -1,0 +1,12 @@
+title: Bruin Christensen
+url: "http://www.cbchristensen.net"
+timezone: UTC
+permalink: date
+markdown: kramdown
+
+exclude:
+  - refs/
+  - plans/
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md

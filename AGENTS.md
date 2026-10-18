@@ -17,6 +17,9 @@ During the rebuild:
 ```
 .
 ├── AGENTS.md          Agent instructions (CLAUDE.md points here)
+├── Gemfile            Ruby gems for the site, see Dependencies below
+├── Gemfile.lock       Resolved gem versions for every platform
+├── _config.yml        Jekyll config
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   └── done/          Finished plan sets
@@ -27,10 +30,14 @@ The new site gets built at the repo root. Content goes back to the paths it had 
 
 ## Jekyll
 
-The old site ran Jekyll 2.5.3. The rebuild moves to Jekyll 4.4.1, see `plans/install-latest-jekyll/install-latest-jekyll-00-overview.md`.
+The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3. See `plans/install-latest-jekyll/install-latest-jekyll-00-overview.md` for the install.
 
 - **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `plans/live-url-inventory.tsv` lists all of them. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, and the overview plan explains how to pin them.
-- Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. Otherwise Jekyll builds the old site's pages over the new ones.
+- Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. Otherwise Jekyll builds the old site's pages over the new ones. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.
+- `url` is the canonical host, `http://www.cbchristensen.net`. `jekyll doctor` warns and exits with status 1 without it.
+- `timezone: UTC` matches the 2022 build, so every front matter date lands on the same day in its URL.
+- `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
+- Don't remove `timezone` or `permalink` without re-running the URL parity check in the rebuild overview.
 
 ## Quick commands
 
@@ -38,7 +45,11 @@ Run from the repo root.
 
 - `rbenv install`: installs the Ruby named in `.ruby-version`. Use it on a new machine.
 
-TODO. The Jekyll plan adds the build commands.
+- `bundle install`: installs the gems in `Gemfile.lock`.
+- `bundle exec jekyll build`: builds the site into `_site/`.
+- `bundle exec jekyll doctor`: checks the config and content for problems. It should print "Everything looks fine."
+
+`bundle exec jekyll serve` is the user's to run. Don't start it.
 
 ## Skills
 
@@ -57,12 +68,22 @@ TODO.
 ## Key technologies
 
 - Ruby, managed locally with rbenv. Ruby 3.4.11, pinned in `.ruby-version`.
-- Jekyll, with kramdown for Markdown and Liquid for templates.
+- Jekyll 4.4.1, with kramdown for Markdown and Liquid for templates.
 - AWS S3 static website hosting.
 
 ## Dependencies
 
 Keep them few. The site has to keep building in CI for years with little upkeep. Ask the user before adding any gem, plugin or theme, and give each one in the Gemfile a comment saying why it's there. No Node toolchain, and no third-party CDNs in the pages.
+
+The Gemfile lists three gems:
+
+- `jekyll` (`~> 4.4.1`).
+- `bigdecimal`. Liquid 4.0.4 requires it without declaring it, and Ruby 3.4 dropped it from the default gems.
+- `logger`. Jekyll 4.4.1 requires it without declaring it, and Ruby 4.0 drops it from the default gems.
+
+Today both of the last two reach the bundle through other gems. Declaring them keeps the build working if those chains change.
+
+`Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`.
 
 Dependabot security updates are on in the repo's GitHub settings, and they stay on. Once the new `Gemfile.lock` reaches `master`, expect Dependabot PRs against it.
 

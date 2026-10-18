@@ -3,9 +3,11 @@
 
 # Jekyll site builds
 _site
+.jekyll-cache/
+.jekyll-metadata
 
-# Old Jekyll SASS cache
-.sass-cache
+# Bundler local config
+.bundle/
 
 # References folder
 refs/*

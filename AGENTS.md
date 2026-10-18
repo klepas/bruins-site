@@ -6,7 +6,7 @@ This is the Jekyll-powered website for the philosopher Bruin Christensen (Carlet
 
 The site is live at http://www.cbchristensen.net/.
 
-The content is primarily in English, with some pages holding German-language content, either in part or in full as the main article body.
+The content is primarily in English, with some pages holding German-language content, either in part or in full as the main article body. Bruin writes Australian and British English, so use that spelling in any interface text you write. The site's `lang` is `en-AU`, and only pages written entirely in German get `lang: de`. The interface stays English on those pages.
 
 A rebuild is in progress on the `site-rebuild-with-latest-jekyll-and-new-theme` branch: a current Ruby, the latest Jekyll, a new theme, and all content brought back with unchanged URLs. Read [`plans/overview-site-rebuild.md`](./plans/overview-site-rebuild.md) before working on any part of it. `plans/` is gitignored, so the plans only exist on the user's machine.
 
@@ -20,7 +20,7 @@ During the rebuild:
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   └── done/          Finished plan sets
-└── refs/old-site/     The old Jekyll 2 site, a read-only reference
+└── refs/old-site/     The old Jekyll 2 site, a read-only reference, deleted before the merge to master
 ```
 
 The new site gets built at the repo root. Content goes back to the paths it had in the old site: `papers/_posts/`, `blog/_posts/`, the `_descartes/`, `_dilthey/` and `_technology/` collections, `files/`, and the top-level pages. Update this section as files land.
@@ -60,11 +60,15 @@ TODO.
 
 Keep them few. The site has to keep building in CI for years with little upkeep. Ask the user before adding any gem, plugin or theme, and give each one in the Gemfile a comment saying why it's there. No Node toolchain, and no third-party CDNs in the pages.
 
+Dependabot security updates are on in the repo's GitHub settings, and they stay on. Once the new `Gemfile.lock` reaches `master`, expect Dependabot PRs against it.
+
 ## Deployment
 
-The live site is served from the S3 bucket `www.cbchristensen.net` (`ap-southeast-2`) over HTTP. A separate nginx host redirects `cbchristensen.net` to `www.`. The last deploy happened on 2022-04-19, and the repo doesn't record how. Don't attempt a deploy.
+The live site is served from the S3 bucket `www.cbchristensen.net` (`ap-southeast-2`) over HTTP. `www.cbchristensen.net` is the canonical host. A separate nginx host redirects every path on `cbchristensen.net` to the same path on `www.`, and that redirect has to keep working.
 
-TODO: document the deploy process once it's decided.
+Semaphore CI used to build and deploy the site. The last deploy happened on 2022-04-19, before Semaphore's platform overhaul broke the setup. The user holds the AWS credentials. Don't attempt a deploy.
+
+CI goes back to Semaphore after the rebuild, with GitHub Actions as the fallback if Semaphore isn't viable. TODO: document the deploy process once the CI plan is written.
 
 ## Git workflow
 

@@ -42,6 +42,7 @@ Each task file must include:
    - CSS variable changes
    - Structural changes with before/after code snippets
    - Pitfalls or gotchas to watch for
+   - What to do when a step fails: the verbose flag to re-run with, and where the logs are
 5. **Acceptance criteria** -- A checklist of verifiable outcomes:
    - Build passes
    - Formatting and linting pass (once we install this)
@@ -74,8 +75,9 @@ When asked to execute a task from this directory:
 3. **Check dependencies** -- verify prerequisite tasks are complete (e.g., grep for old imports that should have been removed).
 4. **Make the changes** following the migration details precisely.
 5. **Run acceptance criteria** -- execute the verification commands listed in the task.
-6. **Do not run dev servers** -- assume the user has them running. Verify via static analysis only.
-7. **Update the overview** if you discover something that affects other tasks (new gotchas, dependency changes).
+6. **Stop when a step fails.** Re-run the failing command once with verbose output if it has a flag for that. Write the command, the error and any log path into the overview's log, and ask the user what to do. Don't patch tools, pin versions or add dependencies to get past an error.
+7. **Do not run dev servers** -- assume the user has them running. Verify via static analysis only.
+8. **Update the overview** if you discover something that affects other tasks (new gotchas, dependency changes).
 
 ## Conventions
 
@@ -83,3 +85,4 @@ When asked to execute a task from this directory:
 - If a task turns out to be larger than expected, split it and update the overview's task table.
 - If a task becomes unnecessary (e.g., the API turns out to be identical), mark it as skippable in the overview and note why.
 - Cross-reference between tasks using relative markdown links.
+- When a plan set is finished, mark it done in its overview and leave the folder in place. The user moves finished plan sets into `done/` themselves.

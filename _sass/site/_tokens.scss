@@ -3,8 +3,9 @@
 // colours in the forced-colours rules.
 //
 // Order matters. When several blocks match, the last one wins, so the block
-// for dark with more contrast comes last. Without it, the light more-contrast
-// values would override the dark ones.
+// for dark with more contrast comes after the other screen palettes. Without
+// it, the light more-contrast values would override the dark ones. The print
+// palette comes last of all.
 
 :root {
   color-scheme: light dark; // matches the meta tag in _includes/head.html
@@ -91,5 +92,23 @@
     --color-chrome-link: #ffd58a;
     --color-hero-from: #000000;
     --color-hero-to: #000000;
+  }
+}
+
+// Print: black on white in every mode. A reader in dark mode matches both
+// `prefers-color-scheme: dark` and `print` while printing, so this block
+// stays last and wins over the screen palettes.
+@media print {
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-text: #000000;
+    --color-text-muted: #333333;
+    --color-link: #000000;
+    --color-link-visited: #000000;
+    --color-rule: #999999;
+    --color-control: #999999;
+    --color-mark: transparent;
+    --color-hero-text: #000000;
   }
 }

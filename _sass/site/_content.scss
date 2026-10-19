@@ -40,6 +40,14 @@ sup[id^="fnref:"] {
   scroll-margin-top: 1.5rem;
 }
 
+// Forced colours mode drops the background, so mark the jump with an outline
+@media (forced-colors: active) {
+  .footnotes li:target,
+  sup:target {
+    outline: 2px solid Highlight;
+  }
+}
+
 
 
 /**

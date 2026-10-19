@@ -1,8 +1,13 @@
-// Colour tokens, the light column of the palette. Every colour on the site
-// is defined here and nowhere else.
+// Colour tokens: light, dark, and a more-contrast version of each. Every
+// colour on the site is defined here and nowhere else, apart from the system
+// colours in the forced-colours rules.
+//
+// Order matters. When several blocks match, the last one wins, so the block
+// for dark with more contrast comes last. Without it, the light more-contrast
+// values would override the dark ones.
 
 :root {
-  color-scheme: light;
+  color-scheme: light dark; // matches the meta tag in _includes/head.html
 
   --color-bg: #ffffff;
   --color-surface: #f4f5f7;
@@ -21,4 +26,70 @@
   --color-hero-from: #2f5d9a;
   --color-hero-to: #45505a;
   --color-hero-text: #ffffff;
+}
+
+// A dark blue-grey rather than black, which glares behind light text. The
+// header and footer go darker than the page.
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #161b22;
+    --color-surface: #1f252d;
+    --color-text: #e4e7eb;
+    --color-text-muted: #a3abb5;
+    --color-link: #8db4ec;
+    --color-link-visited: #c0a6f0;
+    --color-rule: #3a4350;
+    --color-control: #6b7480;
+    --color-mark: #3d3720;
+    --color-chrome-bg: #0e1520;
+    --color-chrome-border: #2a3546;
+    --color-chrome-text: #e4e7eb;
+    --color-chrome-muted: #b6bdc7;
+    --color-chrome-link: #e9b96e;
+    --color-hero-from: #1f3a63;
+    --color-hero-to: #2a3138;
+  }
+}
+
+// The hero drops its gradient in this mode, so both stops are the same.
+@media (prefers-contrast: more) {
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-text: #000000;
+    --color-text-muted: #333333;
+    --color-link: #123f80;
+    --color-link-visited: #3b1f6e;
+    --color-rule: #5c5c5c;
+    --color-control: #5c5c5c;
+    --color-chrome-bg: #1b2635;
+    --color-chrome-border: #000000;
+    --color-chrome-text: #ffffff;
+    --color-chrome-muted: #e4e7eb;
+    --color-chrome-link: #f0c987;
+    --color-hero-from: #1b2635;
+    --color-hero-to: #1b2635;
+  }
+}
+
+// The header and footer are black on a black page here, so their border
+// turns white to keep the bands visible. `--color-mark` keeps the dark value.
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --color-bg: #000000;
+    --color-surface: #000000;
+    --color-text: #ffffff;
+    --color-text-muted: #e4e7eb;
+    --color-link: #b3d1ff;
+    --color-link-visited: #dcc8ff;
+    --color-rule: #cfcfcf;
+    --color-control: #cfcfcf;
+    --color-chrome-bg: #000000;
+    --color-chrome-border: #ffffff;
+    --color-chrome-text: #ffffff;
+    --color-chrome-muted: #e4e7eb;
+    --color-chrome-link: #ffd58a;
+    --color-hero-from: #000000;
+    --color-hero-to: #000000;
+  }
 }

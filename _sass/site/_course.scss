@@ -17,3 +17,27 @@
   line-height: 1.5;
   text-align: center;
 }
+
+// A solid background for readers who ask for more contrast. In forced
+// colours mode a border keeps the box visible, and dropping the gradient
+// doesn't depend on how each browser treats background images there.
+@media (prefers-contrast: more) {
+  .hero {
+    background-image: none;
+  }
+}
+
+// In dark with more contrast the hero is black on a black page, so a border
+// marks out the box.
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  .hero {
+    border: 1px solid var(--color-rule);
+  }
+}
+
+@media (forced-colors: active) {
+  .hero {
+    background-image: none;
+    border: 1px solid CanvasText;
+  }
+}

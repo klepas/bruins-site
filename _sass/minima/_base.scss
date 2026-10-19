@@ -214,6 +214,12 @@ a:hover {
   outline-offset: 2px;
 }
 
+@media (prefers-contrast: more) {
+  :focus-visible {
+    outline-width: 4px;
+  }
+}
+
 
 /**
  * Blockquotes

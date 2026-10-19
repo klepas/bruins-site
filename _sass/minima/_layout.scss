@@ -67,6 +67,14 @@
     text-decoration-line: underline;
     text-decoration-thickness: 0.12em;
   }
+
+  // Always underlined for readers who ask for more contrast. The current
+  // page keeps its thicker line.
+  @media (prefers-contrast: more) {
+    a {
+      text-decoration-line: underline;
+    }
+  }
 }
 
 .site-header .site-title {

@@ -1,0 +1,24 @@
+// Colour tokens, the light column of the palette. Every colour on the site
+// is defined here and nowhere else.
+
+:root {
+  color-scheme: light;
+
+  --color-bg: #ffffff;
+  --color-surface: #f4f5f7;
+  --color-text: #333333;
+  --color-text-muted: #595959;
+  --color-link: #2b5ea7;
+  --color-link-visited: #5a3f8f;
+  --color-rule: #cccccc;
+  --color-control: #8a8a8a;
+  --color-mark: #fff6c8;
+  --color-chrome-bg: #28374c;
+  --color-chrome-border: #142f56;
+  --color-chrome-text: #ffffff;
+  --color-chrome-muted: #c4cad3;
+  --color-chrome-link: #e9b96e;
+  --color-hero-from: #2f5d9a;
+  --color-hero-to: #45505a;
+  --color-hero-text: #ffffff;
+}

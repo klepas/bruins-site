@@ -21,6 +21,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  text-decoration: none;
 
   &,
   &:visited {
@@ -30,6 +31,7 @@
 
 .site-nav {
   float: right;
+  font-family: $sans-font-family;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -43,6 +45,7 @@
   .page-link {
     color: var(--color-text);
     line-height: $base-line-height;
+    text-decoration: none;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -110,6 +113,7 @@
  * Site footer
  */
 .site-footer {
+  font-family: $sans-font-family;
   border-top: 1px solid var(--color-rule);
   padding: $spacing-unit 0;
 }
@@ -171,14 +175,6 @@
   flex: 1;
 }
 
-.page-heading {
-  @include relative-font-size(2);
-}
-
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -189,7 +185,9 @@
 }
 
 .post-meta {
+  font-family: $sans-font-family;
   font-size: $small-font-size;
+  line-height: 1.45;
   color: var(--color-text-muted);
 }
 
@@ -207,24 +205,6 @@
   margin-bottom: $spacing-unit;
 }
 
-.post-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
-}
-
 .post-content {
   margin-bottom: $spacing-unit;
-
-  h2 {
-    @include relative-font-size(2);
-  }
-
-  h3 {
-    @include relative-font-size(1.625);
-  }
-
-  h4 {
-    @include relative-font-size(1.25);
-  }
 }

@@ -4,6 +4,9 @@ timezone: UTC
 permalink: date
 markdown: kramdown
 
+sass:
+  sourcemap: never
+
 exclude:
   - refs/
   - plans/

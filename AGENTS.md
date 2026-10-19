@@ -22,8 +22,8 @@ During the rebuild:
 ├── _config.yml        Jekyll config
 ├── _includes/         head, header and footer, from Minima 2.5.2
 ├── _layouts/          base, page, post and home, from Minima 2.5.2
-├── _sass/             Minima's Sass, with its MIT licence in _sass/minima/LICENSE.txt
-├── assets/main.scss   Compiles to assets/main.css
+├── _sass/minima/      Minima's Sass as @use modules, with its MIT licence in LICENSE.txt
+├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)

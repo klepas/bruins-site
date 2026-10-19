@@ -3,4 +3,5 @@
 ---
 // Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt.
 
-@import "minima";
+@use "minima/base";
+@use "minima/layout";

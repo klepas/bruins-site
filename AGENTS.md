@@ -30,7 +30,7 @@ The new site gets built at the repo root. Content goes back to the paths it had 
 
 ## Jekyll
 
-The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3. See `plans/install-latest-jekyll/install-latest-jekyll-00-overview.md` for the install.
+The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3. See `plans/done/install-latest-jekyll/install-latest-jekyll-00-overview.md` for the install.
 
 - **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `plans/live-url-inventory.tsv` lists all of them. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, and the overview plan explains how to pin them.
 - Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. Otherwise Jekyll builds the old site's pages over the new ones. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.

@@ -23,8 +23,9 @@ During the rebuild:
 ├── _includes/         head, header and footer, from Minima 2.5.2
 ├── _layouts/          base, page, post and home, from Minima 2.5.2
 ├── _sass/minima/      Minima's Sass as @use modules, with its MIT licence in LICENSE.txt
-├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property
+├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
+├── assets/fonts/      Literata and Source Sans 3 as variable WOFF2 files, with their OFL licences
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)

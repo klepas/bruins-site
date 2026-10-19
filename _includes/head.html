@@ -3,5 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip }} | {% endif %}{{ site.title | escape }}</title>
+  <link rel="preload" href="{{ '/assets/fonts/literata-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/source-sans-3-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>

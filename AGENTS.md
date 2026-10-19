@@ -22,13 +22,14 @@ During the rebuild:
 ├── _config.yml        Jekyll config
 ├── _data/navigation.yml  The header and footer links, in order
 ├── _includes/         head, header and footer, from Minima 2.5.2; content.html, which fixes kramdown's footnote and table markup; interface-lang.html, which marks interface text lang="en-AU" on German pages; print-button.html
-├── _layouts/          base, page, post and home, from Minima 2.5.2; post serves papers, blog posts and course documents
+├── _layouts/          base, page and post, from Minima 2.5.2; post serves papers, blog posts and course documents; home lists the latest blog post and three recent papers; course-overview is each course's index, with the hero and its document list
 ├── _sass/minima/      Minima's Sass as @use modules, with its MIT licence in LICENSE.txt
-├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles, _post.scss the article header, print button and abstract box
+├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles, _post.scss the article header, print button and abstract box, _listings.scss the shared .item-list used by the home page and every index, _home.scss the introduction, _course.scss the course hero
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
 ├── assets/fonts/      Literata and Source Sans 3 as variable WOFF2 files, with their OFL licences
+├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
-├── papers/, blog/, _dilthey/, about.md, files/images/  Temporary sample content for theme tasks 08a and 08b, copied from refs/old-site/. Theme task 12 deletes it
+├── papers/, blog/, _dilthey/, about.md, index.html, files/images/  Temporary sample content for theme tasks 08a and 08b, copied from refs/old-site/. Theme task 12 deletes it
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   └── done/          Finished plan sets

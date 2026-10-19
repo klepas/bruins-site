@@ -1,0 +1,14 @@
+---
+layout: base
+title: Blog
+permalink: /blog/
+---
+<h1 class="page-heading">{{ page.title }}</h1>
+<ul class="item-list">
+  {%- for post in site.categories.blog %}
+  <li class="item"{% if post.lang and post.lang != site.lang %} lang="{{ post.lang }}"{% endif %}>
+    <h2 class="item-title"><a href="{{ post.url | relative_url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h2>
+    <p class="item-meta"{% include interface-lang.html lang=post.lang %}><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
+  </li>
+  {%- endfor %}
+</ul>

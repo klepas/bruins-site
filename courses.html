@@ -1,0 +1,21 @@
+---
+layout: base
+title: Course materials
+permalink: /courses/
+---
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- comment -%}
+  Sorted on each collection's order key, because Jekyll sorts
+  site.collections by label. A collection without one sorts first.
+{%- endcomment -%}
+{%- assign courses = site.collections | where_exp: "c", "c.label != 'posts'" | sort: "order" %}
+<ul class="item-list">
+  {%- for course in courses %}
+  <li class="item">
+    <h2 class="item-title"><a href="{{ '/courses/' | append: course.label | append: '/' | relative_url }}">{{ course.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h2>
+    {%- if course.abstract %}
+    <p class="item-abstract">{{ course.abstract | truncatewords: 90 | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>

@@ -1,0 +1,19 @@
+// The course overview: the hero with the course abstract, and the heading
+// above its list of documents.
+@use "../minima/settings" as *;
+
+// The solid colour under the gradient is for forced colours mode and print.
+// White text stays above 4.5:1 against both stops.
+.hero {
+  margin-block: 1.5rem 2rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 2px;
+  background-color: var(--color-hero-to);
+  background-image: linear-gradient(5deg, var(--color-hero-from), var(--color-hero-to));
+  color: var(--color-hero-text);
+  font-family: $sans-font-family;
+  font-size: 1.35rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}

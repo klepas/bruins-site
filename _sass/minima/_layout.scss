@@ -133,25 +133,11 @@
   flex: 1;
 }
 
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
 .post-meta {
   font-family: $sans-font-family;
   font-size: $small-font-size;
   line-height: 1.45;
   color: var(--color-text-muted);
-}
-
-.post-link {
-  display: block;
-  @include relative-font-size(1.5);
 }
 
 

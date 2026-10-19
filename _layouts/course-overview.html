@@ -1,0 +1,27 @@
+---
+layout: base
+---
+{%- assign course = site.collections | where: "label", page.collection | first -%}
+<article class="course">
+  <header class="course-header">
+    <h1 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h1>
+    {%- if course.abstract %}
+    <p class="hero">{{ course.abstract | truncatewords: 90 | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    {%- endif %}
+  </header>
+  <div class="post-content">
+    {% include content.html html=content %}
+  </div>
+  <h2 class="course-items-heading">Contents</h2>
+  <ul class="item-list">
+    {%- for doc in course.docs %}
+    {%- if doc.url == page.url %}{% continue %}{% endif %}
+    <li class="item"{% if doc.lang and doc.lang != site.lang %} lang="{{ doc.lang }}"{% endif %}>
+      <h3 class="item-title"><a href="{{ doc.url | relative_url }}">{{ doc.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h3>
+      {%- if doc.abstract %}
+      <div class="item-abstract">{{ doc.abstract | markdownify }}</div>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</article>

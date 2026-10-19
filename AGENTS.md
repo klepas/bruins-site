@@ -32,7 +32,8 @@ During the rebuild:
 ├── papers/, blog/, _dilthey/, about.md, index.html, files/images/  Temporary sample content for theme tasks 08a and 08b, copied from refs/old-site/. Theme task 12 deletes it
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
-│   └── done/          Finished plan sets
+│   ├── done/          Finished plan sets
+│   └── tools/screenshots/  Playwright screenshots of the site in every colour mode, see its README.md
 └── refs/old-site/     The old Jekyll 2 site, a read-only reference, deleted before the merge to master
 ```
 
@@ -60,6 +61,8 @@ Run from the repo root.
 - `bundle exec jekyll doctor`: checks the config and content for problems. It should print "Everything looks fine."
 
 `bundle exec jekyll serve` is the user's to run. Don't start it.
+
+To check visual changes, or to share screenshots with Bruin, use `plans/tools/screenshots/`. Its `README.md` covers setup and running.
 
 ## Skills
 

@@ -76,8 +76,14 @@ When asked to execute a task from this directory:
 4. **Make the changes** following the migration details precisely.
 5. **Run acceptance criteria** -- execute the verification commands listed in the task.
 6. **Stop when a step fails.** Re-run the failing command once with verbose output if it has a flag for that. Write the command, the error and any log path into the overview's log, and ask the user what to do. Don't patch tools, pin versions or add dependencies to get past an error.
-7. **Do not run dev servers** -- assume the user has them running. Verify via static analysis only.
+7. **Do not run dev servers** -- assume the user has them running. Verify via static analysis only. The one exception is the screenshot tool below, which serves a throwaway build from your scratchpad, never `jekyll serve`.
 8. **Update the overview** if you discover something that affects other tasks (new gotchas, dependency changes).
+
+## Tools
+
+`tools/` holds helper scripts for plan work. Like the rest of `plans/`, git ignores them, so they only exist on the user's machine.
+
+- `tools/screenshots/`: a Playwright script that screenshots the home page, style guide, a paper, its footnotes, the Dilthey overview and keyboard focus in light, dark, both more-contrast palettes and forced colours. Use it to check visual changes, or to make comparison artifacts to share with Bruin. Its `README.md` explains how to build, serve and run it.
 
 ## Conventions
 

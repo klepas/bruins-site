@@ -20,6 +20,11 @@ During the rebuild:
 ├── Gemfile            Ruby gems for the site, see Dependencies below
 ├── Gemfile.lock       Resolved gem versions for every platform
 ├── _config.yml        Jekyll config
+├── _includes/         head, header and footer, from Minima 2.5.2
+├── _layouts/          base, page, post and home, from Minima 2.5.2
+├── _sass/             Minima's Sass, with its MIT licence in _sass/minima/LICENSE.txt
+├── assets/main.scss   Compiles to assets/main.css
+├── style-guide/       Theme test pages, published: false, built with --unpublished
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   └── done/          Finished plan sets

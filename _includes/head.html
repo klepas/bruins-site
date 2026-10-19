@@ -1,0 +1,7 @@
+{%- comment -%} Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt. {%- endcomment -%}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | markdownify | strip_html | strip }} | {% endif %}{{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>

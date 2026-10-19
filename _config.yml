@@ -4,6 +4,10 @@ timezone: UTC
 permalink: date
 markdown: kramdown
 
+# U+FE0E keeps iOS from drawing the backlink arrow as an emoji
+kramdown:
+  footnote_backlink: "&#8617;&#xFE0E;"
+
 sass:
   sourcemap: never
 

@@ -20,10 +20,10 @@ During the rebuild:
 ├── Gemfile            Ruby gems for the site, see Dependencies below
 ├── Gemfile.lock       Resolved gem versions for every platform
 ├── _config.yml        Jekyll config
-├── _includes/         head, header and footer, from Minima 2.5.2
+├── _includes/         head, header and footer, from Minima 2.5.2, and content.html, which fixes kramdown's footnote and table markup
 ├── _layouts/          base, page, post and home, from Minima 2.5.2
 ├── _sass/minima/      Minima's Sass as @use modules, with its MIT licence in LICENSE.txt
-├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules
+├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
 ├── assets/fonts/      Literata and Source Sans 3 as variable WOFF2 files, with their OFL licences
 ├── style-guide/       Theme test pages, published: false, built with --unpublished

@@ -219,12 +219,8 @@ a:hover {
  * Blockquotes
  */
 blockquote {
-  color: var(--color-text-muted);
-  border-left: 4px solid var(--color-rule);
-  padding-left: $spacing-unit * 0.5;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
+  border-left: 3px solid var(--color-rule);
+  padding-left: calc(1.5rem - 3px); // text sits 1.5rem in
 
   > :last-child {
     margin-bottom: 0;

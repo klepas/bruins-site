@@ -1,0 +1,15 @@
+{%- comment -%}
+  Fixes kramdown's rendered HTML, which has no options for these. Gives the
+  footnotes a "Notes" heading in place of Bruin's own, names the backlinks,
+  and wraps tables in a box that scrolls. Each replace matches kramdown's
+  exact markup, so check them after a kramdown update.
+{%- endcomment -%}
+{%- assign html = include.html -%}
+{%- if html contains '<div class="footnotes" role="doc-endnotes">' -%}
+  {%- assign html = html | remove: '<h2 id="notes">Notes</h2>' | remove: '<h3 id="notes">Notes</h3>' -%}
+{%- endif -%}
+{%- assign html = html | replace: '<div class="footnotes" role="doc-endnotes">', '<div class="footnotes" role="doc-endnotes"><h2 class="footnotes-heading" id="notes">Notes</h2>' -%}
+{%- assign html = html | replace: 'role="doc-backlink">', 'role="doc-backlink" aria-label="Back to text">' -%}
+{%- assign html = html | replace: '<table>', '<div class="table-scroll" role="region" aria-label="Table" tabindex="0"><table>' -%}
+{%- assign html = html | replace: '</table>', '</table></div>' -%}
+{{ html }}

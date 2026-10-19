@@ -91,6 +91,12 @@ In seiner Vorlesung _Platon: Sophistes_ behauptet Heidegger, dass mit der _phró
 
 **Flexible transport will be considered for areas and times of low demand*
 
+A table with a header row and column alignment:
+
+|           Right            | Centre            | Left          |
+|:--------------------------:|:------------------|:--------------|
+| Richard Buckminster-Fuller | Emmanuel Mesthene | Jacques Ellul |
+
 ## Logic block
 
 <p class="logic">Zwei Individuen A und B wissen gemeinsam, dass <em>p</em>,<br><br>dann und nur dann, wenn<br><br>A weiss, dass B weiss, dass A weiss, ... dass <em>p</em>;<br>und<br>B weiss, dass A weiss, dass B weiss, ... dass <em>p</em><br></p>

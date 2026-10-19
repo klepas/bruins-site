@@ -2,23 +2,26 @@
 layout: base
 ---
 {%- comment -%} Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt. {%- endcomment -%}
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+    <h1 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h1>
+    <p class="post-meta"{% include interface-lang.html %}>
+      {%- if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>{% endif %}
+      {%- if page.updated %} · Updated <time datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date: "%-d %B %Y" }}</time>{% endif %}
+      {%- if page.author %} · {{ page.author | escape }}{% endif -%}
+    </p>
+    {%- if page.version %}
+    <p class="post-meta post-version"><span{% include interface-lang.html %}>Version:</span> {{ page.version | escape }}</p>
+    {%- endif %}
+    {% include print-button.html %}
   </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
+  {%- if page.abstract %}
+  <section class="abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading"{% include interface-lang.html %}>Abstract</h2>
+    {{ page.abstract | markdownify }}
+  </section>
+  {%- endif %}
+  <div class="post-content">
     {% include content.html html=content %}
   </div>
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

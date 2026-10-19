@@ -21,13 +21,14 @@ During the rebuild:
 ├── Gemfile.lock       Resolved gem versions for every platform
 ├── _config.yml        Jekyll config
 ├── _data/navigation.yml  The header and footer links, in order
-├── _includes/         head, header and footer, from Minima 2.5.2; content.html, which fixes kramdown's footnote and table markup; interface-lang.html, which marks interface text lang="en-AU" on German pages
-├── _layouts/          base, page, post and home, from Minima 2.5.2
+├── _includes/         head, header and footer, from Minima 2.5.2; content.html, which fixes kramdown's footnote and table markup; interface-lang.html, which marks interface text lang="en-AU" on German pages; print-button.html
+├── _layouts/          base, page, post and home, from Minima 2.5.2; post serves papers, blog posts and course documents
 ├── _sass/minima/      Minima's Sass as @use modules, with its MIT licence in LICENSE.txt
-├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles
+├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles, _post.scss the article header, print button and abstract box
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
 ├── assets/fonts/      Literata and Source Sans 3 as variable WOFF2 files, with their OFL licences
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
+├── papers/, blog/, _dilthey/, about.md, files/images/  Temporary sample content for theme tasks 08a and 08b, copied from refs/old-site/. Theme task 12 deletes it
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   └── done/          Finished plan sets

@@ -20,7 +20,7 @@ $measure:          38rem !default; // about 80 characters of Literata
 $on-palm:          40em !default;  // 640px at the browser's default 16px
 
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
+  @media screen and (width < $device) {
     @content;
   }
 }

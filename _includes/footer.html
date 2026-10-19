@@ -1,32 +1,15 @@
 {%- comment -%} Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt. {%- endcomment -%}
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="site-footer"{% include interface-lang.html %}>
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+    <nav aria-label="Footer">
+      <ul>
+        {%- for link in site.data.navigation %}
+        <li><a href="{{ link.url | relative_url }}">{{ link.title | escape }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
+    <p>© 2004–{{ site.time | date: "%Y" }} Carleton Bruin Christensen</p>
+    <p>Last updated {{ site.time | date: "%-d %B %Y" }}. Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/jekyll/minima">Minima</a>.</p>
   </div>
-
 </footer>

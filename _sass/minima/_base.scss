@@ -264,42 +264,9 @@ pre {
   max-width: $measure;
   margin-inline: auto;
   padding-inline: $spacing-unit;
-  @extend %clearfix;
 
   @include media-query($on-palm) {
     padding-inline: $spacing-unit * 0.5;
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
-.svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: var(--color-control);
-    padding-right: 5px;
-    vertical-align: text-top;
-}
-
-.social-media-list {
-  li + li {
-    padding-top: 5px;
   }
 }
 

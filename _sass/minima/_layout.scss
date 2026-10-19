@@ -1,167 +1,125 @@
 // Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt.
 @use "settings" as *;
-@use "base";
 
 /**
- * Site header
+ * Skip link, off screen until it has focus
  */
-.site-header {
-  border-top: 5px solid var(--color-text);
-  border-bottom: 1px solid var(--color-rule);
-  min-height: $spacing-unit * 1.865;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+.skip-link {
+  position: absolute;
+  z-index: 1;
+  inset-inline-start: 0.5rem;
+  top: -10rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-bg);
+  color: var(--color-link);
 }
 
-.site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
-  text-decoration: none;
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+
+
+/**
+ * Site header and footer
+ *
+ * Not sticky: a fixed header would cover footnote targets and the focused
+ * element (WCAG 2.4.11).
+ */
+.site-header,
+.site-footer {
+  font-family: $sans-font-family;
+  background-color: var(--color-chrome-bg);
+  color: var(--color-chrome-text);
+
+  a,
+  a:visited {
+    color: var(--color-chrome-link);
+  }
+
+  // The body's link blue is only 1.87:1 on the header blue
+  :focus-visible {
+    outline-color: var(--color-chrome-link);
+  }
+}
+
+.site-header {
+  border-bottom: 2px solid var(--color-chrome-border);
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding-block: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration-line: underline;
+  }
+
+  a[aria-current] {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.12em;
+  }
+}
+
+.site-header .site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
 
   &,
   &:visited {
-    color: var(--color-text);
+    color: var(--color-chrome-text);
   }
 }
 
-.site-nav {
-  float: right;
-  font-family: $sans-font-family;
-  line-height: $base-line-height * $base-font-size * 2.25;
-
-  .nav-trigger {
-      display: none;
-  }
-
-  .menu-icon {
-    display: none;
-  }
-
-  .page-link {
-    color: var(--color-text);
-    line-height: $base-line-height;
-    text-decoration: none;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit * 0.5;
-    background-color: var(--color-bg);
-    border: 1px solid var(--color-rule);
-    border-radius: 5px;
-    text-align: right;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: var(--color-text);
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      margin-left: 20px;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-
-
-/**
- * Site footer
- */
-.site-footer {
-  font-family: $sans-font-family;
-  border-top: 1px solid var(--color-rule);
-  padding: $spacing-unit 0;
-}
-
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit * 0.5;
-}
-
-.contact-list,
-.social-media-list {
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
   list-style: none;
-  margin-left: 0;
-}
-
-.footer-col-wrapper {
-  @include relative-font-size(0.9375);
-  color: var(--color-text-muted);
-  margin-left: -$spacing-unit * 0.5;
-  @extend %clearfix;
-}
-
-.footer-col {
-  float: left;
-  margin-bottom: $spacing-unit * 0.5;
-  padding-left: $spacing-unit * 0.5;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  .site-header .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+}
+
+.site-footer {
+  border-top: 2px solid var(--color-chrome-border);
+  padding: $spacing-unit 0;
+  font-size: $small-font-size;
+  color: var(--color-chrome-muted);
+  text-align: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+    margin: 0 0 $spacing-unit * 0.5;
+    list-style: none;
+  }
+
+  p {
+    margin-block-end: $spacing-unit * 0.5;
+  }
+
+  p:last-child {
+    margin-block-end: 0;
   }
 }
 

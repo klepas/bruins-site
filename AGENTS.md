@@ -27,6 +27,7 @@ During the rebuild:
 ├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, in light, dark and two more-contrast palettes plus a print palette as its last block, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles, _post.scss the article header, print button and abstract box, _listings.scss the shared .item-list used by the home page and every index, _home.scss the introduction, _course.scss the course hero, _print.scss the print stylesheet, loaded last
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
 ├── assets/fonts/      Literata and Source Sans 3 as variable WOFF2 files, with their OFL licences
+├── favicon.svg, favicon.ico, apple-touch-icon.png  The site icon, "CBC" in Literata, gold on the header blue. plans/tools/favicon/ writes all three, so change them there, not by hand
 ├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
 ├── papers/, blog/, _dilthey/, about.md, index.html, files/images/  Temporary sample content for theme tasks 08a and 08b, copied from refs/old-site/. Theme task 12 deletes it

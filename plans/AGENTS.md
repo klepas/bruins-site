@@ -84,6 +84,7 @@ When asked to execute a task from this directory:
 `tools/` holds helper scripts for plan work. Like the rest of `plans/`, git ignores them, so they only exist on the user's machine.
 
 - `tools/screenshots/`: a Playwright script that screenshots the home page, style guide, a paper, its footnotes, the Dilthey overview and keyboard focus in light, dark, both more-contrast palettes and forced colours. Use it to check visual changes, or to make comparison artifacts to share with Bruin. Its `README.md` explains how to build, serve and run it.
+- `tools/favicon/`: writes `favicon.svg`, `favicon.ico` and `apple-touch-icon.png` to the repo root, with "CBC" outlined from Literata. Re-run it rather than editing the files by hand. Its `README.md` covers the Python venv it needs.
 
 ## Conventions
 

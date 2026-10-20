@@ -8,6 +8,10 @@
   <meta name="description" content="{{ description | markdownify | strip_html | normalize_whitespace | strip | truncate: 160 | escape_once }}">
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
+  {%- comment -%} sizes="32x32", not "any", or Chrome fetches the ICO as well as the SVG. {%- endcomment %}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <link rel="preload" href="{{ '/assets/fonts/literata-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ '/assets/fonts/source-sans-3-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <meta name="color-scheme" content="light dark">

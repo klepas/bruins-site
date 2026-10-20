@@ -115,6 +115,8 @@
   border-top: 2px solid var(--color-chrome-border);
   padding: $spacing-unit 0;
   font-size: $small-font-size;
+  // Tabular figures, as in the article's date line
+  font-variant-numeric: tabular-nums;
   color: var(--color-chrome-muted);
   text-align: center;
 

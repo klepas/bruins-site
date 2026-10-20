@@ -83,6 +83,7 @@ In seiner Vorlesung _Platon: Sophistes_ behauptet Heidegger, dass mit der _phró
 ## Table
 
 | Date | Urban Form | Weekdays Peak | Offpeak | Weekends | Distance to Bus Stop   |
+| --- | --- | --- | --- | --- | --- |
 | By 2016 | Between group centres, medium density development and employment locations |  30 minutes or better | 30 minutes or better | 60 minutes or better. Routes same as weekdays.* | 500m (5-7 minutes walk) of 95% of households   |
 |        | Low density, outer suburbs | 30 minutes or better | 60 minutes or better* | 60 minutes or better. Routes same as weekdays.* | 500m (5-7 minutes walk) of 95% of households   |
 | By 2021 | Between group centres, medium density development and employment locations | 30 minutes or better | 30 minutes or better | 30 minutes or better | 500m (5-7 minutes walk) of 95% of households  |

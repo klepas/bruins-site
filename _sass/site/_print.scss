@@ -2,9 +2,9 @@
 // colours come from the print palette, the last block in _tokens.scss. This
 // partial loads last in main.scss, so its rules win over everything before it.
 //
-// Kept from the old site: 6cm of space above the title on the first page, a
-// new page for every h2 in a paper, and wide outer margins for things like
-// handwritten notes.
+// Kept from the old site: 6cm of space above the title on the first page, and
+// wide outer margins for things like handwritten notes. Unlike the old site,
+// an h2 doesn't start a new page.
 
 @media print {
   /**
@@ -41,12 +41,14 @@
     font-size: 11pt;
   }
 
-  // A block, not the screen's flex column that keeps the footer down. Firefox
-  // ignores the forced page breaks near the start of a flex container.
+  // A block, not the screen's flex column that keeps the footer down. The
+  // footer doesn't print, and Firefox ignores forced page breaks near the
+  // start of a flex container. The leading leaves room between the lines for
+  // readers' marks and comments.
   body {
     display: block;
     min-height: 0;
-    line-height: 1.4;
+    line-height: 1.8;
   }
 
   .wrapper {
@@ -84,22 +86,10 @@
   /**
    * Page breaks
    *
-   * The title and the abstract sit outside .post-content, so they stay on the
-   * first page. The "Notes" heading is an h2 there too, so the notes start a
-   * page of their own.
+   * None are forced. Sections and the notes follow straight on, the notes
+   * set off by the same rule as on screen. Headings stay with the text after
+   * them, and short blocks aren't split.
    */
-  .post .post-content h2 {
-    break-before: page;
-  }
-
-  // The notes start a page of their own, so the rule and space that set them
-  // off on screen go. Chrome printed the rule alone at the top of the page.
-  .post .footnotes {
-    margin-block-start: 0;
-    padding-block-start: 0;
-    border-top: 0;
-  }
-
   h2,
   h3,
   h4 {

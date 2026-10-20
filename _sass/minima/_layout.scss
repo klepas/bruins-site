@@ -18,6 +18,11 @@
   top: 0.5rem;
 }
 
+// It opens over the header, where the body's link blue is only 1.87:1
+.skip-link:focus-visible {
+  outline-color: var(--color-chrome-link);
+}
+
 
 
 /**

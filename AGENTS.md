@@ -34,7 +34,7 @@ During the rebuild:
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   ├── done/          Finished plan sets
-│   └── tools/screenshots/  Playwright screenshots of the site in every colour mode, see its README.md
+│   └── tools/         screenshots/ takes Playwright screenshots of the site in every colour mode, favicon/ writes the icon files. Each has a README.md
 └── refs/old-site/     The old Jekyll 2 site, a read-only reference, deleted before the merge to master
 ```
 

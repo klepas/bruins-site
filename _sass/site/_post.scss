@@ -26,9 +26,11 @@
   line-height: 1.45;
   cursor: pointer;
 
+  // Inverts the button's colours, at the same contrast as its resting state
   &:hover {
-    color: var(--color-text);
     border-color: var(--color-text-muted);
+    background-color: var(--color-text-muted);
+    color: var(--color-bg);
   }
 }
 

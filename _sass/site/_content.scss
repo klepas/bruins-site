@@ -23,9 +23,9 @@ a.footnote {
   font-size: $small-font-size;
 }
 
+// Underlined like other links in running text (WCAG 1.4.1)
 a.reversefootnote {
   padding-inline: 0.25em;
-  text-decoration: none;
 }
 
 // Light up where a jump lands, with room above it. No smooth scrolling: a

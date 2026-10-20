@@ -4,18 +4,26 @@
   and wraps tables in a box that scrolls. Each replace matches kramdown's
   exact markup, so check them after a kramdown update. On German pages the
   labels are marked English, and the table gets the page's language back.
+  The boxes are numbered, so each region landmark has its own name.
 {%- endcomment -%}
 {%- capture ui_lang %}{% include interface-lang.html %}{% endcapture -%}
 {%- if ui_lang != "" %}{% capture table_lang %} lang="{{ page.lang }}"{% endcapture %}{% endif -%}
 {%- capture notes_heading %}<div class="footnotes" role="doc-endnotes"><h2 class="footnotes-heading" id="notes"{{ ui_lang }}>Notes</h2>{% endcapture -%}
 {%- capture backlink %}role="doc-backlink" aria-label="Back to text"{{ ui_lang }}>{% endcapture -%}
-{%- capture table_open %}<div class="table-scroll" role="region" aria-label="Table" tabindex="0"{{ ui_lang }}><table{{ table_lang }}>{% endcapture -%}
 {%- assign html = include.html -%}
 {%- if html contains '<div class="footnotes" role="doc-endnotes">' -%}
   {%- assign html = html | remove: '<h2 id="notes">Notes</h2>' | remove: '<h3 id="notes">Notes</h3>' -%}
 {%- endif -%}
 {%- assign html = html | replace: '<div class="footnotes" role="doc-endnotes">', notes_heading -%}
 {%- assign html = html | replace: 'role="doc-backlink">', backlink -%}
-{%- assign html = html | replace: '<table>', table_open -%}
-{%- assign html = html | replace: '</table>', '</table></div>' -%}
+{%- if html contains '<table>' -%}
+  {%- assign parts = html | split: '<table>' -%}
+  {%- capture html -%}
+    {%- for part in parts -%}
+      {%- unless forloop.first %}<div class="table-scroll" role="region" aria-label="Table {{ forloop.index0 }}" tabindex="0"{{ ui_lang }}><table{{ table_lang }}>{% endunless -%}
+      {{ part }}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- assign html = html | replace: '</table>', '</table></div>' -%}
+{%- endif -%}
 {{ html }}

@@ -15,8 +15,12 @@ future: true
 strict_front_matter: true
 markdown: kramdown
 
-# U+FE0E keeps iOS from drawing the backlink arrow as an emoji
 kramdown:
+  # kramdown's own syntax, which the site has always used. Jekyll 4's
+  # default, GFM, gives headings different ids and renders some of the
+  # content differently. See README.md for what it means when writing.
+  input: kramdown
+  # U+FE0E keeps iOS from drawing the backlink arrow as an emoji
   footnote_backlink: "&#8617;&#xFE0E;"
 
 sass:

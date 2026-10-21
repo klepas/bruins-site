@@ -6,6 +6,10 @@ description: >-
 url: "http://www.cbchristensen.net"
 timezone: UTC
 permalink: date
+# Bruin works in Canberra, 10 or 11 hours ahead of UTC. A paper dated today
+# and committed in the morning is still in the future in UTC, and Jekyll
+# would leave it out without an error.
+future: true
 markdown: kramdown
 
 # U+FE0E keeps iOS from drawing the backlink arrow as an emoji

@@ -30,7 +30,7 @@ During the rebuild:
 ├── favicon.svg, favicon.ico, apple-touch-icon.png  The site icon, "CBC" in Literata, gold on the header blue. plans/tools/favicon/ writes all three, so change them there, not by hand
 ├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
-├── papers/, blog/, _dilthey/, about.md, index.html, files/images/  Temporary sample content for theme tasks 08a and 08b, copied from refs/old-site/. Theme task 12 deletes it
+├── papers/, blog/, _dilthey/, about.md, index.html, files/  Bruin's content, being restored from refs/old-site/ by the content plan set. Don't delete it
 ├── .claude/skills/    Project skills, see Skills below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   ├── done/          Finished plan sets

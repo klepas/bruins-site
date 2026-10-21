@@ -10,6 +10,9 @@ permalink: date
 # and committed in the morning is still in the future in UTC, and Jekyll
 # would leave it out without an error.
 future: true
+# Stop the build on a top block YAML can't read, rather than publish the
+# page at a URL with the build day's date.
+strict_front_matter: true
 markdown: kramdown
 
 # U+FE0E keeps iOS from drawing the backlink arrow as an emoji

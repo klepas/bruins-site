@@ -7,9 +7,10 @@
 # or course folder, a heading left empty above the notes, look-alike
 # characters and accents typed apart from their letters, headings that skip
 # a level, spaces in addresses and file names, links that read only "here",
-# course notes on the wrong layout, and an updated: before the date, and
-# warns about Word files outside the drafts and files folders. CI runs it
-# before the build, and an error stops the deploy.
+# course notes on the wrong layout, and an updated: before the date. It
+# warns about Word files outside the drafts and files folders, and about a
+# mark typed apart from its letter where no ready-made letter has it. CI
+# runs it before the build, and an error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -112,6 +113,8 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-06-backtick-fence.md:9: three backticks don't start a code block on this site. Use three tildes, ~~~, on the lines before and after the code
   papers/_posts/2026-02-07-combining-mark.md:3: "Müller" has a mark typed apart from its letter (U+0308), which can sit in the wrong place. Type the letter with its mark built in, or copy it from "Special characters" in README.md
   papers/_posts/2026-02-07-combining-mark.md:5: "α̉ρετή" has a mark typed apart from its letter (U+0309), which can sit in the wrong place. Type the word again with the Greek Polytonic keyboard (see "Special characters" in README.md)
+  papers/_posts/2026-02-07-combining-mark.md:6: "café" has a mark typed apart from its letter (U+0301), which can sit in the wrong place. Type the letter with its mark built in, or copy it from "Special characters" in README.md
+  papers/_posts/2026-02-07-combining-mark.md:7: "φω̂ς" has a mark typed apart from its letter (U+0302), which can sit in the wrong place. Type the word again with the Greek Polytonic keyboard (see "Special characters" in README.md)
   papers/_posts/2026-02-08-lookalikes.md:3: ´ (U+00B4) is an accent on its own. For an apostrophe use ’, and for a prime ′, from "Special characters" in README.md
   papers/_posts/2026-02-08-lookalikes.md:5: &#9001; gives 〈 (U+2329), an old angle bracket that some programs swap for a wide Chinese one. Use ⟨, from "Special characters" in README.md
   papers/_posts/2026-02-08-lookalikes.md:5: &#x232A; gives 〉 (U+232A), an old angle bracket that some programs swap for a wide Chinese one. Use ⟩, from "Special characters" in README.md
@@ -139,6 +142,11 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-15-updated-before-date.md:5: updated: is earlier than the date, so the page would read "14 February 2026 · Updated 13 February 2026". Check updated: and date: (see "The block at the top" in README.md)
   papers/_posts/2026-02-22-case-address-a.md:4: another page has this address apart from its capitals: papers/_posts/2026-02-22-case-address-b.md, and some computers can't keep both. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
   papers/_posts/2026-02-22-case-address-b.md:4: another page has this address apart from its capitals: papers/_posts/2026-02-22-case-address-a.md, and some computers can't keep both. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
+  papers/_posts/2026-02-23-mark-without-letter.md:5: warning: "p̄" has a mark typed apart from its letter (U+0304). No ready-made letter has it, so if you meant it, leave it
+  papers/_posts/2026-02-23-mark-without-letter.md:6: warning: "x̄" has a mark typed apart from its letter (U+0304). No ready-made letter has it, so if you meant it, leave it
+  papers/_posts/2026-02-23-mark-without-letter.md:7: warning: "за́мок" has a mark typed apart from its letter (U+0301). No ready-made letter has it, so if you meant it, leave it
+  papers/_posts/2026-02-23-mark-without-letter.md:8: warning: "ᾱ́" has a mark typed apart from its letter (U+0301). No ready-made letter has it, so if you meant it, leave it
+  papers/_posts/2026-02-23-mark-without-letter.md:9: warning: "α̣" has a mark typed apart from its letter (U+0323). No ready-made letter has it, so if you meant it, leave it
   papers/_posts/Old notes 1994.doc:1: warning: anyone can see this .doc file on GitHub, though the site doesn't show it. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
   talk-notes.docx:1: warning: anyone can see this .docx file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
@@ -198,6 +206,14 @@ NOT_AN_ACCENT = /[\u{FE00}-\u{FE0F}\u{E0100}-\u{E01EF}\u{20E3}]/
 # gives the right one. In Hebrew, Arabic, Devanagari and other scripts,
 # marks are how vowels are written, so they're left alone.
 MARKED_SCRIPTS = /\A[\p{Latin}\p{Greek}\p{Cyrillic}\p{Common}\p{Inherited}]/
+# The marks Greek is written with: grave, acute, perispomeni, diaeresis, the
+# two breathings, koronis, dialytika with tonos and iota subscript, as the
+# Polytonic keyboard types them, and the macron, breve, overline and dot
+# below that editions add. Any other mark on a Greek letter stands in for
+# one of these, as the hook above U+0309 did for a smooth breathing, or the
+# Latin circumflex U+0302 or tilde U+0303 for perispomeni, and the right
+# letter is ready-made.
+GREEK_MARKS = /[\u{300 301 304 305 306 308 313 314 323 342 343 344 345}]/
 
 # Characters that look right and aren't, raw or as an entity. The named
 # entities are the ones kramdown turns into these characters: its table
@@ -992,24 +1008,41 @@ class FileCheck
   # Character checks.
 
   # An accent or breathing typed as a mark of its own after its letter, as
-  # in "α̉ρετή" (U+0309). One finding for each word on a line.
+  # in "α̉ρετή" (U+0309). One finding for each word on a line: an error where
+  # a ready-made letter is what was meant, and otherwise a warning, since a
+  # mark no single character holds, such as the bar in p̄ or a Russian
+  # stress mark, can only be typed this way (decided 2026-10-25).
   def combining_marks(n, text)
     # Splitting into letters is slow, and most lines have no mark at all.
     return unless text.match?(/\p{M}/)
 
     words = text.split.select { |word| word.scan(/\X/).any? { |cluster| loose_mark?(cluster) } }
     words.map { |word| word.gsub(/\A[[:punct:]]+|[[:punct:]]+\z/, "") }.uniq.each do |word|
-      codes = word.scan(/\X/).select { |cluster| loose_mark?(cluster) }
-                  .flat_map { |cluster| cluster.scan(/\p{M}/).grep_v(NOT_AN_ACCENT) }
-                  .uniq.map { |mark| code_point(mark.ord) }
+      loose = word.scan(/\X/).select { |cluster| loose_mark?(cluster) }
+      fixable = loose.select { |cluster| ready_made?(cluster) }
+      codes = (fixable.empty? ? loose : fixable).flat_map { |cluster| cluster.scan(/\p{M}/).grep_v(NOT_AN_ACCENT) }
+                                                 .uniq.map { |mark| code_point(mark.ord) }.join(", ")
+      typed = %("#{word}" has a mark typed apart from its letter (#{codes}))
+      if fixable.empty?
+        add(n, "#{typed}. No ready-made letter has it, so if you meant it, leave it", warning: true)
+        next
+      end
+
       fix = if word.match?(/\p{Greek}/)
               'Type the word again with the Greek Polytonic keyboard (see "Special characters" in README.md)'
             else
               'Type the letter with its mark built in, or copy it from "Special characters" in README.md'
             end
-      add(n, %("#{word}" has a mark typed apart from its letter (#{codes.join(', ')}), ) +
-             "which can sit in the wrong place. #{fix}")
+      add(n, "#{typed}, which can sit in the wrong place. #{fix}")
     end
+  end
+
+  # Whether a ready-made letter is what was meant: the letter and its marks
+  # make one character under NFC, as e and U+0301 make é, or the letter is
+  # Greek and a mark isn't one Greek is written with.
+  def ready_made?(cluster)
+    marks = cluster.unicode_normalize(:nfc).gsub(NOT_AN_ACCENT, "").scan(/\p{M}/)
+    marks.empty? || (cluster.match?(/\A\p{Greek}/) && !marks.all? { |mark| mark.match?(GREEK_MARKS) })
   end
 
   # A grapheme cluster holding an accent typed apart from its letter.

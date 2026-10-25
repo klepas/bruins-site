@@ -1,8 +1,12 @@
 // Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt.
 @use "settings" as *;
 
+// The gutter keeps room for the scrollbar on pages too short to scroll, so
+// the column doesn't shift sideways between short and long pages. Overlay
+// scrollbars take no room, so it changes nothing there.
 html {
   font-size: 112.5%; // 18px at the browser's default 16px
+  scrollbar-gutter: stable;
 }
 
 @media (min-width: $on-palm) {

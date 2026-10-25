@@ -157,15 +157,11 @@ In the Coverage Network there will be two kinds of route, distinguished accordin
 
 
 | Date | Urban Form | Weekdays Peak | Offpeak | Weekends | Distance to Bus Stop   |
-
+|---|---|---|---|---|---|
 | By 2016 | Between group centres, medium density development and employment locations |  30 minutes or better | 30 minutes or better | 60 minutes or better. Routes same as weekdays.* | 500m (5-7 minutes walk) of 95% of households   |
-
 |        | Low density, outer suburbs | 30 minutes or better | 60 minutes or better* | 60 minutes or better. Routes same as weekdays.* | 500m (5-7 minutes walk) of 95% of households   |
-
 | By 2021 | Between group centres, medium density development and employment locations | 30 minutes or better | 30 minutes or better | 30 minutes or better | 500m (5-7 minutes walk) of 95% of households  |
-
 |   | Low density, outer suburbs | 30 minutes or better | 30 minutes or better | 60 minutes or better* | 500m (5-7 minutes walk) of 95% of households   |
-
 | By 2031 | Everywhere | 30 minutes or better | 30 minutes or better | 30 minutes or better | 500m (5-7 minutes walk) of 95% of households   |
 
 
@@ -183,9 +179,8 @@ Of course, crucial to the functioning of the whole system and its capacity to ch
 
 
 | Station transfer direction | Average wait time 7am to 7pm by 2013 | Average wait time 7am to 7pm from 2016 |
-
+|---|---|---|
 | Coverage service to frequent network | 7.5 minutes | 5 minutes   |
-
 | Frequent network to coverage service | 15 minutes | 10 minutes   |
 
 
@@ -229,13 +224,10 @@ Unfortunately, one is bound yet again for disappointment. On p. 58 of *Transport
 
 
 | Mode | 2006 actual | 2011 target | NEW 2016 target | 2026 target   |
-
+|---|---|---|---|---|
 | walking | 5% | 6% | 6.5% | 7%   |
-
 | cycling | 2.5% | 5% | 6% | 7%   |
-
 | public transport | 7.9% | 9% | 10.5% | 16%   |
-
 | total | 15.4% | 20% | 23% | 30%   |
 
 

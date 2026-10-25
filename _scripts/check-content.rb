@@ -89,14 +89,16 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-01-18-top-block-unreadable.md:3: the block at the top can't be read (mapping values are not allowed in this context). Check the quotation marks (see "The block at the top" in README.md)
   papers/_posts/2026-01-19-key-twice.md:5: abstract: appears twice in the block at the top, and the site uses only the last one
   papers/_posts/2026-01-20-lang.md:4: lang: should be de, or left out for English
-  papers/_posts/2026-01-28-byte-order-mark.md:1: warning: the file starts with an invisible byte order mark. Ask the user to remove it.
-  papers/_posts/2026-01-29-stray-carriage-return.md:5: warning: a stray carriage return character. Ask the user to remove it.
-  papers/_posts/2026-01-30-crlf.md:1: warning: Windows line endings. The page still shows correctly. Ask the user to convert the file.
+  papers/_posts/2026-01-28-byte-order-mark.md:1: the file starts with an invisible byte order mark, which stops some pages being built. Ask Pep to remove it.
+  papers/_posts/2026-01-29-stray-carriage-return.md:5: warning: a stray carriage return character. Ask Pep to remove it.
+  papers/_posts/2026-01-30-crlf.md:1: warning: Windows line endings. The page still shows correctly. Ask Pep to convert the file.
   papers/_posts/2026-01-31-not-utf8.md:1: the file isn't saved as UTF-8, so some characters would show wrongly. Open it in GitHub's editor and commit it again.
   papers/_posts/2026-02-01-shared-permalink-a.md:4: another page has this address: papers/_posts/2026-02-02-shared-permalink-b.md. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
   papers/_posts/2026-02-02-shared-permalink-b.md:4: another page has this address: papers/_posts/2026-02-01-shared-permalink-a.md. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
   papers/_posts/2026-02-03-draft.docx:1: only Markdown pages go in this folder. Put Word files and other drafts in papers/_posts/_drafts/ (see "Where files go" in README.md)
   papers/_posts/2026-02-04-notes-heading.md:8: the site writes its own "Notes" heading above the notes. Change this heading to ## Notes, or delete it (rule 6 in README.md)
+  papers/_posts/2026-02-06-backtick-fence.md:7: three backticks don't start a code block on this site. Use three tildes, ~~~, on the lines before and after the code
+  papers/_posts/2026-02-06-backtick-fence.md:9: three backticks don't start a code block on this site. Use three tildes, ~~~, on the lines before and after the code
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
 TEXT
 
@@ -119,8 +121,10 @@ BLOCK_START = /\A(?:#|>|\||[*+-]\s|\d+\.\s)/
 PREVIEW_BLOCK = /\A(?:\#{1,6}(?:\s|\z)|>|\||[*+-]\s+\S|1[.)]\s)/
 # The line of dashes under a table's first row.
 TABLE_SEPARATOR = /\A\|?[ \t:|+-]*-[ \t:|+-]*\z/
-# The first or last line of fenced code.
-FENCE = /\A(```|~~~)/
+# A line GitHub's preview reads as the first or last line of code between
+# backticks. kramdown's own syntax fences code only with ~~~, and reads
+# backticks as code inside a paragraph, which an empty line ends.
+BACKTICK_FENCE = /\A {0,3}`{3,}[^`]*\z/
 
 # A name Jekyll reads as a post, whatever its extension: its
 # Document::DATE_FILENAME_MATCHER, for the file name alone.
@@ -290,11 +294,11 @@ class FileCheck
   UNREAD_CHECKS = %i[not_markdown].freeze
   # After the block at the top is read.
   FILE_CHECKS = %i[duplicate_keys lang course_permalink post_date].freeze
-  # Each body line of a Markdown file outside fenced code. They get the
+  # Each body line of a Markdown file outside ~~~ code blocks. They get the
   # line's number in the file, the line and the line before it.
   LINE_CHECKS = %i[heading_space block_after_paragraph table_rows table_separator
-                   links missing_files image_description].freeze
-  # Each body line of a Markdown file, fenced code included, since Jekyll
+                   links missing_files image_description backtick_fence].freeze
+  # Each body line of a Markdown file, code blocks included, since Jekyll
   # runs templates before Markdown.
   LINE_CHECKS_INCLUDING_CODE = %i[template].freeze
   # Each body line of an .html page.
@@ -310,6 +314,7 @@ class FileCheck
     @path = file.path
     @data = {}
     @key_lines = {}
+    @code_lines = Set.new
     @findings = []
   end
 
@@ -356,18 +361,22 @@ class FileCheck
     checks.each { |check| send(check, *args) }
   end
 
-  # Byte checks. Returns false if the rest can't be read.
+  # Byte checks. Returns false if the rest can't be read. A byte order mark
+  # is an error (decided 2026-10-25): Jekyll then copies a page or course
+  # document as it is, block at the top and all, instead of building it.
+  # Line endings stay warnings, since Bruin can't change them himself.
   def read_bytes
     bytes = File.binread(@site.full(@path))
     if bytes.start_with?("\xEF\xBB\xBF".b)
-      add(1, "the file starts with an invisible byte order mark. Ask the user to remove it.", warning: true)
+      add(1, "the file starts with an invisible byte order mark, which stops some pages being built. " \
+             "Ask Pep to remove it.")
       bytes = bytes.byteslice(3..)
     end
     if bytes.include?("\r\n")
-      add(1, "Windows line endings. The page still shows correctly. Ask the user to convert the file.", warning: true)
+      add(1, "Windows line endings. The page still shows correctly. Ask Pep to convert the file.", warning: true)
     end
     if (stray = bytes =~ /\r(?!\n)/n)
-      add(bytes.byteslice(0, stray).count("\n") + 1, "a stray carriage return character. Ask the user to remove it.",
+      add(bytes.byteslice(0, stray).count("\n") + 1, "a stray carriage return character. Ask Pep to remove it.",
           warning: true)
     end
 
@@ -432,29 +441,33 @@ class FileCheck
   end
 
   # Calls the block with each body line's number in the file, the line, the
-  # line before it, and whether it's part of fenced code, fences included.
+  # line before it, and whether it's part of a ~~~ code block, fences
+  # included.
   def each_body_line
-    fence = nil
     prev = ""
     @lines.each_with_index do |line, i|
       next if i < @body_start
 
-      opening = fence ? nil : line[FENCE, 1]
-      yield i + 1, line, prev, !(fence || opening).nil?
-      if opening
-        fence = opening
-      elsif fence && line.start_with?(fence)
-        fence = nil
-      end
+      yield i + 1, line, prev, @code_lines.include?(i + 1)
       prev = line
     end
   end
 
-  # kramdown's tree, and the body lines where each kind of element starts.
+  # kramdown's tree, the body lines where each kind of element starts, and
+  # the file's lines inside ~~~ code blocks. Those come from the tree, so a
+  # fence counts only where kramdown starts a block: not straight after a
+  # paragraph line, and not if it's never closed.
   def parse_body
     @doc = Kramdown::Document.new(@lines[@body_start..].join("\n"), @site.kramdown_options)
     @starts = Hash.new { |hash, type| hash[type] = Set.new }
-    each_element { |el, line| @starts[el.type] << line if el.options[:location] }
+    each_element do |el, line|
+      @starts[el.type] << line if el.options[:location]
+      next unless el.type == :codeblock && el.options[:fenced]
+
+      # The opening fence, the code and the closing fence.
+      first = line + @body_start
+      @code_lines.merge(first..(first + el.value.count("\n") + 1))
+    end
   end
 
   # Calls the block with each element and the body line it starts on.
@@ -612,6 +625,17 @@ class FileCheck
 
   def image_description(n, line, _prev)
     add(n, "describe the image inside the [ ] of ![ ]( )") if line.match?(/!\[\s*\]\(/)
+  end
+
+  # The preview shows code between two lines of backticks. The site reads
+  # them as code inside a paragraph, which the first empty line ends, and
+  # shows what follows as text. Each of the two lines is reported, since
+  # both need changing.
+  def backtick_fence(n, line, _prev)
+    return unless line.match?(BACKTICK_FENCE)
+
+    add(n, "three backticks don't start a code block on this site. " \
+           "Use three tildes, ~~~, on the lines before and after the code")
   end
 
   def template(n, line, _prev)

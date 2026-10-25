@@ -30,10 +30,16 @@ An underscore escaped inside italics, *file\_name*, and addresses with
 underscores, www.example_site.org and http://example.org/a_b. A link to the
 second page of [the slides](/files/pdfs/present.pdf#page=2).
 
-```
+~~~~
 ##Notes
-[a relative link](notes.html) between backtick fences
 ```
+~~~
+[a relative link](notes.html) after a shorter fence, which doesn't close
+the block, so it's still code
+~~~~
+
+```Three backticks``` inside a line are code in both, and so are
+```these```.
 
 <p class="logic">Premise one, in HTML as Bruin writes his logic.
 

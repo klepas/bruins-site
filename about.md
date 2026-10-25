@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-![Bruin meme photo](/files/images/Bruin-meme-v3 copy.jpg)
+![Bruin Christensen leaning on a gate beside a #LeardBlockade banner, with the quote: “There is a need to prevent climate change. A need to oppose the destruction of Australia’s environment and agricultural capacity. A need to protect regional communities. A need to stop the subordination of all aspects of life to the demands of the global economy.” Bruin Christensen, ANU Academic](/files/images/Bruin-meme-v3.jpg)
 
-I completed a B.A. (Hons) First Class in Philosophy at Latrobe University in Melbourne, Australia. I then completed a M.A. mit Auszeichnung at the Goethe-Universität, in Frankfurt am Main, Germany. I also received my Dr. Phil. (magna cum laude) from the Goethe Universität, with a dissertation on Searle’s Theory of Speech Acts supervised by Karl-Otto Apel and Jürgen Habermas. After a postdoctoral fellowship at the University of New South Wales, I taught at the ANU from 1993 until 2000, then at the University of Sydney until 2007. In 2008 I returned to the ANU, where I remained until 2016. In 2019, I commenced a second course of doctoral research, at the UNSW, which I completed in early 2026—for a PDF click [here](/files/pdfs/Christensen-On-the-Concept-of-the-De-Se-UNSW-PhD-2025.pdf)!
+I completed a B.A. (Hons) First Class in Philosophy at Latrobe University in Melbourne, Australia. I then completed a M.A. mit Auszeichnung at the Goethe-Universität, in Frankfurt am Main, Germany. I also received my Dr. Phil. (magna cum laude) from the Goethe Universität, with a dissertation on Searle’s Theory of Speech Acts supervised by Karl-Otto Apel and Jürgen Habermas. After a postdoctoral fellowship at the University of New South Wales, I taught at the ANU from 1993 until 2000, then at the University of Sydney until 2007. In 2008 I returned to the ANU, where I remained until 2016. In 2019, I commenced a second course of doctoral research, at the UNSW, which I completed in early 2026—for a PDF, see [On the Concept of the _De Se_](/files/pdfs/Christensen-On-the-Concept-of-the-De-Se-UNSW-PhD-2025.pdf)!
    
    In the past, I have worked primarily on German philosophy of the late 19th and early 20th centuries, with emphasis on the phenomenology of Husserl and Heidegger; and on the philosophy of technology and sustainability. But I also have a background in analytical philosophy and in Descartes, Kant, Hegel, Marx and Critical Theory, and Gadamer and hermeneutics.
    
@@ -24,7 +24,7 @@ I can be contacted at [my personal email address](mailto:carleton.christensen@gm
 
 ‘Two Kinds of Economy, Two Kinds of Self—Toward More Manageable, Hence More Sustainable and Just Supply Chains’, in _Human Ecological Review_, Vol. 21, No.2 (2015), pp.3-21
 
-#### 2014
+### 2014
 
 ‘Sustainability and Sustainable Development: Philosophical Distinctions and Practical Implications’, co-authored with Donald Hector and James Petrie, in _Environmental Values_, Vol. 23, No.1 (2014), pp.8-28
 
@@ -76,7 +76,7 @@ Dialogue with Will McNeill on Heidegger’s Notion of Technicity and its Relevan
 
 ‘The Material Basis of Everyday Rationality: Transformation by Design or Education?’, in _Design Philosophy Papers_, Vol. 3, No.4, December, 2005, [https://www.tandfonline.com/doi/abs/10.2752/144871305X13966254124950](https://www.tandfonline.com/doi/abs/10.2752/144871305X13966254124950); print version in Design Philosophy Papers Collection Three, edited by Anne-Marie Willis, Ravensbourne, Australia: Team D/E/S Publications, 2007, pp.40-53
 
-## 2001
+### 2001
 
 ‘Wie Man Gedanken und Anschauungen zusammenführt: Eine Rekonstruktion von Mind and World’, in _Deutsche Zeitschrift für Philosophie_, Vol. 48, No. 6, December, 2000, pp.891-914
 

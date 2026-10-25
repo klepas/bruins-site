@@ -114,7 +114,7 @@ The **philosophy of technology** <span class="amp">&amp;</span> **sustainability
 
 ## Image
 
-![Bruin meme photo](/files/images/Bruin-meme-v3%20copy.jpg)
+![Bruin meme photo](/files/images/Bruin-meme-v3.jpg)
 
 ## Notes
 

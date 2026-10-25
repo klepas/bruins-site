@@ -126,7 +126,7 @@ Let us first look at the characteristics which the Frequent or patronage network
 
 
 
-[The Frequent Network 2031](/files/images/Frequent Network TfC.jpg)
+[The Frequent Network 2031](/files/images/Frequent-Network-TfC.jpg)
 
 
 

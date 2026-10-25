@@ -16,7 +16,7 @@ The site turns each Markdown file into a web page with a program called kramdown
 | A blog post | `blog/_posts/` | `2026-10-20-short-title.md` |
 | Course notes | `_descartes/`, `_technology/` or `_dilthey/` | Like the others in the folder |
 | A PDF, image or slides | `files/pdfs/`, `files/images/` or `files/ppts/` | Hyphens in place of spaces, such as `frequent-network-2031.jpg` |
-| Word files and other drafts | `papers/_posts/_drafts/` | Anything. The site never shows this folder |
+| Word files and other drafts | `papers/_posts/_drafts/` | Anything. The site never shows this folder, but anyone can see it on GitHub |
 
 A paper's web address comes from its date and its file name. Once a paper is online, don't rename the file or change its `date:`, or links to the old address stop working. The same goes for a PDF or picture, whose address is its file name. To mark a revision, change `version:` or add `updated:`.
 

@@ -2,7 +2,7 @@
 layout: post
 lang: de
 title: >-
-  Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx´
+  Zum Zusammenhang von Mensch, Natur und Entfremdung in Marx’
   *Ökonomisch-Philosophischen Manuskripten*
 date: 2016-07-14T00:00:00.000Z
 version: '18.07.16, 08:04 am'

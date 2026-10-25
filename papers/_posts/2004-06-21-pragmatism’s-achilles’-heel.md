@@ -51,7 +51,7 @@ Now Brandom distinguishes undertaking commitments _explicitly_ from undertaking 
 
 How, then, will this general programme deal with first person assertion and belief? Brandom clearly appreciates the two strands to Perry’s argument. He presents the first strand thus:
 
-> Following Castañeda, Perry has argued persuasively that there are things that can be said using expressions such as ‘I’, ‘now’, and ‘here’ that cannot be said by using nonindexical vocabulary. I can of course refer to or describe myself in many ways, but no other term can do the … job done by ‘I’. For any other term ┌ _t_ ┐ I might use to pick myself out, there would always be some possible circumstances in which I could believe that _t_ had a property – was about to be eaten by a bear, was standing in the Stanford library, was leaving a trail of sugar on the floor of the supermarket, and so on – without thereby believing that _I_ have that property. (552)
+> Following Castañeda, Perry has argued persuasively that there are things that can be said using expressions such as ‘I’, ‘now’, and ‘here’ that cannot be said by using nonindexical vocabulary. I can of course refer to or describe myself in many ways, but no other term can do the … job done by ‘I’. For any other term ⌜_t_⌝ I might use to pick myself out, there would always be some possible circumstances in which I could believe that _t_ had a property – was about to be eaten by a bear, was standing in the Stanford library, was leaving a trail of sugar on the floor of the supermarket, and so on – without thereby believing that _I_ have that property. (552)
 
 He then notes the second strand, which, as we have seen, concerns how the difference in content argued for in the first strand
 

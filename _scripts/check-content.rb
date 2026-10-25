@@ -7,8 +7,9 @@
 # or course folder, a heading left empty above the notes, look-alike
 # characters and accents typed apart from their letters, headings that skip
 # a level, spaces in addresses and file names, links that read only "here",
-# course notes on the wrong layout, and an updated: before the date. CI runs
-# it before the build, and an error stops the deploy.
+# course notes on the wrong layout, and an updated: before the date, and
+# warns about Word files outside the drafts and files folders. CI runs it
+# before the build, and an error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -71,6 +72,8 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   index.html:5: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
   index.html:6: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
   no-top-block.md:1: the page needs a block at the top, between two --- lines (see "The block at the top" in README.md)
+  papers/Notes.pages:1: warning: anyone can see this .pages file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
+  papers/Old-draft.DOC:1: warning: anyone can see this .doc file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
   papers/_posts/2026-01-02-heading-no-space.md:6: put a space after the # marks (rule 2 in README.md). If this line isn't a heading, start it with a word instead
   papers/_posts/2026-01-03-quote-after-paragraph.md:6: leave an empty line before this quotation (rule 1 in README.md). If it belongs to the paragraph above, join it to that line
   papers/_posts/2026-01-04-heading-after-paragraph.md:6: leave an empty line before this heading (rule 1 in README.md). If it belongs to the paragraph above, join it to that line
@@ -136,12 +139,16 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-15-updated-before-date.md:5: updated: is earlier than the date, so the page would read "14 February 2026 · Updated 13 February 2026". Check updated: and date: (see "The block at the top" in README.md)
   papers/_posts/2026-02-22-case-address-a.md:4: another page has this address apart from its capitals: papers/_posts/2026-02-22-case-address-b.md, and some computers can't keep both. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
   papers/_posts/2026-02-22-case-address-b.md:4: another page has this address apart from its capitals: papers/_posts/2026-02-22-case-address-a.md, and some computers can't keep both. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
+  papers/_posts/Old notes 1994.doc:1: warning: anyone can see this .doc file on GitHub, though the site doesn't show it. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
+  talk-notes.docx:1: warning: anyone can see this .docx file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
 TEXT
 
 FIXTURES = File.join(__dir__, "check-content-fixtures")
 
 MARKDOWN_EXTENSIONS = %w[.md .markdown].freeze
+# Word documents and the like, which belong in a _drafts folder or files/.
+DOCUMENT_EXTENSIONS = %w[.doc .docx .odt .rtf .pages].freeze
 
 # Jekyll 4 adds these to every site's exclude: list.
 JEKYLL_EXCLUDES = %w[.sass-cache .jekyll-cache gemfiles Gemfile Gemfile.lock node_modules
@@ -306,6 +313,20 @@ class Site
     @files ||= Dir.glob("files/**/*", base: root).select { |f| File.file?(full(f)) }.to_set
   end
 
+  # Word documents and the like among the files Jekyll reads or copies and
+  # those in the posts and course folders, leaving out files/ and every
+  # _drafts folder. A Pages document can be a folder, so the path stops at
+  # the first part with one of the extensions.
+  def documents
+    paths = copied_files + post_folders.flat_map { |dir| files_in(dir) } +
+            collections.flat_map { |name| files_in("_#{name}") }
+    paths.filter_map do |path|
+      parts = path.split("/")
+      last = parts.index { |part| DOCUMENT_EXTENSIONS.include?(File.extname(part).downcase) }
+      parts[0..last].join("/") if last && parts.first != "files"
+    end.uniq.sort
+  end
+
   def full(path)
     File.join(root, path)
   end
@@ -316,6 +337,18 @@ class Site
     list = @config["collections"]
     names = list.is_a?(Hash) ? list.keys : Array(list)
     names.map(&:to_s) - ["posts"]
+  end
+
+  # The files outside the posts and collection folders that Jekyll reads or
+  # copies to the site, walking the folders the way it does. That leaves
+  # out the folders whose names start with _, such as _scripts and _layouts.
+  def copied_files(dir = nil)
+    Dir.children(dir ? full(dir) : root).sort.flat_map do |name|
+      path = dir ? File.join(dir, name) : name
+      next [] if skipped?(name, path)
+
+      File.directory?(full(path)) ? copied_files(path) : [path]
+    end
   end
 
   # _posts at the root and in every folder Jekyll reads.
@@ -1049,6 +1082,7 @@ def check_site(root)
   # and checks on files the linter doesn't read.
   findings = (checks.flat_map(&:findings) + shared_permalinks(checks) + permalinks_differing_in_case(checks) +
               file_spaces(site)).uniq(&:to_s)
+  findings += documents(site, findings)
   findings.each_with_index.sort_by { |finding, i| [finding.path, finding.line, i] }.map(&:first)
 end
 
@@ -1094,6 +1128,27 @@ def file_spaces(site)
   site.files.select { |path| path.match?(/[[:space:]]/) }.sort.map do |path|
     Finding.new(path, 1, "the file name has a space. Rename it with hyphens in place of spaces, and change " \
                          'any links to it to match (see "Where files go" in README.md)', false)
+  end
+end
+
+# Word documents and the like outside a _drafts folder and files/. The
+# repository is public, so anyone can read them on GitHub, and Jekyll
+# publishes those outside an underscore folder. A warning, so the user
+# hears and the deploy goes ahead (decided 2026-10-25). A file that already
+# has an error, such as a dated Word file in a posts folder or any in a
+# course folder, gets no warning as well: the error's advice moves it to
+# _drafts/, which clears both.
+def documents(site, findings)
+  errors = findings.reject(&:warning).to_set(&:path)
+  site.documents.reject { |path| errors.include?(path) }.map do |path|
+    shown = if path.split("/").include?("_posts")
+              "though the site doesn't show it"
+            else
+              "and on the site, which offers it as a download"
+            end
+    Finding.new(path, 1, "anyone can see this #{File.extname(path).downcase} file on GitHub, #{shown}. " \
+                         "Put drafts in papers/_posts/_drafts/, or keep them off GitHub " \
+                         '(see "Where files go" in README.md)', true)
   end
 end
 

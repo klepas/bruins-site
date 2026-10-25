@@ -8,6 +8,7 @@ kramdown:
 
 exclude:
   - excluded.md
+  - excluded/
 
 collections:
   example:

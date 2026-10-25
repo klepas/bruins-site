@@ -4,8 +4,11 @@
 # renders differently from GitHub's preview, and for files with Windows line
 # endings or the wrong encoding. It also looks for two pages with one
 # address, Markdown in an .html page, files that aren't Markdown in a posts
-# or course folder, and a heading left empty above the notes. CI runs it
-# before the build, and an error stops the deploy.
+# or course folder, a heading left empty above the notes, look-alike
+# characters and accents typed apart from their letters, headings that skip
+# a level, spaces in addresses and file names, links that read only "here",
+# course notes on the wrong layout, and an updated: before the date. CI runs
+# it before the build, and an error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -47,6 +50,7 @@ require "kramdown"
 require "optparse"
 require "psych"
 require "set"
+require "time"
 require "uri"
 
 # Every finding --self-test expects from _scripts/check-content-fixtures,
@@ -58,7 +62,11 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   _example/2026-01-04-permalink-no-slash.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
   _example/2026-01-05-course-address.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
   _example/2026-01-06-other-course.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
+  _example/2026-01-08-space in name.md:1: the file name has a space. Use hyphens in place of spaces (see "Where files go" in README.md)
+  _example/2026-01-09-layout-post.md:2: course notes need the line layout: course-document in the block at the top (see "Where files go" in README.md)
+  _example/2026-01-10-no-layout.md:1: course notes need the line layout: course-document in the block at the top (see "Where files go" in README.md)
   _example/README:1: only Markdown pages go in this folder. Put Word files and other drafts in papers/_posts/_drafts/ (see "Where files go" in README.md)
+  files/pdfs/with space.pdf:1: the file name has a space. Rename it with hyphens in place of spaces, and change any links to it to match (see "Where files go" in README.md)
   index.html:5: this page is HTML, so Markdown links show as typed. Write <a href="address">text</a> (see "Where files go" in README.md)
   index.html:5: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
   index.html:6: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
@@ -99,6 +107,33 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-04-notes-heading.md:8: the site writes its own "Notes" heading above the notes. Change this heading to ## Notes, or delete it (rule 6 in README.md)
   papers/_posts/2026-02-06-backtick-fence.md:7: three backticks don't start a code block on this site. Use three tildes, ~~~, on the lines before and after the code
   papers/_posts/2026-02-06-backtick-fence.md:9: three backticks don't start a code block on this site. Use three tildes, ~~~, on the lines before and after the code
+  papers/_posts/2026-02-07-combining-mark.md:3: "Müller" has a mark typed apart from its letter (U+0308), which can sit in the wrong place. Type the letter with its mark built in, or copy it from "Special characters" in README.md
+  papers/_posts/2026-02-07-combining-mark.md:5: "α̉ρετή" has a mark typed apart from its letter (U+0309), which can sit in the wrong place. Type the word again with the Greek Polytonic keyboard (see "Special characters" in README.md)
+  papers/_posts/2026-02-08-lookalikes.md:3: ´ (U+00B4) is an accent on its own. For an apostrophe use ’, and for a prime ′, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:5: &#9001; gives 〈 (U+2329), an old angle bracket that some programs swap for a wide Chinese one. Use ⟨, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:5: &#x232A; gives 〉 (U+232A), an old angle bracket that some programs swap for a wide Chinese one. Use ⟩, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:5: 〈 (U+2329) is an old angle bracket that some programs swap for a wide Chinese one. Use ⟨, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:5: 〉 (U+232A) is an old angle bracket that some programs swap for a wide Chinese one. Use ⟩, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:6: &lang; gives 〉 (U+232A) on this site, an old angle bracket the wrong way round. Use ⟨, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:6: &rang; gives 〈 (U+2329) on this site, an old angle bracket the wrong way round. Use ⟩, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:7: &acute; gives ´ (U+00B4), an accent on its own. For an apostrophe use ’, and for a prime ′, from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:7: ¸ (U+00B8) is a cedilla on its own. For a comma type a comma, and copy ç from "Special characters" in README.md
+  papers/_posts/2026-02-08-lookalikes.md:8: ┌ (U+250C) is a character for drawing boxes. For corner quotes use ⌜ and ⌝, from "Special characters" in README.md. For a diagram, put a line of ~~~ above it and another below
+  papers/_posts/2026-02-08-lookalikes.md:8: ┐ (U+2510) is a character for drawing boxes. For corner quotes use ⌜ and ⌝, from "Special characters" in README.md. For a diagram, put a line of ~~~ above it and another below
+  papers/_posts/2026-02-09-modifier-prime.md:5: warning: ʹ (U+02B9) is a letter used in transliteration, such as for the Russian soft sign. For a prime, as in S′, use ′, from "Special characters" in README.md. If you meant ʹ, leave it
+  papers/_posts/2026-02-10-heading-skip.md:13: this #### heading comes under a ## heading, so it skips a level. Make it ### (rule 8 in README.md)
+  papers/_posts/2026-02-10-heading-skip.md:7: this ### heading comes under the page's title, so it skips a level. Make it ## (rule 8 in README.md)
+  papers/_posts/2026-02-11-space-in-address.md:11: a space in the address /files/images/another photo.jpg. Give the file hyphens in place of spaces, and change the address to match (see "Where files go" in README.md)
+  papers/_posts/2026-02-11-space-in-address.md:5: a space in the address /files/pdfs/present copy.pdf. Give the file hyphens in place of spaces, and change the address to match (see "Where files go" in README.md)
+  papers/_posts/2026-02-11-space-in-address.md:7: a space in the address /files/images/a photo.jpg. Give the file hyphens in place of spaces, and change the address to match (see "Where files go" in README.md)
+  papers/_posts/2026-02-11-space-in-address.md:9: a space in the address /papers/2021/12/03/Intentionality-de-se-and-the-Problem-of Self-Consciousness.html. Write %20 in place of each space
+  papers/_posts/2026-02-12-here-link.md:11: link text "here" doesn't say where the link goes. Put the link on words that do, such as a title (rule 9 in README.md)
+  papers/_posts/2026-02-12-here-link.md:5: link text "here" doesn't say where the link goes. Put the link on words that do, such as a title (rule 9 in README.md)
+  papers/_posts/2026-02-12-here-link.md:7: link text "click here" doesn't say where the link goes. Put the link on words that do, such as a title (rule 9 in README.md)
+  papers/_posts/2026-02-12-here-link.md:9: link text "hier" doesn't say where the link goes. Put the link on words that do, such as a title (rule 9 in README.md)
+  papers/_posts/2026-02-13-space in name.md:1: the file name has a space. Use hyphens in place of spaces (see "Where files go" in README.md)
+  papers/_posts/2026-02-14-updated-before-file-date.md:4: updated: is earlier than the date, so the page would read "14 February 2026 · Updated 10 February 2026". Check updated: and the date in the file name (see "The block at the top" in README.md)
+  papers/_posts/2026-02-15-updated-before-date.md:5: updated: is earlier than the date, so the page would read "14 February 2026 · Updated 13 February 2026". Check updated: and date: (see "The block at the top" in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
 TEXT
 
@@ -140,6 +175,30 @@ HTML_MARKDOWN_LINK = /\[[^\]]+\]\([^)\s]+\)/
 # so footnote marks such as "(2026)*, (1990)*" and "*.pdf" aren't caught.
 HTML_MARKDOWN_EMPHASIS = /(?<![[:alnum:]_*])\*\*?[[:alnum:]“‘„«"'][^*]*(?<!\s)\*\*?(?![[:alnum:]_*])|
                           (?<![[:alnum:]_])__?[[:alnum:]“‘„«"'][^_]*(?<!\s)__?(?![[:alnum:]_])/x
+
+# Inline code on one line, as kramdown reads it. The character checks leave
+# code alone, since it shows exactly what was typed.
+CODE_SPAN = /(`+)(?!`).+?(?<!`)\1(?!`)/
+
+# Marks that don't add an accent: variation selectors, which choose text or
+# emoji style for the character before them, as in the footnote arrow ↩︎,
+# and U+20E3, which makes keycap emoji such as 1️⃣.
+NOT_AN_ACCENT = /[\u{FE00}-\u{FE0F}\u{E0100}-\u{E01EF}\u{20E3}]/
+# A mark on a letter of these scripts, or on a space or symbol, can sit in
+# the wrong place, and a ready-made letter or the Greek Polytonic keyboard
+# gives the right one. In Hebrew, Arabic, Devanagari and other scripts,
+# marks are how vowels are written, so they're left alone.
+MARKED_SCRIPTS = /\A[\p{Latin}\p{Greek}\p{Cyrillic}\p{Common}\p{Inherited}]/
+
+# Characters that look right and aren't, raw or as an entity. The named
+# entities are the ones kramdown turns into these characters: its table
+# swaps &lang; and &rang;, and gives the old brackets for both.
+LOOKALIKE = /[\u2329\u232A\u00B4\u00B8\u02B9\u2500-\u257F]|&\#(?:0*(\d+)|[xX]0*(\h+));|&(lang|rang|acute|cedil);/
+LOOKALIKE_CODES = Set[0x2329, 0x232A, 0xB4, 0xB8, 0x2B9, *(0x2500..0x257F)].freeze
+LOOKALIKE_NAMES = { "lang" => 0x232A, "rang" => 0x2329, "acute" => 0xB4, "cedil" => 0xB8 }.freeze
+
+# Link text that doesn't say where the link goes (rule 9 in README.md).
+VAGUE_LINK_TEXT = ["here", "click here", "hier"].freeze
 
 # Words the underscore check leaves out: web and email addresses.
 ADDRESS = %r{https?://\S+|\S*@\S+|www\.\S+}
@@ -213,6 +272,10 @@ class Site
     end
 
     @exclude = Array(@config["exclude"]).map(&:to_s) + JEKYLL_EXCLUDES
+
+    # Jekyll sets TZ from timezone:, so a time in a top block reads the same
+    # here as in the build.
+    ENV["TZ"] = @config["timezone"].to_s if @config["timezone"]
   end
 
   # Posts in every _posts folder, the documents in each collection and the
@@ -233,8 +296,12 @@ class Site
 
   # Exact names, since macOS ignores case and S3 doesn't.
   def file?(path)
+    files.include?(path)
+  end
+
+  # Every file under files/, its path from the root.
+  def files
     @files ||= Dir.glob("files/**/*", base: root).select { |f| File.file?(full(f)) }.to_set
-    @files.include?(path)
   end
 
   def full(path)
@@ -293,7 +360,8 @@ class FileCheck
   # the name alone and never read the file.
   UNREAD_CHECKS = %i[not_markdown].freeze
   # After the block at the top is read.
-  FILE_CHECKS = %i[duplicate_keys lang course_permalink post_date].freeze
+  FILE_CHECKS = %i[duplicate_keys lang course_permalink course_layout post_date file_name_space
+                   updated_before_date].freeze
   # Each body line of a Markdown file outside ~~~ code blocks. They get the
   # line's number in the file, the line and the line before it.
   LINE_CHECKS = %i[heading_space block_after_paragraph table_rows table_separator
@@ -304,7 +372,12 @@ class FileCheck
   # Each body line of an .html page.
   HTML_LINE_CHECKS = %i[markdown_in_html].freeze
   # After kramdown has parsed a Markdown body.
-  TREE_CHECKS = %i[underscores kramdown_warnings notes_heading].freeze
+  TREE_CHECKS = %i[underscores kramdown_warnings notes_heading heading_levels address_spaces
+                   vague_links].freeze
+  # Each line of the file, the block at the top included, leaving out code:
+  # ~~~ blocks, and `…` on one line in a Markdown body. They get the line's
+  # number and its text.
+  CHARACTER_CHECKS = %i[combining_marks lookalikes].freeze
 
   attr_reader :file, :data, :key_lines, :findings
 
@@ -337,6 +410,7 @@ class FileCheck
     else
       each_body_line { |n, line, prev| run_all(HTML_LINE_CHECKS, n, line, prev) }
     end
+    each_text_line { |n, text| run_all(CHARACTER_CHECKS, n, text) }
   end
 
   # Jekyll leaves out a page whose published: is false or empty.
@@ -453,6 +527,22 @@ class FileCheck
     end
   end
 
+  # Calls the block with each line's number in the file and its text, from
+  # the first line on, leaving out ~~~ code blocks. In a Markdown body,
+  # inline code becomes a space.
+  def each_text_line
+    @lines.each_with_index do |line, i|
+      next if @code_lines.include?(i + 1)
+
+      yield i + 1, (file.markdown? && i >= @body_start ? line.gsub(CODE_SPAN, " ") : line)
+    end
+  end
+
+  # The first line from n on that holds text, or n.
+  def line_with(n, text)
+    (n..@lines.size).find { |i| @lines[i - 1].include?(text) } || n
+  end
+
   # kramdown's tree, the body lines where each kind of element starts, and
   # the file's lines inside ~~~ code blocks. Those come from the tree, so a
   # fence counts only where kramdown starts a block: not straight after a
@@ -544,12 +634,71 @@ class FileCheck
     File.dirname(@path) == "_#{file.collection}" && File.basename(@path, ".*") == "index"
   end
 
+  # Course notes show no date or version (decided 2026-10-25), which only
+  # their own layout leaves out. A paper's block copied into a course folder
+  # would bring layout: post with it.
+  def course_layout
+    return unless file.kind == :collection && !course_index?
+    return if value_text(@data["layout"]) == "course-document"
+
+    add(key_line("layout"), "course notes need the line layout: course-document in the block at the top " \
+                            '(see "Where files go" in README.md)')
+  end
+
   def post_date
     return unless file.kind == :post && file.markdown?
     return if File.basename(@path).match?(/\A\d{4}-\d{1,2}-\d{1,2}-.+\.(?:md|markdown)\z/i)
 
     add(1, 'the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it ' \
            '(see "Where files go" in README.md)')
+  end
+
+  # In a posts or course folder. The check for files that aren't Markdown
+  # covers the other files there, and Jekyll never reads _drafts/.
+  def file_name_space
+    return unless %i[post collection].include?(file.kind) && @path.match?(/[[:space:]]/)
+
+    add(1, 'the file name has a space. Use hyphens in place of spaces (see "Where files go" in README.md)')
+  end
+
+  # Papers and blog posts show both dates, so an updated: before the date
+  # reads wrongly. Course notes show neither (decided 2026-10-25), so they
+  # aren't checked. Compares the days the page shows.
+  def updated_before_date
+    return unless file.kind == :post
+
+    updated = shown_day(@data["updated"], own_offset: true)
+    date = @data.key?("date") ? shown_day(@data["date"]) : file_name_day
+    return unless updated && date && updated < date
+
+    shown = [date, updated].map { |day| day.strftime("%-d %B %Y") }
+    source = @data.key?("date") ? "date:" : "the date in the file name"
+    add(key_line("updated"), %(updated: is earlier than the date, so the page would read "#{shown[0]} · ) +
+                             %(Updated #{shown[1]}". Check updated: and #{source} ) +
+                             '(see "The block at the top" in README.md)')
+  end
+
+  # The day a date in the top block shows on the page. Jekyll moves date:
+  # into the site's time zone, and Liquid shows updated: in the offset it
+  # was written with, as Jekyll's build of 2026-10-25 did. Nil for anything
+  # that isn't a date.
+  def shown_day(value, own_offset: false)
+    return value if value.instance_of?(Date)
+
+    time = value if value.is_a?(Time)
+    time ||= Time.parse(value) if value.is_a?(String) && value.match?(/\A\d{4}-\d{1,2}-\d{1,2}/)
+    time && (own_offset ? time : time.localtime).to_date
+  rescue ArgumentError
+    nil
+  end
+
+  # The date at the start of a post's file name, which Jekyll uses when the
+  # block has no date:.
+  def file_name_day
+    day = File.basename(@path)[/\A(\d{4}-\d{1,2}-\d{1,2})-/, 1]
+    day && Date.strptime(day, "%Y-%m-%d")
+  rescue ArgumentError
+    nil
   end
 
   # Line checks. Each finding about kramdown's blocks is checked against its
@@ -716,13 +865,176 @@ class FileCheck
   def notes_heading
     return if @starts[:footnote].empty?
 
-    last = @doc.root.children.reverse.find { |el| el.type != :blank }
-    return unless last&.type == :header
-    return if [2, 3].include?(last.options[:level]) && last.options[:raw_text] == "Notes" &&
-              last.attr.all? { |name, value| name == "id" && value == "notes" }
+    last = last_block
+    return unless last&.type == :header && !replaced_notes_heading?(last)
 
     add(last.options[:location] + @body_start, 'the site writes its own "Notes" heading above the notes. ' \
                                                "Change this heading to ## Notes, or delete it (rule 6 in README.md)")
+  end
+
+  def last_block
+    @doc.root.children.reverse.find { |el| el.type != :blank }
+  end
+
+  # A "## Notes" or "### Notes" heading, which _includes/content.html
+  # removes from a page with notes, wherever it is.
+  def replaced_notes_heading?(el)
+    !@starts[:footnote].empty? && [2, 3].include?(el.options[:level]) && el.options[:raw_text] == "Notes" &&
+      el.attr.all? { |name, value| name == "id" && value == "notes" }
+  end
+
+  # A heading more than one level below the one before (rule 8 in
+  # README.md), starting from the page's title at level 1. Only the page's
+  # own headings count, not those inside a quotation, a list or a note. The
+  # heading above the notes is left out: the site replaces it with its own
+  # level 2 "Notes", or the notes heading check reports it.
+  def heading_levels
+    notes = last_block unless @starts[:footnote].empty?
+    previous = 1
+    above = "the page's title"
+    @doc.root.children.each do |el|
+      next unless el.type == :header && !el.equal?(notes) && !replaced_notes_heading?(el)
+
+      level = el.options[:level]
+      if level > previous + 1
+        add(el.options[:location] + @body_start,
+            "this #{'#' * level} heading comes under #{above}, so it skips a level. " \
+            "Make it #{'#' * (previous + 1)} (rule 8 in README.md)")
+      end
+      previous = level
+      above = "a #{'#' * level} heading"
+    end
+  end
+
+  # The address of a link or image, written in Markdown or HTML.
+  def link_address(el)
+    case el.type
+    when :a then el.attr["href"]
+    when :img then el.attr["src"]
+    when :html_element then el.attr[{ "a" => "href", "img" => "src" }[el.value]]
+    end
+  end
+
+  # GitHub's preview doesn't read an address with a space as a link, and
+  # the site's own files have hyphens in place of spaces (decided
+  # 2026-10-25). A space kramdown drops, as in "]( https://…)", isn't in its
+  # tree, and neither is one written as %20.
+  def address_spaces
+    each_element do |el, line|
+      target = link_address(el)
+      next unless target&.match?(/[[:space:]]/)
+
+      advice = if target.start_with?("/files/")
+                 "Give the file hyphens in place of spaces, and change the address to match " \
+                 '(see "Where files go" in README.md)'
+               else
+                 "Write %20 in place of each space"
+               end
+      add(line_with(line + @body_start, target), "a space in the address #{target}. #{advice}")
+    end
+  end
+
+  # A link that reads only "here" (rule 9 in README.md), its text taken from
+  # inside any italics or bold.
+  def vague_links
+    each_element do |el, line|
+      next unless el.type == :a || (el.type == :html_element && el.value == "a")
+
+      text = link_text(el).gsub(/[[:space:]]+/, " ").gsub(/\A[[:punct:] ]+|[[:punct:] ]+\z/, "")
+      next unless VAGUE_LINK_TEXT.include?(text.downcase)
+
+      add(line + @body_start, %(link text "#{text}" doesn't say where the link goes. ) +
+                              "Put the link on words that do, such as a title (rule 9 in README.md)")
+    end
+  end
+
+  def link_text(el)
+    return el.value if %i[text codespan].include?(el.type)
+
+    el.children.map { |child| link_text(child) }.join
+  end
+
+  # Character checks.
+
+  # An accent or breathing typed as a mark of its own after its letter, as
+  # in "α̉ρετή" (U+0309). One finding for each word on a line.
+  def combining_marks(n, text)
+    # Splitting into letters is slow, and most lines have no mark at all.
+    return unless text.match?(/\p{M}/)
+
+    words = text.split.select { |word| word.scan(/\X/).any? { |cluster| loose_mark?(cluster) } }
+    words.map { |word| word.gsub(/\A[[:punct:]]+|[[:punct:]]+\z/, "") }.uniq.each do |word|
+      codes = word.scan(/\X/).select { |cluster| loose_mark?(cluster) }
+                  .flat_map { |cluster| cluster.scan(/\p{M}/).grep_v(NOT_AN_ACCENT) }
+                  .uniq.map { |mark| code_point(mark.ord) }
+      fix = if word.match?(/\p{Greek}/)
+              'Type the word again with the Greek Polytonic keyboard (see "Special characters" in README.md)'
+            else
+              'Type the letter with its mark built in, or copy it from "Special characters" in README.md'
+            end
+      add(n, %("#{word}" has a mark typed apart from its letter (#{codes.join(', ')}), ) +
+             "which can sit in the wrong place. #{fix}")
+    end
+  end
+
+  # A grapheme cluster holding an accent typed apart from its letter.
+  def loose_mark?(cluster)
+    cluster.gsub(NOT_AN_ACCENT, "").match?(/\p{M}/) && cluster.match?(MARKED_SCRIPTS)
+  end
+
+  def code_point(code)
+    format("U+%04X", code)
+  end
+
+  # One finding for each look-alike on a line, for each way it's typed.
+  def lookalikes(n, text)
+    found = {}
+    text.scan(LOOKALIKE) do
+      match = Regexp.last_match
+      code = lookalike_code(match)
+      found[match[0].downcase] ||= [match[0], code] if code
+    end
+    found.each_value do |typed, code|
+      what, fix = lookalike_advice(typed, code)
+      char = "#{code.chr(Encoding::UTF_8)} (#{code_point(code)})"
+      named = " on this site" if %w[&lang; &rang;].include?(typed)
+      message = typed.start_with?("&") ? "#{typed} gives #{char}#{named}, #{what}" : "#{char} is #{what}"
+      add(n, "#{message}. #{fix}", warning: code == 0x2B9)
+    end
+  end
+
+  # The character a match stands for, if it's a look-alike. In an .html
+  # page the browser reads &lang; and &rang; as the right brackets.
+  def lookalike_code(match)
+    code = if match[1] then match[1].to_i
+           elsif match[2] then match[2].hex
+           elsif match[3] then LOOKALIKE_NAMES[match[3]] if file.markdown? || !%w[lang rang].include?(match[3])
+           else match[0].ord
+           end
+    code if LOOKALIKE_CODES.include?(code)
+  end
+
+  # What the character is, and what to use instead.
+  def lookalike_advice(typed, code)
+    guide = 'from "Special characters" in README.md'
+    case code
+    when 0x2329, 0x232A
+      right = { "&lang;" => "⟨", "&rang;" => "⟩" }.fetch(typed, code == 0x2329 ? "⟨" : "⟩")
+      what = if %w[&lang; &rang;].include?(typed)
+               "an old angle bracket the wrong way round"
+             else
+               "an old angle bracket that some programs swap for a wide Chinese one"
+             end
+      [what, "Use #{right}, #{guide}"]
+    when 0xB4 then ["an accent on its own", "For an apostrophe use ’, and for a prime ′, #{guide}"]
+    when 0xB8 then ["a cedilla on its own", "For a comma type a comma, and copy ç #{guide}"]
+    when 0x2B9
+      ["a letter used in transliteration, such as for the Russian soft sign",
+       "For a prime, as in S′, use ′, #{guide}. If you meant ʹ, leave it"]
+    else
+      ["a character for drawing boxes",
+       "For corner quotes use ⌜ and ⌝, #{guide}. For a diagram, put a line of ~~~ above it and another below"]
+    end
   end
 end
 
@@ -731,8 +1043,9 @@ def check_site(root)
   site = Site.new(root)
   checks = site.content_files.map { |file| FileCheck.new(site, file).tap(&:run) }
   # Checks that compare files with each other go here, using each
-  # FileCheck's file, data, key_lines, published? and literal_permalink.
-  findings = (checks.flat_map(&:findings) + shared_permalinks(checks)).uniq(&:to_s)
+  # FileCheck's file, data, key_lines, published? and literal_permalink,
+  # and checks on files the linter doesn't read.
+  findings = (checks.flat_map(&:findings) + shared_permalinks(checks) + file_spaces(site)).uniq(&:to_s)
   findings.each_with_index.sort_by { |finding, i| [finding.path, finding.line, i] }.map(&:first)
 end
 
@@ -750,6 +1063,16 @@ def shared_permalinks(checks)
                                            '(see "The block at the top" in README.md)', false)
       end
     end
+  end
+end
+
+# A PDF, picture or slides whose name has a space, which a link has to
+# write as %20. The site's own files have hyphens instead (decided
+# 2026-10-25).
+def file_spaces(site)
+  site.files.select { |path| path.match?(/[[:space:]]/) }.sort.map do |path|
+    Finding.new(path, 1, "the file name has a space. Rename it with hyphens in place of spaces, and change " \
+                         'any links to it to match (see "Where files go" in README.md)', false)
   end
 end
 

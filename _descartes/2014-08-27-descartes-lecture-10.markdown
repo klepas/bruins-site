@@ -2,7 +2,7 @@
 layout: post
 permalink: /courses/descartes/descartes-meditations-on-first-philosophy-10/
 title: "Descartes’ *Meditations on First Philosophy* 10"
-updated: 2014-08-10
+updated: 2014-08-27
 abstract: "More on the Ontological Argument---The Fifth Meditation (cont.)"
 ---
 

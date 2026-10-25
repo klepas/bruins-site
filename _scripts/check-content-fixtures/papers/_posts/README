@@ -1,0 +1,2 @@
+Jekyll reads a file in a posts folder only if its name starts with a date,
+so it never sees this one.

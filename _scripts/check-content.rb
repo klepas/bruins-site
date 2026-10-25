@@ -2,8 +2,10 @@
 
 # Checks Bruin's pages for Markdown that kramdown, which builds the site,
 # renders differently from GitHub's preview, and for files with Windows line
-# endings or the wrong encoding. CI runs it before the build, and an error
-# stops the deploy.
+# endings or the wrong encoding. It also looks for two pages with one
+# address, Markdown in an .html page, files that aren't Markdown in a posts
+# or course folder, and a heading left empty above the notes. CI runs it
+# before the build, and an error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -51,7 +53,15 @@ require "uri"
 # sorted as text, so line 10 of a file comes before line 5. Update it in the
 # same commit as any change to a check, a message or a fixture.
 SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
+  _example/2026-01-02-no-permalink.md:1: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
   _example/2026-01-03-placeholder-permalink.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
+  _example/2026-01-04-permalink-no-slash.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
+  _example/2026-01-05-course-address.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
+  _example/2026-01-06-other-course.md:4: course notes need their own full address in a permalink: line, like /courses/descartes/a-short-title/ (see "Where files go" in README.md)
+  _example/README:1: only Markdown pages go in this folder. Put Word files and other drafts in papers/_posts/_drafts/ (see "Where files go" in README.md)
+  index.html:5: this page is HTML, so Markdown links show as typed. Write <a href="address">text</a> (see "Where files go" in README.md)
+  index.html:5: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
+  index.html:6: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
   no-top-block.md:1: the page needs a block at the top, between two --- lines (see "The block at the top" in README.md)
   papers/_posts/2026-01-02-heading-no-space.md:6: put a space after the # marks (rule 2 in README.md). If this line isn't a heading, start it with a word instead
   papers/_posts/2026-01-03-quote-after-paragraph.md:6: leave an empty line before this quotation (rule 1 in README.md). If it belongs to the paragraph above, join it to that line
@@ -83,6 +93,10 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-01-29-stray-carriage-return.md:5: warning: a stray carriage return character. Ask the user to remove it.
   papers/_posts/2026-01-30-crlf.md:1: warning: Windows line endings. The page still shows correctly. Ask the user to convert the file.
   papers/_posts/2026-01-31-not-utf8.md:1: the file isn't saved as UTF-8, so some characters would show wrongly. Open it in GitHub's editor and commit it again.
+  papers/_posts/2026-02-01-shared-permalink-a.md:4: another page has this address: papers/_posts/2026-02-02-shared-permalink-b.md. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
+  papers/_posts/2026-02-02-shared-permalink-b.md:4: another page has this address: papers/_posts/2026-02-01-shared-permalink-a.md. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
+  papers/_posts/2026-02-03-draft.docx:1: only Markdown pages go in this folder. Put Word files and other drafts in papers/_posts/_drafts/ (see "Where files go" in README.md)
+  papers/_posts/2026-02-04-notes-heading.md:8: the site writes its own "Notes" heading above the notes. Change this heading to ## Notes, or delete it (rule 6 in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
 TEXT
 
@@ -107,6 +121,21 @@ PREVIEW_BLOCK = /\A(?:\#{1,6}(?:\s|\z)|>|\||[*+-]\s+\S|1[.)]\s)/
 TABLE_SEPARATOR = /\A\|?[ \t:|+-]*-[ \t:|+-]*\z/
 # The first or last line of fenced code.
 FENCE = /\A(```|~~~)/
+
+# A name Jekyll reads as a post, whatever its extension: its
+# Document::DATE_FILENAME_MATCHER, for the file name alone.
+POST_NAME = /\A\d{2,4}-\d{1,2}-\d{1,2}-.*\.[^.]+\z/
+
+# What an .html page doesn't show as text: comments, Liquid, scripts, styles
+# and tags, which can each run over several lines.
+HTML_HIDDEN = %r{<!--.*?-->|\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}|\{\{.*?\}\}|\{%.*?%\}|
+                 <(script|style)\b.*?</\1\s*>|<[^>]*>}mx
+HTML_MARKDOWN_LINK = /\[[^\]]+\]\([^)\s]+\)/
+# Italics or bold made with * or _. The text inside has to start with a
+# letter, a digit or an opening quotation mark, and can't end with a space,
+# so footnote marks such as "(2026)*, (1990)*" and "*.pdf" aren't caught.
+HTML_MARKDOWN_EMPHASIS = /(?<![[:alnum:]_*])\*\*?[[:alnum:]“‘„«"'][^*]*(?<!\s)\*\*?(?![[:alnum:]_*])|
+                          (?<![[:alnum:]_])__?[[:alnum:]“‘„«"'][^_]*(?<!\s)__?(?![[:alnum:]_])/x
 
 # Words the underscore check leaves out: web and email addresses.
 ADDRESS = %r{https?://\S+|\S*@\S+|www\.\S+}
@@ -258,7 +287,7 @@ end
 class FileCheck
   # For a file in a posts or course folder that isn't Markdown. These go by
   # the name alone and never read the file.
-  UNREAD_CHECKS = %i[].freeze
+  UNREAD_CHECKS = %i[not_markdown].freeze
   # After the block at the top is read.
   FILE_CHECKS = %i[duplicate_keys lang course_permalink post_date].freeze
   # Each body line of a Markdown file outside fenced code. They get the
@@ -269,9 +298,9 @@ class FileCheck
   # runs templates before Markdown.
   LINE_CHECKS_INCLUDING_CODE = %i[template].freeze
   # Each body line of an .html page.
-  HTML_LINE_CHECKS = %i[].freeze
+  HTML_LINE_CHECKS = %i[markdown_in_html].freeze
   # After kramdown has parsed a Markdown body.
-  TREE_CHECKS = %i[underscores kramdown_warnings].freeze
+  TREE_CHECKS = %i[underscores kramdown_warnings notes_heading].freeze
 
   attr_reader :file, :data, :key_lines, :findings
 
@@ -308,6 +337,13 @@ class FileCheck
   # Jekyll leaves out a page whose published: is false or empty.
   def published?
     @data.fetch("published", true) ? true : false
+  end
+
+  # The permalink: as written, unless it's missing or holds a placeholder
+  # such as :title.
+  def literal_permalink
+    permalink = value_text(@data["permalink"])
+    permalink unless permalink.empty? || permalink.include?(":")
   end
 
   private
@@ -441,6 +477,21 @@ class FileCheck
     !line.strip.empty? && !line.match?(BLOCK_START) && !line.match?(/\A\s/) && !line.start_with?("[^")
   end
 
+  # Unread checks.
+
+  # Jekyll reads a file in a posts folder as a post if its name starts with a
+  # date, so a Word file named like a draft stops the build with a Ruby
+  # error. It skips the folder's other files. In a course folder it reads
+  # every file, and publishes one without a block at the top at the course's
+  # address plus the file's extension, such as /courses/descartes.docx. A
+  # file with no extension there stops the build.
+  def not_markdown
+    return if file.kind == :post && !File.basename(@path).match?(POST_NAME)
+
+    add(1, "only Markdown pages go in this folder. Put Word files and other drafts in papers/_posts/_drafts/ " \
+           '(see "Where files go" in README.md)')
+  end
+
   # File checks.
 
   def duplicate_keys
@@ -457,12 +508,27 @@ class FileCheck
     add(key_line("lang"), "lang: should be de, or left out for English")
   end
 
+  # Course notes need an address of their own inside the course's. Without
+  # one they take the course page's address, /courses/<name>/, and replace
+  # it. A placeholder makes Jekyll 4 build the address from the file name,
+  # and without the closing / the course page links to an address the
+  # server doesn't have.
   def course_permalink
-    return unless file.kind == :collection && !File.basename(@path).start_with?("index.")
-    return unless value_text(@data["permalink"]).include?(":")
+    return unless file.kind == :collection && !course_index?
+
+    course = "/courses/#{file.collection}/"
+    permalink = value_text(@data["permalink"])
+    return if permalink.start_with?(course) && permalink.end_with?("/") && !permalink.include?(":") &&
+              permalink != course
 
     add(key_line("permalink"), "course notes need their own full address in a permalink: line, like " \
                                '/courses/descartes/a-short-title/ (see "Where files go" in README.md)')
+  end
+
+  # The course's own page, index.md in its folder, which has the course's
+  # address.
+  def course_index?
+    File.dirname(@path) == "_#{file.collection}" && File.basename(@path, ".*") == "index"
   end
 
   def post_date
@@ -552,6 +618,29 @@ class FileCheck
     add(n, "{{ or {% here would be read as a template instruction") if line.match?(/\{\{|\{%/)
   end
 
+  # HTML line checks.
+
+  # Jekyll doesn't run Markdown in an .html page, so a Markdown link or
+  # italics there show as typed, as Bruin's thesis link once did.
+  def markdown_in_html(n, _line, _prev)
+    text = html_text[n - 1 - @body_start]
+    if text.match?(HTML_MARKDOWN_LINK)
+      add(n, 'this page is HTML, so Markdown links show as typed. Write <a href="address">text</a> ' \
+             '(see "Where files go" in README.md)')
+    end
+    return unless text.match?(HTML_MARKDOWN_EMPHASIS)
+
+    add(n, 'this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)')
+  end
+
+  # The body's lines with what the page doesn't show as text turned into
+  # spaces, so a comment or tag over several lines keeps the line numbers.
+  def html_text
+    @html_text ||= @lines[@body_start..].join("\n")
+                                        .gsub(HTML_HIDDEN) { |hidden| hidden.gsub(/[^\n]/, " ") }
+                                        .split("\n", -1)
+  end
+
   # Tree checks.
 
   # An underscore left next to a letter in the rendered text is emphasis that
@@ -594,6 +683,23 @@ class FileCheck
           "kramdown says: #{warning.gsub(/line (\d+)/) { "line #{Regexp.last_match(1).to_i + @body_start}" }}")
     end
   end
+
+  # kramdown moves the notes to the end of the page, and
+  # _includes/content.html swaps a "## Notes" or "### Notes" heading there
+  # for its own. Any other heading last on the page would stand empty above
+  # the site's. Goes by kramdown's tree, not by the line above the first
+  # note, since a note can be written anywhere and still shows at the end.
+  def notes_heading
+    return if @starts[:footnote].empty?
+
+    last = @doc.root.children.reverse.find { |el| el.type != :blank }
+    return unless last&.type == :header
+    return if [2, 3].include?(last.options[:level]) && last.options[:raw_text] == "Notes" &&
+              last.attr.all? { |name, value| name == "id" && value == "notes" }
+
+    add(last.options[:location] + @body_start, 'the site writes its own "Notes" heading above the notes. ' \
+                                               "Change this heading to ## Notes, or delete it (rule 6 in README.md)")
+  end
 end
 
 # Every finding for the site at root, in file and line order.
@@ -601,9 +707,26 @@ def check_site(root)
   site = Site.new(root)
   checks = site.content_files.map { |file| FileCheck.new(site, file).tap(&:run) }
   # Checks that compare files with each other go here, using each
-  # FileCheck's file, data, key_lines and published?.
-  findings = checks.flat_map(&:findings).uniq(&:to_s)
+  # FileCheck's file, data, key_lines, published? and literal_permalink.
+  findings = (checks.flat_map(&:findings) + shared_permalinks(checks)).uniq(&:to_s)
   findings.each_with_index.sort_by { |finding, i| [finding.path, finding.line, i] }.map(&:first)
+end
+
+# Pages with the same permalink:, one of which silently replaces the other.
+# Each names the others. Placeholders are left to the course check, since
+# the old site's 32 course documents all had /courses/:collection/:title/.
+def shared_permalinks(checks)
+  groups = checks.select(&:published?).group_by(&:literal_permalink).except(nil)
+  groups.each_value.select { |group| group.size > 1 }.flat_map do |group|
+    group.flat_map do |check|
+      line = check.key_lines.fetch("permalink", [1]).last
+      (group - [check]).map do |other|
+        Finding.new(check.file.path, line, "another page has this address: #{other.file.path}. " \
+                                           "If you copied this block, delete the permalink: line " \
+                                           '(see "The block at the top" in README.md)', false)
+      end
+    end
+  end
 end
 
 def self_test

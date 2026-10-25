@@ -1,0 +1,2 @@
+Jekyll publishes every file in a course folder. This one would go to
+/courses/example, where it would stop the build.

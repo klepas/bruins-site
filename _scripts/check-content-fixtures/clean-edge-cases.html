@@ -1,0 +1,18 @@
+---
+layout: base
+title: "HTML that looks like Markdown but isn't"
+---
+{%- comment -%}
+  Each line here shows on the site as written. A Liquid comment never
+  reaches the page, so _this_ and [this](/papers/) don't count.
+{%- endcomment -%}
+<h1 class="page-heading">{{ page.title | default: "_Untitled_" }}</h1>
+<p>A <a href="/files/pdfs/present.pdf">link</a> and <em>italics</em> written in HTML.</p>
+<p>Marks for notes: the PhD (2026)*, the MA (1990)*, and (*) twice (*).</p>
+<p>Sums, 2 * 3 * 4 and 2*3*4. Files, *.pdf and *.ppt, my_file_name.pdf,
+http://example.org/a_b_c, www.example_site.org and c_b_christensen@example.org.</p>
+<!--
+  A paragraph put aside: *Sein und Zeit* and [the thesis](/files/pdfs/present.pdf).
+-->
+<a class="file"
+   title="_draft_" href="/files/pdfs/present.pdf">a tag over two lines</a>

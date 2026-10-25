@@ -134,6 +134,8 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-13-space in name.md:1: the file name has a space. Use hyphens in place of spaces (see "Where files go" in README.md)
   papers/_posts/2026-02-14-updated-before-file-date.md:4: updated: is earlier than the date, so the page would read "14 February 2026 · Updated 10 February 2026". Check updated: and the date in the file name (see "The block at the top" in README.md)
   papers/_posts/2026-02-15-updated-before-date.md:5: updated: is earlier than the date, so the page would read "14 February 2026 · Updated 13 February 2026". Check updated: and date: (see "The block at the top" in README.md)
+  papers/_posts/2026-02-22-case-address-a.md:4: another page has this address apart from its capitals: papers/_posts/2026-02-22-case-address-b.md, and some computers can't keep both. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
+  papers/_posts/2026-02-22-case-address-b.md:4: another page has this address apart from its capitals: papers/_posts/2026-02-22-case-address-a.md, and some computers can't keep both. If you copied this block, delete the permalink: line (see "The block at the top" in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
 TEXT
 
@@ -1045,7 +1047,8 @@ def check_site(root)
   # Checks that compare files with each other go here, using each
   # FileCheck's file, data, key_lines, published? and literal_permalink,
   # and checks on files the linter doesn't read.
-  findings = (checks.flat_map(&:findings) + shared_permalinks(checks) + file_spaces(site)).uniq(&:to_s)
+  findings = (checks.flat_map(&:findings) + shared_permalinks(checks) + permalinks_differing_in_case(checks) +
+              file_spaces(site)).uniq(&:to_s)
   findings.each_with_index.sort_by { |finding, i| [finding.path, finding.line, i] }.map(&:first)
 end
 
@@ -1059,6 +1062,24 @@ def shared_permalinks(checks)
       line = check.key_lines.fetch("permalink", [1]).last
       (group - [check]).map do |other|
         Finding.new(check.file.path, line, "another page has this address: #{other.file.path}. " \
+                                           "If you copied this block, delete the permalink: line " \
+                                           '(see "The block at the top" in README.md)', false)
+      end
+    end
+  end
+end
+
+# Pages whose permalink: differs from another's only in capitals. S3 keeps
+# both, but a Mac or Windows computer keeps one file for the two, and
+# jekyll doctor fails on them. Each names the others, as above.
+def permalinks_differing_in_case(checks)
+  groups = checks.select(&:published?).group_by { |check| check.literal_permalink&.downcase }.except(nil)
+  groups.each_value.flat_map do |group|
+    group.flat_map do |check|
+      line = check.key_lines.fetch("permalink", [1]).last
+      group.reject { |other| other.literal_permalink == check.literal_permalink }.map do |other|
+        Finding.new(check.file.path, line, "another page has this address apart from its capitals: " \
+                                           "#{other.file.path}, and some computers can't keep both. " \
                                            "If you copied this block, delete the permalink: line " \
                                            '(see "The block at the top" in README.md)', false)
       end

@@ -1,0 +1,13 @@
+# The sample site for check-content.rb --self-test. Each file holds the one
+# problem its name says, or none if its name has "clean" in it. The script's
+# SELF_TEST_EXPECTED lists every finding.
+kramdown:
+  input: kramdown
+
+exclude:
+  - excluded.md
+
+collections:
+  example:
+    output: true
+    permalink: /courses/:collection/

@@ -1,0 +1,172 @@
+# Checks every push and pull request: Bruin's Markdown, the content
+# check's own self-test, a production build, every live URL and jekyll
+# doctor. Deploying isn't part of this workflow.
+name: Check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+# For the notice jobs at the end. GitHub emails only the person whose push
+# started a run, which on master is usually Bruin. So on master a failed
+# check opens an issue assigned to NOTIFY_LOGIN, or comments on the one
+# already open, and the next passing push closes it. Each file the content
+# check warns about gets an issue of its own, closed once the file has no
+# warning. Assignment is what notifies, so no issue text has an @-mention.
+env:
+  NOTIFY_LOGIN: klepas
+  ISSUE_TITLE: The site check failed on master
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    outputs:
+      linted: ${{ steps.warnings.outputs.linted }}
+      warnings: ${{ steps.warnings.outputs.warnings }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Check the content
+        id: content
+        run: |
+          set -o pipefail
+          bundle exec ruby _scripts/check-content.rb | tee "$RUNNER_TEMP/content.txt"
+      # Warnings don't fail the check, so this passes them on to the
+      # warning-notices job. It does so only if the content check finished:
+      # it passed, or it failed with an error line. The script prints its
+      # findings once it has read every file, so a crash prints none, and an
+      # empty list would close every warning issue.
+      - name: Pass the content warnings on
+        id: warnings
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          OUTCOME: ${{ steps.content.outcome }}
+        run: |
+          out="$RUNNER_TEMP/content.txt"
+          case "$OUTCOME" in
+            success) ;;
+            failure) grep -Ev '^[^:]+:[0-9]+: warning: ' "$out" | grep -Eq '^[^:]+:[0-9]+: ' || exit 0 ;;
+            *) exit 0 ;;
+          esac
+          delim="end_of_warnings_$RANDOM$RANDOM"
+          {
+            echo "linted=true"
+            echo "warnings<<$delim"
+            grep -E '^[^:]+:[0-9]+: warning: ' "$out" || true
+            echo "$delim"
+          } >> "$GITHUB_OUTPUT"
+      - name: Self-test the content check
+        run: bundle exec ruby _scripts/check-content.rb --self-test
+      - name: Build
+        run: bundle exec jekyll build --destination "$RUNNER_TEMP/site"
+      - name: Check every live URL still builds
+        run: ruby _scripts/check-urls.rb _scripts/live-url-inventory.tsv "$RUNNER_TEMP/site"
+      - name: Doctor
+        run: bundle exec jekyll doctor
+
+  # Separate jobs, so the build steps never hold a token that can write
+  # issues. Each expression reaches its script through env:, never pasted
+  # into the script itself, so text from a push can't run as a command.
+  notify:
+    needs: check
+    if: failure() && github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04
+    permissions:
+      issues: write
+    steps:
+      - name: Tell the user the check failed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+          PUSHER: ${{ github.actor }}
+        run: |
+          body="The check failed on master. The run shows which step failed and why.
+
+          - Run: $RUN_URL
+          - Commit: $COMMIT_URL
+          - Pushed by: $PUSHER"
+          open=$(gh issue list --state open --limit 200 --json number,title)
+          number=$(jq -r --arg title "$ISSUE_TITLE" 'map(select(.title == $title)) | first | .number // empty' <<< "$open")
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body "$body"
+          else
+            gh issue create --title "$ISSUE_TITLE" --assignee "$NOTIFY_LOGIN" --body "$body"
+          fi
+
+  close-notice:
+    needs: check
+    if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04
+    permissions:
+      issues: write
+    steps:
+      - name: Close the notice once master passes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+          PUSHER: ${{ github.actor }}
+        run: |
+          open=$(gh issue list --state open --limit 200 --json number,title)
+          number=$(jq -r --arg title "$ISSUE_TITLE" 'map(select(.title == $title)) | first | .number // empty' <<< "$open")
+          if [ -n "$number" ]; then
+            gh issue close "$number" --comment "The check passed on master again.
+
+          - Run: $RUN_URL
+          - Commit: $COMMIT_URL
+          - Pushed by: $PUSHER"
+          fi
+
+  # One issue per file with warnings, on every push to master where the
+  # content check finished, pass or fail. A file gets one issue while it has
+  # warnings, with no comment on later pushes, and the issue closes once the
+  # file has none: fixed, renamed or deleted.
+  warning-notices:
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master' && !cancelled() && needs.check.outputs.linted == 'true'
+    runs-on: ubuntu-24.04
+    permissions:
+      issues: write
+    steps:
+      - name: Open or close an issue for each file with warnings
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+          PUSHER: ${{ github.actor }}
+          WARNINGS: ${{ needs.check.outputs.warnings }}
+        run: |
+          prefix="Warning in "
+          warned=$(printf '%s\n' "$WARNINGS" | grep -E '^[^:]+:[0-9]+: warning: ' | cut -d: -f1 | sort -u)
+          open=$(gh issue list --state open --limit 200 --json number,title)
+          printf '%s\n' "$warned" | while IFS= read -r file; do
+            [ -n "$file" ] || continue
+            jq -e --arg title "$prefix$file" 'any(.[]; .title == $title)' <<< "$open" > /dev/null && continue
+            lines=$(printf '%s\n' "$WARNINGS" | FILE="$file" awk 'index($0, ENVIRON["FILE"] ":") == 1 { print "    " $0 }')
+            gh issue create --title "$prefix$file" --assignee "$NOTIFY_LOGIN" --body "The content check warns about this file. A warning doesn't fail the check, and Pep will look at it.
+
+          $lines
+
+          - Run: $RUN_URL
+          - Commit: $COMMIT_URL
+          - Pushed by: $PUSHER"
+          done
+          jq -r --arg prefix "$prefix" '.[] | select(.title | startswith($prefix)) | "\(.number) \(.title | ltrimstr($prefix))"' <<< "$open" |
+            while read -r number file; do
+              printf '%s\n' "$warned" | grep -qxF -- "$file" && continue
+              gh issue close "$number" --comment "This file has no warnings now.
+
+          - Run: $RUN_URL
+          - Commit: $COMMIT_URL
+          - Pushed by: $PUSHER"
+            done

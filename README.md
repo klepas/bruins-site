@@ -99,6 +99,12 @@ For anything else in Greek, use the Greek Polytonic keyboard, which Macs and Win
 
 To show a picture, upload it to `files/images/`, then write `![description](/files/images/name.jpg)` where it should go. Readers who can't see the picture have its description read out by their screen reader in its place. So say what the picture shows, not just what it's called, and include any words that are part of it, such as a quotation on a photo. The diagram in Descartes lecture 3 is an example. Its description starts "Hand-drawn diagram. A large circle stands for Descartes’ mind."
 
+### Checking your work
+
+After each commit, GitHub checks the site. It takes about a minute, with a small yellow dot next to the commit until it's done. A green tick then means all is well. A red cross means the check found something that would show wrongly on the site, or that a page which was online has gone missing, for example after a file was renamed.
+
+Click the cross, then **Details**, to see the file, the line and what to change. Then edit the file in the browser and commit again. Pep hears about a red cross too, and can help. If the check itself looks wrong, tell Pep.
+
 ## Copyright and licensing
 
 (C) 2004- Carleton Bruin Christensen.

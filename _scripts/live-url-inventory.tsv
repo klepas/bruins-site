@@ -1,0 +1,104 @@
+# Live URL inventory for http://www.cbchristensen.net
+# Every URL the live site served on 2026-10-18, found by crawling its pages
+# and listing the old site's files, each with the status a HEAD request got
+# that day. _scripts/check-urls.rb checks every build against it, and the
+# GitHub check runs it after every push. New pages need no row. Remove a row
+# only when the user agrees a page is gone for good.
+#
+# 200: must exist in the new build at exactly this path.
+# 302: S3 redirect to the trailing-slash form. Only the target has to exist.
+# 403: missing on S3, which answers 403 rather than 404. The thesis PDF was
+#      uploaded to master in September 2026 and never deployed. It must
+#      still be in the build.
+#
+# Paths are percent-encoded the way the live HTML links them.
+# Two deliberate changes on 2026-10-25, at the user's request: two images live
+# with a space in their names were renamed, retiring the old addresses.
+# Bruin-meme-v3%20copy.jpg became Bruin-meme-v3.jpg, and
+# Frequent%20Network%20TfC.jpg became Frequent-Network-TfC.jpg. See the
+# content overview's log.
+status	kind	path
+200	page	/
+200	page	/about/
+200	page	/blog/
+200	page	/courses/
+200	page	/feed.xml
+200	page	/impressum/
+200	page	/papers/
+200	course-index	/courses/descartes/
+200	course-index	/courses/dilthey/
+200	course-index	/courses/technology/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-1/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-10/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-11/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-12/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-13/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-2/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-3/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-4/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-5/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-6/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-7/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-8/
+200	course-doc	/courses/descartes/descartes-meditations-on-first-philosophy-9/
+200	course-doc	/courses/dilthey/dilthey-on-hermeneutics-and-the-understanding-of-others/
+200	course-doc	/courses/dilthey/dilthey-on-historicity-and-hermeneutics/
+200	course-doc	/courses/dilthey/dilthey-on-the-concept-of-psychology-i/
+200	course-doc	/courses/dilthey/dilthey-on-the-concept-of-psychology-ii/
+200	course-doc	/courses/dilthey/dilthey-s-account-of-descriptive-or-analytic-psychology-i/
+200	course-doc	/courses/dilthey/dilthey-s-account-of-descriptive-or-analytic-psychology-ii/
+200	course-doc	/courses/dilthey/wilhelm-dilthey-introductory-remarks/
+200	course-doc	/courses/technology/concluding-remarks-technological-development-as-a-form-of-practical-wisdom/
+200	course-doc	/courses/technology/karl-marx-on-technology-economy-and-society/
+200	course-doc	/courses/technology/marcuse-and-the-one-dimensional-society/
+200	course-doc	/courses/technology/modernity-and-innovation/
+200	course-doc	/courses/technology/more-on-marcuse-and-the-one-dimensional-society/
+200	course-doc	/courses/technology/overview-of-the-philosophy-of-technology/
+200	course-doc	/courses/technology/problems-of-complexity-the-space-shuttle-challenger/
+200	course-doc	/courses/technology/problems-of-complexity-the-u-s-s-vincennes/
+200	course-doc	/courses/technology/small-is-beautiful-e-f-schumacher-on-appropriate-development-and-technology/
+200	course-doc	/courses/technology/the-radical-techno-critic-jacques-ellul/
+200	course-doc	/courses/technology/the-techno-centrist-emmanuel-mesthene/
+200	course-doc	/courses/technology/the-technophile-richard-buckminster-fuller/
+200	paper	/papers/2004/06/21/pragmatism%E2%80%99s-achilles%E2%80%99-heel.html
+200	paper	/papers/2004/07/02/Green-Fever-about-Luxury.html
+200	paper	/papers/2006/12/10/ERE-Panel-Contribution.html
+200	paper	/papers/2007/05/11/Heidegger-and-the-hermeneutic-As.html
+200	paper	/papers/2007/07/12/using-luther-to-understand-heidegger.html
+200	paper	/papers/2009/01/08/on-the-need.html
+200	paper	/papers/2009/06/24/Was-ist-eigentlich-Eigentlichkeit.html
+200	paper	/papers/2009/11/04/How-Philosophy-can-contribute-to-Ecopolitical-Thinking.html
+200	paper	/papers/2010/02/04/sichbenehmen-and-sichverhalten-why-heidegger-is-not-an-anthrochauvinist.html
+200	paper	/papers/2010/07/16/on-the-mindedness-of-rational-animals.html
+200	paper	/papers/2010/10/22/the-myth-of-affluenza.html
+200	paper	/papers/2012/11/16/making-the-argument-against-efficiency-more-efficient.html
+200	paper	/papers/2013/06/13/The-Struggle-for-the-Ordinary.html
+200	paper	/papers/2014/12/05/tunnel-vision-light-rail.html
+200	paper	/papers/2015/03/14/consciousness-self-consciousness-and-essential-indexicality-short.html
+200	paper	/papers/2015/11/30/attitudes-de-se-and-de-me.html
+200	paper	/papers/2016/02/25/the-problem-of-essential-anaphora.html
+200	paper	/papers/2016/04/15/Eleventh-Thesis-SHE-2016.html
+200	paper	/papers/2016/06/30/tomasello-zu-moralitaet-aus-der-perspektive-der-zweiten-person.html
+200	paper	/papers/2016/07/14/Mensch-Natur-und-Entfremdung-in-Marx.html
+200	paper	/papers/2016/10/04/what-is-species-being.html
+200	paper	/papers/2018/02/23/Abstract-Labour-and-the-Reduction-Problem.html
+200	paper	/papers/2018/06/22/Muss-die-Gegebenheit-des-Subjekts-eine-Gegebenheit-als-Subjekt-sein.html
+200	paper	/papers/2019/06/27/Phronesis-Gewissen-und-Schuld.html
+200	paper	/papers/2021/12/03/Intentionality-de-se-and-the-Problem-of%20Self-Consciousness.html
+200	blog-post	/blog/2019/04/14/first-post.html
+200	blog-post	/blog/2021/12/01/blog-post-about-cpag-article-on-planning.html
+200	file	/files/images/Bruin-meme-v3.jpg
+200	file	/files/images/Frequent-Network-TfC.jpg
+200	file	/files/images/how-descartes-thinks-of-himself.png
+200	file	/files/pdfs/ACT-Greens-Transport-for-Canberra-Plan-Final-Submission.pdf
+200	file	/files/pdfs/ACT-Strategic-Public-Transport-Network-Plan-2009.pdf
+403	file	/files/pdfs/Christensen-On-the-Concept-of-the-De-Se-UNSW-PhD-2025.pdf
+200	file	/files/pdfs/Mees-Appendix-to-Transport-for-Canberra-submission.pdf
+200	file	/files/pdfs/Mees-Transport-for-Canberra-submission.pdf
+200	file	/files/pdfs/Transport-for-Canberra-2012-2031.pdf
+200	file	/files/pdfs/Transport-for-Canberra-Time-to-Talk.pdf
+200	file	/files/ppts/Heidegger_on_Anxiety_27.07.07_9.32.ppt
+302	redirect	/about
+302	redirect	/blog
+302	redirect	/courses
+302	redirect	/papers

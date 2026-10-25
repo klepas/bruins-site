@@ -6,10 +6,10 @@
  * Footnote references and the notes
  *
  * `a.footnote` rather than `sup a`, so Bruin's own `<sup>` text keeps its
- * plain look.
+ * plain look. The side padding widens the target for mouse and touch.
  */
 a.footnote {
-  padding: 0 0.2em;
+  padding: 0 0.4em;
   border-radius: 2px;
   background-color: var(--color-mark);
   font-family: $sans-font-family;
@@ -26,6 +26,23 @@ a.footnote {
 // Underlined like other links in running text (WCAG 1.4.1)
 a.reversefootnote {
   padding-inline: 0.25em;
+  border-radius: 2px;
+}
+
+// Both links are often a single character, too small for a thicker underline
+// to show, so hovering inverts their colours, as on the print button. The
+// text keeps the contrast the link has on the page. The box marks the
+// backlink, so its underline goes.
+a.footnote:hover,
+a.reversefootnote:hover {
+  background-color: var(--color-link);
+  color: var(--color-bg);
+  text-decoration-line: none;
+}
+
+a.footnote:visited:hover,
+a.reversefootnote:visited:hover {
+  background-color: var(--color-link-visited);
 }
 
 // Light up where a jump lands, with room above it. No smooth scrolling: a
@@ -40,11 +57,24 @@ sup[id^="fnref:"] {
   scroll-margin-top: 1.5rem;
 }
 
-// Forced colours mode drops the background, so mark the jump with an outline
+// Forced colours mode drops backgrounds, so mark the jump with an outline,
+// and invert the hover in the reader's own link and page colours
 @media (forced-colors: active) {
   .footnotes li:target,
   sup:target {
     outline: 2px solid Highlight;
+  }
+
+  a.footnote:hover,
+  a.reversefootnote:hover {
+    forced-color-adjust: none;
+    background-color: LinkText;
+    color: Canvas;
+  }
+
+  a.footnote:visited:hover,
+  a.reversefootnote:visited:hover {
+    background-color: VisitedText;
   }
 }
 

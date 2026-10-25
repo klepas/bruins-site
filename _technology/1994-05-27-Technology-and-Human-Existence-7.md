@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/karl-marx-on-technology-economy-and-society/
 title: "Karl Marx on Technology, Economy and Society"
 date: 1994-05-27

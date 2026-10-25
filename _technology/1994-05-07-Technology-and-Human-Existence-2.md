@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/the-technophile-richard-buckminster-fuller/
 title: "The Technophile Richard Buckminster Fuller"
 date: 1994-05-07

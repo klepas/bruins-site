@@ -22,7 +22,7 @@ During the rebuild:
 ├── _config.yml        Jekyll config
 ├── _data/navigation.yml  The header and footer links, in order
 ├── _includes/         head, header and footer, from Minima 2.5.2; content.html, which fixes kramdown's footnote and table markup; interface-lang.html, which marks interface text lang="en-AU" on German pages; print-button.html
-├── _layouts/          base, page and post, from Minima 2.5.2; post serves papers, blog posts and course documents; home lists the latest blog post and three recent papers; course-overview is each course's index, with the hero and its document list
+├── _layouts/          base, page and post, from Minima 2.5.2; post serves papers and blog posts; course-document is a copy of post for course documents, without the date, "Updated" and version line, which Bruin keeps in the files for himself, so keep the two in step; home lists the latest blog post and three recent papers; course-overview is each course's index, with the hero and its document list
 ├── _sass/minima/      Minima's Sass as @use modules, with its MIT licence in LICENSE.txt
 ├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, in light, dark and two more-contrast palettes plus a print palette as its last block, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles, _post.scss the article header, print button and abstract box, _listings.scss the shared .item-list used by the home page and every index, _home.scss the introduction, _course.scss the course hero, _print.scss the print stylesheet, loaded last
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map

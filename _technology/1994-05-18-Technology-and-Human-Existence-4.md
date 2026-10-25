@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/the-radical-techno-critic-jacques-ellul/
 title: "The Radical Techno-Critic Jacques Ellul"
 date: 1994-05-18

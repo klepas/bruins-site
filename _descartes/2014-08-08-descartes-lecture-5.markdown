@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 title: "Descartes’ *Meditations on First Philosophy* 5"
 updated: 2014-08-08
 permalink: /courses/descartes/descartes-meditations-on-first-philosophy-5/

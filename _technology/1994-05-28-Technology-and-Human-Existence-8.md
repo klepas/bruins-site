@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/modernity-and-innovation/
 title: "Modernity and Innovation"
 date: 1994-05-28

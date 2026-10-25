@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/small-is-beautiful-e-f-schumacher-on-appropriate-development-and-technology/
 title: "“Small is Beautiful”—E. F. Schumacher on Appropriate Development and Technology"
 date: 1994-06-09

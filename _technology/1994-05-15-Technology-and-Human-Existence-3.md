@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/the-techno-centrist-emmanuel-mesthene/
 title: "The Techno-Centrist Emmanuel Mesthene"
 date: 1994-05-15

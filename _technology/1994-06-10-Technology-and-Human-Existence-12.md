@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/concluding-remarks-technological-development-as-a-form-of-practical-wisdom/
 title: "Concluding Remarks: Technological Development as a Form of Practical Wisdom"
 date: 1994-06-10

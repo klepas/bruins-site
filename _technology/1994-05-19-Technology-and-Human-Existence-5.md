@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/problems-of-complexity-the-u-s-s-vincennes/
 title: "Problems of Complexity—The _U.S.S. Vincennes_"
 date: 1994-05-19

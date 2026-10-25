@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/overview-of-the-philosophy-of-technology/
 title: "Overview of the Philosophy of Technology"
 date: 1994-05-06

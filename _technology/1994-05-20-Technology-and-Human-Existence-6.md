@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/technology/problems-of-complexity-the-space-shuttle-challenger/
 title: "Problems of Complexity—The Space Shuttle _Challenger_"
 date: 1994-05-20

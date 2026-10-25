@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: course-document
 permalink: /courses/descartes/descartes-meditations-on-first-philosophy-11/
 title: "Descartes’ *Meditations on First Philosophy* 11"
 date: 2014-08-29 09:00:00

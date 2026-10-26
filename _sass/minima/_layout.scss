@@ -23,6 +23,13 @@
   outline-color: var(--color-chrome-link);
 }
 
+// assets/js/skip-links.js focuses the link's target, `<main>` or the header,
+// so VoiceOver follows. The reader can't operate the target, so it gets no
+// focus ring, as in GOV.UK Frontend.
+.skip-link-target:focus {
+  outline: none;
+}
+
 
 
 /**

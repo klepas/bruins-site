@@ -16,4 +16,6 @@
   <link rel="preload" href="{{ '/assets/fonts/source-sans-3-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {%- comment -%} A module waits for the page, and browsers too old for modules skip it. {%- endcomment %}
+  <script type="module" src="{{ '/assets/js/skip-links.js' | relative_url }}"></script>
 </head>

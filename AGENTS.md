@@ -27,6 +27,7 @@ During the rebuild:
 ├── _sass/site/        The site's own Sass: _tokens.scss holds every colour as a custom property, in light, dark and two more-contrast palettes plus a print palette as its last block, _fonts.scss the @font-face rules, _content.scss the footnote, table and other Markdown styles, _post.scss the article header, print button and abstract box, _listings.scss the shared .item-list used by the home page and every index, _home.scss the introduction, _course.scss the course hero, _print.scss the print stylesheet, loaded last
 ├── _scripts/          The two checks, see Content checks below: check-content.rb, the content check, with its self-test fixtures in check-content-fixtures/; check-urls.rb, the URL check; live-url-inventory.tsv, every URL the live site served, which the URL check reads
 ├── assets/css/main.scss  Compiles to assets/css/main.css, with no source map
+├── assets/js/skip-links.js  The site's only script, after GOV.UK Frontend: focuses the target of "Skip to content" and "Back to top", so VoiceOver follows. The links work without it
 ├── assets/fonts/      Literata and Source Sans 3 as variable WOFF2 files, with their OFL licences
 ├── favicon.svg, favicon.ico, apple-touch-icon.png  The site icon, "CBC" in Literata, gold on the header blue. plans/tools/favicon/ writes all three, so change them there, not by hand
 ├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key

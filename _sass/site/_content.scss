@@ -47,23 +47,31 @@ a.reversefootnote:visited:hover {
   background-color: var(--color-link-visited);
 }
 
-// Light up where a jump lands, with room above it. No smooth scrolling: a
-// long animated scroll can make readers with vestibular disorders feel ill.
-.footnotes li:target,
-sup:target {
+// Light up the note a jump lands on, and leave room above every jump
+// target. A reference link is tinted all the time already. No smooth
+// scrolling: a long animated scroll can make readers with vestibular
+// disorders feel ill.
+.footnotes li:target {
   background-color: var(--color-mark);
 }
 
 .footnotes li,
-sup[id^="fnref:"] {
+a.footnote {
   scroll-margin-top: 1.5rem;
+}
+
+// The jump focuses the note, which has tabindex="-1" from
+// _includes/content.html. The links' radius rounds its tint and focus ring
+// to match theirs.
+.footnotes li {
+  border-radius: 2px;
 }
 
 // Forced colours mode drops backgrounds, so mark the jump with an outline,
 // and invert the hover in the reader's own link and page colours
 @media (forced-colors: active) {
   .footnotes li:target,
-  sup:target {
+  a.footnote:target {
     outline: 2px solid Highlight;
   }
 

@@ -7,7 +7,11 @@
   reference's text and the note's place in the list, never from the id: a
   footnote written [^Castaneda] has "Castaneda" in its ids. A note
   referenced twice gets two backlinks, named "Back to reference 2, 1 of 2"
-  and "2 of 2". Each replace and split matches kramdown's exact markup, so
+  and "2 of 2". Following a footnote link or backlink has to move focus to
+  where it lands, or VoiceOver in Safari stays on the link. So each note gets
+  tabindex="-1", and each reference's id moves from its sup onto its link,
+  which can take focus already. Each replace and split matches kramdown's
+  exact markup, so
   check them after a kramdown update. On German pages the labels are marked
   English, and the table gets the page's language back. The boxes are
   numbered, so each region landmark has its own name.
@@ -49,6 +53,20 @@
     {%- endfor -%}
   {%- endcapture -%}
 {%- endif -%}
+{%- if html contains '<sup id="fnref:' -%}
+  {%- assign parts = html | split: '<sup id="fnref:' -%}
+  {%- capture html -%}
+    {%- for part in parts -%}
+      {%- if forloop.first -%}
+        {{ part }}
+      {%- else -%}
+        {%- assign reference = part | replace_first: '"><a href="#fn:', '" href="#fn:' -%}
+        <sup><a id="fnref:{{ reference }}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+{%- endif -%}
+{%- assign html = html | replace: '<li id="fn:', '<li tabindex="-1" id="fn:' -%}
 {%- if html contains '<table>' -%}
   {%- assign parts = html | split: '<table>' -%}
   {%- capture html -%}

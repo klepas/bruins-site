@@ -1,21 +1,54 @@
 {%- comment -%}
   Fixes kramdown's rendered HTML, which has no options for these. Gives the
-  footnotes a "Notes" heading in place of Bruin's own, names the backlinks,
-  and wraps tables in a box that scrolls. Each replace matches kramdown's
-  exact markup, so check them after a kramdown update. On German pages the
-  labels are marked English, and the table gets the page's language back.
-  The boxes are numbered, so each region landmark has its own name.
+  footnotes a "Notes" heading in place of Bruin's own, names the footnote
+  links, and wraps tables in a box that scrolls. A screen reader's list of
+  links shows only their names, so a reference is named "Note 2" rather than
+  "2", and its backlink "Back to reference 2". The number comes from the
+  reference's text and the note's place in the list, never from the id: a
+  footnote written [^Castaneda] has "Castaneda" in its ids. A note
+  referenced twice gets two backlinks, named "Back to reference 2, 1 of 2"
+  and "2 of 2". Each replace and split matches kramdown's exact markup, so
+  check them after a kramdown update. On German pages the labels are marked
+  English, and the table gets the page's language back. The boxes are
+  numbered, so each region landmark has its own name.
 {%- endcomment -%}
 {%- capture ui_lang %}{% include interface-lang.html %}{% endcapture -%}
 {%- if ui_lang != "" %}{% capture table_lang %} lang="{{ page.lang }}"{% endcapture %}{% endif -%}
 {%- capture notes_heading %}<div class="footnotes" role="doc-endnotes"><h2 class="footnotes-heading" id="notes"{{ ui_lang }}>Notes</h2>{% endcapture -%}
-{%- capture backlink %}role="doc-backlink" aria-label="Back to text"{{ ui_lang }}>{% endcapture -%}
 {%- assign html = include.html -%}
 {%- if html contains '<div class="footnotes" role="doc-endnotes">' -%}
   {%- assign html = html | remove: '<h2 id="notes">Notes</h2>' | remove: '<h3 id="notes">Notes</h3>' -%}
 {%- endif -%}
 {%- assign html = html | replace: '<div class="footnotes" role="doc-endnotes">', notes_heading -%}
-{%- assign html = html | replace: 'role="doc-backlink">', backlink -%}
+{%- if html contains 'role="doc-noteref">' -%}
+  {%- assign parts = html | split: 'role="doc-noteref">' -%}
+  {%- capture html -%}
+    {%- for part in parts -%}
+      {%- unless forloop.first -%}
+        {%- assign note_number = part | split: '</a>' | first -%}
+        role="doc-noteref" aria-label="Note {{ note_number }}"{{ ui_lang }}>
+      {%- endunless -%}
+      {{ part }}
+    {%- endfor -%}
+  {%- endcapture -%}
+{%- endif -%}
+{%- if html contains 'role="doc-backlink">' -%}
+  {%- assign parts = html | split: '<li id="fn:' -%}
+  {%- capture html -%}
+    {%- for part in parts -%}
+      {%- assign note_number = forloop.index0 -%}
+      {%- assign backlinks = part | split: 'role="doc-backlink">' -%}
+      {%- assign backlink_count = backlinks.size | minus: 1 -%}
+      {%- unless forloop.first %}<li id="fn:{% endunless -%}
+      {%- for backlink in backlinks -%}
+        {%- unless forloop.first -%}
+          role="doc-backlink" aria-label="Back to reference {{ note_number }}{% if backlink_count > 1 %}, {{ forloop.index0 }} of {{ backlink_count }}{% endif %}"{{ ui_lang }}>
+        {%- endunless -%}
+        {{ backlink }}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+{%- endif -%}
 {%- if html contains '<table>' -%}
   {%- assign parts = html | split: '<table>' -%}
   {%- capture html -%}

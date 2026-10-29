@@ -27,11 +27,11 @@ English quotation marks: “double” and ‘single’. German ones: „doppelt�
 
 Polytonic Greek: σημεῖον  δ᾽  ὅτι  λήθη  μὲν  τῆς  τοιαύτης  ἕξεως  ἔστι, φρονήσεως  δ᾽  οὐκ  ἔστιν (b28 sqq).
 
-Es handelt sich in der Tat um eine Art _ε̉ποχή_.
+Es handelt sich in der Tat um eine Art _ἐποχή_.
 
-Trivially, however, there are infinitely many co-referential terms of the form “The object at &#9001;_x_, _y_ &#9002;” since there are infinitely many frames of reference.
+Trivially, however, there are infinitely many co-referential terms of the form “The object at &#10216;_x_, _y_ &#10217;” since there are infinitely many frames of reference.
 
-For any other term ┌ _t_ ┐ I might use to pick myself out, there would always be some possible circumstances.
+For any other term ⌜_t_⌝ I might use to pick myself out, there would always be some possible circumstances.
 
 1. God is a supremely perfect being, that is, has all perfections
 

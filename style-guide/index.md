@@ -114,7 +114,7 @@ The **philosophy of technology** <span class="amp">&amp;</span> **sustainability
 
 ## Image
 
-![Bruin meme photo](/files/images/Bruin-meme-v3.jpg)
+![Bruin Christensen leaning on a gate beside a #LeardBlockade banner, with the quote: “There is a need to prevent climate change. A need to oppose the destruction of Australia’s environment and agricultural capacity. A need to protect regional communities. A need to stop the subordination of all aspects of life to the demands of the global economy.” Bruin Christensen, ANU Academic](/files/images/Bruin-meme-v3.jpg)
 
 ## Notes
 

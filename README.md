@@ -105,6 +105,33 @@ After each commit, GitHub checks the site. It takes about a minute, with a small
 
 Click the cross, then **Details**, to see the file, the line and what to change. Then edit the file in the browser and commit again. Pep hears about a red cross too, and can help. If the check itself looks wrong, tell Pep.
 
+## Developer
+
+### Style guide
+
+`bundle exec jekyll serve --unpublished`, then `/style-guide/`, `/style-guide/page/` and `/style-guide/german/`. They never go live.
+
+### After a kramdown or Jekyll update
+
+Check the style guide still shows one "Notes" heading, footnote links that jump both ways, and tables that scroll on a narrow screen. `_includes/content.html` rewrites that markup by exact string match.
+
+### Local checks
+
+GitHub runs both on every push. The first prints nothing when all is well, and takes `--self-test` after a change to it or a gem update. The second prints `missing: 0`.
+
+```sh
+bundle exec ruby _scripts/check-content.rb
+out=$(mktemp -d) && bundle exec jekyll build --destination "$out" && ruby _scripts/check-urls.rb _scripts/live-url-inventory.tsv "$out"
+```
+
+### Hosting
+
+The S3 bucket `www.cbchristensen.net`, in `ap-southeast-2`. A separate nginx host, outside this repo, redirects `cbchristensen.net` to `www.`.
+
+### Debugging Sass
+
+Change `sourcemap: never` in `_config.yml` to `always` for source maps, and back before committing.
+
 ## Copyright and licensing
 
 (C) 2004- Carleton Bruin Christensen.

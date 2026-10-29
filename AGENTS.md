@@ -57,7 +57,7 @@ The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old 
 
 ## Theme
 
-The theme is Minima 2.5.2, Jekyll's default theme, copied into the repo from its `v2.5.2` tag at commit `c6e74bb` and reshaped for Bruin's writing. There's no theme gem and no plugin. Its Sass is ported from `@import` to `@use`, and `_sass/minima/LICENSE.txt` carries its MIT licence. The plan set that built it is `plans/pick-install-and-modify-new-jekyll-theme/`.
+The theme is Minima 2.5.2, Jekyll's default theme, copied into the repo from its `v2.5.2` tag at commit `c6e74bb` and reshaped for Bruin's writing. There's no theme gem and no plugin. Its Sass is ported from `@import` to `@use`, and `_sass/minima/LICENSE.txt` carries its MIT licence.
 
 Styles:
 
@@ -76,7 +76,7 @@ Markup:
 - `/courses/` lists the collections by their `order` key in `_config.yml`, because Jekyll sorts `site.collections` by label. A new course needs an `order`, or it sorts first.
 - The style guide in `style-guide/` is unpublished and builds only with `--unpublished`. It's the test bed for theme changes.
 
-The user chose each of these on purpose. They aren't bugs, and the theme's plan tasks still describe some of the first build's values, so don't restore those either:
+The user chose each of these on purpose. They aren't bugs, so don't undo them:
 
 - The text column is 52rem with 1.8 leading. Print has 1.8 leading too and forces no page breaks. The user chose these on 2026-10-20, in place of the first build's 38rem, 1.5 on screen, 1.4 in print and a new page for each `h2`.
 - Print keeps the wide outer margins, on the edge away from the binding, so students have room for notes. Don't swap them to the inner edge.

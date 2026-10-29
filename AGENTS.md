@@ -8,11 +8,9 @@ The site is live at http://www.cbchristensen.net/.
 
 The content is primarily in English, with some pages holding German-language content, either in part or in full as the main article body. Bruin writes Australian and British English, so use that spelling in any interface text you write. The site's `lang` is `en-AU`, and only pages written entirely in German get `lang: de`. The interface stays English on those pages.
 
-A rebuild is in progress on the `site-rebuild-with-latest-jekyll-and-new-theme` branch: a current Ruby, the latest Jekyll, a new theme, and all content brought back with unchanged URLs. Read [`plans/overview-site-rebuild.md`](./plans/overview-site-rebuild.md) before working on any part of it. `plans/` is gitignored, so the plans only exist on the user's machine.
+The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a new theme, with all content brought back at unchanged URLs. [`plans/overview-site-rebuild.md`](./plans/overview-site-rebuild.md) tracks what's left of that work. Read it before picking any of it up. `plans/` is gitignored, so the plans only exist on the user's machine.
 
 ## Directory structure
-
-During the rebuild:
 
 ```
 .
@@ -168,7 +166,7 @@ The theme added no gems. It's a copy in the repo, and the Sass compiler comes wi
 
 `Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`.
 
-Dependabot security updates are on in the repo's GitHub settings, and they stay on. Once the new `Gemfile.lock` reaches `master`, expect Dependabot PRs against it.
+Dependabot security updates are on in the repo's GitHub settings, and they stay on. Expect Dependabot PRs against `Gemfile.lock`.
 
 ## Deployment
 
@@ -181,7 +179,6 @@ CI goes back to Semaphore after the rebuild, with GitHub Actions as the fallback
 ## Git workflow
 
 - `master` is the default branch and holds the published content. Bruin edits content directly on `master` through GitHub's web editor.
-- Rebuild work happens on `site-rebuild-with-latest-jekyll-and-new-theme`.
 
 ## LLM contribution guidelines
 
@@ -189,7 +186,7 @@ CI goes back to Semaphore after the rebuild, with GitHub Actions as the fallback
 2. **Do not git commit changes on behalf of the user**. The user will make git commits. You can suggest commit messages.
 3. **Always update** the relevant AGENTS.md when making structural changes.
 4. **Treat `refs/old-site/` as read-only**. Copy content out of it, never edit it in place.
-5. **Keep plans current**. For rebuild work, read `plans/overview-site-rebuild.md` first, follow the conventions in `plans/AGENTS.md`, and log progress in the plan set you're working from.
+5. **Keep plans current**. Follow the conventions in `plans/AGENTS.md`, and log progress in the plan set you're working from.
 6. **Keep Bruin's words**. Content changes fix markup, never his text, unless he agrees through the user. The user decides small fixes, such as a stray full stop, under a standing agreement with Bruin. Markup fixes need the user's agreement too, and go in a commit of their own, as the ones in `782b899` did.
 
 ## Updating this file

@@ -14,7 +14,7 @@ layout: base
       <li class="item"{% if post.lang and post.lang != site.lang %} lang="{{ post.lang }}"{% endif %}>
         <h3 class="item-title"><a href="{{ post.url | relative_url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h3>
         <p class="item-meta"{% include interface-lang.html lang=post.lang %}><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
-        <div class="item-abstract">{{ post.excerpt }}</div>
+        <div class="item-abstract">{{ post.content | split: '</p>' | first | strip }}</p></div>
       </li>
       {%- endfor %}
     </ul>

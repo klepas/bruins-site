@@ -74,6 +74,7 @@ Markup:
 - Navigation links live in `_data/navigation.yml`. The header shows them at every width, stacked one per line on phones. There's no menu button, by the user's choice.
 - Papers show `version` (free text, printed as written) and `updated` (a date) under the date, on screen and in print. Course documents use `_layouts/course-document.html`, a copy of `post.html` that shows no date, "Updated" or version, because Bruin keeps those in the files for himself (decided 2026-10-25). Keep the two layouts in step.
 - `/courses/` lists the collections by their `order` key in `_config.yml`, because Jekyll sorts `site.collections` by label. A new course needs an `order`, or it sorts first.
+- The home page shows the latest blog post's first paragraph, cut from the rendered post at its first `</p>` (decided 2026-10-20). Jekyll's `post.excerpt` cuts the source file at its first empty line, and a file with Windows line endings has none, so the excerpt was the whole post. Cutting the HTML gives the same paragraph whatever the line endings. Anything above the first paragraph, such as a heading or a picture, comes along, and a post with no paragraph shows whole. Rule 7 of the guide in `README.md` asks Bruin to start a post with a paragraph.
 - The style guide in `style-guide/` is unpublished and builds only with `--unpublished`. It's the test bed for theme changes.
 
 The user chose each of these on purpose. They aren't bugs, so don't undo them:

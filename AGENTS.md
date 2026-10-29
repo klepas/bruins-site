@@ -38,7 +38,7 @@ During the rebuild:
 ├── .github/workflows/check.yml  The GitHub check and its notices to the user, see Content checks below
 ├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
 │   ├── done/          Finished plan sets
-│   └── tools/         screenshots/ takes Playwright screenshots of the site in every colour mode, favicon/ writes the icon files. Each has a README.md
+│   └── tools/         screenshots/ takes Playwright screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
 └── refs/old-site/     The old Jekyll 2 site, a read-only reference, deleted before the merge to master
 ```
 
@@ -55,6 +55,36 @@ The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old 
 - `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
 - Don't remove `timezone` or `permalink` without re-running the URL parity check in the rebuild overview.
 
+## Theme
+
+The theme is Minima 2.5.2, Jekyll's default theme, copied into the repo from its `v2.5.2` tag at commit `c6e74bb` and reshaped for Bruin's writing. There's no theme gem and no plugin. Its Sass is ported from `@import` to `@use`, and `_sass/minima/LICENSE.txt` carries its MIT licence. The plan set that built it is `plans/pick-install-and-modify-new-jekyll-theme/`.
+
+Styles:
+
+- Colours come only from custom properties in `_sass/site/_tokens.scss`, with light, dark, more-contrast and print palettes. The one exception is the system colours (`Canvas`, `CanvasText`, `Highlight`, `LinkText`) in the forced-colours rules. Sizes are in `rem`, so they follow the root size and the reader's own default font size.
+- A Sass deprecation warning means something needs porting. Don't silence it with `silence_deprecations` or `quiet_deps`, and don't make it fatal with `fatal_deprecations`. A fatal warning would turn a Dependabot bump of `sass-embedded` into a failed check.
+- Source maps are off (`sass: sourcemap: never`), so none get deployed. To debug the styles, set it to `always` locally and back to `never` before committing.
+- The fonts are self-hosted variable WOFF2 files under the SIL Open Font License, with the licences in `assets/fonts/`. Literata sets the text, and Source Sans 3 the headings, metadata and navigation. Literata replaced the old site's Merriweather, which has no Greek, because six papers quote polytonic Greek. Don't subset or rename the files, and don't load fonts from Google, Bunny Fonts or any other CDN.
+- `plans/tools/fonts/` downloads the font files and writes `_sass/site/_fonts.scss`. Each `unicode-range` has to match its file, or the browser skips a file it needs with no error, so re-run the tool rather than editing a range by hand.
+
+Markup:
+
+- `_includes/content.html` rewrites kramdown's footnote and table markup by exact string match. It deletes Bruin's own "Notes" heading above the footnotes, in the rendered page only, and puts the theme's in its place. It also names the footnote links for screen readers ("Note 2", "Back to reference 2") and numbers the table boxes. After a kramdown update, check that the style guide still shows one "Notes" heading above the footnotes. `README.md` has the rest of that check.
+- Interface text on German pages carries `lang="en-AU"`, written by `_includes/interface-lang.html`, so screen readers read it in English (WCAG 3.1.2). Any new label, heading or date the theme writes gets the include in its opening tag, as in `<footer class="site-footer"{% include interface-lang.html %}>`. Bruin's text never does.
+- Navigation links live in `_data/navigation.yml`. The header shows them at every width, stacked one per line on phones. There's no menu button, by the user's choice.
+- Papers show `version` (free text, printed as written) and `updated` (a date) under the date, on screen and in print. Course documents use `_layouts/course-document.html`, a copy of `post.html` that shows no date, "Updated" or version, because Bruin keeps those in the files for himself (decided 2026-10-25). Keep the two layouts in step.
+- `/courses/` lists the collections by their `order` key in `_config.yml`, because Jekyll sorts `site.collections` by label. A new course needs an `order`, or it sorts first.
+- The style guide in `style-guide/` is unpublished and builds only with `--unpublished`. It's the test bed for theme changes.
+
+The user chose each of these on purpose. They aren't bugs, and the theme's plan tasks still describe some of the first build's values, so don't restore those either:
+
+- The text column is 52rem with 1.8 leading. Print has 1.8 leading too and forces no page breaks. The user chose these on 2026-10-20, in place of the first build's 38rem, 1.5 on screen, 1.4 in print and a new page for each `h2`.
+- Print keeps the wide outer margins, on the edge away from the binding, so students have room for notes. Don't swap them to the inner edge.
+- The site title is "Carleton B. Christensen", and the print button inverts its colours on hover. The user chose both on 2026-10-20, in place of the first build's "Bruin Christensen" and a hover that only darkened the text and border. The footer's "Carleton Bruin Christensen" is meant to stay.
+- `html` has `scrollbar-gutter: stable` (2026-10-25), so the centred column doesn't shift sideways between short and long pages. On short pages that leaves a strip of page background at the right end of the header and footer, where a scrollbar would sit.
+- Footnote jump targets keep their focus outline after a mouse click. Safari draws it then and Chrome and Firefox don't, a difference the user accepted on 2026-10-26.
+- In Safari, a page scroll by trackpad or mouse wheel with the pointer over a table box leaves the arrow keys unable to scroll that box. It's a Safari bug, not the theme's, and keyboard-only use isn't affected. The user chose on 2026-10-27, and again on 2026-10-29, to leave it rather than add a script.
+
 ## Quick commands
 
 Run from the repo root.
@@ -63,12 +93,15 @@ Run from the repo root.
 
 - `bundle install`: installs the gems in `Gemfile.lock`.
 - `bundle exec jekyll build`: builds the site into `_site/`.
+- `bundle exec jekyll build --unpublished --destination "$(mktemp -d)"`: builds the site with the style guide, without touching `_site/`.
 - `bundle exec jekyll doctor`: checks the config and content for problems. It should print "Everything looks fine."
 - `bundle exec ruby _scripts/check-content.rb`: the content check, over Bruin's pages. It should print nothing.
 - `bundle exec ruby _scripts/check-content.rb --self-test`: runs the content check on its fixtures and compares the findings with the ones it expects.
 - `ruby _scripts/check-urls.rb _scripts/live-url-inventory.tsv "$out"`: after a build into `$out`, checks that every live URL is still in it. It should print `missing: 0`.
 
 `bundle exec jekyll serve` is the user's to run. Don't start it. While it runs, agents run doctor as `bundle exec jekyll doctor --config _config.yml,"$nocache"`, where `$nocache` is a file outside the repo holding `disable_disk_cache: true`: a plain `jekyll doctor` empties `.jekyll-cache/`, which `jekyll serve` uses, and doctor has no flag to stop it.
+
+For visual checks, ask the user to look at their running server. They run it as `jekyll serve --unpublished`, so the style guide shows.
 
 To check visual changes, or to share screenshots with Bruin, use `plans/tools/screenshots/`. Its `README.md` covers setup and running.
 
@@ -116,6 +149,8 @@ The Gemfile lists three gems:
 - `logger`. Jekyll 4.4.1 requires it without declaring it, and Ruby 4.0 drops it from the default gems.
 
 Today both of the last two reach the bundle through other gems. Declaring them keeps the build working if those chains change.
+
+The theme added no gems. It's a copy in the repo, and the Sass compiler comes with Jekyll through `jekyll-sass-converter`.
 
 `Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`.
 

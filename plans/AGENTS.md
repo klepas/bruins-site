@@ -85,6 +85,7 @@ When asked to execute a task from this directory:
 
 - `tools/screenshots/`: a Playwright script that screenshots the home page, style guide, a paper, its footnotes, the Dilthey overview and keyboard focus in light, dark, both more-contrast palettes and forced colours. Use it to check visual changes, or to make comparison artifacts to share with Bruin. Its `README.md` explains how to build, serve and run it.
 - `tools/favicon/`: writes `favicon.svg`, `favicon.ico` and `apple-touch-icon.png` to the repo root, with "CBC" outlined from Literata. Re-run it rather than editing the files by hand. Its `README.md` covers the Python venv it needs.
+- `tools/fonts/`: downloads Literata and Source Sans 3 from Google Fonts' CSS API into `assets/fonts/`, with their licences, and writes `_sass/site/_fonts.scss` with each file's `unicode-range`. Re-run it rather than editing a range by hand. Theme task 04 wrote it, and its `README.md` covers running it.
 
 ## Conventions
 

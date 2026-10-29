@@ -32,7 +32,15 @@ During the rebuild:
 ├── favicon.svg, favicon.ico, apple-touch-icon.png  The site icon, "CBC" in Literata, gold on the header blue. plans/tools/favicon/ writes all three, so change them there, not by hand
 ├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
-├── papers/, blog/, _dilthey/, about.md, index.html, files/  Bruin's content, being restored from refs/old-site/ by the content plan set. Don't delete it
+├── index.html         Bruin's introduction. Its layout, home, adds the latest blog post and three recent papers
+├── about.md, impressum.md  The about page and the Impressum
+├── papers/_posts/     The papers, each named <date>-<slug>.md
+│   └── _drafts/       Bruin's Word files and Markdown drafts. Jekyll never builds the folder, but anyone can read it on GitHub
+├── blog/_posts/       The blog posts
+├── _descartes/, _technology/, _dilthey/  The three courses, one collection each: the course documents and the course's index.md
+├── files/             Images, PDFs and a PowerPoint, in images/, pdfs/ and ppts/, published at the same paths
+├── feed.xml           The RSS feed, hand-written Liquid
+├── README.md          The repo's front page on GitHub, with Bruin's "Writing in Markdown" guide. Excluded from the build
 ├── .claude/skills/    Project skills, see Skills below
 ├── .gitattributes     LF line endings for text files committed from a clone; refs/ and the content check's fixtures keep their bytes
 ├── .github/workflows/check.yml  The GitHub check and its notices to the user, see Content checks below
@@ -42,18 +50,24 @@ During the rebuild:
 └── refs/old-site/     The old Jekyll 2 site, a read-only reference, deleted before the merge to master
 ```
 
-The new site gets built at the repo root. Content goes back to the paths it had in the old site: `papers/_posts/`, `blog/_posts/`, the `_descartes/`, `_dilthey/` and `_technology/` collections, `files/`, and the top-level pages. Update this section as files land.
+The site is built at the repo root. Bruin's content sits at the paths it had in the old site, so `git log` on a file shows its whole history and Bruin finds his files where they always were. Keep it there.
 
 ## Jekyll
 
 The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3. See `plans/done/install-latest-jekyll/install-latest-jekyll-00-overview.md` for the install.
 
-- **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `_scripts/live-url-inventory.tsv` lists all of them, and `_scripts/check-urls.rb` checks every build against it. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, and the overview plan explains how to pin them. The one exception so far: on 2026-10-25 two image files got hyphens in place of the spaces in their names, agreed by the user with Bruin, so their old addresses are gone. No page's URL changed.
+- **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `_scripts/live-url-inventory.tsv` lists all of them, and `_scripts/check-urls.rb` checks every build against it. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, so those pages pin theirs with a literal `permalink:`, see below. The one exception so far: on 2026-10-25 two image files got hyphens in place of the spaces in their names, agreed by the user with Bruin, so their old addresses are gone. No page's URL changed.
 - Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. Otherwise Jekyll builds the old site's pages over the new ones. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.
 - `url` is the canonical host, `http://www.cbchristensen.net`. `jekyll doctor` warns and exits with status 1 without it.
 - `timezone: UTC` matches the 2022 build, so every front matter date lands on the same day in its URL.
 - `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
 - Don't remove `timezone` or `permalink` without re-running the URL parity check in the rebuild overview.
+- `kramdown.input: kramdown` is kramdown's own syntax, which the site has always used. Don't switch to GFM, Jekyll 4's default. It changes the heading ids on 35 pages, breaking any outside link to a section, and renders some of Bruin's Markdown differently. `README.md`'s "Writing in Markdown" guide has the rules Bruin follows.
+- Each course document holds its live URL as a literal `permalink:`, and so do the two papers whose URLs keep a curly apostrophe or a space. Never edit those lines. Bruin can retitle a page without moving it. A new course document needs a literal `permalink:` of its own too, such as `/courses/descartes/a-short-title/`. Without one it builds to `/courses/<collection>/` and replaces the course's index page. A placeholder such as `:title` makes Jekyll 4 take the URL from the file name. The content check rejects both, and any `permalink:` two pages share.
+- `strict_front_matter: true` makes a top block YAML can't read fail the build. Without it, Jekyll publishes the page anyway, at a URL with the build day's date. Keep it.
+- `future: true` publishes a paper dated after the build's day in UTC. Bruin works in Canberra, 10 or 11 hours ahead, so a paper he dates today and commits in the morning is in the future for a UTC build. Without the setting, Jekyll would leave it out and still exit `0`. The user wants to revisit it before the new site goes live (asked on 2026-10-21). If it goes, the content check should warn about a date after today in UTC. The rebuild overview's CI section has the note.
+- Six papers carry `lang: de`, the ones written entirely in German. A new paper written in German needs it too.
+- `feed.xml` is hand-written, with no feed plugin. It builds every URL with `absolute_url`, which encodes the space and the curly apostrophes in the two pinned papers' URLs.
 
 ## Theme
 
@@ -130,7 +144,6 @@ The content check, `_scripts/check-content.rb`, is the repo's only linter, and n
 - Some checks only warn, Windows line endings among them (decided 2026-10-20). A warning leaves the exit status at `0`, and on `master` it opens a notice issue for the file. The script's header comment says which checks warn.
 - There's no way to skip a page. A false alarm means fixing the content check, not silencing it.
 - Run the self-test after any change to the script or its fixtures, and after any gem update.
-- `strict_front_matter: true` in `_config.yml` makes a broken top block fail the build. Keep it.
 - `.gitattributes` must keep `refs/** -text` and the fixtures line last. The later line wins, and without them git would convert the CRLF files in `refs/old-site/` and the fixtures.
 
 ## Key technologies
@@ -177,6 +190,7 @@ CI goes back to Semaphore after the rebuild, with GitHub Actions as the fallback
 3. **Always update** the relevant AGENTS.md when making structural changes.
 4. **Treat `refs/old-site/` as read-only**. Copy content out of it, never edit it in place.
 5. **Keep plans current**. For rebuild work, read `plans/overview-site-rebuild.md` first, follow the conventions in `plans/AGENTS.md`, and log progress in the plan set you're working from.
+6. **Keep Bruin's words**. Content changes fix markup, never his text, unless he agrees through the user. The user decides small fixes, such as a stray full stop, under a standing agreement with Bruin. Markup fixes need the user's agreement too, and go in a commit of their own, as the ones in `782b899` did.
 
 ## Updating this file
 

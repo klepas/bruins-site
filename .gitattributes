@@ -8,7 +8,6 @@
 *.yml       text eol=lf
 *.scss      text eol=lf
 *.rb        text eol=lf
-# Leave these bytes alone. refs/old-site/ is a read-only copy of the old
-# site, and the linter's fixtures need their CRLF and Windows-1252 files.
-refs/**                            -text
+# Leave these bytes alone. The linter's fixtures need their CRLF and
+# Windows-1252 files.
 _scripts/check-content-fixtures/** -text

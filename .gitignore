@@ -11,7 +11,6 @@ _site
 
 # References folder
 refs/*
-!refs/old-site
 
 # Plans folder
 plans/*

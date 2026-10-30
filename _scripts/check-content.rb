@@ -14,7 +14,7 @@
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
-#   bundle exec ruby _scripts/check-content.rb --root DIR   another copy, such as refs/old-site
+#   bundle exec ruby _scripts/check-content.rb --root DIR   another copy of the site, such as a git worktree
 #   bundle exec ruby _scripts/check-content.rb --self-test  the checks themselves
 #
 # Prints path:line: message for each error and path:line: warning: message

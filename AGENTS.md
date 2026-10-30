@@ -40,12 +40,11 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── feed.xml           The RSS feed, hand-written Liquid
 ├── README.md          The repo's front page on GitHub, with Bruin's "Writing in Markdown" guide. Excluded from the build
 ├── .claude/skills/    Project skills, see Skills below
-├── .gitattributes     LF line endings for text files committed from a clone; refs/ and the content check's fixtures keep their bytes
+├── .gitattributes     LF line endings for text files committed from a clone; the content check's fixtures keep their bytes
 ├── .github/workflows/check.yml  The GitHub check and its notices to the user, see Content checks below
-├── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
-│   ├── done/          Finished plan sets
-│   └── tools/         screenshots/ takes Playwright screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
-└── refs/old-site/     The old Jekyll 2 site, a read-only reference, deleted before the merge to master
+└── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
+    ├── done/          Finished plan sets
+    └── tools/         screenshots/ takes Playwright screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
 ```
 
 The site is built at the repo root. Bruin's content sits at the paths it had in the old site, so `git log` on a file shows its whole history and Bruin finds his files where they always were. Keep it there.
@@ -55,7 +54,7 @@ The site is built at the repo root. Bruin's content sits at the paths it had in 
 The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3. See `plans/done/install-latest-jekyll/install-latest-jekyll-00-overview.md` for the install.
 
 - **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `_scripts/live-url-inventory.tsv` lists all of them, and `_scripts/check-urls.rb` checks every build against it. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, so those pages pin theirs with a literal `permalink:`, see below. The one exception so far: on 2026-10-25 two image files got hyphens in place of the spaces in their names, agreed by the user with Bruin, so their old addresses are gone. No page's URL changed.
-- Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. Otherwise Jekyll builds the old site's pages over the new ones. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.
+- Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. On the user's machine both hold notes, plans and test pages, such as `refs/safari-box-overflow-scroll-bug/testcase.html`, which Jekyll would otherwise copy into the site. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.
 - `url` is the canonical host, `http://www.cbchristensen.net`. `jekyll doctor` warns and exits with status 1 without it.
 - `timezone: UTC` matches the 2022 build, so every front matter date lands on the same day in its URL.
 - `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
@@ -142,7 +141,7 @@ The content check, `_scripts/check-content.rb`, is the repo's only linter, and n
 - Some checks only warn, Windows line endings among them (decided 2026-10-20). A warning leaves the exit status at `0`, and on `master` it opens a notice issue for the file. The script's header comment says which checks warn.
 - There's no way to skip a page. A false alarm means fixing the content check, not silencing it.
 - Run the self-test after any change to the script or its fixtures, and after any gem update.
-- `.gitattributes` must keep `refs/** -text` and the fixtures line last. The later line wins, and without them git would convert the CRLF files in `refs/old-site/` and the fixtures.
+- `.gitattributes` must keep the fixtures line last. The later line wins, and without it git would convert the fixtures' CRLF files.
 
 ## Key technologies
 
@@ -185,9 +184,8 @@ CI goes back to Semaphore after the rebuild, with GitHub Actions as the fallback
 1. **Do not run local dev servers**. Assume the user is already running them. That includes `jekyll serve`.
 2. **Do not git commit changes on behalf of the user**. The user will make git commits. You can suggest commit messages.
 3. **Always update** the relevant AGENTS.md when making structural changes.
-4. **Treat `refs/old-site/` as read-only**. Copy content out of it, never edit it in place.
-5. **Keep plans current**. Follow the conventions in `plans/AGENTS.md`, and log progress in the plan set you're working from.
-6. **Keep Bruin's words**. Content changes fix markup, never his text, unless he agrees through the user. The user decides small fixes, such as a stray full stop, under a standing agreement with Bruin. Markup fixes need the user's agreement too, and go in a commit of their own, as the ones in `782b899` did.
+4. **Keep plans current**. Follow the conventions in `plans/AGENTS.md`, and log progress in the plan set you're working from.
+5. **Keep Bruin's words**. Content changes fix markup, never his text, unless he agrees through the user. The user decides small fixes, such as a stray full stop, under a standing agreement with Bruin. Markup fixes need the user's agreement too, and go in a commit of their own, as the ones in `782b899` did.
 
 ## Updating this file
 

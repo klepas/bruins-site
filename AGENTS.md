@@ -112,7 +112,7 @@ Run from the repo root.
 - `bundle exec ruby _scripts/check-content.rb --self-test`: runs the content check on its fixtures and compares the findings with the ones it expects.
 - `ruby _scripts/check-urls.rb _scripts/live-url-inventory.tsv "$out"`: after a build into `$out`, checks that every live URL is still in it. It should print `missing: 0`.
 
-`bundle exec jekyll serve` is the user's to run. Don't start it. While it runs, agents run doctor as `bundle exec jekyll doctor --config _config.yml,"$nocache"`, where `$nocache` is a file outside the repo holding `disable_disk_cache: true`: a plain `jekyll doctor` empties `.jekyll-cache/`, which `jekyll serve` uses, and doctor has no flag to stop it.
+`bundle exec jekyll serve` is the user's to run. Don't start it. While it runs, agents build with `--disable-disk-cache` and run doctor as `bundle exec jekyll doctor --config _config.yml,"$nocache"`, where `$nocache` is a `.yml` file outside the repo holding `disable_disk_cache: true`. Without them, Jekyll empties `.jekyll-cache/`, which `jekyll serve` uses. Doctor has no flag for it, and Jekyll reads a config file only if its name ends in `.yml`, `.yaml` or `.toml`.
 
 For visual checks, ask the user to look at their running server. They run it as `jekyll serve --unpublished`, so the style guide shows.
 

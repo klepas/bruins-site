@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/technology/modernity-and-innovation/
 title: "Modernity and Innovation"
 date: 1994-05-28
 version: "27.05.1994"

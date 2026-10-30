@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/descartes/descartes-meditations-on-first-philosophy-8/
 title: "Descartes’ *Meditations on First Philosophy* 8"
 updated: 2014-08-20
 abstract: "On Truth and Falsehood or rather, on Correctness and Error in Judgement---The Fourth Meditation"

@@ -12,7 +12,7 @@ published: true
 
 In § 33 of _Sein und Zeit_, Heidegger writes,
 
-> It … cannot be denied that the assertion arises ontologically out of explication, which is inherently understanding of what it lays out. We call the original ‘as’ of circumspectly understanding explication (ε̉ρμηνεία) the existentially _hermeneutic_ ‘as’ in contrast to the _apophantic_ ‘as’ of assertion. (_Sein und Zeit_, § 33, H 158; my translation)[^1]
+> It … cannot be denied that the assertion arises ontologically out of explication, which is inherently understanding of what it lays out. We call the original ‘as’ of circumspectly understanding explication (ἑρμηνεία) the existentially _hermeneutic_ ‘as’ in contrast to the _apophantic_ ‘as’ of assertion. (_Sein und Zeit_, § 33, H 158; my translation)[^1]
 
 Heidegger clearly intends this as a distinction between types of predication. For this remark is immediately followed by a brief discussion, first, of Aristotle’s account of judgement as binding-and-separating in one, and then of the copula. So according to Heidegger there is a distinctively hermeneutic kind of predication in addition to the standard assertoric, judgemental or doxastic kind. Unfortunately, Heidegger never clearly elaborates this distinction between a non-assertoric and an assertoric type of predication, nor indeed the claim that the latter is grounded in the former. In this paper, I wish to remedy this deficit both in the sense of making the distinction clear; and in the sense of providing some justification for it.
 
@@ -138,7 +138,7 @@ Now indisputably Heidegger claims that in order to grasp the spatially demonstra
 
 ## Notes
 
-[^1]: “So kann die Aussage ihre ontologische Herkunft aus der verstehenden Auslegung nicht verleugnen. Das ursprüngliche »Als« der umsichtig verstehenden Auslegung (ε̉ρμηνεία) nennen wir das existenzial-<em>hermeneutische</em> »Als« im Unterschied vom _apophantischen_ »Als« der Aussage.“ (_Sein und Zeit_, § 33, H 158)
+[^1]: “So kann die Aussage ihre ontologische Herkunft aus der verstehenden Auslegung nicht verleugnen. Das ursprüngliche »Als« der umsichtig verstehenden Auslegung (ἑρμηνεία) nennen wir das existenzial-<em>hermeneutische</em> »Als« im Unterschied vom _apophantischen_ »Als« der Aussage.“ (_Sein und Zeit_, § 33, H 158)
 
 [^2]: _Sein und Zeit_, § 32, H 149.
 

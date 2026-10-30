@@ -1,20 +1,40 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
+<div class="home">
+  <h1 class="visually-hidden">{{ site.title | escape }}</h1>
 
-  {% include head.html %}
+  {{ content }}
 
-  {% if page.custom_css %}
-    {{ page.custom_css | stylesheet }}
-  {% endif %}
+  {%- if site.categories.blog.size > 0 %}
+  <section class="home-section" aria-labelledby="latest-blog-post">
+    <h2 id="latest-blog-post">Latest blog post</h2>
+    <ul class="item-list">
+      {%- for post in site.categories.blog limit: 1 %}
+      <li class="item"{% if post.lang and post.lang != site.lang %} lang="{{ post.lang }}"{% endif %}>
+        <h3 class="item-title"><a href="{{ post.url | relative_url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h3>
+        <p class="item-meta"{% include interface-lang.html lang=post.lang %}><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
+        <div class="item-abstract">{{ post.content | split: '</p>' | first | strip }}</p></div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
 
-  <body>
-
-    <div class="page-content">
-        {{ content }}
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+  {%- if site.categories.papers.size > 0 %}
+  <section class="home-section" aria-labelledby="recent-papers">
+    <h2 id="recent-papers">Recent papers</h2>
+    <ul class="item-list">
+      {%- for post in site.categories.papers limit: 3 %}
+      <li class="item"{% if post.lang and post.lang != site.lang %} lang="{{ post.lang }}"{% endif %}>
+        <h3 class="item-title"><a href="{{ post.url | relative_url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h3>
+        <p class="item-meta"{% include interface-lang.html lang=post.lang %}><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
+        {%- if post.abstract %}
+        <p class="item-abstract">{{ post.abstract | truncatewords: 65 | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</div>

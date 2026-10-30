@@ -1,49 +1,57 @@
-﻿# Site settings
-title: Bruin Christensen
-email: carleton.christensen@anu.edu.au
-description: > # this means to ignore newlines until "baseurl:"
+title: Carleton B. Christensen
+lang: en-AU
+description: >-
   This is the personal website of Carleton B. Christensen, AKA Bruin
   Christensen. Please visit the site and download anything of interest to you!
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://cbchristensen.net"
-
-# Excluded files
-exclude: [README.md, Rakefile, .gitignore, Gemfile, Gemfile.lock, vendor]
-
-# Build settings
+url: "http://www.cbchristensen.net"
+timezone: UTC
+permalink: date
+# Bruin works in Canberra, 10 or 11 hours ahead of UTC. A paper dated today
+# and committed in the morning is still in the future in UTC, and Jekyll
+# would leave it out without an error.
+future: true
+# Stop the build on a top block YAML can't read, rather than publish the
+# page at a URL with the build day's date.
+strict_front_matter: true
 markdown: kramdown
 
-# Prose.io configuration
-prose:
-  siteurl: 'http://cbchristensen.net'
-  ignore:
-    - Gemfile
-    - Gemfile.lock
-    - .gitignore
-    - /_assets
-    - /_plugins
-    - /_includes
-    - /_layouts
-    - feed.xml
-    - courses.html
-    - index.html
-    - papers.html
-    - /_posts
-    # posts added until general blogging is added later
+kramdown:
+  # kramdown's own syntax, which the site has always used. Jekyll 4's
+  # default, GFM, gives headings different ids and renders some of the
+  # content differently. See README.md for what it means when writing.
+  input: kramdown
+  # U+FE0E keeps iOS from drawing the backlink arrow as an emoji
+  footnote_backlink: "&#8617;&#xFE0E;"
 
+sass:
+  sourcemap: never
+
+exclude:
+  - refs/
+  - plans/
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+
+# The courses on /courses/. Each title and abstract shows there and on the
+# course's own page. Jekyll sorts collections by name, so /courses/ sorts
+# them by order instead. A new course needs an order too.
 collections:
   descartes:
     output: true
     permalink: /courses/:collection/
     title: "Descartes"
     abstract: "The materials I use for introductory courses on René Descartes"
+    order: 1
   technology:
     output: true
     permalink: /courses/:collection/
     title: "Technology and Human Existence"
     abstract: "The materials I use for a six-week First Year option on the philosophy of technology"
+    order: 2
   dilthey:
     output: true
     permalink: /courses/:collection/
     title: "Wilhelm Dilthey"
     abstract: "The materials I use for a half-semester introduction to the thought of Wilhelm Dilthey"
+    order: 3

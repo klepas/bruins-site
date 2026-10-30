@@ -1,18 +1,15 @@
-<header id="header" class="centered-navigation">
-  <div class="centered-navigation-wrapper">
-    <a href="/" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">HOME</a>
-    <nav role="navigation">
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a href="/about">About</a></li>
-        <li class="nav-link"><a href="/impressum/">Impressum</a></li>
-        <li class="nav-link home">
-          <a href="/" class="home-icon">
-            <i class="fa fa-home"></i>
-          </a>
-        </li>
-        <li class="nav-link"><a href="/blog">Blog</a></li>
-        <li class="nav-link"><a href="/papers">Papers</a></li>
-        <li class="nav-link"><a href="/courses">Course materials</a></li>
+{%- comment -%} Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt. {%- endcomment -%}
+<header class="site-header" id="top"{% include interface-lang.html %}>
+  <div class="wrapper">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        {%- for link in site.data.navigation %}
+        {%- assign start = page.url | slice: 0, link.url.size %}
+        <li><a href="{{ link.url | relative_url }}"
+          {%- if page.url == link.url %} aria-current="page"
+          {%- elsif start == link.url %} aria-current="true"{% endif %}>{{ link.title | escape }}</a></li>
+        {%- endfor %}
       </ul>
     </nav>
   </div>

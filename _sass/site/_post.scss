@@ -1,0 +1,70 @@
+// The article header (title, date line, version and print button) and the
+// abstract box, for the post, course-document and page layouts.
+@use "../minima/settings" as *;
+
+.post-header {
+  margin-block-end: $spacing-unit;
+}
+
+.post-title {
+  margin-block-end: 0.5rem;
+}
+
+// Tabular figures make the digits in dates and version numbers easier to
+// tell apart
+.post-header .post-meta {
+  margin-block-end: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.print-button {
+  margin-block-start: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--color-control);
+  border-radius: 3px;
+  background-color: transparent;
+  color: var(--color-text-muted);
+  font-family: $sans-font-family;
+  font-size: $small-font-size;
+  line-height: 1.45;
+  cursor: pointer;
+
+  // Inverts the button's colours, at the same contrast as its resting state
+  &:hover {
+    border-color: var(--color-text-muted);
+    background-color: var(--color-text-muted);
+    color: var(--color-bg);
+  }
+}
+
+
+
+/**
+ * Abstract
+ */
+.abstract {
+  margin-block-end: 2.25rem;
+  padding: $spacing-unit;
+  background-color: var(--color-surface);
+  font-family: $sans-font-family;
+  font-size: 1.05rem;
+  line-height: 1.5;
+
+  p:last-child {
+    margin-block-end: 0;
+  }
+}
+
+// With more contrast the surface matches the page, and in forced colours mode
+// the background goes, so a border marks out the box.
+@media (prefers-contrast: more) {
+  .abstract {
+    border: 1px solid var(--color-rule);
+  }
+}
+
+@media (forced-colors: active) {
+  .abstract {
+    border: 1px solid CanvasText;
+  }
+}

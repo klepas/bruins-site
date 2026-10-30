@@ -1,0 +1,8 @@
+{%- comment -%}
+  Marks interface text as English when the text around it is in another
+  language, so screen readers read it in an English voice (WCAG 3.1.2).
+  The text around it is the page's language, or the lang passed in, such as
+  a list item's post.
+{%- endcomment -%}
+{%- assign around = include.lang | default: page.lang | default: site.lang -%}
+{%- if around != site.lang %} lang="{{ site.lang }}"{% endif -%}

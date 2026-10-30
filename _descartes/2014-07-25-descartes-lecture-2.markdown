@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/descartes/descartes-meditations-on-first-philosophy-2/
 title: "Descartes’ *Meditations on First Philosophy* 2"
 updated: 2014-07-25
 abstract: "The Letter of Dedication and the First Meditation"

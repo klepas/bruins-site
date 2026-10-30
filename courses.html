@@ -3,28 +3,19 @@ layout: base
 title: Course materials
 permalink: /courses/
 ---
-<section class="content courses">
-  <header class="page courses">
-    <h2 class="page-title">{{ page.title | remove: '<p>' | remove: '</p>' }}</h2>
-  </header>
-
-  <article class="page content">
-  <ul class="course-list">
-    {% for collection in site.collections %}
-    {% capture label %}{{ collection[0] }}{% endcapture %}
-      <li class="item">
-        <div class="item-title">
-          <h3>
-            <a class="item-link item-course" href="{{ collection[0] }}">{{ site.collections.[label].title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
-          </h3>
-        </div>
-        {% if site.collections.[label].abstract %}
-        <div class="item-abstract">
-          <p class="abstract">{{ site.collections.[label].abstract | truncatewords:90 | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-        </div>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  </article>
-</section>
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- comment -%}
+  Sorted on each collection's order key, because Jekyll sorts
+  site.collections by label. A collection without one sorts first.
+{%- endcomment -%}
+{%- assign courses = site.collections | where_exp: "c", "c.label != 'posts'" | sort: "order" %}
+<ul class="item-list">
+  {%- for course in courses %}
+  <li class="item">
+    <h2 class="item-title"><a href="{{ '/courses/' | append: course.label | append: '/' | relative_url }}">{{ course.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h2>
+    {%- if course.abstract %}
+    <p class="item-abstract">{{ course.abstract | truncatewords: 90 | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ul>

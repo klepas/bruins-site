@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: course-document
 title: "Descartes’ *Meditations on First Philosophy* 6"
 updated: 2014-08-13
-permalink: /courses/:collection/:title/
+permalink: /courses/descartes/descartes-meditations-on-first-philosophy-6/
 abstract: "The Third Meditation (continued): Of God, that He exists --- Part II"
 ---
 

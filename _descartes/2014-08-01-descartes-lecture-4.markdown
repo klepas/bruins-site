@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: course-document
 title: "Descartes’ *Meditations on First Philosophy* 4"
 updated: 2014-08-01
-permalink: /courses/:collection/:title/
+permalink: /courses/descartes/descartes-meditations-on-first-philosophy-4/
 abstract: "Descartes’ Certain Knowledge of Himself as *res cogitans* and the Claim of the Second Meditation that Mind is better known than Body"
 ---
 

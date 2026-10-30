@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/technology/overview-of-the-philosophy-of-technology/
 title: "Overview of the Philosophy of Technology"
 date: 1994-05-06
 version: "06.05.1994"
@@ -20,6 +20,7 @@ On this conception of it philosophy is just one more pursuit of knowledge alongs
 On this conception, philosophy, like science, has no intrinsic practical goal or purpose; it does not have any intrinsic function of, say, making life better or discovering the “meaning of life”, no more so than science has. Of course, both may gather knowledge which turns out to very useful, but this is not why they set out to gather it. The only essential or intrinsic point or function of science as a intellectual discipline is to gather scientific knowledge; the only essential or intrinsic point or function of philosophy is to gather philosophical knowledge.
 
 Of course, this immediately raises a further question: Just what is philosophical, as opposed to scientific knowledge? These days, most philosophers believe that only physics and the various other empirical sciences can tell us how the world really is. So for them philosophical knowledge cannot be knowledge about the world in any straightforward sense. Thus, many philosophers today would say that philosophical knowledge was conceptual knowledge. It is knowledge about how to resolve certain conceptual problems which we encounter when we do science, or engage in art, politics, ethics and any other human activity. Here are some examples of such conceptual problems:
+
 > Is it possible for there to be free human action in a world governed by the laws of physics? And if so, how? (This is often called the problem of Free Will _versus_ Causal Determinism.)
 
 > Is human reasoning basically the same as what a computer does when it runs through its programme? That is, is the human brain at least in part a kind of computer? (This is a question which is very topical today because both artificial intelligence and a certain branch of psychology called cognitive science rest upon the assumption that the human mind is a kind of computer.)
@@ -75,6 +76,7 @@ But apart from this moral problem of how to ensure the responsible development a
 > Structural unemployment caused by the introduction of new technologies;
 
 A good example is the introduction of new, highly computerised systems of steel milling into the steel industry at places like Wollongong and Newcastle.
+
 > The almost obsessive need for increased occupational and social flexibility and speed;
 
 The fact that these days the only constant in technological society is technological change itself has implications for our conceptions both of training for a working life and of working life itself. Once vocational training consisted in imparting a certain set of skills which defined a certain occupation and which constituted all the skills a person needed for a working life-time. But now people are increasingly having to re-train and re-learn throughout their working lives—so much so that increasingly you hear a lot of talk about how the crucial task of educational institutions is not primarily or exclusively to impart a specific set of occupational skills, but to give people the ability to train and re-train themselves during their working lives. The emphasis is on flexibility, on being able to re-learn or acquire new skills quickly and efficiently, etc. Nor does this demand for increased flexibility and adaptability concern only our occupational skills and abilities. The very tendency of this demand is a universal one: desirable workers are not merely flexible in their specific occupations and skills; they are flexible in all or as many respects as possible. Our technological society demands today the indefinitely malleable individual, the individual skilled in adapting to the latest demands of the social systems within which he or she exists. Such an individual is quickly at home in whatever new skills and activities are required and in whatever the new workplace is where such talents are needed. Increasingly, people are being asked to move around, to accept that they must be prepared to change their jobs, change their workplace, change their address. And thus the desirable individual is increasingly one who is at home everywhere—and possibly just for this reason nowhere.

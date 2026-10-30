@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/technology/the-technophile-richard-buckminster-fuller/
 title: "The Technophile Richard Buckminster Fuller"
 date: 1994-05-07
 version: "06.05.1994"

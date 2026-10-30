@@ -1,2 +1,22 @@
+# Mac Desktop Services Store file
+.DS_Store
+
+# Jekyll site builds
 _site
-.sass-cache
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler local config
+.bundle/
+
+# References folder
+refs/*
+
+# Plans folder
+plans/*
+!plans/AGENTS.md
+!plans/CLAUDE.md
+
+# Ignore local Claude configurations
+**/.claude/settings.local.json
+**/.claude/worktrees/*

@@ -1,0 +1,11 @@
+# The links in the site header and footer, in order.
+- title: About
+  url: /about/
+- title: Impressum
+  url: /impressum/
+- title: Blog
+  url: /blog/
+- title: Papers
+  url: /papers/
+- title: Course materials
+  url: /courses/

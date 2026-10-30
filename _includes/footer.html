@@ -1,22 +1,15 @@
-<footer class="footer" role="contentinfo">
-  <nav class="footer-links">
-    <ul>
-      <li class="nav-link home">
-        <a href="/" class="home-icon">
-          <i class="fa fa-home"></i>
-        </a>
-      </li>
-      <li class="nav-link"><a href="/about">About</a></li>
-      <li class="nav-link"><a href="/impressum/">Impressum</a></li>
-      <li class="nav-link"><a href="/papers">Papers</a></li>
-      <li class="nav-link"><a href="/courses">Course materials</a></li>
-      <li class="nav-link back-up">[ <a href="#header">back to top &uarr;</a> ]</li>
-    </ul>
-  </nav>
-
-  <hr>
-
-  <p class="copyright authorship">&copy; 2004&ndash; Carleton Bruin Christensen</p>
-  <p class="updated">Last updated: {{ site.time }}</p>
-  <p class="developer"><i class="fa fa-cogs"></i> built with <a class="dev-resource" href="http://jekyllrb.com/">Jekyll</a> &amp; <a class="dev-resource" href="http://bourbon.io/">Bourbon</a></p>
+{%- comment -%} Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt. {%- endcomment -%}
+<footer class="site-footer"{% include interface-lang.html %}>
+  <div class="wrapper">
+    <nav aria-label="Footer">
+      <ul>
+        {%- for link in site.data.navigation %}
+        <li><a href="{{ link.url | relative_url }}">{{ link.title | escape }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <p><a href="#top" data-skip-link>Back to top <span aria-hidden="true">↑</span></a></p>
+    <p>© 2004–{{ site.time | date: "%Y" }} Carleton Bruin Christensen</p>
+    <p>Last updated {{ site.time | date: "%-d %B %Y" }}. Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/jekyll/minima">Minima</a>.</p>
+  </div>
 </footer>

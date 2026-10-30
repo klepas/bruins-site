@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/descartes/descartes-meditations-on-first-philosophy-9/
 title: "Descartes’ *Meditations on First Philosophy* 9"
 updated: 2014-08-22
 abstract: "More on Proving the Existence of God—The Fifth Meditation"

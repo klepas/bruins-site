@@ -1,0 +1,161 @@
+// Print: papers on A4 or Letter, black on white in every colour mode. The
+// colours come from the print palette, the last block in _tokens.scss. This
+// partial loads last in main.scss, so its rules win over everything before it.
+//
+// Kept from the old site: 6cm of space above the title on the first page, and
+// wide outer margins for things like handwritten notes. Unlike the old site,
+// an h2 doesn't start a new page.
+
+@media print {
+  /**
+   * Pages
+   *
+   * The 2.5cm side is the outer edge, away from the binding. Page 1 is a right
+   * page, so its wide margin is on the right (CSS Paged Media 3, §4.2.1).
+   * Firefox ignores :left and :right and prints 2.5cm on both sides. Safari
+   * has a bug that applies page 1's margins to every page, so it keeps the wide
+   * margin on the right throughout. No `size`: the reader's printer settings
+   * choose the paper.
+   */
+  @page {
+    margin: 2cm 2.5cm 1.5cm;
+  }
+
+  @page :left {
+    margin-right: 1.5cm;
+  }
+
+  @page :right {
+    margin-left: 1.5cm;
+  }
+
+
+
+  /**
+   * Type and text column
+   *
+   * The size goes on `html`, so headings, notes and metadata in `rem` keep
+   * their proportions to the text.
+   */
+  html {
+    font-size: 11pt;
+  }
+
+  // A block, not the screen's flex column that keeps the footer down. The
+  // footer doesn't print, and Firefox ignores forced page breaks near the
+  // start of a flex container. The leading leaves room between the lines for
+  // readers' marks and comments.
+  body {
+    display: block;
+    min-height: 0;
+    line-height: 1.8;
+  }
+
+  .wrapper {
+    max-width: none;
+    padding: 0;
+  }
+
+  // 6cm above the title on page 1: the 2cm page margin plus 4cm of padding,
+  // which only page 1 has. Not `@page :first`: WebKit applies page 1's
+  // margins to every page (`PrintContext::computedPageMargin`), so Safari
+  // would print 6cm above each one. No padding below, which would spill onto
+  // a blank last page when the content nearly fills one.
+  .page-content {
+    padding-block: 4cm 0;
+  }
+
+
+
+  /**
+   * What has no use on paper
+   *
+   * The date line and version stay, so a printed copy says which version of
+   * the paper it is.
+   */
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .print-button,
+  a.reversefootnote {
+    display: none;
+  }
+
+
+
+  /**
+   * Page breaks
+   *
+   * None are forced. Sections and the notes follow straight on, the notes
+   * set off by the same rule as on screen. Headings stay with the text after
+   * them, and short blocks aren't split.
+   */
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+
+  blockquote,
+  tr,
+  .logic,
+  .footnotes li,
+  img {
+    break-inside: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+
+
+  /**
+   * Links and footnote references
+   *
+   * Links print black and underlined, without their URLs. The print palette
+   * clears the footnote references' background, so they print as plain
+   * superscript numbers.
+   */
+  a {
+    text-decoration-line: underline;
+  }
+
+  a.footnote {
+    padding: 0;
+    text-decoration: none;
+  }
+
+
+
+  /**
+   * The abstract and the course overview hero
+   *
+   * Browsers drop background colours on paper, so a border keeps each box.
+   * The print palette turns the hero's text black.
+   */
+  .abstract {
+    border: 1px solid var(--color-rule);
+  }
+
+  .hero {
+    background: none;
+    border: 1px solid var(--color-rule);
+  }
+
+
+
+  /**
+   * Tables
+   *
+   * Wide tables print in full rather than inside their scrolling box.
+   */
+  .table-scroll {
+    overflow: visible;
+  }
+
+  table {
+    font-size: 9pt;
+  }
+}

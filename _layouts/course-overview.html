@@ -1,51 +1,27 @@
 ---
 layout: base
 ---
-
-<section class="content course">
-  <header class="page course">
-    <h2 class="page-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
-    <div class="hero">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          {% assign the-collection = page.collection %}
-          {% for collection in site.collections %}
-          {% capture label %}{{ collection[0] }}{% endcapture %}
-          {% if label == page.collection %}
-          {{ site.collections.[label].abstract | truncatewords:90 | markdownify | remove: '<p>' | remove: '</p>' }}
-        </div>
-        {% if site.collections.[label].['pdf'] %}
-        <a class="course-outline" href="{{ site.baseurl }}{{ site.collections.[label].['pdf'] }}">
-          <i class="fa fa-file-o"> PDF course outline</i>
-        </a>
-        {% endif %}
-      </div>
-    </div>
+{%- assign course = site.collections | where: "label", page.collection | first -%}
+<article class="course">
+  <header class="course-header">
+    <h1 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h1>
+    {%- if course.abstract %}
+    <p class="hero">{{ course.abstract | truncatewords: 90 | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    {%- endif %}
   </header>
-
-  <article class="page content">
-    {{ content }}
-    <ul class="course-items">
-      {% assign doc-listing = site.collections.[label].docs %}
-      {% for doc in doc-listing %}
-        {% if doc.layout == "post" or doc.layout == "lecture" or doc.layout == "resource" %}
-        <li class="item">
-          <div class="item-title">
-            <h3>
-              <a class="item-link" href="{{ doc.url }}">{{ doc.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
-            </h3>
-          </div>
-          {% if doc.abstract %}
-          <div class="item-abstract">
-            <p>{{ doc.abstract | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          </div>
-          {% endif %}
-        </li>
-        {% endif %}
-      {% endfor %}
-      {% break %}
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </article>
-</section>
+  <div class="post-content">
+    {% include content.html html=content %}
+  </div>
+  <h2 class="course-items-heading">Contents</h2>
+  <ul class="item-list">
+    {%- for doc in course.docs %}
+    {%- if doc.url == page.url %}{% continue %}{% endif %}
+    <li class="item"{% if doc.lang and doc.lang != site.lang %} lang="{{ doc.lang }}"{% endif %}>
+      <h3 class="item-title"><a href="{{ doc.url | relative_url }}">{{ doc.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a></h3>
+      {%- if doc.abstract %}
+      <div class="item-abstract">{{ doc.abstract | markdownify }}</div>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</article>

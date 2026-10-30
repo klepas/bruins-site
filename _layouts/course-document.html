@@ -1,0 +1,19 @@
+---
+layout: base
+---
+{%- comment -%} Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt. A copy of post.html without the date, "Updated" and version line: Bruin keeps those in the course documents' files for himself, not for readers. {%- endcomment -%}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</h1>
+    {% include print-button.html %}
+  </header>
+  {%- if page.abstract %}
+  <section class="abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading"{% include interface-lang.html %}>Abstract</h2>
+    {{ page.abstract | markdownify }}
+  </section>
+  {%- endif %}
+  <div class="post-content">
+    {% include content.html html=content %}
+  </div>
+</article>

@@ -1,0 +1,44 @@
+// Lists of papers, blog posts, courses and course documents, on the home
+// page, the index pages and each course overview. Title above abstract.
+@use "../minima/settings" as *;
+
+.item-list {
+  margin: 0 0 $spacing-unit;
+  list-style: none;
+}
+
+.item {
+  padding-block: 1rem;
+  border-top: 1px solid var(--color-rule);
+
+  &:last-child {
+    border-bottom: 1px solid var(--color-rule);
+  }
+}
+
+.item-title {
+  margin: 0 0 0.25rem;
+  font-family: $serif-font-family;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+// Tabular figures, as in the article's date line
+.item-meta {
+  margin-block-end: 0.5rem;
+  font-family: $sans-font-family;
+  font-size: $small-font-size;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.item-abstract {
+  font-family: $base-font-family;
+}
+
+.item > :last-child,
+.item-abstract > :last-child {
+  margin-block-end: 0;
+}

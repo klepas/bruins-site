@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/technology/marcuse-and-the-one-dimensional-society/
 title: "Marcuse and the One-Dimensional Society"
 date: 1994-06-02
 version: "02.06.1994"

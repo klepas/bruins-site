@@ -1,0 +1,13 @@
+# Content and templates use LF line endings. Git converts CRLF on commit
+# from a clone. GitHub's web editor and uploads may not, so
+# _scripts/check-content.rb warns about CRLF too.
+*.md        text eol=lf
+*.markdown  text eol=lf
+*.html      text eol=lf
+*.xml       text eol=lf
+*.yml       text eol=lf
+*.scss      text eol=lf
+*.rb        text eol=lf
+# Leave these bytes alone. The linter's fixtures need their CRLF and
+# Windows-1252 files.
+_scripts/check-content-fixtures/** -text

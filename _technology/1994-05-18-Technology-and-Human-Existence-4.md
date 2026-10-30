@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/technology/the-radical-techno-critic-jacques-ellul/
 title: "The Radical Techno-Critic Jacques Ellul"
 date: 1994-05-18
 version: "19.05.1994"

@@ -1,0 +1,43 @@
+// The course overview: the hero with the course abstract, and the heading
+// above its list of documents.
+@use "../minima/settings" as *;
+
+// The solid colour under the gradient is for forced colours mode and print.
+// White text stays above 4.5:1 against both stops.
+.hero {
+  margin-block: 1.5rem 2rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 2px;
+  background-color: var(--color-hero-to);
+  background-image: linear-gradient(5deg, var(--color-hero-from), var(--color-hero-to));
+  color: var(--color-hero-text);
+  font-family: $sans-font-family;
+  font-size: 1.35rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+// A solid background for readers who ask for more contrast. In forced
+// colours mode a border keeps the box visible, and dropping the gradient
+// doesn't depend on how each browser treats background images there.
+@media (prefers-contrast: more) {
+  .hero {
+    background-image: none;
+  }
+}
+
+// In dark with more contrast the hero is black on a black page, so a border
+// marks out the box.
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  .hero {
+    border: 1px solid var(--color-rule);
+  }
+}
+
+@media (forced-colors: active) {
+  .hero {
+    background-image: none;
+    border: 1px solid CanvasText;
+  }
+}

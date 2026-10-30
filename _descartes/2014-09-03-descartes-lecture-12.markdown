@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/descartes/descartes-meditations-on-first-philosophy-12/
 title: "Descartes’ *Meditations on First Philosophy* 12"
 updated: 2014-09-03
 abstract: "Descartes’ Metaphysics of Nature and Mind---The Sixth Meditation (Part II)"

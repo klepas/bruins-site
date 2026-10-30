@@ -1,0 +1,31 @@
+// The home page: Bruin's introduction and the two lists below it.
+@use "../minima/settings" as *;
+
+.site-intro {
+  margin-block-end: 2.25rem;
+}
+
+.home-intro {
+  margin-block-end: 0.75rem;
+}
+
+// The large opening line
+.home-intro.hello {
+  font-family: $sans-font-family;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.home-intro.about-me {
+  padding-block-end: 1.5rem;
+  border-bottom: 2px dotted var(--color-rule);
+}
+
+// The old site's italic Palatino ampersand, used once on the home page
+.amp {
+  font-family: "Palatino Linotype", Palatino, Baskerville, Times, "Times New Roman", Georgia, serif;
+  font-style: italic;
+  line-height: 1;
+  font-weight: 300;
+}

@@ -1,0 +1,172 @@
+// Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt.
+@use "settings" as *;
+
+/**
+ * Skip link, off screen until it has focus
+ */
+.skip-link {
+  position: absolute;
+  z-index: 1;
+  inset-inline-start: 0.5rem;
+  top: -10rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-bg);
+  color: var(--color-link);
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+// It opens over the header, where the body's link blue is only 1.87:1
+.skip-link:focus-visible {
+  outline-color: var(--color-chrome-link);
+}
+
+// assets/js/skip-links.js focuses the link's target, `<main>` or the header,
+// so VoiceOver follows. The reader can't operate the target, so it gets no
+// focus ring, as in GOV.UK Frontend.
+.skip-link-target:focus {
+  outline: none;
+}
+
+
+
+/**
+ * Site header and footer
+ *
+ * Not sticky: a fixed header would cover footnote targets and the focused
+ * element (WCAG 2.4.11).
+ */
+.site-header,
+.site-footer {
+  font-family: $sans-font-family;
+  background-color: var(--color-chrome-bg);
+  color: var(--color-chrome-text);
+
+  a,
+  a:visited {
+    color: var(--color-chrome-link);
+  }
+
+  // The body's link blue is only 1.87:1 on the header blue
+  :focus-visible {
+    outline-color: var(--color-chrome-link);
+  }
+}
+
+.site-header {
+  border-bottom: 2px solid var(--color-chrome-border);
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding-block: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration-line: underline;
+  }
+
+  a[aria-current] {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.12em;
+  }
+
+  // Always underlined for readers who ask for more contrast. The current
+  // page keeps its thicker line.
+  @media (prefers-contrast: more) {
+    a {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.site-header .site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  &,
+  &:visited {
+    color: var(--color-chrome-text);
+  }
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  list-style: none;
+}
+
+@include media-query($on-palm) {
+  .site-header .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+}
+
+.site-footer {
+  border-top: 2px solid var(--color-chrome-border);
+  padding: $spacing-unit 0;
+  font-size: $small-font-size;
+  // Tabular figures, as in the article's date line
+  font-variant-numeric: tabular-nums;
+  color: var(--color-chrome-muted);
+  text-align: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+    margin: 0 0 $spacing-unit * 0.5;
+    list-style: none;
+  }
+
+  p {
+    margin-block-end: $spacing-unit * 0.5;
+  }
+
+  p:last-child {
+    margin-block-end: 0;
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+.post-meta {
+  font-family: $sans-font-family;
+  font-size: $small-font-size;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-content {
+  margin-bottom: $spacing-unit;
+}

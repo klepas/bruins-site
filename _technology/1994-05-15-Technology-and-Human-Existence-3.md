@@ -1,6 +1,6 @@
 ---
-layout: post
-permalink: /courses/:collection/:title/
+layout: course-document
+permalink: /courses/technology/the-techno-centrist-emmanuel-mesthene/
 title: "The Techno-Centrist Emmanuel Mesthene"
 date: 1994-05-15
 version: "15.05.1994"

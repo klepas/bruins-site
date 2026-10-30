@@ -1,0 +1,30 @@
+// Based on Minima 2.5.2 (MIT). See _sass/minima/LICENSE.txt.
+
+// Define defaults for each variable.
+
+$serif-font-family: "Literata", Georgia, "Times New Roman", serif !default;
+$sans-font-family:  "Source Sans 3", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$mono-font-family:  ui-monospace, Menlo, Consolas, "Liberation Mono", monospace !default;
+$base-font-family:  $serif-font-family !default;
+$base-font-size:   1rem !default;
+$base-font-weight: 400 !default;
+$small-font-size:  0.875rem !default;
+$base-line-height: 1.8 !default;
+
+$spacing-unit:     1.5rem !default;
+
+$table-text-align: left !default;
+
+$measure:          52rem !default; // about 110 characters of Literata
+
+$on-palm:          40em !default;  // 640px at the browser's default 16px
+
+@mixin media-query($device) {
+  @media screen and (width < $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $ratio * 1rem;
+}

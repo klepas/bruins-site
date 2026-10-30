@@ -51,7 +51,7 @@ The site is built at the repo root. Bruin's content sits at the paths it had in 
 
 ## Jekyll
 
-The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3. See `plans/done/install-latest-jekyll/install-latest-jekyll-00-overview.md` for the install.
+The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old site ran Jekyll 2.5.3.
 
 - **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `_scripts/live-url-inventory.tsv` lists all of them, and `_scripts/check-urls.rb` checks every build against it. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, so those pages pin theirs with a literal `permalink:`, see below. The one exception so far: on 2026-10-25 two image files got hyphens in place of the spaces in their names, agreed by the user with Bruin, so their old addresses are gone. No page's URL changed.
 - Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. On the user's machine both hold notes, plans and test pages, such as `refs/safari-box-overflow-scroll-bug/testcase.html`, which Jekyll would otherwise copy into the site. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.

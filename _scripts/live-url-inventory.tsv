@@ -15,8 +15,7 @@
 # Two deliberate changes on 2026-10-25, at the user's request: two images live
 # with a space in their names were renamed, retiring the old addresses.
 # Bruin-meme-v3%20copy.jpg became Bruin-meme-v3.jpg, and
-# Frequent%20Network%20TfC.jpg became Frequent-Network-TfC.jpg. See the
-# content overview's log.
+# Frequent%20Network%20TfC.jpg became Frequent-Network-TfC.jpg.
 status	kind	path
 200	page	/
 200	page	/about/

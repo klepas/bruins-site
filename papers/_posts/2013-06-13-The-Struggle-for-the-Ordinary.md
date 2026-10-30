@@ -11,7 +11,7 @@ abstract: >
   I will be adding an abstract later.<br>This is the long version of a paper
   held on 13<sup>th.</sup>, June, 2013, in the Doktorandenkolloquium of Prof.
   Dr. Axel Honneth, Institut für Philosophie, Goethe-Universität, Frankfurt am
-  Man.
+  Main.
 published: true
 ---
 

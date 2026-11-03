@@ -86,6 +86,8 @@ Next to an italic or bold letter, type the italics or bold as usual, and put the
 | Two asterisks: S\*\* | `S\*\*` |
 | Logic with italics: B\*(*x*, *y is F*) | `B\*(*x*, *y is F*)` |
 
+Underscores work for italics too, as in `_F\*_`, but only around a whole word, not after a hyphen or inside a word (rule 3).
+
 ### Special characters
 
 Some programs, older ones on Windows in particular, put in a character that looks right but isn't, such as an accent mark where an apostrophe belongs. Copy what you need from here instead.

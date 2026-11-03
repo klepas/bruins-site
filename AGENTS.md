@@ -46,7 +46,7 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── .github/workflows/check.yml  The GitHub check, the deploy and the notices to the user, see Content checks and Deployment below
 └── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
     ├── done/          Finished plan sets
-    └── tools/         screenshots/ takes Playwright screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
+    └── tools/         screenshots/ takes screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
 ```
 
 The site is built at the repo root. Bruin's content sits at the paths it had in the old site, so `git log` on a file shows its whole history and Bruin finds his files where they always were. Keep it there.

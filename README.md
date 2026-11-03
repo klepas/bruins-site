@@ -22,7 +22,7 @@ To start a new paper or post, open its folder on GitHub, choose **Add file**, th
 
 New course notes need their own address in a `permalink:` line, ending in `/`, such as `permalink: /courses/descartes/a-short-title/`. No other page may have the same address. Keep the line `layout: course-document` from the notes you copied: course notes don't show their date or version on the site, but those lines stay in the file for your own records.
 
-The introduction on the home page lives in `index.html`. It's written in HTML, not Markdown, so a link there is `<a href="/files/pdfs/name.pdf">the title</a>` and italics are `<em>…</em>`. Markdown there shows up on the page as brackets and underscores.
+The introduction on the home page lives in `index.md`, in Markdown like a paper. On the site, its first paragraph shows in large type as the opening line, and an `&` with a space on each side comes out in italics. The preview shows both as ordinary text.
 
 ### The block at the top
 

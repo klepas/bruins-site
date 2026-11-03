@@ -30,7 +30,7 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── favicon.svg, favicon.ico, apple-touch-icon.png  The site icon, "CBC" in Literata, gold on the header blue. plans/tools/favicon/ writes all three, so change them there, not by hand
 ├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
-├── index.html         Bruin's introduction. Its layout, home, adds the latest blog post and three recent papers
+├── index.md           Bruin's introduction, in Markdown. Its layout, home, adds the latest blog post and three recent papers
 ├── about.md, impressum.md  The about page and the Impressum
 ├── 404.html           "Page not found", for the bucket's ErrorDocument. S3 serves it at the missing address, so its links start with "/". Its noindex: true drops the canonical link
 ├── robots.txt         Opts the site out of AI training and leaves search engines alone. Its header says where the names come from and when to recheck them
@@ -87,6 +87,7 @@ Markup:
 - Navigation links live in `_data/navigation.yml`. The header shows them at every width, stacked one per line on phones. There's no menu button, by the user's choice.
 - Papers show `version` (free text, printed as written) and `updated` (a date) under the date, on screen and in print. Course documents use `_layouts/course-document.html`, a copy of `post.html` that shows no date, "Updated" or version, because Bruin keeps those in the files for himself (decided 2026-10-25). Keep the two layouts in step.
 - `/courses/` lists the collections by their `order` key in `_config.yml`, because Jekyll sorts `site.collections` by label. A new course needs an `order`, or it sorts first.
+- The home page's introduction is `index.md`, so Bruin can edit it as Markdown (Issue #44). Its first paragraph is the large opening line, styled by its place (`.site-intro > p:first-child`), so the Markdown needs no class. `_layouts/home.html` gives an `&` with a space on each side the old site's italic ampersand.
 - The home page shows the latest blog post's first paragraph, cut from the rendered post at its first `</p>` (decided 2026-10-20). Jekyll's `post.excerpt` cuts the source file at its first empty line, and a file with Windows line endings has none, so the excerpt was the whole post. Cutting the HTML gives the same paragraph whatever the line endings. Anything above the first paragraph, such as a heading or a picture, comes along, and a post with no paragraph shows whole. Rule 7 of the guide in `README.md` asks Bruin to start a post with a paragraph.
 - The style guide in `style-guide/` is unpublished and builds only with `--unpublished`. It's the test bed for theme changes.
 

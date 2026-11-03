@@ -4,7 +4,15 @@ layout: base
 <div class="home">
   <h1 class="visually-hidden">{{ site.title | escape }}</h1>
 
-  {{ content }}
+  {%- comment -%}
+    Bruin's introduction, index.md, fixed up by content.html like his other
+    pages. An & with a space on each side gets the old site's italic
+    ampersand.
+  {%- endcomment %}
+  <div class="site-intro">
+    {%- capture intro %}{% include content.html html=content %}{% endcapture %}
+    {{ intro | replace: ' &amp; ', ' <span class="amp">&amp;</span> ' }}
+  </div>
 
   {%- if site.categories.blog.size > 0 %}
   <section class="home-section" aria-labelledby="latest-blog-post">

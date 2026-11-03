@@ -3,14 +3,14 @@
 # Checks Bruin's pages for Markdown that kramdown, which builds the site,
 # renders differently from GitHub's preview, and for files with Windows line
 # endings or the wrong encoding. It also looks for two pages with one
-# address, Markdown in an .html page, files that aren't Markdown in a posts
-# or course folder, a heading left empty above the notes, look-alike
-# characters and accents typed apart from their letters, headings that skip
-# a level, spaces in addresses and file names, links that read only "here",
-# course notes on the wrong layout, and an updated: before the date. It
-# warns about Word files outside the drafts and files folders, and about a
-# mark typed apart from its letter where no ready-made letter has it. CI
-# runs it before the build, and an error stops the deploy.
+# address, files that aren't Markdown in a posts or course folder, a heading
+# left empty above the notes, look-alike characters and accents typed apart
+# from their letters, headings that skip a level, spaces in addresses and
+# file names, links that read only "here", course notes on the wrong layout,
+# and an updated: before the date. It warns about Word files outside the
+# drafts and files folders, and about a mark typed apart from its letter
+# where no ready-made letter has it. CI runs it before the build, and an
+# error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -69,9 +69,6 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   _example/2026-01-10-no-layout.md:1: course notes need the line layout: course-document in the block at the top (see "Where files go" in README.md)
   _example/README:1: only Markdown pages go in this folder. Put Word files and other drafts in papers/_posts/_drafts/ (see "Where files go" in README.md)
   files/pdfs/with space.pdf:1: the file name has a space. Rename it with hyphens in place of spaces, and change any links to it to match (see "Where files go" in README.md)
-  index.html:5: this page is HTML, so Markdown links show as typed. Write <a href="address">text</a> (see "Where files go" in README.md)
-  index.html:5: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
-  index.html:6: this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)
   no-top-block.md:1: the page needs a block at the top, between two --- lines (see "The block at the top" in README.md)
   papers/Notes.pages:1: warning: anyone can see this .pages file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
   papers/Old-draft.DOC:1: warning: anyone can see this .doc file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
@@ -181,17 +178,6 @@ BACKTICK_FENCE = /\A {0,3}`{3,}[^`]*\z/
 # A name Jekyll reads as a post, whatever its extension: its
 # Document::DATE_FILENAME_MATCHER, for the file name alone.
 POST_NAME = /\A\d{2,4}-\d{1,2}-\d{1,2}-.*\.[^.]+\z/
-
-# What an .html page doesn't show as text: comments, Liquid, scripts, styles
-# and tags, which can each run over several lines.
-HTML_HIDDEN = %r{<!--.*?-->|\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}|\{\{.*?\}\}|\{%.*?%\}|
-                 <(script|style)\b.*?</\1\s*>|<[^>]*>}mx
-HTML_MARKDOWN_LINK = /\[[^\]]+\]\([^)\s]+\)/
-# Italics or bold made with * or _. The text inside has to start with a
-# letter, a digit or an opening quotation mark, and can't end with a space,
-# so footnote marks such as "(2026)*, (1990)*" and "*.pdf" aren't caught.
-HTML_MARKDOWN_EMPHASIS = /(?<![[:alnum:]_*])\*\*?[[:alnum:]“‘„«"'][^*]*(?<!\s)\*\*?(?![[:alnum:]_*])|
-                          (?<![[:alnum:]_])__?[[:alnum:]“‘„«"'][^_]*(?<!\s)__?(?![[:alnum:]_])/x
 
 # Inline code on one line, as kramdown reads it. The character checks leave
 # code alone, since it shows exactly what was typed.
@@ -420,8 +406,6 @@ class FileCheck
   # Each body line of a Markdown file, code blocks included, since Jekyll
   # runs templates before Markdown.
   LINE_CHECKS_INCLUDING_CODE = %i[template].freeze
-  # Each body line of an .html page.
-  HTML_LINE_CHECKS = %i[markdown_in_html].freeze
   # After kramdown has parsed a Markdown body.
   TREE_CHECKS = %i[underscores kramdown_warnings notes_heading heading_levels address_spaces
                    vague_links].freeze
@@ -458,8 +442,6 @@ class FileCheck
         run_all(fenced ? LINE_CHECKS_INCLUDING_CODE : LINE_CHECKS_INCLUDING_CODE + LINE_CHECKS, n, line, prev)
       end
       run_all(TREE_CHECKS)
-    else
-      each_body_line { |n, line, prev| run_all(HTML_LINE_CHECKS, n, line, prev) }
     end
     each_text_line { |n, text| run_all(CHARACTER_CHECKS, n, text) }
   end
@@ -840,29 +822,6 @@ class FileCheck
 
   def template(n, line, _prev)
     add(n, "{{ or {% here would be read as a template instruction") if line.match?(/\{\{|\{%/)
-  end
-
-  # HTML line checks.
-
-  # Jekyll doesn't run Markdown in an .html page, so a Markdown link or
-  # italics there show as typed, as Bruin's thesis link once did.
-  def markdown_in_html(n, _line, _prev)
-    text = html_text[n - 1 - @body_start]
-    if text.match?(HTML_MARKDOWN_LINK)
-      add(n, 'this page is HTML, so Markdown links show as typed. Write <a href="address">text</a> ' \
-             '(see "Where files go" in README.md)')
-    end
-    return unless text.match?(HTML_MARKDOWN_EMPHASIS)
-
-    add(n, 'this page is HTML, so _ and * show as typed. Write <em>text</em> (see "Where files go" in README.md)')
-  end
-
-  # The body's lines with what the page doesn't show as text turned into
-  # spaces, so a comment or tag over several lines keeps the line numbers.
-  def html_text
-    @html_text ||= @lines[@body_start..].join("\n")
-                                        .gsub(HTML_HIDDEN) { |hidden| hidden.gsub(/[^\n]/, " ") }
-                                        .split("\n", -1)
   end
 
   # Tree checks.

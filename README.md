@@ -44,6 +44,7 @@ abstract: "A sentence or two. It shows above the paper, and on the home page whi
 - A `permalink:` line holds a page's address. Leave it exactly as it is. If the block you copied has one, delete it from the new page, or the new page takes the old one's place on the site.
 - Keep the title and the abstract inside straight double quotes, `"…"`. For quotation marks inside them, use curly ones: “ ” and ‘ ’.
 - If the abstract starts `abstract: >`, as in the newer papers, leave out the quotes and indent each line below it by two spaces.
+- In a title or abstract inside quotes, an asterisk that should show takes two backslashes, as in `title: "Why she\\* is happy"`. With one, the check can't read the block and gives a red cross. Under `abstract: >`, one is enough, as in the text (see "Asterisks that should show" below).
 - Write each line once. With two `abstract:` lines, the site shows only the second.
 
 ### Rules the preview won't warn you about
@@ -66,6 +67,24 @@ abstract: "A sentence or two. It shows above the paper, and on the home page whi
 9. Put a link on words that say where it goes, such as a title, not on "here". Screen reader users often hear a page's links as a list, without the words around them.
 
 Square brackets in a quotation, as in “[the senses—C.B.C.]”, are fine as they are.
+
+### Asterisks that should show
+
+Markdown reads `*` as the start or end of italics or bold. For an asterisk that should show, as in she\* or B\*, type a backslash in front of it: `she\*`, `B\*`. The backslash doesn't show on the site.
+
+Type the backslash every time, even where the preview looks right without it. Typed as `that it*, S, is F and it*, S, is G`, the line looks right in the preview. On the site, everything between the two asterisks comes out in italics, and the asterisks are gone.
+
+Next to an italic or bold letter, type the italics or bold as usual, and put the backslash only on the asterisk that should show:
+
+| For | Type |
+| --- | --- |
+| An italic letter, then an asterisk: *x*\* | `*x*\*` |
+| The asterisk in italics too: *x\** | `*x\**` |
+| A bold letter, then an asterisk: **F**\* | `**F**\*` |
+| A bold italic letter, then an asterisk: ***F***\* | `***F***\*` |
+| An asterisk, then an italic letter: \**x* | `\**x*` |
+| Two asterisks: S\*\* | `S\*\*` |
+| Logic with italics: B\*(*x*, *y is F*) | `B\*(*x*, *y is F*)` |
 
 ### Special characters
 
@@ -92,6 +111,8 @@ Some programs, older ones on Windows in particular, put in a character that look
 | Greek words already on the site | ἀρετή ἐποχή ἑρμηνεία φρόνησις |
 
 For anything else in Greek, use the Greek Polytonic keyboard, which Macs and Windows both have. It types each letter with its breathing and accent built in. A mark added on its own can sit in the wrong place.
+
+Older papers sometimes have a code in place of a character: `&Phi;` or `&#934;` for Φ, `&#9670;` for ◆, and `&#10216;` and `&#10217;` for ⟨ and ⟩. The site shows the character either way, so both are fine, but a character copied from the table is easier to read in the file.
 
 ### Pictures
 

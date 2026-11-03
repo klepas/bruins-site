@@ -4,6 +4,20 @@
 @use "../minima/settings" as *;
 
 /**
+ * Paragraph endings
+ *
+ * The browser picks line breaks so a paragraph doesn't end on a lone short
+ * word, on screen and in print. Chrome, Edge and Safari do this. Firefox
+ * doesn't support it yet and wraps as before. Breaks across printed pages
+ * are the print stylesheet's `orphans` and `widows`.
+ */
+.page-content p {
+  text-wrap: pretty;
+}
+
+
+
+/**
  * Footnote references and the notes
  *
  * `a.footnote` rather than `sup a`, so Bruin's own `<sup>` text keeps its

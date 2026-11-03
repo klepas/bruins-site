@@ -8,7 +8,7 @@ The site is live at http://www.cbchristensen.net/.
 
 The content is primarily in English, with some pages holding German-language content, either in part or in full as the main article body. Bruin writes Australian and British English, so use that spelling in any interface text you write. The site's `lang` is `en-AU`, and only pages written entirely in German get `lang: de`. The interface stays English on those pages.
 
-The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a new theme, with all content brought back at unchanged URLs. [`plans/overview-site-rebuild.md`](./plans/overview-site-rebuild.md) tracks what's left of that work. Read it before picking any of it up. `plans/` is gitignored, so the plans only exist on the user's machine.
+The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a new theme, with all content brought back at unchanged URLs.
 
 ## Directory structure
 
@@ -60,7 +60,7 @@ The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old 
 - `url` is the canonical host, `http://www.cbchristensen.net`. `jekyll doctor` warns and exits with status 1 without it.
 - `timezone: UTC` matches the 2022 build, so every front matter date lands on the same day in its URL.
 - `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
-- Don't remove `timezone` or `permalink` without re-running the URL parity check in the rebuild overview.
+- Don't remove `timezone` or `permalink` without building the site and checking that `_scripts/check-urls.rb` still prints `missing: 0`.
 - `kramdown.input: kramdown` is kramdown's own syntax, which the site has always used. Don't switch to GFM, Jekyll 4's default. It changes the heading ids on 35 pages, breaking any outside link to a section, and renders some of Bruin's Markdown differently. `README.md`'s "Writing in Markdown" guide has the rules Bruin follows.
 - Each course document holds its live URL as a literal `permalink:`, and so do the two papers whose URLs keep a curly apostrophe or a space. Never edit those lines. Bruin can retitle a page without moving it. A new course document needs a literal `permalink:` of its own too, such as `/courses/descartes/a-short-title/`. Without one it builds to `/courses/<collection>/` and replaces the course's index page. A placeholder such as `:title` makes Jekyll 4 take the URL from the file name. The content check rejects both, and any `permalink:` two pages share.
 - `strict_front_matter: true` makes a top block YAML can't read fail the build. Without it, Jekyll publishes the page anyway, at a URL with the build day's date. Keep it.
@@ -148,7 +148,7 @@ The content check, `_scripts/check-content.rb`, is the repo's only linter, and n
 
 ## Key technologies
 
-- Ruby, managed locally with rbenv. Ruby 3.4.11, pinned in `.ruby-version`.
+- Ruby, managed locally with rbenv. Ruby 3.4.12, pinned in `.ruby-version`.
 - Jekyll 4.4.1, with kramdown for Markdown and Liquid for templates.
 - AWS S3 static website hosting, deployed from GitHub Actions.
 

@@ -148,7 +148,7 @@ The content check, `_scripts/check-content.rb`, is the repo's only linter, and n
 
 ## Key technologies
 
-- Ruby, managed locally with rbenv. Ruby 3.4.11, pinned in `.ruby-version`.
+- Ruby, managed locally with rbenv. Ruby 3.4.12, pinned in `.ruby-version`.
 - Jekyll 4.4.1, with kramdown for Markdown and Liquid for templates.
 - AWS S3 static website hosting, deployed from GitHub Actions.
 

@@ -99,6 +99,7 @@ The user chose each of these on purpose. They aren't bugs, so don't undo them:
 - In print, links in Bruin's text and abstracts aren't underlined, and each shows its address in brackets after it (Issue #18, 2026-11-01). Site links get the site's `url` in front, passed in by `assets/css/main.scss`, so a `jekyll serve` build prints `http://localhost:4000`.
 - Footnote jump targets keep their focus outline after a mouse click. Safari draws it then and Chrome and Firefox don't, a difference the user accepted on 2026-10-26.
 - In Safari, a page scroll by trackpad or mouse wheel with the pointer over a table box leaves the arrow keys unable to scroll that box. It's a Safari bug, not the theme's, and keyboard-only use isn't affected. The user chose on 2026-10-27, and again on 2026-10-29, to leave it rather than add a script.
+- A paragraph that follows another starts with a 1.5rem indent, as in a book (2026-11-03). Text after a quote, list, table, rule, logic block or picture starts flush, because the Markdown can't tell whether it carries on the paragraph before. `_sass/site/_content.scss` has the rules and their exceptions.
 
 ## Quick commands
 

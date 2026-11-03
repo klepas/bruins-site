@@ -18,6 +18,47 @@
 
 
 /**
+ * Paragraph indents
+ *
+ * As in a book, a paragraph that follows another starts with an indent. The
+ * first paragraph of the text, of each section and of each quotation starts
+ * flush. So does text after a quotation, list, table, rule, logic block or
+ * picture, because the Markdown can't tell whether it starts a new paragraph
+ * or carries on the one before. Paragraphs in lists, the notes among them,
+ * never indent. On the home page, the large opening line counts as a
+ * heading.
+ */
+:is(.post-content, .abstract) p + p,
+.home-intro:not(.hello) + p {
+  text-indent: 1.5rem;
+}
+
+:is(.post-content, .abstract) {
+  :is(li, dd) p,
+  p.logic,
+  p.logic + p {
+    text-indent: 0;
+  }
+
+  // A rule of its own: a browser without :has() drops the whole rule, and
+  // would otherwise drop the exceptions above too
+  p:has(img),
+  p:has(img) + p {
+    text-indent: 0;
+  }
+}
+
+// Paragraphs that read as a list stay flush: the About page's publications,
+// found by the id kramdown gives its "Publications" heading, and the advice
+// on the 404 page
+#publications ~ p,
+.post-content.no-indent p {
+  text-indent: 0;
+}
+
+
+
+/**
  * Footnote references and the notes
  *
  * `a.footnote` rather than `sup a`, so Bruin's own `<sup>` text keeps its

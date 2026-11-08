@@ -7,10 +7,10 @@ date: 2014-08-01
 updated: 2014-08-22
 version: "21.05.07, 06:29 am, vorzuletzt modifiziert: 14.05.07, 09:44 am"
 author: Carleton B. Christensen
-abstract: >
-  A test page for the theme, built from short excerpts of the site's content. It
-  is never published. See <em>Being and Time</em>, § 7.<br/>This second line
-  follows a line break, the way papers' abstracts write them.
+abstract: |
+  A test page for the theme, built from short excerpts of the site's content. It is never published. See <em>Being and Time</em>, § 7.
+
+  This second paragraph follows an empty line, the way abstracts write them.
 ---
 
 This page copies short excerpts from Bruin's content so that every feature the content uses appears at least once. Build it with `--unpublished`.

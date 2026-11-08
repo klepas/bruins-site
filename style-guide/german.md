@@ -9,9 +9,8 @@ date: 2019-06-27
 updated: 2014-08-22
 version: "23.06.19, 11:24 am"
 author: Carleton B. Christensen
-abstract: >
-  A German test page with an English abstract, like “The Struggle for the
-  Ordinary”. It is never published.
+abstract: |
+  A German test page with an English abstract, like “The Struggle for the Ordinary”. It is never published.
 ---
 
 ## Einleitung

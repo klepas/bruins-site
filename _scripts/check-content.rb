@@ -7,10 +7,10 @@
 # left empty above the notes, look-alike characters and accents typed apart
 # from their letters, headings that skip a level, spaces in addresses and
 # file names, links that read only "here", course notes on the wrong layout,
-# and an updated: before the date. It warns about Word files outside the
-# drafts and files folders, and about a mark typed apart from its letter
-# where no ready-made letter has it. CI runs it before the build, and an
-# error stops the deploy.
+# abstracts not written below abstract: | or holding a <br>, and an updated:
+# before the date. It warns about Word files outside the drafts and files
+# folders, and about a mark typed apart from its letter where no ready-made
+# letter has it. CI runs it before the build, and an error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -96,7 +96,7 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-01-16-kramdown-warning.md:5: kramdown says: Footnote definition for '9' not found on line 5
   papers/_posts/2026-01-17-top-block-not-closed.md:1: the block at the top needs a --- line at its end
   papers/_posts/2026-01-18-top-block-unreadable.md:3: the block at the top can't be read (mapping values are not allowed in this context). Check the quotation marks (see "The block at the top" in README.md)
-  papers/_posts/2026-01-19-key-twice.md:5: abstract: appears twice in the block at the top, and the site uses only the last one
+  papers/_posts/2026-01-19-key-twice.md:6: abstract: appears twice in the block at the top, and the site uses only the last one
   papers/_posts/2026-01-20-lang.md:4: lang: should be de, or left out for English
   papers/_posts/2026-01-28-byte-order-mark.md:1: the file starts with an invisible byte order mark, which stops some pages being built. Ask Pep to remove it.
   papers/_posts/2026-01-29-stray-carriage-return.md:5: warning: a stray carriage return character. Ask Pep to remove it.
@@ -144,6 +144,11 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-23-mark-without-letter.md:7: warning: "за́мок" has a mark typed apart from its letter (U+0301). No ready-made letter has it, so if you meant it, leave it
   papers/_posts/2026-02-23-mark-without-letter.md:8: warning: "ᾱ́" has a mark typed apart from its letter (U+0301). No ready-made letter has it, so if you meant it, leave it
   papers/_posts/2026-02-23-mark-without-letter.md:9: warning: "α̣" has a mark typed apart from its letter (U+0323). No ready-made letter has it, so if you meant it, leave it
+  papers/_posts/2026-02-24-abstract-quoted.md:4: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
+  papers/_posts/2026-02-24-abstract-quoted.md:4: put the abstract on the lines below abstract: |, indented by two spaces and without quotes, so an empty line can start a new paragraph (see "The block at the top" in README.md)
+  papers/_posts/2026-02-25-abstract-folded.md:4: write abstract: | in place of abstract: >-. After >-, an empty line doesn't start a new paragraph (see "The block at the top" in README.md)
+  papers/_posts/2026-02-26-abstract-br.md:5: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
+  papers/_posts/2026-02-26-abstract-br.md:7: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
   papers/_posts/Old notes 1994.doc:1: warning: anyone can see this .doc file on GitHub, though the site doesn't show it. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
   talk-notes.docx:1: warning: anyone can see this .docx file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
@@ -397,8 +402,8 @@ class FileCheck
   # the name alone and never read the file.
   UNREAD_CHECKS = %i[not_markdown].freeze
   # After the block at the top is read.
-  FILE_CHECKS = %i[duplicate_keys lang course_permalink course_layout post_date file_name_space
-                   updated_before_date].freeze
+  FILE_CHECKS = %i[duplicate_keys lang abstract_block course_permalink course_layout post_date
+                   file_name_space updated_before_date].freeze
   # Each body line of a Markdown file outside ~~~ code blocks. They get the
   # line's number in the file, the line and the line before it.
   LINE_CHECKS = %i[heading_space block_after_paragraph table_rows table_separator
@@ -422,6 +427,7 @@ class FileCheck
     @path = file.path
     @data = {}
     @key_lines = {}
+    @value_nodes = {}
     @code_lines = Set.new
     @findings = []
   end
@@ -532,8 +538,12 @@ class FileCheck
     root = document && document.root
     return unless root.is_a?(Psych::Nodes::Mapping)
 
-    root.children.each_slice(2) do |key, _value|
-      (@key_lines[key.value] ||= []) << key.start_line + 2 if key.is_a?(Psych::Nodes::Scalar)
+    root.children.each_slice(2) do |key, value|
+      next unless key.is_a?(Psych::Nodes::Scalar)
+
+      (@key_lines[key.value] ||= []) << key.start_line + 2
+      # The last one, as the site uses.
+      @value_nodes[key.value] = value
     end
   end
 
@@ -642,6 +652,35 @@ class FileCheck
     return if @data["lang"].nil? || %w[de en-AU].include?(value_text(@data["lang"]))
 
     add(key_line("lang"), "lang: should be de, or left out for English")
+  end
+
+  # Abstracts go below abstract: |, one line per paragraph (decided
+  # 2026-11-04). After > or inside quotes, an empty line doesn't start a new
+  # paragraph, and the site runs the paragraphs into one. A <br> breaks the
+  # line but doesn't start a paragraph either.
+  def abstract_block
+    node = @value_nodes["abstract"]
+    return unless node.is_a?(Psych::Nodes::Scalar) && !node.value.strip.empty?
+
+    line = key_line("abstract")
+    if node.style == Psych::Nodes::Scalar::FOLDED
+      written = @lines[line - 1][/\Aabstract:\s*(\S+)/, 1]
+      add(line, "write abstract: | in place of abstract: #{written}. After #{written}, an empty line doesn't start a " \
+                'new paragraph (see "The block at the top" in README.md)')
+    elsif node.style != Psych::Nodes::Scalar::LITERAL
+      add(line, "put the abstract on the lines below abstract: |, indented by two spaces and without quotes, so an " \
+                'empty line can start a new paragraph (see "The block at the top" in README.md)')
+    end
+
+    # Psych counts from 0 at the line after the first ---. A block ends at
+    # the start of the next key's line.
+    last = node.end_column.zero? ? node.end_line - 1 : node.end_line
+    (node.start_line..[last, node.start_line].max).each do |i|
+      next unless @lines[i + 1].to_s.match?(%r{<br\s*/?>}i)
+
+      add(i + 2, 'leave an empty line in place of <br> to start a new paragraph in the abstract ' \
+                 '(see "The block at the top" in README.md)')
+    end
   end
 
   # Course notes need an address of their own inside the course's. Without

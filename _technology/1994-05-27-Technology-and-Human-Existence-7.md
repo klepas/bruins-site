@@ -4,7 +4,10 @@ permalink: /courses/technology/karl-marx-on-technology-economy-and-society/
 title: "Karl Marx on Technology, Economy and Society"
 date: 1994-05-27
 version: "27.05.1994"
-abstract: "This is the seventh of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.<br><br/>The structure and much of the substance of these notes have been adapted from lectures notes prepared by C.A. Hooker and J.N. Wright for the course “Technology and Human Values,” offered in 1991 by the Department of Philosophy at the University of Newcastle. Indeed, although he would disagree with my assessment of, e.g., Ellul, the general idea of a course on the philosophy of technology is one of several I owe to Hooker."
+abstract: |
+  This is the seventh of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
+
+  The structure and much of the substance of these notes have been adapted from lectures notes prepared by C.A. Hooker and J.N. Wright for the course “Technology and Human Values,” offered in 1991 by the Department of Philosophy at the University of Newcastle. Indeed, although he would disagree with my assessment of, e.g., Ellul, the general idea of a course on the philosophy of technology is one of several I owe to Hooker.
 
 ---
 

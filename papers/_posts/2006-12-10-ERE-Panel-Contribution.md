@@ -10,7 +10,8 @@ version: "11.12.2006, 09:28 am"
 
 author: Carleton B. Christensen
 
-abstract: "This is a slightly revised version of my contribution to the ERE Panel Discussion on Sustainability and Economic Growth held at Macquarie University on December 10<sup>th.</sup>, 2006."
+abstract: |
+  This is a slightly revised version of my contribution to the ERE Panel Discussion on Sustainability and Economic Growth held at Macquarie University on December 10<sup>th.</sup>, 2006.
 
 ---
 

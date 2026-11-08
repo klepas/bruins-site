@@ -4,7 +4,8 @@ permalink: /courses/technology/marcuse-and-the-one-dimensional-society/
 title: "Marcuse and the One-Dimensional Society"
 date: 1994-06-02
 version: "02.06.1994"
-abstract: "This is the ninth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+abstract: |
+  This is the ninth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
 
 ---
 

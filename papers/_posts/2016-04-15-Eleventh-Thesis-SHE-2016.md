@@ -4,7 +4,8 @@ title: “Philosophers have thus far only ... interpreted the world ...”
 date: 2016-04-15T00:00:00.000Z
 version: "02.04.16, 22:19 pm"
 author: Carleton B. Christensen
-abstract: "This short paper was given at the annual conference of the <em>Society for Human Ecology</em>, on April 15<sup>th.</sup>, 2016."
+abstract: |
+  This short paper was given at the annual conference of the <em>Society for Human Ecology</em>, on April 15<sup>th.</sup>, 2016.
 published: true
 ---
 

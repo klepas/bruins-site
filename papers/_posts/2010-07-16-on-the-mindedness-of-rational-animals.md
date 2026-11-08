@@ -4,7 +4,8 @@ title: "On the Mindedness of Rational Animals—Coping with Dreyfus"
 date: 2010-07-16
 author: Carleton B. Christensen
 version: "13.01.15 19.45 StackEdit"
-abstract: "I will be adding an abstract later."
+abstract: |
+  I will be adding an abstract later.
 
 ---
 

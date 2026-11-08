@@ -4,7 +4,8 @@ permalink: /courses/technology/modernity-and-innovation/
 title: "Modernity and Innovation"
 date: 1994-05-28
 version: "27.05.1994"
-abstract: "This is the eighth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+abstract: |
+  This is the eighth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
 
 ---
 

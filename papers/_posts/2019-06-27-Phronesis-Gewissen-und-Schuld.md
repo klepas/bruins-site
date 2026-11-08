@@ -6,7 +6,7 @@ title: >
 date: 2019-06-27
 version: "23.06.19, 11:24 am"
 author: Carleton B. Christensen
-abstract: >
+abstract: |
   Dieses Paper bildet den Text eines Vortrags, den ich am 20<sup>.sten</sup> Juni, 2019, im Institut für Philosophie an der Universität Leipzig, und am 27<sup>.sten</sup> Juni, 2019 im Institut für Philosophie an der Westfälischen Wilhelms-Universität, Münster, gehalten habe.
 published: true
 ---

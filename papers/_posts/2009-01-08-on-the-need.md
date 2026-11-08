@@ -3,7 +3,8 @@ layout: post
 title: "On the Need not to be Constructivist about Affectivities"
 date: 2009-01-08
 author: Carleton B. Christensen
-abstract: "This is the slightly revised text of a paper I held at the Parsons School of Design at the New School, New York, in January, 2009"
+abstract: |
+  This is the slightly revised text of a paper I held at the Parsons School of Design at the New School, New York, in January, 2009
 ---
 
 ## Introduction

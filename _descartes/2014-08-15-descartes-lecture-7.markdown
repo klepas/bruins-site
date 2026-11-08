@@ -3,7 +3,8 @@ layout: course-document
 permalink: /courses/descartes/descartes-meditations-on-first-philosophy-7/
 title: "Descartes’ *Meditations on First Philosophy* 7"
 updated: 2014-08-15
-abstract: "The Third Meditation: Of God, that He exists --- Part III"
+abstract: |
+  The Third Meditation: Of God, that He exists --- Part III
 ---
 
 ## The Third Meditation: Of God, that He exists --- Part III

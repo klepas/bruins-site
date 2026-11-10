@@ -151,7 +151,7 @@ out=$(mktemp -d) && bundle exec jekyll build --destination "$out" && ruby _scrip
 
 ### Hosting
 
-The S3 bucket `www.cbchristensen.net`, in `ap-southeast-2`. A separate nginx host, outside this repo, redirects `cbchristensen.net` to `www.`. GitHub deploys each push to `master` that passes the check, from the `deploy` job in `.github/workflows/check.yml`.
+The S3 bucket `www.cbchristensen.net`, in `ap-southeast-2`. wwwizer.com, a free redirect service outside this repo, sends `cbchristensen.net` to `www.`. GitHub deploys each push to `master` that passes the check, from the `deploy` job in `.github/workflows/check.yml`.
 
 ### Debugging Sass
 

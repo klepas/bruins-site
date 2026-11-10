@@ -34,6 +34,7 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── about.md, impressum.md  The about page and the Impressum
 ├── 404.html           "Page not found", for the bucket's ErrorDocument. S3 serves it at the missing address, so its links start with "/". Its noindex: true drops the canonical link
 ├── robots.txt         Opts the site out of AI training and leaves search engines alone. Its header says where the names come from and when to recheck them
+├── .well-known/tdmrep.json  Reserves the site's text and data mining rights, the PDFs included, see Jekyll below
 ├── papers/_posts/     The papers, each named <date>-<slug>.md
 │   └── _drafts/       Bruin's Word files and Markdown drafts. Jekyll never builds the folder, but anyone can read it on GitHub
 ├── blog/_posts/       The blog posts
@@ -57,6 +58,7 @@ The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old 
 
 - **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `_scripts/live-url-inventory.tsv` lists all of them, and `_scripts/check-urls.rb` checks every build against it. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, so those pages pin theirs with a literal `permalink:`, see below. The one exception so far: on 2026-10-25 two image files got hyphens in place of the spaces in their names, agreed by the user with Bruin, so their old addresses are gone. No page's URL changed.
 - Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. On the user's machine both hold notes, plans and test pages, such as `refs/safari-box-overflow-scroll-bug/testcase.html`, which Jekyll would otherwise copy into the site. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.
+- Jekyll skips names that start with a dot, so `include:` lists `.well-known`. Its `tdmrep.json` reserves text and data mining rights for the whole site under W3C's TDMRep. It's the only TDMRep form that reaches the PDFs, since S3 can't send TDMRep's HTTP header. On 2026-11-11 the user left out the spec's optional `tdm-policy`, and its `tdm-reservation` meta tag, because the spec asks rightsholders to use only one technique.
 - `url` is the canonical host, `http://www.cbchristensen.net`. `jekyll doctor` warns and exits with status 1 without it.
 - `timezone: UTC` matches the 2022 build, so every front matter date lands on the same day in its URL.
 - `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
@@ -177,7 +179,7 @@ Dependabot security updates are on in the repo's GitHub settings, and they stay 
 
 The live site is served from the S3 bucket `www.cbchristensen.net` (`ap-southeast-2`) over HTTP, through the bucket's website endpoint. Its `ErrorDocument` is `404.html`, which S3 serves with a `404` at any address with no file. `www.cbchristensen.net` is the canonical host. A separate nginx host redirects every path on `cbchristensen.net` to the same path on `www.`, and that redirect has to keep working.
 
-Every push to `master` that passes the check goes live. The `deploy` job in `.github/workflows/check.yml` uploads the build the `check` job made, with `aws s3 sync` and `Cache-Control: no-cache` on every file. `--delete` removes whatever the build no longer makes, so a file deleted or renamed in the repo leaves the site with the next deploy. The job signs in through GitHub's OIDC token as the IAM role `bruins-site-deploy`, whose ARN is in the repository secret `AWS_DEPLOY_ROLE_ARN`, so no AWS key is stored anywhere. AWS lets only runs on `master` take the role, and the role can only list the bucket and write and delete its files. A run whose commit is no longer `master`'s tip uploads nothing, so re-running an old run can't put an old build back.
+Every push to `master` that passes the check goes live. The `deploy` job in `.github/workflows/check.yml` uploads the build the `check` job made, with `aws s3 sync` and `Cache-Control: no-cache` on every file. The build's artifact needs `include-hidden-files: true`, or `upload-artifact` leaves out `.well-known/`. `--delete` removes whatever the build no longer makes, so a file deleted or renamed in the repo leaves the site with the next deploy. The job signs in through GitHub's OIDC token as the IAM role `bruins-site-deploy`, whose ARN is in the repository secret `AWS_DEPLOY_ROLE_ARN`, so no AWS key is stored anywhere. AWS lets only runs on `master` take the role, and the role can only list the bucket and write and delete its files. A run whose commit is no longer `master`'s tip uploads nothing, so re-running an old run can't put an old build back.
 
 The user holds the AWS account. Agents never run `aws` commands or deploy by hand.
 

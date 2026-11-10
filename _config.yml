@@ -26,6 +26,11 @@ kramdown:
 sass:
   sourcemap: never
 
+# Jekyll skips names that start with a dot. .well-known/tdmrep.json reserves
+# text and data mining rights for the whole site, the PDFs included.
+include:
+  - .well-known
+
 exclude:
   - refs/
   - plans/

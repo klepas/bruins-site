@@ -73,7 +73,9 @@ jobs:
         run: bundle exec jekyll doctor
       # The deploy job copies exactly this build, so on master it's kept as
       # an artifact for a day. overwrite replaces any site artifact this run
-      # already has, so the upload can't fail on the name.
+      # already has, so the upload can't fail on the name. Without
+      # include-hidden-files, the action would leave out .well-known/, as it
+      # does every name that starts with a dot.
       - name: Keep the build for the deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v7
@@ -83,6 +85,7 @@ jobs:
           retention-days: 1
           if-no-files-found: error
           overwrite: true
+          include-hidden-files: true
 
   # Copies the checked build to the bucket. AWS lets only a run on this
   # repo's master take the deploy role, through GitHub's OIDC token, so no

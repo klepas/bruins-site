@@ -33,10 +33,10 @@ jobs:
     steps:
       # No later step uses git, so the token isn't kept in .git/config,
       # where the gems' code could read it.
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1.338.0
         with:
           bundler-cache: true
       - name: Check the content
@@ -84,7 +84,7 @@ jobs:
       # does every name that starts with a dot.
       - name: Keep the build for the deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: site
           path: ${{ runner.temp }}/site
@@ -123,12 +123,12 @@ jobs:
           else
             echo "::notice::master is now at $tip, so its run deploys instead."
           fi
-      - uses: actions/download-artifact@v8
+      - uses: actions/download-artifact@v8.0.2
         if: steps.tip.outputs.deploy == 'true'
         with:
           name: site
           path: site
-      - uses: aws-actions/configure-aws-credentials@v6
+      - uses: aws-actions/configure-aws-credentials@v6.3.0
         if: steps.tip.outputs.deploy == 'true'
         with:
           role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}

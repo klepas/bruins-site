@@ -45,6 +45,7 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── .claude/skills/    Project skills, see Skills below
 ├── .gitattributes     LF line endings for text files committed from a clone; the content check's fixtures keep their bytes
 ├── .github/workflows/check.yml  The GitHub check, the deploy and the notices to the user, see Content checks and Deployment below
+├── .github/workflows/actions.lock  The exact commit of each action check.yml uses, written by gh actions-lock, see Dependencies below
 └── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
     ├── done/          Finished plan sets
     └── tools/         screenshots/ takes screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
@@ -174,6 +175,8 @@ The theme added no gems. It's a copy in the repo, and the Sass compiler comes wi
 `Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`.
 
 Dependabot security updates are on in the repo's GitHub settings, and they stay on. Expect Dependabot PRs against `Gemfile.lock`.
+
+Each action in the workflow is locked to an exact commit in `.github/workflows/actions.lock`, so moving a tag upstream can't change what runs, and a job that uses an action the lockfile doesn't list fails. After changing a `uses:` line, run `gh actions-lock` then `gh actions-lock --verify`, and commit the lockfile with the workflow. The command comes from the `github/gh-actions-lock` extension for `gh`. Each `ruby/setup-ruby` release knows only the Rubies out before it, so if the check can't find the Ruby in `.ruby-version`, raise the action's version in its `uses:` line and relock.
 
 ## Deployment
 

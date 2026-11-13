@@ -56,6 +56,19 @@
   text-indent: 0;
 }
 
+// A paper's references read as a list too: the paragraphs after its last
+// "References" or "Literaturhinweise" heading. kramdown gives the first
+// heading with that wording the id "references", even one in a quotation,
+// and each later one "references-1", "references-2" and so on. The `>`
+// skips headings in quotations. The references end the text, and the notes
+// sit in a box of their own, so no other paragraph follows them. A rule of
+// its own because of :has(), as above.
+$references-heading: ':is([id="references"], [id^="references-"], [id="literaturhinweise"], [id^="literaturhinweise-"])';
+
+.post-content > #{$references-heading}:not(:has(~ #{$references-heading})) ~ p {
+  text-indent: 0;
+}
+
 
 
 /**

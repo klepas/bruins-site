@@ -92,6 +92,14 @@ Next to an italic or bold letter, type the italics or bold as usual, and put the
 
 Underscores work for italics too, as in `_F\*_`, but only around a whole word, not after a hyphen or inside a word (rule 3).
 
+### Raised and lowered text
+
+For raised text, as in 31<sup>st</sup>, type `31<sup>st</sup>`. For lowered text, as in *I*<sub>1</sub>, type `*I*<sub>1</sub>`. The preview shows them as the site does.
+
+Carets, as in `31^st^`, don't raise anything. Some programs write them when they save a file as Markdown, and the site shows them as typed. The check gives a red cross for them.
+
+A note number in a passage you quote, such as the 10 in eminently,<sup>10</sup>, is raised text too. For a note of your own, use a footnote (rule 6).
+
 ### Special characters
 
 Some programs, older ones on Windows in particular, put in a character that looks right but isn't, such as an accent mark where an apostrophe belongs. Copy what you need from here instead.

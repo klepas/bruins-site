@@ -8,8 +8,8 @@ on:
   push:
   pull_request:
 
-permissions:
-  contents: read
+# Each job names the permissions it needs, so a new job starts with none.
+permissions: {}
 
 # For the notice jobs at the end. GitHub emails only the person whose push
 # started a run, which on master is usually Bruin. So on master a failed
@@ -25,11 +25,17 @@ env:
 jobs:
   check:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
     outputs:
       linted: ${{ steps.warnings.outputs.linted }}
       warnings: ${{ steps.warnings.outputs.warnings }}
     steps:
+      # No later step uses git, so the token isn't kept in .git/config,
+      # where the gems' code could read it.
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true

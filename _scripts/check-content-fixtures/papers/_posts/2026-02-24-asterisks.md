@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Asterisks the site reads differently"
-abstract: >
+abstract: |
   Whether it*, S, is F and it*, S, is G.
 ---
 Castañeda’s ‘he*’ comes before *de se* in this line.

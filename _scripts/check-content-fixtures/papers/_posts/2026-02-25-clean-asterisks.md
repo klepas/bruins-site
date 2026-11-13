@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why she\\* is happy"
-abstract: >
+abstract: |
   Whether it\*, S, is F and it\*, S, is G, and *x*\*.
 ---
 Mary believes that she* is happy, and he* or she* agrees.

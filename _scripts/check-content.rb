@@ -153,7 +153,7 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-24-asterisks.md:17: "R**": the site starts bold here, where the preview shows the asterisks. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
   papers/_posts/2026-02-24-asterisks.md:21: "*y**": the site shows this asterisk, where the preview can start italics with it. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
   papers/_posts/2026-02-24-asterisks.md:27: "he*": the site starts italics here, where the preview shows the asterisk. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
-  papers/_posts/2026-02-24-asterisks.md:5: "it*": the site starts italics here. For an asterisk that should show, type \\* inside quotes, or \* under abstract: > (see "The block at the top" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:5: "it*": the site starts italics here. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
   papers/_posts/2026-02-24-asterisks.md:7: "he*": the site starts italics here, where the preview shows the asterisk. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
   papers/_posts/2026-02-24-asterisks.md:9: "B*": the site starts italics here, where the preview shows the asterisk. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
   papers/_posts/2026-02-25-abstract-folded.md:4: write abstract: | in place of abstract: >-. After >-, an empty line doesn't start a new paragraph (see "The block at the top" in README.md)
@@ -940,9 +940,12 @@ class FileCheck
           n = source_line(line + offset, word, word)
           next unless started.add?(n)
 
-          add(n, if key
-                   %("#{word}": the site starts #{kind} here. For an asterisk that should show, ) +
-                     'type \\\\* inside quotes, or \\* under abstract: > (see "The block at the top" in README.md)'
+          add(n, case key
+                 when "title"
+                   %("#{word}": the site starts #{kind} here. For an asterisk that should show in the title, ) +
+                     'type \\\\* (see "The block at the top" in README.md)'
+                 when "abstract"
+                   %("#{word}": the site starts #{kind} here. #{ASTERISK_ADVICE})
                  else
                    %("#{word}": the site starts #{kind} here, where the preview shows the ) +
                      "#{marks.size == 1 ? 'asterisk' : 'asterisks'}. #{ASTERISK_ADVICE}"

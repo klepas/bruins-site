@@ -147,7 +147,7 @@ With this Descartes is implying—he is certainly not stating it explicitly—th
 
 [^13]: At the top of p.28 Descartes insinuates that his lump of wax is white, not yellow!
 
-[^14]: I.e*., haptically*, a word one sometimes finds in the literature.
+[^14]: I.e., *haptically*, a word one sometimes finds in the literature.
 
 [^15]: That the mind *infers to* the identity on the basis of the *evidence* provided by the senses, hence *judges* the wax to be of such and such a kind, or again, such and such an individual instance of the kind, is the point of the example Descartes gives across pp.28-29, where he speaks of his *inferring* that the things in hats and coats he sees moving about on the street below are people.
 

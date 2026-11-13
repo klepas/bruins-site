@@ -270,7 +270,7 @@ Zahavi, D. (2009) “Is the Self a Social Construct?,” in *Inquiry*, Vol. 52, 
 
 [^15]: That the Editor of *Soul* believes that he* is a millionaire does, of course, implicate *actual* self-consciousness and (arguably therefore) also *actual* ability to wield the first-person pronoun—in, for example, an assertion of the sentence, “I am a millionaire.” But one can and, I argue, must construe this as a consequence of what the sentence means in total; it is not an accomplishment of the asterisked third-person pronoun alone. See once again in this connection note 11.
 
-[^16]: And ultimately so, too, does Anscombe—see Anscombe 1975, p. 47. For according to her Castañeda’s ‘he*’ presupposes ‘I’ and the latter sets itself apart from her curious expression ‘A’ precisely through the character of its use as expressing self-consciousness. Lewis’s thought-experiment of the two gods suggests that he, too, at least as a matter of brute fact, associates the *de se* with *actual* self-consciousness. But the matter is not clear.
+[^16]: And ultimately so, too, does Anscombe—see Anscombe 1975, p. 47. For according to her Castañeda’s ‘he\*’ presupposes ‘I’ and the latter sets itself apart from her curious expression ‘A’ precisely through the character of its use as expressing self-consciousness. Lewis’s thought-experiment of the two gods suggests that he, too, at least as a matter of brute fact, associates the *de se* with *actual* self-consciousness. But the matter is not clear.
 
 [^17]: See Castañeda 1967a and 1966 respectively.
 
@@ -278,7 +278,7 @@ Zahavi, D. (2009) “Is the Self a Social Construct?,” in *Inquiry*, Vol. 52, 
 
 [^19]: Whose other members include Dieter Henrich and Ulrich Pothast. The founding text of the School, in which the argument is first presented, both as an interpretation of Fichte and as a critique of the subject-object model in general, is Henrich 1967. 
 
-[^20]: See Castañeda 1999b, p. 264f. This intimates, incidentally, how Castañeda might explain the fact that when the pronoun ‘he’ is used as ‘he*’, it often occurs in conjunction with the matching third-person *reflexive* pronoun, in the complex pronominal phrase ‘he himself’: the reflexive pronoun does not merely perform the function of underscoring that the form of intentionality at issue is *de se*; it also functions as an abbreviation of the phrase ‘he *in his capacity simply as himself*’. Indeed, Castañeda might claim that it only thus emphasises because it thus abbreviates.
+[^20]: See Castañeda 1999b, p. 264f. This intimates, incidentally, how Castañeda might explain the fact that when the pronoun ‘he’ is used as ‘he\*’, it often occurs in conjunction with the matching third-person *reflexive* pronoun, in the complex pronominal phrase ‘he himself’: the reflexive pronoun does not merely perform the function of underscoring that the form of intentionality at issue is *de se*; it also functions as an abbreviation of the phrase ‘he *in his capacity simply as himself*’. Indeed, Castañeda might claim that it only thus emphasises because it thus abbreviates.
 
 [^21]: Castañeda is quite explicit about this: see Castañeda 1999b, p. 258.
 

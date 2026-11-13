@@ -29,9 +29,9 @@
 # - No new gem. It needs only Ruby's standard library and kramdown, which
 #   Jekyll already brings.
 # - It reads kramdown's options from _config.yml and parses the way the
-#   build does, so it sees what the site will show. The underscore check
-#   reads kramdown's output, because a pattern on the source can't tell an
-#   opening _ from a closing one.
+#   build does, so it sees what the site will show. The underscore and
+#   asterisk checks read kramdown's output, because a pattern on the source
+#   can't tell an opening _ or * from a closing one.
 # - It checks the mistakes this content actually had, which mdl has no rules
 #   for, and its messages point Bruin at the README guide.
 #
@@ -40,8 +40,9 @@
 #   so a false alarm holds the deploy until this script is fixed.
 # - It knows only the problems we've taught it. A new kind of mistake needs
 #   a new check.
-# - The underscore check walks kramdown's parse tree, so a major kramdown
-#   upgrade could break it. Run --self-test after any gem update.
+# - The underscore and asterisk checks walk kramdown's parse tree, so a
+#   major kramdown upgrade could break them. Run --self-test after any gem
+#   update.
 # - --self-test and its fixtures are the only tests. Add a fixture with
 #   every new check.
 #
@@ -146,6 +147,15 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-23-mark-without-letter.md:9: warning: "α̣" has a mark typed apart from its letter (U+0323). No ready-made letter has it, so if you meant it, leave it
   papers/_posts/2026-02-24-abstract-quoted.md:4: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
   papers/_posts/2026-02-24-abstract-quoted.md:4: put the abstract on the lines below abstract: |, indented by two spaces and without quotes, so an empty line can start a new paragraph (see "The block at the top" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:11: "*x**": the site shows this asterisk, where the preview can start italics with it. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:13: "*first": the site shows this asterisk, where the preview can start italics with it. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:15: "*Flexible": the site shows this asterisk, where the preview can start italics with it. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:17: "R**": the site starts bold here, where the preview shows the asterisks. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:21: "*y**": the site shows this asterisk, where the preview can start italics with it. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:27: "he*": the site starts italics here, where the preview shows the asterisk. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:5: "it*": the site starts italics here. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:7: "he*": the site starts italics here, where the preview shows the asterisk. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
+  papers/_posts/2026-02-24-asterisks.md:9: "B*": the site starts italics here, where the preview shows the asterisk. For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)
   papers/_posts/2026-02-25-abstract-folded.md:4: write abstract: | in place of abstract: >-. After >-, an empty line doesn't start a new paragraph (see "The block at the top" in README.md)
   papers/_posts/2026-02-26-abstract-br.md:5: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
   papers/_posts/2026-02-26-abstract-br.md:7: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
@@ -221,6 +231,17 @@ ADDRESS = %r{https?://\S+|\S*@\S+|www\.\S+}
 LEFTOVER_UNDERSCORE = /[[:alpha:]]_|_[[:alpha:]]/
 # Punctuation around a word, left out when the message names it.
 EDGE_PUNCTUATION = /\A[[:punct:]&&[^_]]+|[[:punct:]&&[^_]]+\z/
+
+# The asterisk check parses the page again with each \* swapped for this
+# private-use character, since kramdown turns \* into a plain *.
+ESCAPED_ASTERISK = "\u{E000}"
+# \*, but not the * in \\*, which follows a backslash that shows.
+TYPED_ESCAPE = /(?<!\\)((?:\\\\)*)\\\*/
+# An asterisk before a letter or digit, as in "*first".
+WORD_START_ASTERISK = /(?<![[:alnum:]])\*(?=[[:alnum:]])/
+# Punctuation around a word, as for EDGE_PUNCTUATION, keeping \ and *.
+ASTERISK_EDGE_PUNCTUATION = /\A[[:punct:]&&[^*\\]]+|[[:punct:]&&[^*\\]]+\z/
+ASTERISK_ADVICE = 'For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)'
 
 Finding = Struct.new(:path, :line, :message, :warning) do
   def to_s
@@ -412,7 +433,7 @@ class FileCheck
   # runs templates before Markdown.
   LINE_CHECKS_INCLUDING_CODE = %i[template].freeze
   # After kramdown has parsed a Markdown body.
-  TREE_CHECKS = %i[underscores kramdown_warnings notes_heading heading_levels address_spaces
+  TREE_CHECKS = %i[underscores asterisks kramdown_warnings notes_heading heading_levels address_spaces
                    vague_links].freeze
   # Each line of the file, the block at the top included, leaving out code:
   # ~~~ blocks, and `…` on one line in a Markdown body. They get the line's
@@ -891,6 +912,83 @@ class FileCheck
   # in a table cell only knows the table's first line.
   def source_line(n, word, escaped)
     (n..@lines.size).find { |i| @lines[i - 1].include?(word) || @lines[i - 1].include?(escaped) } || n
+  end
+
+  # Asterisks the site and GitHub's preview read differently. After a letter
+  # and before punctuation, an asterisk starts italics or bold on the site
+  # but shows in the preview, so "it*, S, is F and it*, S" puts ", S, is F
+  # and it" in italics. Before a letter, an asterisk the site shows can
+  # start italics in the preview, as "*first of all*" inside _…_ does. The
+  # title and the abstract get only the first test, since the preview shows
+  # them as typed. Italics started by mistake leave the asterisks after
+  # them unpaired, so a line with those reports only the first.
+  def asterisks
+    body = asterisk_parse(@lines[@body_start..].join("\n"))
+    sources = [[body, @body_start, nil]]
+    %w[title abstract].each do |key|
+      sources << [asterisk_parse(@data[key]), key_line(key) - 1, key] if @data[key].is_a?(String)
+    end
+
+    started = Set.new
+    sources.each do |doc, offset, key|
+      each_element(doc.root) do |el, line|
+        el.children.each_cons(2) do |before, span|
+          next unless started_after_letter?(before, span)
+
+          kind, marks = span.type == :em ? %w[italics *] : %w[bold **]
+          word = shown_word(before.value[/\S*\z/]) + marks
+          n = source_line(line + offset, word, word)
+          next unless started.add?(n)
+
+          add(n, case key
+                 when "title"
+                   %("#{word}": the site starts #{kind} here. For an asterisk that should show in the title, ) +
+                     'type \\\\* (see "The block at the top" in README.md)'
+                 when "abstract"
+                   %("#{word}": the site starts #{kind} here. #{ASTERISK_ADVICE})
+                 else
+                   %("#{word}": the site starts #{kind} here, where the preview shows the ) +
+                     "#{marks.size == 1 ? 'asterisk' : 'asterisks'}. #{ASTERISK_ADVICE}"
+                 end)
+        end
+      end
+    end
+
+    each_element(body.root) do |el, line|
+      next unless el.type == :text && el.value.match?(WORD_START_ASTERISK)
+
+      el.value.to_enum(:scan, /\S+/).map { Regexp.last_match }.each do |match|
+        next unless match[0].gsub(ADDRESS, "").match?(WORD_START_ASTERISK)
+
+        word = shown_word(match[0])
+        n = source_line(line + el.value[0, match.begin(0)].count("\n") + @body_start, word, word)
+        next if started.include?(n)
+
+        add(n, %("#{word}": the site shows this asterisk, where the preview can start italics with it. ) +
+               ASTERISK_ADVICE)
+      end
+    end
+  end
+
+  def asterisk_parse(text)
+    Kramdown::Document.new(text.gsub(TYPED_ESCAPE) { "#{Regexp.last_match(1)}#{ESCAPED_ASTERISK}" },
+                           @site.kramdown_options)
+  end
+
+  # Italics or bold that kramdown starts with * straight after a letter or
+  # digit, on something other than one. CommonMark, which the preview
+  # follows, doesn't start them there.
+  def started_after_letter?(before, span)
+    return false unless %i[em strong].include?(span.type) && span.options[:char] == "*"
+    return false unless before.type == :text && before.value.match?(/[[:alnum:]]\z/)
+
+    first = span.children.first
+    !(first&.type == :text && first.value.match?(/\A[[:alnum:]]/))
+  end
+
+  # A word as typed, for a message: \* as \*, and no punctuation round it.
+  def shown_word(word)
+    word.gsub(ESCAPED_ASTERISK, "\\*").gsub(ASTERISK_EDGE_PUNCTUATION, "")
   end
 
   # kramdown's own warnings, apart from the "No link definition" ones that

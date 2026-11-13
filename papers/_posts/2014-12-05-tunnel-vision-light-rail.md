@@ -89,7 +89,7 @@ In the Coverage Network there will be two kinds of route, distinguished accordin
 |   | Low density, outer suburbs | 30 minutes or better | 30 minutes or better | 60 minutes or better* | 500m (5-7 minutes walk) of 95% of households   |
 | By 2031 | Everywhere | 30 minutes or better | 30 minutes or better | 30 minutes or better | 500m (5-7 minutes walk) of 95% of households   |
 
-**Flexible transport will be considered for areas and times of low demand*
+\**Flexible transport will be considered for areas and times of low demand*
 
 Of course, crucial to the functioning of the whole system and its capacity to challenge car dominance is the way in which the coverage network interfaces with the frequent or patronage network. In this regard *Transport for Canberra* proposes the following objectives for wait time at stops, in particular, at interchanges:
 

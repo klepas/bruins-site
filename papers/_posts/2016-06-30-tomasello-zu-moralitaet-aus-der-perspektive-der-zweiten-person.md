@@ -5,14 +5,10 @@ title: Tomasello zu Moralität aus der Perspective der zweiten Person
 date: 2016-06-30T00:00:00.000Z
 version: '31.07.16, 21:13 pm'
 author: Carleton B. Christensen
-abstract: >-
-  Nachstehendes ist ein Referat zum dritten Kapitel des neuen, erst 2015 bei
-  Harvard University Press erschienenen Buchs von Michael Tomasello, <em>A
-  Natural History of Human Morality</em>. Das Kapitel selbst trägt den Titel
-  “Second-Personal Morality”. Das Referat wurde am 30<sup>.sten</sup> Juni,
-  2016, in dem Doktoranden-Kolloquium von Axel Honneth an der
-  Goethe-Universität, Frankfurt am Main, abgehalten.<br><br>Ich möchte mich bei
-  Christian Schmidt für sehr nützliche Kommentare und Kritik bedanken.
+abstract: |
+  Nachstehendes ist ein Referat zum dritten Kapitel des neuen, erst 2015 bei Harvard University Press erschienenen Buchs von Michael Tomasello, <em>A Natural History of Human Morality</em>. Das Kapitel selbst trägt den Titel “Second-Personal Morality”. Das Referat wurde am 30<sup>.sten</sup> Juni, 2016, in dem Doktoranden-Kolloquium von Axel Honneth an der Goethe-Universität, Frankfurt am Main, abgehalten.
+
+  Ich möchte mich bei Christian Schmidt für sehr nützliche Kommentare und Kritik bedanken.
 published: true
 ---
 

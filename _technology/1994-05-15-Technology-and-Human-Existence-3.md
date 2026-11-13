@@ -4,7 +4,8 @@ permalink: /courses/technology/the-techno-centrist-emmanuel-mesthene/
 title: "The Techno-Centrist Emmanuel Mesthene"
 date: 1994-05-15
 version: "15.05.1994"
-abstract: "This is the third of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+abstract: |
+  This is the third of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
 
 ---
 

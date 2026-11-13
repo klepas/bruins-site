@@ -1,28 +1,32 @@
 // The home page: Bruin's introduction and the two lists below it.
 @use "../minima/settings" as *;
 
+// The introduction, from index.md, with a dotted rule under it
 .site-intro {
   margin-block-end: 2.25rem;
+  padding-block-end: 1.5rem;
+  border-bottom: 2px dotted var(--color-rule);
+
+  p {
+    margin-block-end: 0.75rem;
+  }
+
+  > :last-child {
+    margin-block-end: 0;
+  }
 }
 
-.home-intro {
-  margin-block-end: 0.75rem;
-}
-
-// The large opening line
-.home-intro.hello {
+// The large opening line, the introduction's first paragraph. GitHub's
+// preview shows it at the normal size.
+.site-intro > p:first-child {
   font-family: $sans-font-family;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.3;
 }
 
-.home-intro.about-me {
-  padding-block-end: 1.5rem;
-  border-bottom: 2px dotted var(--color-rule);
-}
-
-// The old site's italic Palatino ampersand, used once on the home page
+// The old site's italic Palatino ampersand. _layouts/home.html adds it to
+// an & between spaces in the introduction
 .amp {
   font-family: "Palatino Linotype", Palatino, Baskerville, Times, "Times New Roman", Georgia, serif;
   font-style: italic;

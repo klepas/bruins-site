@@ -4,7 +4,10 @@ permalink: /courses/technology/small-is-beautiful-e-f-schumacher-on-appropriate-
 title: "“Small is Beautiful”—E. F. Schumacher on Appropriate Development and Technology"
 date: 1994-06-09
 version: "09.06.1994"
-abstract: "This is the eleventh of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.<br><br/>This set of notes relies on lecture notes from the course _Technology and Human Values_ run by C.A. Hooker and J.N. Wright at the University of Newcastle. (In the text these lecture notes are referred to as Hooker and Wright.)"
+abstract: |
+  This is the eleventh of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
+
+  This set of notes relies on lecture notes from the course _Technology and Human Values_ run by C.A. Hooker and J.N. Wright at the University of Newcastle. (In the text these lecture notes are referred to as Hooker and Wright.)
 
 ---
 

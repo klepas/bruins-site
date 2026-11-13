@@ -30,10 +30,11 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── favicon.svg, favicon.ico, apple-touch-icon.png  The site icon, "CBC" in Literata, gold on the header blue. plans/tools/favicon/ writes all three, so change them there, not by hand
 ├── papers.html, blog.html, courses.html  The /papers/, /blog/ and /courses/ indexes. /courses/ sorts the collections on their order key
 ├── style-guide/       Theme test pages, published: false, built with --unpublished
-├── index.html         Bruin's introduction. Its layout, home, adds the latest blog post and three recent papers
+├── index.md           Bruin's introduction, in Markdown. Its layout, home, adds the latest blog post and three recent papers
 ├── about.md, impressum.md  The about page and the Impressum
 ├── 404.html           "Page not found", for the bucket's ErrorDocument. S3 serves it at the missing address, so its links start with "/". Its noindex: true drops the canonical link
 ├── robots.txt         Opts the site out of AI training and leaves search engines alone. Its header says where the names come from and when to recheck them
+├── .well-known/tdmrep.json  Reserves the site's text and data mining rights, the PDFs included, see Jekyll below
 ├── papers/_posts/     The papers, each named <date>-<slug>.md
 │   └── _drafts/       Bruin's Word files and Markdown drafts. Jekyll never builds the folder, but anyone can read it on GitHub
 ├── blog/_posts/       The blog posts
@@ -43,7 +44,9 @@ The site was rebuilt in October 2026, on a current Ruby, the latest Jekyll and a
 ├── README.md          The repo's front page on GitHub, with Bruin's "Writing in Markdown" guide. Excluded from the build
 ├── .claude/skills/    Project skills, see Skills below
 ├── .gitattributes     LF line endings for text files committed from a clone; the content check's fixtures keep their bytes
+├── .github/dependabot.yml  The monthly update of the actions, see Dependencies below
 ├── .github/workflows/check.yml  The GitHub check, the deploy and the notices to the user, see Content checks and Deployment below
+├── .github/workflows/actions.lock  The exact commit of each action check.yml uses, written by gh actions-lock, see Dependencies below
 └── plans/             Plan sets, one folder each (only AGENTS.md and CLAUDE.md are committed)
     ├── done/          Finished plan sets
     └── tools/         screenshots/ takes screenshots of the site in every colour mode, favicon/ writes the icon files, fonts/ downloads the fonts and writes _sass/site/_fonts.scss. Each has a README.md
@@ -57,6 +60,7 @@ The site runs Jekyll 4.4.1, the newest stable release as of 2026-10-18. The old 
 
 - **Never change a published URL.** Every page, paper, course document and file keeps its exact live path. `_scripts/live-url-inventory.tsv` lists all of them, and `_scripts/check-urls.rb` checks every build against it. Jekyll 4 builds course and some paper URLs differently from Jekyll 2, so those pages pin theirs with a literal `permalink:`, see below. The one exception so far: on 2026-10-25 two image files got hyphens in place of the spaces in their names, agreed by the user with Bruin, so their old addresses are gone. No page's URL changed.
 - Keep `refs/` and `plans/` in the `exclude:` list in `_config.yml`. On the user's machine both hold notes, plans and test pages, such as `refs/safari-box-overflow-scroll-bug/testcase.html`, which Jekyll would otherwise copy into the site. Jekyll 4 adds its own defaults (`Gemfile`, `Gemfile.lock`, `vendor/bundle/` and so on), so don't repeat them.
+- Jekyll skips names that start with a dot, so `include:` lists `.well-known`. Its `tdmrep.json` reserves text and data mining rights for the whole site under W3C's TDMRep. It's the only TDMRep form that reaches the PDFs, since S3 can't send TDMRep's HTTP header. On 2026-11-11 the user left out the spec's optional `tdm-policy`, and its `tdm-reservation` meta tag, because the spec asks rightsholders to use only one technique.
 - `url` is the canonical host, `http://www.cbchristensen.net`. `jekyll doctor` warns and exits with status 1 without it.
 - `timezone: UTC` matches the 2022 build, so every front matter date lands on the same day in its URL.
 - `permalink: date` is Jekyll 4's default. Writing it down protects the paper URLs if a future Jekyll changes the default.
@@ -85,8 +89,10 @@ Markup:
 - `_includes/content.html` rewrites kramdown's footnote and table markup by exact string match. It deletes Bruin's own "Notes" heading above the footnotes, in the rendered page only, and puts the theme's in its place. It also names the footnote links for screen readers ("Note 2", "Back to reference 2") and numbers the table boxes. After a kramdown update, check that the style guide still shows one "Notes" heading above the footnotes. `README.md` has the rest of that check.
 - Interface text on German pages carries `lang="en-AU"`, written by `_includes/interface-lang.html`, so screen readers read it in English (WCAG 3.1.2). Any new label, heading or date the theme writes gets the include in its opening tag, as in `<footer class="site-footer"{% include interface-lang.html %}>`. Bruin's text never does.
 - Navigation links live in `_data/navigation.yml`. The header shows them at every width, stacked one per line on phones. There's no menu button, by the user's choice.
+- `_includes/head.html` writes Open Graph tags for link previews, text only, from the title, description and canonical link it already works out. The 404 page gets none.
 - Papers show `version` (free text, printed as written) and `updated` (a date) under the date, on screen and in print. Course documents use `_layouts/course-document.html`, a copy of `post.html` that shows no date, "Updated" or version, because Bruin keeps those in the files for himself (decided 2026-10-25). Keep the two layouts in step.
 - `/courses/` lists the collections by their `order` key in `_config.yml`, because Jekyll sorts `site.collections` by label. A new course needs an `order`, or it sorts first.
+- The home page's introduction is `index.md`, so Bruin can edit it as Markdown (Issue #44). Its first paragraph is the large opening line, styled by its place (`.site-intro > p:first-child`), so the Markdown needs no class. `_layouts/home.html` gives an `&` with a space on each side the old site's italic ampersand.
 - The home page shows the latest blog post's first paragraph, cut from the rendered post at its first `</p>` (decided 2026-10-20). Jekyll's `post.excerpt` cuts the source file at its first empty line, and a file with Windows line endings has none, so the excerpt was the whole post. Cutting the HTML gives the same paragraph whatever the line endings. Anything above the first paragraph, such as a heading or a picture, comes along, and a post with no paragraph shows whole. Rule 7 of the guide in `README.md` asks Bruin to start a post with a paragraph.
 - The style guide in `style-guide/` is unpublished and builds only with `--unpublished`. It's the test bed for theme changes.
 
@@ -167,15 +173,19 @@ Today both of the last two reach the bundle through other gems. Declaring them k
 
 The theme added no gems. It's a copy in the repo, and the Sass compiler comes with Jekyll through `jekyll-sass-converter`.
 
-`Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`.
+`Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`. Its `CHECKSUMS` section holds each gem's SHA-256, which Bundler checks when it downloads the gem. Keep it, and check that every line in it, Dependabot's included, has a `sha256=` checksum. When Bundler falls back to rubygems.org's older index, it writes the gem names without one and gives no error.
 
-Dependabot security updates are on in the repo's GitHub settings, and they stay on. Expect Dependabot PRs against `Gemfile.lock`.
+Dependabot security updates are on in the repo's GitHub settings, and they stay on. Expect Dependabot PRs against `Gemfile.lock`. `.github/dependabot.yml` adds one PR a month that bumps all the actions, each at least a week after its release, and updates `actions.lock` with them. A PR's check doesn't run the deploy job, so a bump of `download-artifact` or `configure-aws-credentials` is first tried on `master`.
+
+Each action in the workflow is locked to an exact commit in `.github/workflows/actions.lock`, so moving a tag upstream can't change what runs, and a job that uses an action the lockfile doesn't list fails. After changing a `uses:` line, run `gh actions-lock` then `gh actions-lock --verify`, and commit the lockfile with the workflow. The command comes from the `github/gh-actions-lock` extension for `gh`. Each `ruby/setup-ruby` release knows only the Rubies out before it, so if the check can't find the Ruby in `.ruby-version`, raise the action's version in its `uses:` line and relock.
+
+The repo's "Require lockfile" policy, under Settings → Actions → Policies since 2026-11-13, blocks any workflow without a valid lockfile, so a new workflow needs `gh actions-lock` before it can run. The notify job may not report a run the policy blocks.
 
 ## Deployment
 
-The live site is served from the S3 bucket `www.cbchristensen.net` (`ap-southeast-2`) over HTTP, through the bucket's website endpoint. Its `ErrorDocument` is `404.html`, which S3 serves with a `404` at any address with no file. `www.cbchristensen.net` is the canonical host. A separate nginx host redirects every path on `cbchristensen.net` to the same path on `www.`, and that redirect has to keep working.
+The live site is served from the S3 bucket `www.cbchristensen.net` (`ap-southeast-2`) over HTTP, through the bucket's website endpoint. Its `ErrorDocument` is `404.html`, which S3 serves with a `404` at any address with no file. `www.cbchristensen.net` is the canonical host. `cbchristensen.net` points at wwwizer.com, a free outside service that redirects every path to the same path on `www.`, over HTTP only. That redirect has to keep working.
 
-Every push to `master` that passes the check goes live. The `deploy` job in `.github/workflows/check.yml` uploads the build the `check` job made, with `aws s3 sync` and `Cache-Control: no-cache` on every file. `--delete` removes whatever the build no longer makes, so a file deleted or renamed in the repo leaves the site with the next deploy. The job signs in through GitHub's OIDC token as the IAM role `bruins-site-deploy`, whose ARN is in the repository secret `AWS_DEPLOY_ROLE_ARN`, so no AWS key is stored anywhere. AWS lets only runs on `master` take the role, and the role can only list the bucket and write and delete its files. A run whose commit is no longer `master`'s tip uploads nothing, so re-running an old run can't put an old build back.
+Every push to `master` that passes the check goes live. The `deploy` job in `.github/workflows/check.yml` uploads the build the `check` job made, with `aws s3 sync` and `Cache-Control: no-cache` on every file. The build's artifact needs `include-hidden-files: true`, or `upload-artifact` leaves out `.well-known/`. `--delete` removes whatever the build no longer makes, so a file deleted or renamed in the repo leaves the site with the next deploy. The job signs in through GitHub's OIDC token as the IAM role `bruins-site-deploy`, whose ARN is in the repository secret `AWS_DEPLOY_ROLE_ARN`, so no AWS key is stored anywhere. AWS lets only runs on `master` take the role, and the role can only list the bucket and write and delete its files. A run whose commit is no longer `master`'s tip uploads nothing, so re-running an old run can't put an old build back.
 
 The user holds the AWS account. Agents never run `aws` commands or deploy by hand.
 

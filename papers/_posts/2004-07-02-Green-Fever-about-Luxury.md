@@ -4,7 +4,8 @@ title: "Green Fever about Luxury—Misunderstanding the Middle-Class Battler"
 date: 2004-07-02
 version: "02.07.2004, 11:54 am"
 author: Carleton B. Christensen
-abstract: "This is the (slightly revised and corrected) text of a speech I gave as invited speaker at the annual dinner at International House in mid-2004."
+abstract: |
+  This is the (slightly revised and corrected) text of a speech I gave as invited speaker at the annual dinner at International House in mid-2004.
 ---
 
 ## Green Fever about Luxury—Misunderstanding the Middle-Class Battler

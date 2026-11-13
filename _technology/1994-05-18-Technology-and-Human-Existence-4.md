@@ -4,7 +4,8 @@ permalink: /courses/technology/the-radical-techno-critic-jacques-ellul/
 title: "The Radical Techno-Critic Jacques Ellul"
 date: 1994-05-18
 version: "19.05.1994"
-abstract: "This is the fourth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+abstract: |
+  This is the fourth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
 
 ---
 

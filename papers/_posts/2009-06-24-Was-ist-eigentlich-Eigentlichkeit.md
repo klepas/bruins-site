@@ -5,7 +5,10 @@ title: "Was ist eigentlich Eigentlichkeit?"
 date: 2009-06-24
 version: "31.07.2009"
 author: Carleton B. Christensen
-abstract: "Nachstehendes bildet den Text eines Vortrags, den ich am 24.07.2009 im Institut für Philosophie an der Goethe-Universität, Frankfurt am Main, gehalten habe. Ich werde sobald wie möglich ein richtiges Abstrakt schreiben.<br><br/>Für inhaltliche wie auch sprachliche Kritik möchte ich mich bei Karl Mertens bedanken."
+abstract: |
+  Nachstehendes bildet den Text eines Vortrags, den ich am 24.07.2009 im Institut für Philosophie an der Goethe-Universität, Frankfurt am Main, gehalten habe. Ich werde sobald wie möglich ein richtiges Abstrakt schreiben.
+
+  Für inhaltliche wie auch sprachliche Kritik möchte ich mich bei Karl Mertens bedanken.
 
 ---
 

@@ -3,7 +3,8 @@ layout: course-document
 permalink: /courses/descartes/descartes-meditations-on-first-philosophy-13/
 title: "Descartes’ *Meditations on First Philosophy* 13"
 updated: 2014-09-05
-abstract: "Descartes’ Metaphysics of Nature and Mind---The Sixth Meditation (Part III)"
+abstract: |
+  Descartes’ Metaphysics of Nature and Mind---The Sixth Meditation (Part III)
 ---
 
 ## Descartes’ Metaphysics of Nature and Mind---The Sixth Meditation (Part III)

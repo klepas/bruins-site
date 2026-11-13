@@ -5,12 +5,26 @@
   {%- assign title = page.title | markdownify | strip_html | strip %}
   <title>{% if title != "" and page.url != "/" %}{{ title }} | {% endif %}{{ site.title | escape }}</title>
   {%- assign description = page.abstract | default: page.excerpt | default: site.description %}
-  <meta name="description" content="{{ description | markdownify | strip_html | normalize_whitespace | strip | truncate: 160 | escape_once }}">
-  {%- comment -%} 404.html sets noindex. A canonical link there would contradict it. {%- endcomment %}
+  {%- comment -%} A course's index page takes the course's abstract from _config.yml. Its excerpt is only its "Introduction" heading. {%- endcomment %}
+  {%- if page.layout == "course-overview" %}
+  {%- assign course = site.collections | where: "label", page.collection | first %}
+  {%- assign description = course.abstract | default: description %}
+  {%- endif %}
+  {%- comment -%} The space before each <br> keeps strip_html from joining the words on either side. {%- endcomment %}
+  {%- assign description = description | markdownify | replace: "<br", " <br" | strip_html | normalize_whitespace | strip | truncate: 160 | escape_once %}
+  <meta name="description" content="{{ description }}">
+  {%- comment -%} 404.html sets noindex. A canonical link there would contradict it. S3 serves the page at any missing address, so it gets no link preview either. {%- endcomment %}
   {%- if page.noindex %}
   <meta name="robots" content="noindex">
   {%- else %}
-  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  {%- assign canonical = page.url | replace: 'index.html', '' | absolute_url %}
+  <link rel="canonical" href="{{ canonical }}">
+  {%- comment -%} Open Graph tags, for link previews. og:title leaves out the site name, which services show from og:site_name. No og:locale, since the German papers would need their own. {%- endcomment %}
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{% if title != "" and page.url != "/" %}{{ title | escape_once }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:type" content="{% if page.collection == "posts" or page.layout == "course-document" %}article{% else %}website{% endif %}">
   {%- endif %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
   {%- comment -%} sizes="32x32", not "any", or Chrome fetches the ICO as well as the SVG. {%- endcomment %}

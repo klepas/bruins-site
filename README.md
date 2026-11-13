@@ -22,7 +22,7 @@ To start a new paper or post, open its folder on GitHub, choose **Add file**, th
 
 New course notes need their own address in a `permalink:` line, ending in `/`, such as `permalink: /courses/descartes/a-short-title/`. No other page may have the same address. Keep the line `layout: course-document` from the notes you copied: course notes don't show their date or version on the site, but those lines stay in the file for your own records.
 
-The introduction on the home page lives in `index.html`. It's written in HTML, not Markdown, so a link there is `<a href="/files/pdfs/name.pdf">the title</a>` and italics are `<em>…</em>`. Markdown there shows up on the page as brackets and underscores.
+The introduction on the home page lives in `index.md`, in Markdown like a paper. On the site, its first paragraph shows in large type as the opening line, and an `&` with a space on each side comes out in italics. The preview shows both as ordinary text.
 
 ### The block at the top
 
@@ -35,16 +35,20 @@ title: "The title, with *italics* if needed"
 date: 2026-10-20
 version: "20.10.2026"
 author: Carleton B. Christensen
-abstract: "A sentence or two. It shows above the paper, and on the home page while the paper is one of the three newest."
+abstract: |
+  A sentence or two. It shows above the paper, and on the home page while the paper is one of the three newest.
+
+  A note on where you gave the paper, or your thanks, can follow as a paragraph of its own.
 ---
 ```
 
 - On papers, `version:` and `updated:` (a date, written like `date:`) show under the title. On course notes the site shows no date or version, so they're for your own records.
 - Add the line `lang: de` to a paper written in German.
 - A `permalink:` line holds a page's address. Leave it exactly as it is. If the block you copied has one, delete it from the new page, or the new page takes the old one's place on the site.
-- Keep the title and the abstract inside straight double quotes, `"…"`. For quotation marks inside them, use curly ones: “ ” and ‘ ’.
-- If the abstract starts `abstract: >`, as in the newer papers, leave out the quotes and indent each line below it by two spaces.
-- In a title or abstract inside quotes, an asterisk that should show takes two backslashes, as in `title: "Why she\\* is happy"`. With one, the check can't read the block and gives a red cross. Under `abstract: >`, one is enough, as in the text (see "Asterisks that should show" below).
+- Keep the title inside straight double quotes, `"…"`. For quotation marks inside it, use curly ones: “ ” and ‘ ’.
+- Write the abstract below the line `abstract: |`, in Markdown as in the paper, with each line indented by two spaces. Put each paragraph on one line, and leave an empty line between two paragraphs. It needs no quotes and no `<br>`.
+- Keep the `|`. With `>` or quotes in its place, the site runs the paragraphs into one. The check gives a red cross for that, and for a `<br>` in an abstract.
+- In a title, an asterisk that should show takes two backslashes, as in `title: "Why she\\* is happy"`. With one, the check can't read the block and gives a red cross. In the abstract, one is enough, as in the text (see "Asterisks that should show" below).
 - Write each line once. With two `abstract:` lines, the site shows only the second.
 
 ### Rules the preview won't warn you about
@@ -85,6 +89,8 @@ Next to an italic or bold letter, type the italics or bold as usual, and put the
 | An asterisk, then an italic letter: \**x* | `\**x*` |
 | Two asterisks: S\*\* | `S\*\*` |
 | Logic with italics: B\*(*x*, *y is F*) | `B\*(*x*, *y is F*)` |
+
+Underscores work for italics too, as in `_F\*_`, but only around a whole word, not after a hyphen or inside a word (rule 3).
 
 ### Special characters
 
@@ -145,7 +151,7 @@ out=$(mktemp -d) && bundle exec jekyll build --destination "$out" && ruby _scrip
 
 ### Hosting
 
-The S3 bucket `www.cbchristensen.net`, in `ap-southeast-2`. A separate nginx host, outside this repo, redirects `cbchristensen.net` to `www.`. GitHub deploys each push to `master` that passes the check, from the `deploy` job in `.github/workflows/check.yml`.
+The S3 bucket `www.cbchristensen.net`, in `ap-southeast-2`. wwwizer.com, a free redirect service outside this repo, sends `cbchristensen.net` to `www.`. GitHub deploys each push to `master` that passes the check, from the `deploy` job in `.github/workflows/check.yml`.
 
 ### Debugging Sass
 

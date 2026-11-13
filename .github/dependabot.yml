@@ -1,0 +1,16 @@
+# One PR a month bumps every GitHub Action and updates actions.lock to
+# match. Each new release waits a week first, so a bad one has time to be
+# found and pulled. The gems get security updates only, which are switched
+# on in the repo's settings and never wait.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns:
+          - "*"

@@ -4,7 +4,8 @@ permalink: /courses/technology/problems-of-complexity-the-u-s-s-vincennes/
 title: "Problems of Complexity—The _U.S.S. Vincennes_"
 date: 1994-05-19
 version: "09.12.1995"
-abstract: "This is the fifth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+abstract: |
+  This is the fifth of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
 
 ---
 

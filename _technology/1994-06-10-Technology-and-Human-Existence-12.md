@@ -4,7 +4,8 @@ permalink: /courses/technology/concluding-remarks-technological-development-as-a
 title: "Concluding Remarks: Technological Development as a Form of Practical Wisdom"
 date: 1994-06-10
 version: "10.06.1994"
-abstract: "This is the last of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology."
+abstract: |
+  This is the last of a set of twelve course notes written in 1993 and revised across 1994 and 1995 for _Technology and Human Existence_, a half-semester first year option on the philosophy of technology.
 
 ---
 

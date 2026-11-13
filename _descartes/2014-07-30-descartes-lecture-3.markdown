@@ -3,7 +3,8 @@ layout: course-document
 permalink: /courses/descartes/descartes-meditations-on-first-philosophy-3/
 title: "Descartes’ *Meditations on First Philosophy* 3"
 updated: 2014-07-30
-abstract: "The Conclusion of the First Meditation and Descartes’ Discovery of Himself as a *Res Cogitans* in the Second Meditation"
+abstract: |
+  The Conclusion of the First Meditation and Descartes’ Discovery of Himself as a *Res Cogitans* in the Second Meditation
 ---
 
 ## The Conclusion of the First Meditation and Descartes’ Discovery of Himself as a *Res Cogitans* in the Second Meditation 

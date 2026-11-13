@@ -173,7 +173,7 @@ Today both of the last two reach the bundle through other gems. Declaring them k
 
 The theme added no gems. It's a copy in the repo, and the Sass compiler comes with Jekyll through `jekyll-sass-converter`.
 
-`Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`.
+`Gemfile.lock` keeps every platform Bundler writes into a new lockfile, about 19 of them plus `ruby`. Don't add or remove platforms. If `PLATFORMS` shows only `ruby`, check `~/.bundle/config` for `force_ruby_platform`. Its `CHECKSUMS` section holds each gem's SHA-256, which Bundler checks when it downloads the gem. Keep it, and check that every line in it, Dependabot's included, has a `sha256=` checksum. When Bundler falls back to rubygems.org's older index, it writes the gem names without one and gives no error.
 
 Dependabot security updates are on in the repo's GitHub settings, and they stay on. Expect Dependabot PRs against `Gemfile.lock`. `.github/dependabot.yml` adds one PR a month that bumps all the actions, each at least a week after its release, and updates `actions.lock` with them. A PR's check doesn't run the deploy job, so a bump of `download-artifact` or `configure-aws-credentials` is first tried on `master`.
 

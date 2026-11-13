@@ -179,6 +179,8 @@ Dependabot security updates are on in the repo's GitHub settings, and they stay 
 
 Each action in the workflow is locked to an exact commit in `.github/workflows/actions.lock`, so moving a tag upstream can't change what runs, and a job that uses an action the lockfile doesn't list fails. After changing a `uses:` line, run `gh actions-lock` then `gh actions-lock --verify`, and commit the lockfile with the workflow. The command comes from the `github/gh-actions-lock` extension for `gh`. Each `ruby/setup-ruby` release knows only the Rubies out before it, so if the check can't find the Ruby in `.ruby-version`, raise the action's version in its `uses:` line and relock.
 
+The repo's "Require lockfile" policy, under Settings → Actions → Policies since 2026-11-13, blocks any workflow without a valid lockfile, so a new workflow needs `gh actions-lock` before it can run. The notify job may not report a run the policy blocks.
+
 ## Deployment
 
 The live site is served from the S3 bucket `www.cbchristensen.net` (`ap-southeast-2`) over HTTP, through the bucket's website endpoint. Its `ErrorDocument` is `404.html`, which S3 serves with a `404` at any address with no file. `www.cbchristensen.net` is the canonical host. `cbchristensen.net` points at wwwizer.com, a free outside service that redirects every path to the same path on `www.`, over HTTP only. That redirect has to keep working.

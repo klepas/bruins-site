@@ -113,7 +113,7 @@ Zuallerletzt möchte ich das, worin die Entschlossenheit gründet, die Geworfenh
 
 Der Nachteil einer traditionsbelasteten Sprache wird durch einen Vorteil aufgewogen. Versteht man nämlich Heideggers Anliegen so wie hier interpretiert und soeben gekennzeichnet, wird der Grund dafür ersichtlich, weshalb so viele immer wieder die Relevanz Heideggers für die Umweltphilosophie und eine Kritik an dem technokratischen Denken empfunden haben, ohne sie klar ausmachen und begründen zu können. Diese Relevanz lässt sich bündig in der These zusammenfassen, dass Heidegger Ernst Schumacher vorwegnimmt: klein ist schön.[^39] Zugleich sehen wir, dass diese Relevanz nicht erst mit der Spätphilosophie beginnt. Sie liegt nämlich schon in _Sein und Zeit_ vor.[^40] Ferner deutet der soeben hergestellte Bezug zu Schumacher auf den wahren Grund jener Volkstümelei hin, auf die sich Heidegger gelegentlich einlässt. Viele haben diese als Ausdruck bzw. Folge eines dezisionistischen Irrationalismus aufgefasst, der sich nicht nur grün, sondern auch braun färben lässt.[^41] Das ist jedoch ein Missverständnis der Philosophie Heideggers. Was aber die Person anbetrifft, so meine ich, dass sich hinter der Volkstümelei das Bedürfnis steckt, _rational_ der _endlichen_ praktischen Vernunft Grenzen zu setzen, um sie dadurch eigentlich sein zu lassen.
 
-## Literatur
+## Literaturhinweise
 
 Ansari, E. 2016 [“Bolivia to be completely Food Independent in 2020 by investing in Small Farmers,”](http://undergroundreporter.org/bolivia-food-independent-2020/?fbclid=IwAR0iVB1-x7-anIHjkVUBm-_LXRXRquoc7zSefUNNBytkDmHh83T4Vna66ZM) in _Underground Reporter_, 27<sup>.ster</sup> April, 2016
 

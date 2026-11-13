@@ -31,7 +31,7 @@ This philosophical view of the relation between the world as it is for everyday 
 But before we look more closely at the philosophical views which made Descartes such a seminal figure, we need to get acquainted with the man himself. So who is René Descartes? Let us look at the following chronological account of Descartes’ life, which is based on the Cottingham translation of the *Meditations* and other works by Descartes:[^4]
 
 1596
-: born at La Haye near Tours (about 215 km SSW of Paris) on 31^st^ March
+: born at La Haye near Tours (about 215 km SSW of Paris) on 31<sup>st</sup> March
 
 1606-14 
 : attends the Jesuit college of La Flèche in Anjou, which, as I recall, was steeped in the late Mediaeval Scholastic philosophy of Francesco Suarez (1548-1617); Descartes stayed at La Flèche for eight or nine years, but, as is pointed out in the Cottingham translation, “the exact dates of his arrival and departure are uncertain.”

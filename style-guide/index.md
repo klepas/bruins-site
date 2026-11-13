@@ -70,7 +70,7 @@ In March, 2012, the ACT government released the document [*Transport for Canberr
 ## Definition list
 
 1596
-: born at La Haye near Tours (about 215 km SSW of Paris) on 31^st^ March
+: born at La Haye near Tours (about 215 km SSW of Paris) on 31<sup>st</sup> March
 
 1606-14
 : attends the Jesuit college of La Flèche in Anjou, which, as I recall, was steeped in the late Mediaeval Scholastic philosophy of Francesco Suarez (1548-1617)

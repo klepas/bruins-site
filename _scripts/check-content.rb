@@ -6,11 +6,12 @@
 # address, files that aren't Markdown in a posts or course folder, a heading
 # left empty above the notes, look-alike characters and accents typed apart
 # from their letters, headings that skip a level, spaces in addresses and
-# file names, links that read only "here", course notes on the wrong layout,
-# abstracts not written below abstract: | or holding a <br>, and an updated:
-# before the date. It warns about Word files outside the drafts and files
-# folders, and about a mark typed apart from its letter where no ready-made
-# letter has it. CI runs it before the build, and an error stops the deploy.
+# file names, links that read only "here", carets typed for raised text, as
+# in 31^st^, course notes on the wrong layout, abstracts not written below
+# abstract: | or holding a <br>, and an updated: before the date. It warns
+# about Word files outside the drafts and files folders, and about a mark
+# typed apart from its letter where no ready-made letter has it. CI runs it
+# before the build, and an error stops the deploy.
 #
 # Usage, from the repo root:
 #   bundle exec ruby _scripts/check-content.rb              the site
@@ -40,8 +41,8 @@
 #   so a false alarm holds the deploy until this script is fixed.
 # - It knows only the problems we've taught it. A new kind of mistake needs
 #   a new check.
-# - The underscore and asterisk checks walk kramdown's parse tree, so a
-#   major kramdown upgrade could break them. Run --self-test after any gem
+# - The underscore, asterisk and caret checks walk kramdown's parse tree, so
+#   a major kramdown upgrade could break them. Run --self-test after any gem
 #   update.
 # - --self-test and its fixtures are the only tests. Add a fixture with
 #   every new check.
@@ -159,6 +160,16 @@ SELF_TEST_EXPECTED = <<~'TEXT'.lines(chomp: true)
   papers/_posts/2026-02-25-abstract-folded.md:4: write abstract: | in place of abstract: >-. After >-, an empty line doesn't start a new paragraph (see "The block at the top" in README.md)
   papers/_posts/2026-02-26-abstract-br.md:5: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
   papers/_posts/2026-02-26-abstract-br.md:7: leave an empty line in place of <br> to start a new paragraph in the abstract (see "The block at the top" in README.md)
+  papers/_posts/2026-02-27-carets.md:11: "^10^": the site shows these carets as typed. For raised text, type <sup>10</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:11: "^16^": the site shows these carets as typed. For raised text, type <sup>16</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:25: "28^th^": the site shows these carets as typed. For raised text, type 28<sup>th</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:27: "viii^1^": the site shows these carets as typed. For raised text, type viii<sup>1</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:28: "italic^th^": the site shows these carets as typed. For raised text, type italic<sup>th</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:3: "1^st^": the site shows these carets as typed. For raised text, type 1<sup>st</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:5: "2^nd^": the site shows these carets as typed. For raised text, type 2<sup>nd</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:7: "3^rd^": the site shows these carets as typed. For raised text, type 3<sup>rd</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:9: "19^th^": the site shows these carets as typed. For raised text, type 19<sup>th</sup> (see "Raised and lowered text" in README.md)
+  papers/_posts/2026-02-27-carets.md:9: "31^st^": the site shows these carets as typed. For raised text, type 31<sup>st</sup> (see "Raised and lowered text" in README.md)
   papers/_posts/Old notes 1994.doc:1: warning: anyone can see this .doc file on GitHub, though the site doesn't show it. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
   papers/_posts/no-date.md:1: the file name must start with a date, like 2026-10-20-short-title.md, or the site skips it (see "Where files go" in README.md)
   talk-notes.docx:1: warning: anyone can see this .docx file on GitHub, and on the site, which offers it as a download. Put drafts in papers/_posts/_drafts/, or keep them off GitHub (see "Where files go" in README.md)
@@ -242,6 +253,12 @@ WORD_START_ASTERISK = /(?<![[:alnum:]])\*(?=[[:alnum:]])/
 # Punctuation around a word, as for EDGE_PUNCTUATION, keeping \ and *.
 ASTERISK_EDGE_PUNCTUATION = /\A[[:punct:]&&[^*\\]]+|[[:punct:]&&[^*\\]]+\z/
 ASTERISK_ADVICE = 'For an asterisk that should show, type \* (see "Asterisks that should show" in README.md)'
+
+# Raised text typed between carets, as in 31^st^, with the letters or digits
+# before it. A note reference, [^1], isn't in kramdown's text, but one whose
+# note is missing is, so the raised part can't hold a bracket. A letter or
+# digit straight after the second caret means a formula, as in x^2+y^2.
+CARET_PAIR = /([[:alnum:]]*)\^([^\^\s\[\]]+)\^(?![[:alnum:]])/
 
 Finding = Struct.new(:path, :line, :message, :warning) do
   def to_s
@@ -433,7 +450,7 @@ class FileCheck
   # runs templates before Markdown.
   LINE_CHECKS_INCLUDING_CODE = %i[template].freeze
   # After kramdown has parsed a Markdown body.
-  TREE_CHECKS = %i[underscores asterisks kramdown_warnings notes_heading heading_levels address_spaces
+  TREE_CHECKS = %i[underscores asterisks carets kramdown_warnings notes_heading heading_levels address_spaces
                    vague_links].freeze
   # Each line of the file, the block at the top included, leaving out code:
   # ~~~ blocks, and `…` on one line in a Markdown body. They get the line's
@@ -989,6 +1006,33 @@ class FileCheck
   # A word as typed, for a message: \* as \*, and no punctuation round it.
   def shown_word(word)
     word.gsub(ESCAPED_ASTERISK, "\\*").gsub(ASTERISK_EDGE_PUNCTUATION, "")
+  end
+
+  # Carets typed for raised text, as in 31^st^, which some programs write
+  # when they save Markdown. kramdown has no syntax for raised text, so the
+  # site shows the carets, and so does the preview (Issue #54). Reads
+  # kramdown's text, which leaves out code and note references, in the
+  # body, the title and the abstract.
+  def carets
+    sources = [[@doc, @body_start]]
+    %w[title abstract].each do |key|
+      next unless @data[key].is_a?(String)
+
+      sources << [Kramdown::Document.new(@data[key], @site.kramdown_options), key_line(key) - 1]
+    end
+
+    sources.each do |doc, offset|
+      each_element(doc.root) do |el, line|
+        next unless el.type == :text
+
+        el.value.to_enum(:scan, CARET_PAIR).map { Regexp.last_match }.each do |match|
+          typed = match[0]
+          n = source_line(line + el.value[0, match.begin(0)].count("\n") + offset, typed, typed)
+          add(n, %("#{typed}": the site shows these carets as typed. For raised text, type ) +
+                 %(#{match[1]}<sup>#{match[2]}</sup> (see "Raised and lowered text" in README.md)))
+        end
+      end
+    end
   end
 
   # kramdown's own warnings, apart from the "No link definition" ones that
